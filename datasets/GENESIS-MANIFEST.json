@@ -105,6 +105,12 @@
         "person_names:fr",
         "person_names:it",
         "person_names:pt"
+      ],
+      "обороты_полос": [
+        {
+          "оборот": "# books on the shelf how many more",
+          "страниц": 1
+        }
       ]
     },
     {
@@ -1710,7 +1716,7 @@
     {
       "name": "compare_mult",
       "file": "datasets/genesis_compare_mult.txt",
-      "genre": "multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable — the organism had bought one and not the other because they never stood together; plus worded multipliers (twice, thrice) beside the numeric ones, «N times more than» with its ground, and the difference comparison next to the multiple one so the two are told apart",
+      "genre": "multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable — the organism had bought one and not the other because they never stood together; plus worded multipliers (twice, thrice) beside the numeric ones, «N times more than» with its ground, and the difference comparison next to the multiple one so the two are told apart SCENES REWRITTEN 23.09 by the owner's word: «the house cost three times as much as the lot» was GSM8K g1.26 word for word; the tent and the lantern stand in its place.",
       "act": [
         "compare",
         "recount",
@@ -1732,6 +1738,12 @@
       "actors": [
         "person_names:en",
         "person_names:ru"
+      ],
+      "обороты_полос": [
+        {
+          "оборот": "has # apples how many more apples does",
+          "страниц": 10
+        }
       ]
     },
     {
@@ -2937,6 +2949,12 @@
       "actors": [
         "person_names:en",
         "person_names:ru"
+      ],
+      "обороты_полос": [
+        {
+          "оборот": "has # apples how many more apples does",
+          "страниц": 3
+        }
       ]
     },
     {
@@ -3344,10 +3362,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 46866723,
+      "size": 46856493,
       "tiers": [],
       "text": "mix",
-      "lines": 486224
+      "lines": 486160
     },
     {
       "name": "fuseprep",
@@ -3444,7 +3462,7 @@
     {
       "name": "genesis_compare",
       "file": "datasets/genesis_compare.txt",
-      "genre": "COMPARISON BY DIFFERENCE, BY RATIO, AND BY BOTH AT ONCE — declared until 12.09 in eight words. Measured 12.09: 1440 lines, English only, and EVERY ONE asks; 720 carry the arithmetic beside the answer. Four shapes, counted: MORE BY A NUMBER — 144 («Felix has 1 more cookie than Carla. Carla has 3 cookies»); FEWER BY A NUMBER — 143, the same shape run downward, without which a reader would take comparison for addition; SO MANY TIMES — 192 («Ben has 2 times the amount of eggs that Elena has»); AND THE TWO WELDED — 288, the largest genus of the world («Felix has 1 more than twice the number of cards that Ben has»). A DIFFERENCE ANSWERS «BY HOW MUCH» AND A RATIO ANSWERS «HOW MANY TIMES», AND THE WELDED SHAPE ASKS BOTH IN ONE BREATH — that is why it is the largest here: a reader who has learned each apart still stumbles where they stand together, for the order of the two operations decides the answer. The signs bear this out: 434 lines multiply, 288 add and 143 subtract. Eight bearers carry the frame and the thing is always the same on both sides, so that nothing but the comparison is in question. Boundary: whole totals only and no negative value in 1440 lines, both measured — a holding is never fewer than none. Its neighbour is `relcompare`, and the two divide one subject cleanly: THIS world shows the FORMS of comparison and asks for the absolute holding they imply; THAT one teaches that the comparison NUMBER ITSELF belongs to the difference and to NEITHER BEARER — «458 more girls than boys» names no count of girls. ONE BUYS THE SHAPE OF THE QUESTION, THE OTHER BUYS WHOSE THE NUMBER IS.",
+      "genre": "COMPARISON BY DIFFERENCE, BY RATIO, AND BY BOTH AT ONCE — declared until 12.09 in eight words. Measured 12.09: 1440 lines, English only, and EVERY ONE asks; 720 carry the arithmetic beside the answer. Four shapes, counted: MORE BY A NUMBER — 144 («Felix has 1 more cookie than Carla. Carla has 3 cookies»); FEWER BY A NUMBER — 143, the same shape run downward, without which a reader would take comparison for addition; SO MANY TIMES — 192 («Ben has 2 times the amount of eggs that Elena has»); AND THE TWO WELDED — 288, the largest genus of the world («Felix has 1 more than twice the number of stamps that Ben has»). A DIFFERENCE ANSWERS «BY HOW MUCH» AND A RATIO ANSWERS «HOW MANY TIMES», AND THE WELDED SHAPE ASKS BOTH IN ONE BREATH — that is why it is the largest here: a reader who has learned each apart still stumbles where they stand together, for the order of the two operations decides the answer. The signs bear this out: 434 lines multiply, 288 add and 143 subtract. Eight bearers carry the frame and the thing is always the same on both sides, so that nothing but the comparison is in question. Boundary: whole totals only and no negative value in 1440 lines, both measured — a holding is never fewer than none. Its neighbour is `relcompare`, and the two divide one subject cleanly: THIS world shows the FORMS of comparison and asks for the absolute holding they imply; THAT one teaches that the comparison NUMBER ITSELF belongs to the difference and to NEITHER BEARER — «458 more girls than boys» names no count of girls. ONE BUYS THE SHAPE OF THE QUESTION, THE OTHER BUYS WHOSE THE NUMBER IS. REWRITTEN 23.09 by the owner's word: the surfaces had been read off the g1 band — g1.32, g1.37 — and the pages carried the band's own things and numbers in the band's own constructions («has 3 more than twice the number of books that», «3 times the amount of cards that»); the things are ours (shells, pencils, stamps), the nested addend walks 1, 2, 4, and the generic idiom «has # more than twice the number of» is named in `обороты_полос`.",
       "act": [
         "compare"
       ],
@@ -3463,6 +3481,12 @@
       "text": "shows",
       "actors": [
         "person_names:en"
+      ],
+      "обороты_полос": [
+        {
+          "оборот": "has # more than twice the number of",
+          "страниц": 143
+        }
       ]
     },
     {
@@ -8488,7 +8512,7 @@
     {
       "name": "measure_story",
       "file": "datasets/genesis_measure_story.txt",
-      "genre": "MEASURED STORIES — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09). The first: «the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper? 31 − 25 = 6.» — the corpus said this with ONE verb, and a verb met once is learnt as a word rather than as a place of the frame; six verbs walk here (jumped, ran, walked, swam, flew, crawled — прыгнул, пробежал, прошёл, проплыл, пролетел, прополз), each with its bare form for the English question and, in Russian, with its own preposition («прыгнул НА 31 сантиметр», but «пробежал 31 метр») and its past tense agreeing with the actor («лягушка прыгнула», «кузнечик прыгнул»). The second: «a house and a lot cost 120 dollars together. the house costs three times as much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 30.» — «as MUCH as» beside «times» on a price, where the corpus had only «as many as» on countables; both ends of the pair are asked, and the greater costs one step more, for its answer runs through the lesser. Every form is declared by the house (tools/measurestory.py): the Russian measure names three count forms, the past tense two genders, the second good its genitive; the court knows the whole finite table and calls a line of these shapes that the table does not hold a lie",
+      "genre": "MEASURED STORIES — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09). The first: «the goat jumped 81 metres. the rabbit jumped 32 metres. how many fewer metres did the rabbit jump than the goat? 81 − 32 = 49.» — the corpus said this with ONE verb, and a verb met once is learnt as a word rather than as a place of the frame; six verbs walk here (jumped, ran, walked, swam, flew, crawled — прыгнул, пробежал, прошёл, проплыл, пролетел, прополз), each with its bare form for the English question and, in Russian, with its own preposition («прыгнул НА 31 сантиметр», but «пробежал 31 метр») and its past tense agreeing with the actor («лошадь пробежала», «кролик прыгнул»). The second: «a tent and a lantern cost 42 dollars together. the tent costs twice as much as the lantern. how much does the tent cost? 2 + 1 = 3, 42 ÷ 3 = 14, 2 × 14 = 28.» — «as MUCH as» beside «times» on a price, where the corpus had only «as many as» on countables; both ends of the pair are asked, and the greater costs one step more, for its answer runs through the lesser. Every form is declared by the house (tools/measurestory.py): the Russian measure names three count forms, the past tense two genders, the second good its genitive; the court knows the whole finite table and calls a line of these shapes that the table does not hold a lie. SCENES REWRITTEN 23.09 by the owner's word (the lead's order): the orders had been written by reading the bands — the SVAMP jumping contest of the grasshopper, the frog and the mouse, and GSM8K g1.26 «a house and a lot» word for word; the constructions stay, the scenes and the numbers are ours, and EVERY VERB TAKES ITS OWN ACTORS (`КТО`) and, in Russian, its own measures — the world had carried «the kangaroo flew 73 metres» and «пёс пролетел 92 метра», true arithmetic about a false world",
       "act": [
         "recount",
         "compare",
@@ -9276,7 +9300,7 @@
     {
       "name": "numphrase",
       "file": "datasets/genesis_numphrase.txt",
-      "genre": "THE NUMBER'S PHRASE — the number that hangs on a FORM, not on a digit (06.09). The measure of the executor (d5, band p156) named the debt exactly: of 423 tacts where the reader does not read a number, 409 carry PLAIN DIGITS — the trouble is not the shape of the number but the shape of the PHRASE it hangs on. The census of the свод says why: eight lines carry «N pages long», six carry a progressive with a counted subject, and ZERO carry «N more … but N fewer». Four frames, each a different way for a number to sit in a sentence: the measure as what the text HAS («the first chapter has 48 pages», and Russian with no verb at all — «в первой главе 48 страниц»); THE SAME FACT as a PREDICATE OF LENGTH («is 48 pages long»), shown beside the first in ALL NINE languages, because a house that gives a language one of the two sells the market that one — and the languages part company on whether the predicate takes a verb of its own (ru, en, de, fr, it, nl) or a tail on the verb of possession (es, pt, pl: «tiene 48 páginas de largo», «ma 48 stron długości»), which parting is itself a shown fact; in both, the answer must repeat the number in the same COUNT FORM the language gives it («48 stron», never «48 strony»), and each frame carries ITS OWN question, so «how many pages does it have?» is never «how long is it?»; the counted subject with a verb, where the NUMBER GOVERNS THE VERB and the boundary is NOT THE LAST DIGIT — eleven ends in one and takes the plural, twenty-one does not, and BOTH SIDES ARE SHOWN, because a rule shown on one side only is indistinguishable from the rule of the last digit and the reader would buy the counterfeit; and two comparisons of OPPOSITE direction in one sentence, where the second number must not be dragged after the first and the answer is taken from the number that was ASKED about. The verb's form is asked of the LANGUAGE PACK — the same cell that decides the noun's count form — so verb and noun cannot disagree, and it is judged ONLY in a language that moves it (Russian alone of the nine): marking the other eight would call an honest English page a lie («52 children were riding») and would catch a mutant FOR FREE, by its number rather than by its damage. The goods and the counting rule are the house of price's own; declared here are the chapter and the page, the child and the verb of riding, and the two comparison frames (tools/numphrase.py). CLOSED world.",
+      "genre": "THE NUMBER'S PHRASE — the number that hangs on a FORM, not on a digit (06.09). The measure of the executor (d5, band p156) named the debt exactly: of 423 tacts where the reader does not read a number, 409 carry PLAIN DIGITS — the trouble is not the shape of the number but the shape of the PHRASE it hangs on. The census of the свод says why: eight lines carry «N pages long», six carry a progressive with a counted subject, and ZERO carry «N more … but N fewer». Four frames, each a different way for a number to sit in a sentence: the measure as what the text HAS («the story has 52 pages», and Russian with no verb at all — «в рассказе 52 страницы»); THE SAME FACT as a PREDICATE OF LENGTH («is 52 pages long»), shown beside the first in ALL NINE languages, because a house that gives a language one of the two sells the market that one — and the languages part company on whether the predicate takes a verb of its own (ru, en, de, fr, it, nl) or a tail on the verb of possession (es, pt, pl: «tiene 52 páginas de largo», «ma 52 strony długości»), which parting is itself a shown fact; in both, the answer must repeat the number in the same COUNT FORM the language gives it («52 strony», never «52 stron»), and each frame carries ITS OWN question, so «how many pages does it have?» is never «how long is it?»; the counted subject with a verb, where the NUMBER GOVERNS THE VERB and the boundary is NOT THE LAST DIGIT — eleven ends in one and takes the plural, twenty-one does not, and BOTH SIDES ARE SHOWN, because a rule shown on one side only is indistinguishable from the rule of the last digit and the reader would buy the counterfeit; and two comparisons of OPPOSITE direction in one sentence, where the second number must not be dragged after the first and the answer is taken from the number that was ASKED about. The verb's form is asked of the LANGUAGE PACK — the same cell that decides the noun's count form — so verb and noun cannot disagree, and it is judged ONLY in a language that moves it (Russian alone of the nine): marking the other eight would call an honest English page a lie («52 children were riding») and would catch a mutant FOR FREE, by its number rather than by its damage. The goods and the counting rule are the house of price's own; declared here are the story and the page, the child and the verb of riding, and the two comparison frames (tools/numphrase.py). CLOSED world. SCENES REWRITTEN 23.09 by the owner's word: the house had been ordered by the band's own lines — «a book has 2 chapters. the first chapter is 48 pages long», «41 children were riding» — and the chapter became a story, the lengths and the counts of children our own numbers.",
       "act": [
         "recount"
       ],
@@ -10520,7 +10544,7 @@
     {
       "name": "pronouns",
       "file": "datasets/genesis_pronouns.txt",
-      "genre": "the pronoun genus (e9's order 03.09, SVAMP band: the pronoun market buys a word as a pronoun from pages of three sentences «X V1 N. <pron> V2 M. X V3 K» with K = N ± M, and without this genus it bought names standing second): pages of three sentences in one line — the person named first, the pronoun second (he/she by the declared gender of the name in en.json person_forms, they for two persons; then he / later she / he also), the name again third with the result; the question surface asks BY NAME and answers with the equation («paco had 25 cookies. he ate 5 of them. how many cookies does paco have? 25 − 5 = 20.»); four verb triples with sign — loss with «of them» / «из них», gain with «more» / «ещё»; Russian pages with он/она/они and the genitive of the name from ru.json person_forms («у Вани было 25 печений. потом он съел 5 из них. у Вани осталось 20 печений.»); the pronoun never opens a page; the court checks the pronoun against gender and number of persons, the third name against the first, the verb triple and recomputes K",
+      "genre": "the pronoun genus (e9's order 03.09, SVAMP band: the pronoun market buys a word as a pronoun from pages of three sentences «X V1 N. <pron> V2 M. X V3 K» with K = N ± M, and without this genus it bought names standing second): pages of three sentences in one line — the person named first, the pronoun second (he/she by the declared gender of the name in en.json person_forms, they for two persons; then he / later she / he also), the name again third with the result; the question surface asks BY NAME and answers with the equation («Mia and Sam found 30 shells. later they lost 21 of them. how many shells do Mia and Sam still have left? 30 − 21 = 9.»); four verb triples with sign — loss with «of them» / «из них», gain with «more» / «ещё»; Russian pages with он/она/они and the genitive of the name from ru.json person_forms («Аня и Иван собрали 21 яблоко. они потеряли 9 из них. у Ани и Ивана осталось 12 яблок.»); the pronoun never opens a page; the court checks the pronoun against gender and number of persons, the third name against the first, the verb triple and recomputes K; SCENES REWRITTEN 23.09 by the owner's word: Paco's cookies and the baker's cakes of the SVAMP band went — the two acts of one bearer are now picked and eaten plums, written and sent letters, collected and given-away shells, declared once by the house and read by its court",
       "act": [
         "recount",
         "name"
@@ -11074,7 +11098,7 @@
     {
       "name": "relations_story",
       "file": "datasets/genesis_relations_story.txt",
-      "genre": "A MULTIPLE, A DIFFERENCE AND A SUM — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09, G1-ATTACK genus 1 «multiplicative relation + sum», 21 tasks of g1): «there are twice as many worker bees as baby bees. there are 750 bees in all. how many baby bees are there? 1 + 2 = 3, 750 ÷ 3 = 250. so the answer is 250.» (the larger part asked with «× k», the same fact as «half as many / a third as many»), «bobby has 5 fewer than three times as many games as brian. brian has 20 games. how many games does bobby have? 3 × 20 = 60, 60 − 5 = 55. so the answer is 55.», backwards «janey has 3 more than twice the number of books sally has. janey has 21 books. how many books does sally have? 21 − 3 = 18, 18 ÷ 2 = 9. so the answer is 9.», ages «ruby is three times as old as sam. sam is 4 years old. how old is ruby? 3 × 4 = 12.», «… together they are 32 years old. how old is sam? 1 + 3 = 4, 32 ÷ 4 = 8.», the g1 idiom «three times older than»; ru («рабочих пчёл вдвое больше, чем молодых пчёл. всего пчёл 750. сколько молодых пчёл? …», «у Анны на 5 игр меньше, чем утроенное число игр у Ани. у Ани 20 игр. …», «Анна втрое старше Ани. Ане 4 года. сколько лет Анне? …») and de («es gibt doppelt so viele Arbeiterbienen wie junge Bienen. insgesamt sind es 750 Bienen. …», «Anna hat 5 Spiele weniger als dreimal so viele wie Jonas. …», «Anna ist dreimal so alt wie Jonas. zusammen sind sie 32 Jahre alt. …»); whole answers (the sum a multiple of 1 + k), every step a primitive, the last number the answer; the house of relation pages (tools/relstory.py) holds the templates, the court reads them back and REGENERATES the page letter by letter",
+      "genre": "A MULTIPLE, A DIFFERENCE AND A SUM — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09 — the G1-ATTACK genus «multiplicative relation + sum»; SCENES REWRITTEN 23.09 by the owner's word: the worker bees of g1.6, the books of g1.32 and the cards of g1.37 went, pines and birches, shells and stamps came): «there are four times as many boys as girls. there are 95 pupils in all. how many boys are there? 1 + 4 = 5, 95 ÷ 5 = 19, 19 × 4 = 76.» (the larger part asked with «× k», the same fact as «half as many / a third as many»), a difference over a multiple and the same relation backwards («у Анны на 6 ракушек меньше, чем учетверённое число ракушек у Пети. у Анны 102 ракушки. сколько ракушек у Пети? 102 + 6 = 108, 108 ÷ 4 = 27.»), three bearers with one multiple, one difference and one sum («together Carla, Carlos and Dan have 70 games. Carla has twice as many as Carlos. Carlos has 2 more than Dan. how many games does Dan have? 70 + 2 = 72, 2 + 1 + 1 = 4, 72 ÷ 4 = 18, 18 − 2 = 16.»), and ages — the multiple, the sum and the age after k years, with the idiom «three times older than»; en, ru («… вдвое больше, чем …», «… втрое старше …») and de («Anna hat 2 Spiele weniger als doppelt so viele wie Jonas. …»); whole answers (the sum a multiple of 1 + k), every step a primitive, the last number the answer; the house of relation pages (tools/relstory.py) holds the templates, the court reads them back and REGENERATES the page letter by letter",
       "act": [
         "recount",
         "translate"
@@ -11096,6 +11120,20 @@
         "person_names:en",
         "person_names:ru",
         "person_names:de"
+      ],
+      "обороты_полос": [
+        {
+          "оборот": "# more than four times the number of",
+          "страниц": 10
+        },
+        {
+          "оборот": "has # more than twice the number of",
+          "страниц": 10
+        },
+        {
+          "оборот": "is three times older than ben ben is",
+          "страниц": 1
+        }
       ]
     },
     {
@@ -11118,7 +11156,13 @@
       "actors": [
         "person_names:en"
       ],
-      "text": "shows"
+      "text": "shows",
+      "обороты_полос": [
+        {
+          "оборот": "has # apples how many more apples does",
+          "страниц": 35
+        }
+      ]
     },
     {
       "name": "rem",
@@ -11606,10 +11650,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 38765545,
+      "size": 38755315,
       "tiers": [],
       "text": "mix",
-      "lines": 437757
+      "lines": 437693
     },
     {
       "name": "school_biling_v2c",
@@ -12038,7 +12082,7 @@
     {
       "name": "speech",
       "file": "datasets/genesis_speech.txt",
-      "genre": "РЕЧЬ О СЧЁТЕ, ГДЕ ОТКАЗ СТОИ́Т НАРАВНЕ С ОТВЕТОМ: «у Марии было 6 ручек. она отдала 3 ручки. у неё осталось 3 ручки» — и рядом «Vera had 4 apples. she gave away 5 apples — there is no such count: 5 is greater than 4». Мир учит не только считать, но и ОТКАЗЫВАТЬ, когда условие невозможно, и отказ его ОБОСНОВАН сравнением, а не объявлен. Двести сорок отказов на 1910 строк — каждая восьмая (замер 12.09: 316 равенств, 440 вопросов; русских и английских ровно поровну — по 955; читают speech, langcount, rugram, engram, arith).",
+      "genre": "РЕЧЬ О СЧЁТЕ, ГДЕ ОТКАЗ СТОИ́Т НАРАВНЕ С ОТВЕТОМ: «у Марии было 6 ручек. она отдала 3 ручки. у неё осталось 3 ручки» — и рядом «Vera had 4 apples. she gave away 5 apples — there is no such count: 5 is greater than 4». Мир учит не только считать, но и ОТКАЗЫВАТЬ, когда условие невозможно, и отказ его ОБОСНОВАН сравнением, а не объявлен. Двести сорок отказов на 1910 строк — каждая восьмая (замер 12.09: 316 равенств, 440 вопросов; русских и английских ровно поровну — по 955; читают speech, langcount, rugram, engram, arith). 23.09: the marbles of the SVAMP band (Josh's) became shells.",
       "act": [
         "translate",
         "decide"

@@ -1,22 +1,28 @@
 #!/usr/bin/env python3
 """GENESIS layer: MEASURED STORIES — a distance compared, and a pair priced.
 
-Two of holon's orders from the last lines of the attack (03.09):
+Two of holon's orders from the last lines of the attack (03.09): two measured acts and their
+difference, and a pair priced one by the other, asked at both ends.
 
-  «the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more
-   inches did the frog jump than the grasshopper? 31 − 25 = 6.»
-  «a house and a lot cost 120 dollars together. the house costs three times as
-   much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 30.»
+  «the horse ran 23 metres. the fox ran 6 metres. how many more metres did the horse run than
+   the fox? 23 − 6 = 17.»
+  «a tent and a lantern cost 56 dollars together. the tent costs three times as much as the
+   lantern. how much does the lantern cost? 3 + 1 = 4, 56 ÷ 4 = 14.»
 
-The first buys the VERB as a place of the frame, not as a word: six verbs walk
-(jumped, ran, walked, swam, flew, crawled — прыгнул, пробежал, прошёл, проплыл,
-пролетел, прополз), each with its bare form for the question and, in Russian,
-with its own preposition and its past tense agreeing with the actor. The second
-buys «as MUCH as» beside «times» on a price, and asks both ends of the pair.
+SCENES REWRITTEN 23.09 (the owner's word, the lead's order): the orders had been written by
+reading the bands — the SVAMP jumping contest of the grasshopper, the frog and the mouse, and
+GSM8K g1.26 «a house and a lot» word for word. The constructions stay, the scenes go, and every
+verb now takes its own actors (tools/measurestory.py, `КТО`): «the kangaroo flew 73 metres» was a
+page of this world.
 
-MASS BY THE RULE (М-148, LAW² = 9): every verb carries twelve shows in each
-language, every multiplier twenty-four; the house (tools/measurestory.py)
-declares every form it uses.
+The first buys the VERB as a place of the frame, not as a word: six verbs walk (jumped, ran,
+walked, swam, flew, crawled — прыгнул, пробежал, прошёл, проплыл, пролетел, прополз), each with its
+bare form for the question and, in Russian, with its own preposition and its past tense agreeing
+with the actor. The second buys «as MUCH as» beside «times» on a price, and asks both ends of the
+pair.
+
+MASS BY THE RULE (М-148, LAW² = 9): every verb carries at least twelve shows in each language,
+every multiplier twenty-four; the house declares every form it uses.
 """
 import pathlib
 import sys

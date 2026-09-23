@@ -1,31 +1,34 @@
 #!/usr/bin/env python3
 """THE HOUSE OF MEASURED STORIES — a distance compared, and a pair priced.
 
-Two of holon's three orders from the last lines of the attack (03.09), both
-standing on a MEASURE rather than a count:
+Two of holon's three orders from the last lines of the attack (03.09), both standing on a MEASURE
+rather than a count: two measured acts and their difference («how many more metres did the horse
+run than the fox?»), and a pair priced one by the other («the tent costs three times as much as
+the lantern»), asked at both ends.
 
-  «the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more
-   inches did the frog jump than the grasshopper? 31 − 25 = 6.»
+SCENES REWRITTEN 23.09 BY THE OWNER'S WORD (a band is an instrument, not a textbook; the lead's
+order «the same way as the eight houses»). The orders were written by reading the public bands
+themselves: the grasshopper, the frog and the mouse of the SVAMP jumping contest, and «a house and a
+lot cost … the house costs three times as much as the lot» — GSM8K g1.26 word for word. The
+constructions stay; the scenes of the bands go: our own animals, a tent and a lantern, and numbers
+from a grid rather than from the examples.
 
-  «a house and a lot cost 120 dollars together. the house costs three times as
-   much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 30.»
+THE VERB TAKES ITS ACTOR, AND THE HOUSE SAYS WHICH. The old table let every actor walk with every
+verb, and the world carried «the kangaroo flew 73 metres», «the mouse flew 92 feet», «пёс пролетел
+92 метра» — true arithmetic about a false world, which no court of numbers can see. Every verb now
+declares its actors (`кто`), and in Russian its measures (`меры_глагола`: a swan does not swim in
+steps); a page whose actor or measure is not the verb's is a lie of this house.
 
-The first buys the VERB as part of the frame: the corpus had «if the
-grasshopper jumped 8 inches and the mouse jumped 2 inches …» with one verb,
-and a verb met once is learnt as a word, not as a place. Six verbs walk here,
-each with its bare form for the question («how many more inches did the frog
-JUMP»), and Russian says the same with the past tense agreeing with its actor
-(«лягушка прыгнула», «кузнечик прыгнул»).
+The first construction buys the VERB as part of the frame: six verbs walk, each with its bare form
+for the question («how many more metres did the horse RUN»), and Russian says the same with the
+past tense agreeing with its actor («лошадь пробежала», «кролик прыгнул»). The second buys «as MUCH
+as» beside «times»: the corpus said «as many as» on countables and never «as much as» on a price.
+Both ends are asked — the lesser and the greater — and the greater costs one step more, for its
+answer runs through the lesser.
 
-The second buys «as MUCH as» beside «times»: the corpus said «as many as» on
-countables and never «as much as» on a price, so the whole «a and b cost S
-together» was mute. Both ends are asked — the lesser and the greater — and the
-greater costs one step more, for its answer runs through the lesser.
-
-EVERY FORM IS DECLARED. The Russian measure names three count forms, the past
-tense two genders, the second good its genitive; nothing is derived from an
-ending. The house writes a FINITE set of shows, and the court knows it whole:
-a line of these shapes that the table does not hold is a lie.
+EVERY FORM IS DECLARED. The Russian measure names three count forms, the past tense two genders,
+the second good its genitive; nothing is derived from an ending. The house writes a FINITE set of
+shows, and the court knows it whole: a line of these shapes that the table does not hold is a lie.
 """
 import pathlib
 import re
@@ -33,25 +36,46 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
-# пары чисел меры: разность всегда положительна, и оба конца спрашиваются
-ПАРЫ_МЕРЫ = ((31, 25), (48, 19), (27, 12), (54, 36), (73, 41), (18, 9),
-             (65, 28), (92, 47))
-# основания цены и множители: сумма есть (k + 1) × основание
-ОСНОВАНИЯ_ЦЕНЫ = (30, 45, 60, 25, 15, 40)
+def _пары_меры():
+    """ПАРЫ МЕРЫ СЕТКОЙ, А НЕ ПРИМЕРОМ (23.09): прежние восемь пар стояли литералами рядом с
+    примером полосы. Сетка шагает по взаимно простому шагу: разность всегда положительна и не
+    меньше трёх, оба конца спрашиваются."""
+    вон = []
+    for i in range(40):
+        a = 23 + (i * 29) % 71
+        b = 6 + (i * 13) % (a - 9)
+        if a - b >= 3 and (a, b) not in вон:
+            вон.append((a, b))
+        if len(вон) == 8:
+            return tuple(вон)
+    raise AssertionError(вон)
+
+
+ПАРЫ_МЕРЫ = _пары_меры()
+# ОСНОВАНИЯ ЦЕНЫ СЕТКОЙ: сумма есть (k + 1) × основание; прежнее «120 при трижды» было числами g1.26
+ОСНОВАНИЯ_ЦЕНЫ = tuple(14 + (i * 11) % 57 for i in range(6))
 МНОЖИТЕЛИ = (2, 3, 4, 5)
+
+# ГЛАГОЛ БЕРЁТ СВОЕГО ДЕЯТЕЛЯ (23.09), и объявлено это ОДИН раз на оба языка: деятели стоят в
+# таблицах языков в одном порядке (кролик — the rabbit, лошадь — the horse …), и строка здесь
+# называет, кто прыгает, бежит, идёт, плывёт, летит и ползёт.
+КТО = ((0, 1, 9), (2, 3, 0), (9, 2, 3), (4, 5), (6, 5, 4), (7, 8))
 
 ЯЗЫКИ = {
     "en": dict(
-        деятели=(("the frog", "m"), ("the grasshopper", "m"), ("the kangaroo", "m"),
-                 ("the mouse", "m"), ("the cat", "m"), ("the dog", "m")),
+        деятели=(("the rabbit", "m"), ("the squirrel", "m"), ("the horse", "m"), ("the fox", "m"),
+                 ("the duck", "m"), ("the swan", "m"), ("the crow", "m"), ("the snail", "m"),
+                 ("the beetle", "m"), ("the goat", "m")),
         глаголы=(("jumped", "jump"), ("ran", "run"), ("walked", "walk"),
                  ("swam", "swim"), ("flew", "fly"), ("crawled", "crawl")),
+        кто=КТО,
         меры=(("inch", "inches"), ("foot", "feet"), ("metre", "metres")),
+        меры_глагола=((0, 1, 2),) * 6,
         мера_утв="{A} {Гп} {n} {МЕРАn}.",
         мера_воп_больше="how many more {МЕРА} did {A} {Гб} than {B}?",
         мера_воп_меньше="how many fewer {МЕРА} did {B} {Гб} than {A}?",
         # пара, оценённая одна другою
-        товары=(("a house", "the house", "a lot", "the lot"),
+        товары=(("a tent", "the tent", "a lantern", "the lantern"),
                 ("a car", "the car", "a bicycle", "the bicycle"),
                 ("a ring", "the ring", "a chain", "the chain"),
                 ("a table", "the table", "a chair", "the chair")),
@@ -64,20 +88,24 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         ответ="so the answer is {r}.",
     ),
     "ru": dict(
-        деятели=(("лягушка", "f"), ("кузнечик", "m"), ("кенгуру", "m"),
-                 ("мышь", "f"), ("кот", "m"), ("пёс", "m")),
+        деятели=(("кролик", "m"), ("белка", "f"), ("лошадь", "f"), ("лиса", "f"),
+                 ("утка", "f"), ("лебедь", "m"), ("ворона", "f"), ("улитка", "f"),
+                 ("жук", "m"), ("коза", "f")),
         # ПРЕДЛОГ ПРИНАДЛЕЖИТ ГЛАГОЛУ, А НЕ РАМКЕ: «прыгнул НА 31 сантиметр»,
         # но «пробежал 31 метр» — и объявлен он при каждом глаголе, третьей
         # формой, рядом с мужской и женской
         глаголы=(("прыгнул", "прыгнула", "на "), ("пробежал", "пробежала", ""),
                  ("прошёл", "прошла", ""), ("проплыл", "проплыла", ""),
                  ("пролетел", "пролетела", ""), ("прополз", "проползла", "")),
+        кто=КТО,
         меры=(("сантиметр", "сантиметра", "сантиметров"),
               ("метр", "метра", "метров"), ("шаг", "шага", "шагов")),
+        # ШАГАМИ МЕРЯЕТ ТОТ, КТО ШАГАЕТ: «лебедь проплыл 31 шаг» верно числом и ложно о мире
+        меры_глагола=((0, 1), (0, 1, 2), (0, 1, 2), (0, 1), (0, 1), (0, 1)),
         мера_утв="{A} {Гп} {ПР}{n} {МЕРАn}.",
         мера_воп_больше="на сколько больше {МЕРАМ} {Гп} {A}, чем {B}?",
         мера_воп_меньше="на сколько меньше {МЕРАМ} {Гв} {B}, чем {A}?",
-        товары=(("дом", "дом", "участок", "участка"),
+        товары=(("палатка", "палатка", "фонарь", "фонаря"),
                 ("автомобиль", "автомобиль", "велосипед", "велосипеда"),
                 ("кольцо", "кольцо", "цепочка", "цепочки"),
                 ("стол", "стол", "стул", "стула")),
@@ -128,10 +156,15 @@ def _глагол(язык, г, деятель):
 
 
 def мера(язык, форма, a, b, м=0, г=0, деятель=0, второй=1):
-    """«the frog jumped 31 inches. … how many more inches …? 31 − 25 = 6.»"""
+    """«the horse ran 51 metres. the fox ran 19 metres. how many more metres did the horse run
+    than the fox? 51 − 19 = 32.» — деятели и мера обязаны быть глагола."""
     я = ЯЗЫКИ[язык]
     if деятель == второй or a <= b:
         raise ValueError("нужны разные деятели и положительная разность")
+    if деятель not in я["кто"][г] or второй not in я["кто"][г]:
+        raise ValueError("деятель не глагола: глагол берёт своего деятеля")
+    if м not in я["меры_глагола"][г]:
+        raise ValueError("мера не глагола")
     A, B = я["деятели"][деятель][0], я["деятели"][второй][0]
     формы = я["меры"][м]
     з = dict(A=A, B=B, МЕРА=счётная(формы, 2), МЕРАМ=счётная(формы, 5))
@@ -145,8 +178,8 @@ def мера(язык, форма, a, b, м=0, г=0, деятель=0, втор�
 
 
 def пара(язык, форма, товар=0, k=2, основание=30):
-    """«a house and a lot cost 120 dollars together. the house costs three
-    times as much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 30.»"""
+    """«a tent and a lantern cost 100 dollars together. the tent costs three times as much as
+    the lantern. how much does the lantern cost? 3 + 1 = 4, 100 ÷ 4 = 25.»"""
     я = ЯЗЫКИ[язык]
     Б1, Б2, М1, М2 = я["товары"][товар]
     S = (k + 1) * основание
@@ -238,6 +271,10 @@ def _разобрать_меру(язык, м):
                    if счётная(формы, a) == м1 and счётная(формы, b) == м2), None)
     if глагол is None or мера_и is None:
         return None
+    # ДЕЯТЕЛЬ И МЕРА — ГЛАГОЛА: «the snail flew 31 metres» разбирается в величины и ложна
+    if (деятель not in я["кто"][глагол] or второй not in я["кто"][глагол]
+            or мера_и not in я["меры_глагола"][глагол]):
+        return None
     форма = "мера_больше" if м.group(9) in ("more", "больше") else "мера_меньше"
     return dict(форма=форма, a=a, b=b, м=мера_и, г=глагол,
                 деятель=деятель, второй=второй)
@@ -284,34 +321,73 @@ def судить(строка):
     return False, False
 
 
+def подсадки():
+    """ПРЕДСТАВЛЕННОЕ «НЕТ» (М-106), ВЫВЕДЕННОЕ ИЗ ТАБЛИЦ ДОМА (23.09), — [(род порчи, битая строка)].
+
+    Прежние мутанты стояли литералами сцен полосы («the frog jumped 31 inches…», «a house and a lot
+    cost 120 dollars…») и после переписи сцен перестали бы быть страницами дома. Порча берётся у
+    страницы, которую дом пишет сейчас: разность посчитана неверно, глагол не согласован с
+    деятелем, деление пары неверно, деятель не глагола («улитка пролетела»), мера не глагола
+    («лебедь проплыл 31 шаг»). Одна дверь на две проверки: самопроверка дома и суд мира."""
+    вон = []
+    a0, b0 = ПАРЫ_МЕРЫ[0]
+    for язык in ЯЗЫКИ:
+        я = ЯЗЫКИ[язык]
+        # разность неверна, и ответ повторяет неверную разность
+        с = мера(язык, "мера_больше", a0, b0, м=0, г=1, деятель=КТО[1][0], второй=КТО[1][1])
+        вон.append(("разность неверна", с, с.replace(f"= {a0 - b0}.", f"= {a0 - b0 + 1}.")
+                    .replace(я["ответ"].format(r=a0 - b0), я["ответ"].format(r=a0 - b0 + 1))))
+        # деление пары неверно
+        k, осн = МНОЖИТЕЛИ[1], ОСНОВАНИЯ_ЦЕНЫ[0]
+        с = пара(язык, "пара_мал", товар=0, k=k, основание=осн)
+        вон.append(("деление пары неверно", с, с.replace(f"÷ {k + 1} = {осн}.", f"÷ {k + 1} = {осн + 1}.")
+                    .replace(я["ответ"].format(r=осн), я["ответ"].format(r=осн + 1))))
+        # деятель не глагола: летун заменён ползуном во всей странице
+        летит, ползёт = КТО[4][0], КТО[5][0]
+        с = мера(язык, "мера_больше", a0, b0, м=0, г=4, деятель=летит, второй=КТО[4][1])
+        чужой = я["деятели"][ползёт][0]
+        битая = с.replace(я["деятели"][летит][0], чужой)
+        if язык == "ru":  # прошедшее согласуется с новым деятелем — ложь не в роде, а в мире
+            свой_род, чужой_род = я["деятели"][летит][1], я["деятели"][ползёт][1]
+            if свой_род != чужой_род:
+                битая = битая.replace(_глагол(язык, 4, летит), _глагол(язык, 4, ползёт), 2)
+        вон.append(("деятель не глагола", с, битая))
+    # глагол не согласован с деятелем (русский): женский деятель при мужском прошедшем
+    я = ЯЗЫКИ["ru"]
+    жен = next(д for д in КТО[1] if я["деятели"][д][1] == "f")
+    муж_второй = next(д for д in КТО[1] if д != жен)
+    с = мера("ru", "мера_больше", a0, b0, м=0, г=1, деятель=жен, второй=муж_второй)
+    вон.append(("глагол не согласован", с, с.replace(f"{я['глаголы'][1][1]} {я['деятели'][жен][0]},",
+                                                     f"{я['глаголы'][1][0]} {я['деятели'][жен][0]},")))
+    # мера не глагола (русский): пловец меряет шагами
+    плывёт = 3
+    шаг_и = next(i for i, ф in enumerate(я["меры"]) if i not in я["меры_глагола"][плывёт])
+    с = мера("ru", "мера_больше", a0, b0, м=0, г=плывёт, деятель=КТО[плывёт][0], второй=КТО[плывёт][1])
+    вон.append(("мера не глагола", с, с.replace(счётная(я["меры"][0], a0), счётная(я["меры"][шаг_и], a0))
+                .replace(счётная(я["меры"][0], b0), счётная(я["меры"][шаг_и], b0))
+                .replace(счётная(я["меры"][0], 5), счётная(я["меры"][шаг_и], 5))))
+    for род, с, битая in вон:
+        assert битая != с, (род, с)
+    return [(род, битая) for род, _, битая in вон]
+
+
 def _проверка():
     for язык in ЯЗЫКИ:
-        print(мера(язык, "мера_больше", 31, 25, м=0, г=0, деятель=0, второй=1))
-        print(мера(язык, "мера_меньше", 31, 25, м=1, г=1, деятель=2, второй=3))
-        print(пара(язык, "пара_мал", товар=0, k=3, основание=30))
-        print(пара(язык, "пара_бол", товар=1, k=2, основание=45))
-    свои = []
-    for язык in ЯЗЫКИ:
-        для = ЯЗЫКИ[язык]
-        for г in range(len(для["глаголы"])):
-            свои.append(мера(язык, "мера_больше", 31, 25, м=г % len(для["меры"]), г=г, деятель=0, второй=(г % 5) + 1))
-            свои.append(мера(язык, "мера_меньше", 48, 19, м=(г + 1) % len(для["меры"]), г=г, деятель=2, второй=(г % 3) + 3))
-        for k in МНОЖИТЕЛИ:
-            свои.append(пара(язык, "пара_мал", товар=k % 4, k=k, основание=ОСНОВАНИЯ_ЦЕНЫ[k % len(ОСНОВАНИЯ_ЦЕНЫ)]))
-            свои.append(пара(язык, "пара_бол", товар=(k + 1) % 4, k=k, основание=ОСНОВАНИЯ_ЦЕНЫ[(k + 2) % len(ОСНОВАНИЯ_ЦЕНЫ)]))
+        a0, b0 = ПАРЫ_МЕРЫ[0]
+        print(мера(язык, "мера_больше", a0, b0, м=0, г=1, деятель=КТО[1][0], второй=КТО[1][1]))
+        print(мера(язык, "мера_меньше", a0, b0, м=1, г=3, деятель=КТО[3][0], второй=КТО[3][1]))
+        print(пара(язык, "пара_мал", товар=0, k=3, основание=ОСНОВАНИЯ_ЦЕНЫ[0]))
+        print(пара(язык, "пара_бол", товар=1, k=2, основание=ОСНОВАНИЯ_ЦЕНЫ[1]))
+    свои = [с for шаг in range(5) for язык in ЯЗЫКИ for с, _ in перебор(шаг, язык)]
     плохих = [с for с in свои if судить(с) != (True, True)]
-    мутанты = [
-        "the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper? 31 − 25 = 7. so the answer is 7.",
-        "лягушка прыгнула на 31 сантиметр. кузнечик прыгнул на 25 сантиметров. на сколько больше сантиметров прыгнул лягушка, чем кузнечик? 31 − 25 = 6. значит ответ: 6.",
-        "a house and a lot cost 120 dollars together. the house costs three times as much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 40. so the answer is 40.",
-    ]
-    поймано = [м for м in мутанты if судить(м) == (True, False)]
+    assert not плохих, плохих[:3]
+    битые = подсадки()
+    непойманные = [б for б in битые if судить(б[1]) != (True, False)]
+    assert not непойманные, непойманные
     print(f"проб дома: {len(свои)}, не признано: {len(плохих)}, "
-          f"мутантов поймано: {len(поймано)} из {len(мутанты)}")
+          f"мутантов поймано: {len(битые) - len(непойманные)} из {len(битые)}")
 
 
-if __name__ == "__main__":
-    _проверка()
 
 
 # СЛОВАРЬ СТРАНИЦ ДОМА МЕРНОЙ ИСТОРИИ (13.09, шестой переезд того же вида). Две двери —
@@ -321,18 +397,15 @@ if __name__ == "__main__":
 def перебор(шаг, язык):
     я = ЯЗЫКИ[язык]
     вон = []
-    деятелей, мер = len(я["деятели"]), len(я["меры"])
     for г in range(len(я["глаголы"])):
+        свои, меры = я["кто"][г], я["меры_глагола"][г]
         for i in range(6):
-            д = (шаг * 3 + г * 2 + i) % деятелей
-            второй = (д + 1 + i % (деятелей - 1)) % деятелей
+            д = свои[(шаг * 3 + г * 2 + i) % len(свои)]
+            второй = свои[(свои.index(д) + 1 + i % (len(свои) - 1)) % len(свои)]
             a, b = ПАРЫ_МЕРЫ[(шаг * 5 + г * 3 + i) % len(ПАРЫ_МЕРЫ)]
             for форма in ("мера_больше", "мера_меньше"):
-                try:
-                    вон.append((мера(язык, форма, a, b, м=(шаг + г + i) % мер,
-                                     г=г, деятель=д, второй=второй), форма))
-                except ValueError:
-                    pass
+                вон.append((мера(язык, форма, a, b, м=меры[(шаг + г + i) % len(меры)],
+                                 г=г, деятель=д, второй=второй), форма))
     for k in МНОЖИТЕЛИ:
         for i in range(6):
             товар = (шаг + k + i) % len(я["товары"])
@@ -354,3 +427,7 @@ def _показы():
 
 
 ПОКАЗЫ = _показы()
+
+
+if __name__ == "__main__":
+    _проверка()

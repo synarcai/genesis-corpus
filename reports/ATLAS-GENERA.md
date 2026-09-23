@@ -19,7 +19,7 @@
 Мера по страницам живёт в сайдкаре `datasets/GENESIS-FULL.genera.tsv`: номер
 строки свода → «дом · род», 290 002 строки из 442 600.
 
-**Родов 1869, различных имён 1574, страниц под ними 346032.**
+**Родов 1869, различных имён 1574, страниц под ними 345896.**
 Объявлено словом `РОДЫ` в 259 домах, словом `ФОРМЫ` — в 57.
 Домов без своего мира показов — 0. Мир дома узнаётся ПО ВВОЗУ КУЗНИЦЫ,
 а не по окончанию имени файла: догадка «срезать forms» лгала о сорока одном доме.
@@ -577,7 +577,7 @@
   образец: Tom has 2 apples and Ann has 1 apple; Tom has 1 more apple than Ann, and twice as many.
 - **cost** — страниц 160
   зачем: цена по кратности: сколько стоит во столько же раз больше
-  образец: the house cost twice as much as the lot; the lot cost 10000 dollars, so the house cost 20000 dollars.
+  образец: the tent cost twice as much as the lantern; the lantern cost 10 dollars, so the tent cost 20 dollars.
 
 ## `cmpshareforms` → мир `cmpshare`
 
@@ -1399,13 +1399,13 @@
   образец: Dan has 3 apples. Ava has 1 apple more than Dan. how many apples does Ava hold now? Ava holds 4 apples: 3 + 1 = 4.
 - **меньше на столько-то** — страниц 288
   зачем: A = B − n: та же разность в обратную сторону
-  образец: Ben has 1 page fewer than Felix. Felix has 6 pages. how many pages does Ben keep? Ben keeps 5 pages: 6 − 1 = 5.
+  образец: Ben has 1 pencil fewer than Felix. Felix has 6 pencils. how many pencils does Ben keep? Ben keeps 5 pencils: 6 − 1 = 5.
 - **больше во столько-то раз** — страниц 272
   зачем: A = B × n: кратность названа числом
   образец: Hugo has 4 coins. Carla has 2 times as many coins as Hugo. how many coins does Carla hold now? Carla holds 8 coins.
 - **вдвое — числом в СЛОВЕ** — страниц 288
   зачем: A = B × 2, и двойка живёт в слове «вдвое», а не в цифре
-  образец: Dan has double the amount of cards that Grace has. Grace has 5 cards. how many cards does Dan hold now? Dan holds 10 car
+  образец: Dan has double the amount of stamps that Grace has. Grace has 5 stamps. how many stamps does Dan hold now? Dan holds 10 
 - **два шага: умножение и сложение над ним** — страниц 288
   зачем: A = B × 2 + n — внешнее отношение читается поверх внутреннего, и оба показаны
   образец: Ava has 5 eggs. Elena has 1 more than twice as many eggs as Ava. how many eggs does Elena hold now? Elena holds 11 eggs:
@@ -1859,19 +1859,19 @@
   образец: Ava and Dima found 30 coins. later they found 15 more. Ava and Dima have 45 coins.
 - **местоимение при убыли: он отдал столько-то** — страниц 185
   зачем: то же при убыли, и «осталось» сказано тремя разными хвостами
-  образец: Ben had 6 cookies. he ate 2 of them. Ben has 4 cookies.
+  образец: Ben had 6 plums. he ate 2 of them. Ben has 4 plums.
 - **состояние до актов: сколько было сначала** — страниц 70
   зачем: вопрос о состоянии ДО актов: ответ есть первое число, а не сумма
-  образец: Ben had 6 cookies. he ate 2 of them. how many cookies did Ben have at first? Ben had 6 cookies.
+  образец: Ben had 6 plums. he ate 2 of them. how many plums did Ben have at first? Ben had 6 plums.
 - **хвост вопроса: «still have left», «altogether» и прочие** — страниц 135
   зачем: хвост вопроса есть часть формы, и читается только показанный
-  образец: Ann had 9 cookies. then she ate 7 of them. how many cookies does Ann have left with her? 9 − 7 = 2.
+  образец: Ann had 9 plums. then she ate 7 of them. how many plums does Ann have left with her? 9 − 7 = 2.
 - **другое держание той же пары: holds, keeps вместо has** — страниц 138
   зачем: has, holds, keeps — пара знаков покупается лишь от двух держаний
-  образец: Carlos had 15 cookies. he ate 5 of them. Carlos keeps 10 cookies.
+  образец: Carlos had 15 plums. he ate 5 of them. Carlos keeps 10 plums.
 - **два акта одного носителя, сравненные: на сколько больше сделал, чем продал** — страниц 136
   зачем: два акта одного носителя, и вопрос назван местоимением
-  образец: Anna baked 23 cakes. Anna ate 17 cakes. Anna baked 6 more cakes than she ate: 23 − 17 = 6.
+  образец: Anna collected 23 stamps. Anna gave away 17 stamps. Anna collected 6 more stamps than she gave away: 23 − 17 = 6.
 
 ## `gen_genesis_proof` → мир `proof`
 
@@ -3155,14 +3155,14 @@
 
 ## `measurestory` → мир `measure_story`
 
-- **мера_больше** — страниц 360
-  образец: the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper
-- **мера_меньше** — страниц 360
-  образец: the frog jumped 31 inches. the grasshopper jumped 25 inches. how many fewer inches did the grasshopper jump than the fro
+- **мера_больше** — страниц 292
+  образец: the rabbit jumped 23 inches. the squirrel jumped 6 inches. how many more inches did the rabbit jump than the squirrel? 2
+- **мера_меньше** — страниц 292
+  образец: the rabbit jumped 23 inches. the squirrel jumped 6 inches. how many fewer inches did the squirrel jump than the rabbit? 
 - **пара_мал** — страниц 96
-  образец: a ring and a chain cost 45 dollars together. the ring costs twice as much as the chain. how much does the chain cost? 2 
+  образец: a ring and a chain cost 174 dollars together. the ring costs twice as much as the chain. how much does the chain cost? 2
 - **пара_бол** — страниц 96
-  образец: a ring and a chain cost 45 dollars together. the ring costs twice as much as the chain. how much does the ring cost? 2 +
+  образец: a ring and a chain cost 174 dollars together. the ring costs twice as much as the chain. how much does the ring cost? 2 
 
 ## `medianforms` → мир `median`
 
@@ -3560,9 +3560,9 @@
 ## `numphrase` → мир `numphrase`  ·  объявлено словом `ФОРМЫ`
 
 - **обладание** — страниц 54
-  образец: в первой главе 48 страниц. сколько страниц в первой главе? 48 страниц.
+  образец: в рассказе 52 страницы. сколько страниц в рассказе? 52 страницы.
 - **длина** — страниц 54
-  образец: первая глава — 48 страниц длиной. какой длины первая глава? 48 страниц.
+  образец: рассказ — 52 страницы длиной. какой длины рассказ? 52 страницы.
 - **прогрессив** — страниц 81
   образец: 21 ребёнок катался на карусели. сколько детей каталось на карусели? 21 ребёнок.
 - **двойное** — страниц 36
@@ -4306,7 +4306,7 @@
 ## `relstory` → мир `relations_story`
 
 - **сумма** — страниц 132
-  образец: there are twice as many worker bees as baby bees. there are 15 bees in all. how many baby bees are there? 1 + 2 = 3, 15 
+  образец: there are twice as many pines as birches. there are 15 trees in all. how many birches are there? 1 + 2 = 3, 15 ÷ 3 = 5. 
 - **сумма_обр** — страниц 162
   образец: there are 30 blue marbles. there are twice as many red marbles as blue marbles. how many marbles are there in all? 2 × 3
 - **больше** — страниц 180

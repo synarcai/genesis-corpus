@@ -3,11 +3,11 @@
 
 The measure of the executor (d5, band p156) named the debt exactly: of 423 tacts where the reader
 does not read a number, 409 carry PLAIN DIGITS. The trouble is not the shape of the number but the
-shape of the PHRASE it hangs on — «the first chapter is 48 pages long», «41 children were riding»,
+shape of the PHRASE it hangs on — «the story is 52 pages long», «61 children were riding»,
 «36 more but 33 fewer». The court recomputes the whole page in each of the four frames
 (tools/numphrase.py):
 
-  обладание  — the measure as what the text HAS («the first chapter has 48 pages»);
+  обладание  — the measure as what the text HAS («the story has 52 pages»);
   длина      — THE SAME FACT as a PREDICATE OF LENGTH («is 48 pages long»), shown in all nine
                languages beside the first, so the market cannot buy one shape and miss the other.
                In both, the answer must repeat the number IN THE SAME COUNT FORM the language
@@ -53,17 +53,10 @@ def main():
     # ПОСЛЕДНЕЙ ЦИФРЫ — одиннадцать в единственном; ответ о детях разошёлся с фразой; второе
     # число потянулось за первым; ответ взят у второго числа, а спрошено о первом; счётная
     # форма товара от чужого числа.
-    подсадки = (
-        "в первой главе 48 страниц. сколько страниц в первой главе? 96 страниц.",
-        "the first chapter is 124 pages long. how long is the first chapter? 96 pages.",
-        "pierwszy rozdział ma 48 strony długości. jakiej długości jest pierwszy rozdział? 48 stron.",
-        "35 детей катался на карусели. сколько детей каталось на карусели? 35 детей.",
-        "11 детей катался на карусели. сколько детей каталось на карусели? 11 детей.",
-        "29 Kinder fuhren Karussell. wie viele Kinder fuhren Karussell? 42 Kinder.",
-        "ann has 12 books more but 12 pencils fewer. how many more books? 12 books.",
-        "у Ани на 8 книг больше, но на 5 карандашей меньше. на сколько книг больше? 5 книг.",
-        "anna ma 12 książki więcej, ale 7 ołówków mniej. ile książek więcej? 12 książek.",
-    )
+    # С 23.09 подсадки выводит ДОМ из своих таблиц (`numphrase.подсадки`): литералы прежней сцены
+    # («the first chapter is 124 pages long…» — сцена глав полосы SVAMP) после переписи стали бы
+    # чужими строками, и суд ловил бы их молчанием, а не порчей.
+    подсадки = tuple(битая for _, битая in F.подсадки())
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):
         for п in подсадки:

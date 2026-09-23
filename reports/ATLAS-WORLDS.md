@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486224 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486160 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 161, строк 253749.
+Миров 161, строк 253685.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -90,7 +90,7 @@
 - **`relation`** (2092 строк; recompute, declared, reversibility, whole_only, exact_only, unsigned_only)  
   **metalanguage of structure in both languages: hierarchy (a declared tree of 18 nodes** — containment, level, path from the root), relations on a finite set with reflexivity, symmetry and transitivity each shown WITH a confirming case and WITH a named witne…
 - **`relations_story`** (1989 строк; recompute, unsigned_only)  
-  **A MULTIPLE, A DIFFERENCE AND A SUM** — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09, G1-ATTACK genus 1 «multiplicative relation + sum», 21 tasks of g1): «there are twice as many worker bees as baby bees. there are 750 bees in all. how many baby bees …
+  **A MULTIPLE, A DIFFERENCE AND A SUM** — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09 — the G1-ATTACK genus «multiplicative relation + sum»; SCENES REWRITTEN 23.09 by the owner's word: the worker bees of g1.6, the books of g1.32 and the cards of g1.37 …
 - **`ninelang`** (1800 строк; recompute, whole_only)  
   **THREE SHAPES IN NINE LANGUAGES** — one place, nine different words (07.09).
 - **`physics`** (1468 строк; recompute, whole_only)  
@@ -129,12 +129,12 @@
   **THE WEEK IN EIGHT LANGUAGES (the owner's word: every language in surplus; the calendar world's cycle shows «3 days after tuesday comes friday» are the shows from which the organism buys the weekly cycle without names and without the seven** — holon's ЦИКЛ…
 - **`subjcount`** (1105 строк; recompute, whole_only)  
   **THE COUNT OF THE SUBJECT** — the number stands with WHO ACTS, not with what is owned (07.09).
-- **`measure_story`** (1104 строк; recompute, whole_only)  
-  **MEASURED STORIES** — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09).
 - **`clockforms`** (1053 строк; recompute, whole_only, exact_only)  
   **THE CLOCK** — the carry that is sixty, not ten (06.09).
 - **`nature`** (1050 строк; declared, whole_only)  
   **NATURE** — the counted facts about the living and about things, and temperature (the owner asked for a partner able «to talk on different topics»; the topics house gave definitions and the calendar, this one gives what a person KNOWS about the world and w…
+- **`measure_story`** (1040 строк; recompute, whole_only)  
+  **MEASURED STORIES** — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09).
 - **`handy`** (1022 строк; recompute, whole_only)  
   **HANDY COUNTING** — A LAW APPLIED FOR THE SAKE OF EASE. Measured 11.09 across the 237 show worlds: «удобно», «перегруппиру», «дополнение до десятка» — NONE. The corpus counts in columns and by rule, but nowhere shows that counting can be MADE EASIER by mov…
 - **`share`** (996 строк; recompute, whole_only)  

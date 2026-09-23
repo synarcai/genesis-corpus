@@ -3,7 +3,7 @@
   "домов": 316,
   "родов": 1869,
   "различных": 1574,
-  "страниц": 346032,
+  "страниц": 345896,
   "домов_без_словаря_страниц": 1,
   "по_объявлению": {
     "РОДЫ": 259,
@@ -1532,7 +1532,7 @@
         {
           "род": "cost",
           "страниц": 160,
-          "образец": "the house cost twice as much as the lot; the lot cost 10000 dollars, so the house cost 20000 dollars.",
+          "образец": "the tent cost twice as much as the lantern; the lantern cost 10 dollars, so the tent cost 20 dollars.",
           "зачем": "цена по кратности: сколько стоит во столько же раз больше"
         }
       ],
@@ -3808,7 +3808,7 @@
         {
           "род": "меньше на столько-то",
           "страниц": 288,
-          "образец": "Ben has 1 page fewer than Felix. Felix has 6 pages. how many pages does Ben keep? Ben keeps 5 pages: 6 − 1 = 5.",
+          "образец": "Ben has 1 pencil fewer than Felix. Felix has 6 pencils. how many pencils does Ben keep? Ben keeps 5 pencils: 6 − 1 = 5.",
           "зачем": "A = B − n: та же разность в обратную сторону"
         },
         {
@@ -3820,7 +3820,7 @@
         {
           "род": "вдвое — числом в СЛОВЕ",
           "страниц": 288,
-          "образец": "Dan has double the amount of cards that Grace has. Grace has 5 cards. how many cards does Dan hold now? Dan holds 10 car",
+          "образец": "Dan has double the amount of stamps that Grace has. Grace has 5 stamps. how many stamps does Dan hold now? Dan holds 10 ",
           "зачем": "A = B × 2, и двойка живёт в слове «вдвое», а не в цифре"
         },
         {
@@ -4860,31 +4860,31 @@
         {
           "род": "местоимение при убыли: он отдал столько-то",
           "страниц": 185,
-          "образец": "Ben had 6 cookies. he ate 2 of them. Ben has 4 cookies.",
+          "образец": "Ben had 6 plums. he ate 2 of them. Ben has 4 plums.",
           "зачем": "то же при убыли, и «осталось» сказано тремя разными хвостами"
         },
         {
           "род": "состояние до актов: сколько было сначала",
           "страниц": 70,
-          "образец": "Ben had 6 cookies. he ate 2 of them. how many cookies did Ben have at first? Ben had 6 cookies.",
+          "образец": "Ben had 6 plums. he ate 2 of them. how many plums did Ben have at first? Ben had 6 plums.",
           "зачем": "вопрос о состоянии ДО актов: ответ есть первое число, а не сумма"
         },
         {
           "род": "хвост вопроса: «still have left», «altogether» и прочие",
           "страниц": 135,
-          "образец": "Ann had 9 cookies. then she ate 7 of them. how many cookies does Ann have left with her? 9 − 7 = 2.",
+          "образец": "Ann had 9 plums. then she ate 7 of them. how many plums does Ann have left with her? 9 − 7 = 2.",
           "зачем": "хвост вопроса есть часть формы, и читается только показанный"
         },
         {
           "род": "другое держание той же пары: holds, keeps вместо has",
           "страниц": 138,
-          "образец": "Carlos had 15 cookies. he ate 5 of them. Carlos keeps 10 cookies.",
+          "образец": "Carlos had 15 plums. he ate 5 of them. Carlos keeps 10 plums.",
           "зачем": "has, holds, keeps — пара знаков покупается лишь от двух держаний"
         },
         {
           "род": "два акта одного носителя, сравненные: на сколько больше сделал, чем продал",
           "страниц": 136,
-          "образец": "Anna baked 23 cakes. Anna ate 17 cakes. Anna baked 6 more cakes than she ate: 23 − 17 = 6.",
+          "образец": "Anna collected 23 stamps. Anna gave away 17 stamps. Anna collected 6 more stamps than she gave away: 23 − 17 = 6.",
           "зачем": "два акта одного носителя, и вопрос назван местоимением"
         }
       ],
@@ -8145,26 +8145,26 @@
       "роды": [
         {
           "род": "мера_больше",
-          "страниц": 360,
-          "образец": "the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper",
+          "страниц": 292,
+          "образец": "the rabbit jumped 23 inches. the squirrel jumped 6 inches. how many more inches did the rabbit jump than the squirrel? 2",
           "зачем": null
         },
         {
           "род": "мера_меньше",
-          "страниц": 360,
-          "образец": "the frog jumped 31 inches. the grasshopper jumped 25 inches. how many fewer inches did the grasshopper jump than the fro",
+          "страниц": 292,
+          "образец": "the rabbit jumped 23 inches. the squirrel jumped 6 inches. how many fewer inches did the squirrel jump than the rabbit? ",
           "зачем": null
         },
         {
           "род": "пара_мал",
           "страниц": 96,
-          "образец": "a ring and a chain cost 45 dollars together. the ring costs twice as much as the chain. how much does the chain cost? 2 ",
+          "образец": "a ring and a chain cost 174 dollars together. the ring costs twice as much as the chain. how much does the chain cost? 2",
           "зачем": null
         },
         {
           "род": "пара_бол",
           "страниц": 96,
-          "образец": "a ring and a chain cost 45 dollars together. the ring costs twice as much as the chain. how much does the ring cost? 2 +",
+          "образец": "a ring and a chain cost 174 dollars together. the ring costs twice as much as the chain. how much does the ring cost? 2 ",
           "зачем": null
         }
       ],
@@ -9294,13 +9294,13 @@
         {
           "род": "обладание",
           "страниц": 54,
-          "образец": "в первой главе 48 страниц. сколько страниц в первой главе? 48 страниц.",
+          "образец": "в рассказе 52 страницы. сколько страниц в рассказе? 52 страницы.",
           "зачем": null
         },
         {
           "род": "длина",
           "страниц": 54,
-          "образец": "первая глава — 48 страниц длиной. какой длины первая глава? 48 страниц.",
+          "образец": "рассказ — 52 страницы длиной. какой длины рассказ? 52 страницы.",
           "зачем": null
         },
         {
@@ -11420,7 +11420,7 @@
         {
           "род": "сумма",
           "страниц": 132,
-          "образец": "there are twice as many worker bees as baby bees. there are 15 bees in all. how many baby bees are there? 1 + 2 = 3, 15 ",
+          "образец": "there are twice as many pines as birches. there are 15 trees in all. how many birches are there? 1 + 2 = 3, 15 ÷ 3 = 5. ",
           "зачем": null
         },
         {

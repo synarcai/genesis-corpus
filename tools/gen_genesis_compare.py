@@ -19,6 +19,13 @@ repeated (verb, agent, item) key cuts the
 episode). Both number positions shown; small
 numbers (the school table must hold the pair);
 i//8 decoupling against modular resonance.
+
+REWRITTEN 23.09 BY THE OWNER'S WORD (a band is an instrument, not a textbook): the surfaces were
+read off the g1 band itself — g1.32, g1.37, g1.46 — and the pages carried the band's own things and
+numbers in the band's own constructions, eight words in a row. The constructions stay; the things
+are ours (shells, pencils, stamps for books, pages, cards), and the addend of the nested relation
+no longer takes the band's three. The generic idiom «has # more than twice the number of» stays and
+is named in the world's manifest entry (`обороты_полос`), counted page by page by the leak court.
 """
 
 from layer import emit
@@ -40,8 +47,12 @@ _ИМЕНА_ПАКЕТА = set(_json.loads((_pathlib.Path(__file__).resolve().pa
 _ПО_СТРОЧНОМУ = {и.lower(): и for и in _ИМЕНА_ПАКЕТА}
 NAMES = [_ПО_СТРОЧНОМУ.get(и.lower(), и) for и in NAMES_HOUSE]
 assert set(NAMES) <= _ИМЕНА_ПАКЕТА, "имя не объявлено пакетом en"
-ITEMS = ["apples", "cookies", "coins", "books",
-         "eggs", "pages", "points", "cards"]
+# ВЕЩИ ПЕРЕПИСАНЫ 23.09 (слово владельца, решение ведущего): «books» и «cards» стояли здесь ровно
+# в тех конструкциях, где их пишет полоса («3 more than twice the number of books that Sally has» —
+# g1.32, «3 times the amount of cards that PJ has» — g1.37), и страница делила с задачей полосы
+# восемь слов подряд. Вещи — наши: ракушки, карандаши и марки у двери вещей (`gsm_items.ТОВАРЫ`).
+ITEMS = ["apples", "cookies", "coins", "shells",
+         "eggs", "pencils", "points", "stamps"]
 # (tail-before-item?, surface builder)
 # A-side sentence surfaces; {n}=delta, {it}=item,
 # {b}=second bearer
@@ -96,6 +107,7 @@ NESTED_SURF = [
     "{a} has {n} more than twice the number of {it} that {b} has.",
     "{a} has {n} more than twice as many {it} as {b}.",
 ]
+НАДБАВКИ_ВЛОЖЕННОГО = (1, 2, 4)
 ВЕЕР = max(len(ADD_SURF), len(SUB_SURF), len(MUL_SURF),
            len(TWICE_SURF), len(NESTED_SURF))
 
@@ -173,7 +185,11 @@ def pass_shows(pi):
         else:
             # NESTED: A = B × 2 + n — сложение над умножением
             bv = (base + i * 7) % 5 + 2
-            n = (base + i * 3) % 3 + 1
+            # ЧИСЛО ПОЛОСЫ В КОНСТРУКЦИИ ПОЛОСЫ УХОДИТ (23.09): «has 3 more than twice the number of»
+            # есть начало задачи g1.32 с её же тройкой, и 27 страниц несли его слово в слово.
+            # Надбавка берётся из ряда, где тройки нет; оборот «has # more than twice the number
+            # of» остаётся и назван строем в манифесте мира.
+            n = НАДБАВКИ_ВЛОЖЕННОГО[(base + i * 3) % len(НАДБАВКИ_ВЛОЖЕННОГО)]
             av = bv * 2 + n
             # ДВА ШАГА, А НЕ ОДИН: внешнее отношение читается только после
             # внутреннего, и кузница обязана показать этот порядок.
