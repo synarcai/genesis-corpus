@@ -416,7 +416,7 @@
 
 - **дни** — страниц 84
   зачем: день недели и его имя
-  образец: 1 day after monday comes tuesday: 1 + 1 = 2, day 2 is tuesday.
+  образец: 1 day after monday comes tuesday: day 1 is monday, 1 + 1 = 2, day 2 is tuesday.
 - **соседи** — страниц 105
   зачем: что идёт после и что перед
   образец: the day after monday is tuesday.
@@ -436,9 +436,9 @@
 ## `calforms` → мир `calendar_langs`
 
 - **шаг на k дней вперёд, утверждение с леджером** — страниц 280
-  образец: 1 Tag nach Montag kommt Dienstag: 1 + 1 = 2, Tag 2 ist Dienstag.
+  образец: 1 Tag nach Montag kommt Dienstag: Tag 1 ist Montag, 1 + 1 = 2, Tag 2 ist Dienstag.
 - **вопрос о дне через k дней** — страниц 280
-  образец: welcher Tag kommt 4 Tage nach Donnerstag? 4 Tage nach Donnerstag kommt Montag: 4 + 4 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+  образец: welcher Tag kommt 4 Tage nach Donnerstag? 4 Tage nach Donnerstag kommt Montag: Tag 4 ist Donnerstag, 4 + 4 = 8, eine Woc
 - **вопрос о следующем дне** — страниц 56
   образец: welcher Tag kommt nach Montag? nach Montag kommt Dienstag.
 - **вопрос о вчерашнем дне** — страниц 56
@@ -594,7 +594,7 @@
 
 - **мост** — страниц 150
   зачем: крупная единица и мелкая, связанные счётом
-  образец: 3.10 dollars is 310 cents: 3 × 100 = 300, 300 + 10 = 310.
+  образец: a dollar has 100 cents. 3.10 dollars is 310 cents: 3 × 100 = 300, 300 + 10 = 310.
 - **цены** — страниц 150
   зачем: цена вещи в мелкой единице
   образец: a pen costs 15 cents and an apple costs 10 cents; together they cost 25 cents: 15 + 10 = 25.

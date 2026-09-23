@@ -1068,7 +1068,7 @@
         {
           "род": "дни",
           "страниц": 84,
-          "образец": "1 day after monday comes tuesday: 1 + 1 = 2, day 2 is tuesday.",
+          "образец": "1 day after monday comes tuesday: day 1 is monday, 1 + 1 = 2, day 2 is tuesday.",
           "зачем": "день недели и его имя"
         },
         {
@@ -1115,13 +1115,13 @@
         {
           "род": "шаг на k дней вперёд, утверждение с леджером",
           "страниц": 280,
-          "образец": "1 Tag nach Montag kommt Dienstag: 1 + 1 = 2, Tag 2 ist Dienstag.",
+          "образец": "1 Tag nach Montag kommt Dienstag: Tag 1 ist Montag, 1 + 1 = 2, Tag 2 ist Dienstag.",
           "зачем": null
         },
         {
           "род": "вопрос о дне через k дней",
           "страниц": 280,
-          "образец": "welcher Tag kommt 4 Tage nach Donnerstag? 4 Tage nach Donnerstag kommt Montag: 4 + 4 = 8, 8 − 7 = 1, Tag 1 ist Montag.",
+          "образец": "welcher Tag kommt 4 Tage nach Donnerstag? 4 Tage nach Donnerstag kommt Montag: Tag 4 ist Donnerstag, 4 + 4 = 8, eine Woc",
           "зачем": null
         },
         {
@@ -1584,7 +1584,7 @@
         {
           "род": "мост",
           "страниц": 150,
-          "образец": "3.10 dollars is 310 cents: 3 × 100 = 300, 300 + 10 = 310.",
+          "образец": "a dollar has 100 cents. 3.10 dollars is 310 cents: 3 × 100 = 300, 300 + 10 = 310.",
           "зачем": "крупная единица и мелкая, связанные счётом"
         },
         {

@@ -1331,7 +1331,7 @@
     {
       "name": "calendar",
       "file": "datasets/genesis_calendar.txt",
-      "genre": "ДЕНЬ ЧЕРЕЗ ДЕНЬ, И ШАГ ДОКАЗАН СЛОЖЕНИЕМ ПО НОМЕРУ: «через 3 дня после понедельника наступает четверг: 1 + 3 = 4, день 4 — четверг». Имя дня переводится в НОМЕР, номер складывается, и итог переводится обратно в имя — три шага, и все три на странице. Тем же ходом идут месяцы. Кольцо недели замыкается вычитанием семи (замер 12.09: 902 строки, 336 сложений и 336 равенств при 446 вопросах, 168 вычитаний; читают calendar, arith, engram, langcount, rugram).",
+      "genre": "ДЕНЬ ЧЕРЕЗ ДЕНЬ, И ШАГ ДОКАЗАН СЛОЖЕНИЕМ ПО НОМЕРУ: «через 3 дня после понедельника наступает четверг: 1 + 3 = 4, день 4 — четверг». Имя дня переводится в НОМЕР, номер складывается, и итог переводится обратно в имя — три шага, и все три на странице. Тем же ходом идут месяцы. Кольцо недели замыкается вычитанием семи (замер 12.09: 902 строки, 336 сложений и 336 равенств при 446 вопросах, 168 вычитаний; читают calendar, arith, engram, langcount, rugram). С 23.09 ВСЕ ЧИСЛА УРАВНЕНИЯ СТОЯТ В СТРАНИЦЕ: номер дня-начала сказан той же рамкой, что номер итога, а длина недели — дверью единиц («через 3 дня после субботы наступает вторник: день 6 — суббота, 6 + 3 = 9, в неделе 7 дней, 9 − 7 = 2, день 2 — вторник»); выровненных страниц 48 → 336 из 336.",
       "act": [
         "recount"
       ],
@@ -1352,7 +1352,7 @@
     {
       "name": "calendar_langs",
       "file": "datasets/genesis_calendar_langs.txt",
-      "genre": "THE WEEK IN EIGHT LANGUAGES (the owner's word: every language in surplus; the calendar world's cycle shows «3 days after tuesday comes friday» are the shows from which the organism buys the weekly cycle without names and without the seven — holon's ЦИКЛ): «3 Tage nach Dienstag kommt Freitag.», «welcher Tag kommt 2 Tage nach Donnerstag? 2 Tage nach Donnerstag kommt Samstag.», «quel jour vient 2 jours après jeudi ? …», «¿qué día viene 2 días después del jueves? … viene el sábado.», «che giorno viene 2 giorni dopo giovedì? …», «que dia vem 2 dias depois de quinta-feira? …», «welke dag komt 2 dagen na donderdag? …», «jaki dzień przypada 2 dni po czwartku? 2 dni po czwartku przypada sobota.» (Polish locative after «po»), «perşembeden 2 gün sonra hangi gün gelir? perşembeden 2 gün sonra cumartesi gelir.» (Turkish ablative); the house of weekday phrases (tools/calforms.py) holds the names with their oblique forms and the count forms of «day»; the court counts the cycle itself",
+      "genre": "THE WEEK IN EIGHT LANGUAGES (the owner's word: every language in surplus; the calendar world's cycle shows «3 days after tuesday comes friday» are the shows from which the organism buys the weekly cycle without names and without the seven — holon's ЦИКЛ): «3 Tage nach Dienstag kommt Freitag.», «welcher Tag kommt 2 Tage nach Donnerstag? 2 Tage nach Donnerstag kommt Samstag.», «quel jour vient 2 jours après jeudi ? …», «¿qué día viene 2 días después del jueves? … viene el sábado.», «che giorno viene 2 giorni dopo giovedì? …», «que dia vem 2 dias depois de quinta-feira? …», «welke dag komt 2 dagen na donderdag? …», «jaki dzień przypada 2 dni po czwartku? 2 dni po czwartku przypada sobota.» (Polish locative after «po»), «perşembeden 2 gün sonra hangi gün gelir? perşembeden 2 gün sonra cumartesi gelir.» (Turkish ablative); the house of weekday phrases (tools/calforms.py) holds the names with their oblique forms and the count forms of «day»; the court counts the cycle itself Since 23.09 every number of the equation stands in the page: the start day's number is said by the same frame as the result's, the week's length by the door of units («Tag 6 ist Samstag, 6 + 3 = 9, eine Woche hat 7 Tage, 9 − 7 = 2, Tag 2 ist Dienstag»); aligned pages 80 → 560 of 560.",
       "act": [
         "recount",
         "translate"
@@ -3362,7 +3362,7 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 46856493,
+      "size": 46891979,
       "tiers": [],
       "text": "mix",
       "lines": 486160
@@ -8804,7 +8804,7 @@
     {
       "name": "money",
       "file": "datasets/genesis_money.txt",
-      "genre": "money in CENTS and the bridge to the decimal writing (e9's order 04.09, band g1: 15 of 65 problems carry «$16.50», and the organism is honestly mute on decimals): prices, sums, multiples and change counted in whole cents and kopecks — «a pen costs 250 cents and a book costs 375 cents. how much do they cost together? 250 + 375 = 625 cents.», «ann paid 1000 cents for a book that costs 625 cents. how much change did ann get? 1000 − 625 = 375 cents.», «ручка стоит 250 копеек, а книга стоит 375 копеек; вместе они стоят 625 копеек: 250 + 375 = 625.»; the decimal price is shown as a BRIDGE with its ledger («16.50 dollars is 1650 cents: 16 × 100 = 1600, 1600 + 50 = 1650.», «16 рублей 50 копеек — это 1650 копеек: …») and a sum in dollars carries the same sum in cents as its witness («16.50 + 2.50 = 19.00 dollars: 1650 + 250 = 1900 cents»); the answer opens with the question's first quantity; the court reads dollars and cents from the decimal writing itself, recomputes every link, and checks the kopeck and rouble forms by the house of forms and the names by the packs",
+      "genre": "money in CENTS and the bridge to the decimal writing (e9's order 04.09, band g1: 15 of 65 problems carry «$16.50», and the organism is honestly mute on decimals): prices, sums, multiples and change counted in whole cents and kopecks — «a pen costs 250 cents and a book costs 375 cents. how much do they cost together? 250 + 375 = 625 cents.», «ann paid 1000 cents for a book that costs 625 cents. how much change did ann get? 1000 − 625 = 375 cents.», «ручка стоит 250 копеек, а книга стоит 375 копеек; вместе они стоят 625 копеек: 250 + 375 = 625.»; the decimal price is shown as a BRIDGE with its ledger («16.50 dollars is 1650 cents: 16 × 100 = 1600, 1600 + 50 = 1650.», «16 рублей 50 копеек — это 1650 копеек: …») and a sum in dollars carries the same sum in cents as its witness («16.50 + 2.50 = 19.00 dollars: 1650 + 250 = 1900 cents»); the answer opens with the question's first quantity; the court reads dollars and cents from the decimal writing itself, recomputes every link, and checks the kopeck and rouble forms by the house of forms and the names by the packs; since 23.09 the bridge opens with the constant said by the door of units («a dollar has 100 cents. 16.50 dollars is 1650 cents: 16 × 100 = 1600, 1600 + 50 = 1650.», «в рубле 100 копеек. …»), and the question's ledger opens with it — the quantities of the question open the answer in their order; aligned pages 300 → 375 of 500 (the rest read the digits of a decimal writing, not a hidden constant)",
       "act": [
         "recount",
         "name",
@@ -11650,7 +11650,7 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 38755315,
+      "size": 38790801,
       "tiers": [],
       "text": "mix",
       "lines": 437693
