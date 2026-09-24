@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 487683 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 488235 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 162, строк 254610.
+Миров 162, строк 255162.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -57,6 +57,8 @@
   **SHARES AND PERCENTS OVER QUANTITIES** — GENUS 2 OF THE g1 BAND (holon's word 03.09, G1-ATTACK): five forms whose ledger is a chain of primitives whole on the axis, en/ru/de — «what is two thirds of 24? two thirds of 24 is 16: 24 ÷ 3 = 8, 8 × 2 = 16.» (den…
 - **`toolforms`** (2907 строк; recompute, whole_only)  
   **THE TOOL** — «the state before · the call · the state after» (05.09, the agent architecture: a tool is known by what it changes and by what it leaves alone).
+- **`age`** (2904 строк; recompute, whole_only, unsigned_only)  
+  **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`discountroad`** (2808 строк; recompute, whole_only, exact_only)  
   **THE MONEY ROAD WITH A DISCOUNT (05.09, the SECOND gate of the silence atlas by d5's measure: 72–76 turns of the grove stop on the money road). A price, a discount ON EACH item, and FOUR questions over one and the same pair of numbers: the price after the …
 - **`joints`** (2700 строк; declared, whole_only)  
@@ -71,8 +73,6 @@
   **ПРОГРЕССИЯ** — ЧЛЕН ПО НОМЕРУ И СУММА ПО КОНЦАМ, И ОБА ВЫВЕДЕНЫ НА СТРАНИЦЕ: «член номер 5 прогрессии от 2 с шагом 2 равен 10: 5 − 1 = 4, 4 × 2 = 8, 2 + 8 = 10» и «сумма 3 6 9 12 равна 30: 3 + 12 = 15, 4 × 15 = 60, 60 ÷ 2 = 30».
 - **`relcompare`** (2400 строк; recompute, whole_only)  
   **THE RELATIVE FACT** — a number that belongs to the DIFFERENCE and to neither bearer (07.09).
-- **`age`** (2352 строк; recompute, whole_only, unsigned_only)  
-  **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`geometry`** (2344 строк; recompute, exact_only)  
   **ПЛОЩАДЬ И ПЕРИМЕТР, ВЫВЕДЕННЫЕ, А НЕ ОБЪЯВЛЕННЫЕ: «прямоугольник 2 на 3 имеет периметр 2 + 3 = 5, 2 × 5 = 10». Прямоугольник, треугольник, коробка** — и всякий раз формула проходится числами: сложение сторон, удвоение, умножение.
 - **`space`** (2301 строк; recompute, exact_only)  
