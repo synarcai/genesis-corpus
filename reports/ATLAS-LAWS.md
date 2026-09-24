@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 603 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 605 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7674 разных законов на 9812 упоминаний; сказанных однажды — 7071, и они остаются при своём месте.
+Всего в дереве 7679 разных законов на 9820 упоминаний; сказанных однажды — 7074, и они остаются при своём месте.
 
 
 ## Держат 85 файлов
@@ -48,12 +48,15 @@
 - **ПОДСАДКИ ОБЪЯВЛЕНЫ ЗДЕСЬ, И СУД БЕРЁТ ИХ ОТСЮДА ЖЕ**  
   tools/adhominem.py, tools/adjorder.py, tools/alphaorder.py, tools/badground.py, tools/bicondforms.py, tools/boolforms.py … и ещё 25
 
+## Держат 30 файлов
+
+- **ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО**  
+  tools/gen_genesis_aggregate.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_areas.py, tools/gen_genesis_bignum.py, tools/gen_genesis_conversions.py … и ещё 24
+
 ## Держат 29 файлов
 
 - **МУТАНТОВ НЕ ПОСТРОЕНО ВОВСЕ**  
   tools/countlawforms.py, tools/deaccforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py … и ещё 23
-- **ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО**  
-  tools/gen_genesis_aggregate.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_bignum.py, tools/gen_genesis_conversions.py, tools/gen_genesis_cybernetics.py … и ещё 23
 
 ## Держат 28 файлов
 
@@ -892,6 +895,8 @@
   scripts/house_skew.py, tools/seriesforms.py
 - **ПЕРЕНОС ПОКАЗАН, А НЕ УМОЛЧАН**  
   courts/letterwork_court.py, tools/letterwork.py
+- **ПЕРЕСЧЁТ, А НЕ ВЕРА ПЕРЕЧНЮ**  
+  courts/areas_court.py, courts/remainders_court.py
 - **ПЛАСТ РАЗОБРАН И НЕ ПОКАЗАН**  
   tools/numnounforms.py, tools/numplaceforms.py
 - **ПО САМОМУ СЛОВУ РОД НЕ ВИДЕН**  
@@ -1132,6 +1137,8 @@
   scripts/signless_census.py, scripts/template_word.py
 - **СТРОКА И СТОЛБЕЦ СУТЬ ДВЕ КООРДИНАТЫ, А НЕ ДВА ПОИСКА ПОДРЯД**  
   courts/grid_court.py, tools/gridread.py
+- **СТРОКА МИРА, КАКОЙ ДОМ НЕ ПИШЕТ, ЕСТЬ ЛОЖЬ ЭТОГО МИРА**  
+  courts/areas_court.py, courts/remainders_court.py
 - **СУД АРИФМЕТИКИ ЧИТАЕТ ТО, ЧТО СТОИ**  
   tools/handyforms.py, tools/unitcmpforms.py
 - **СУД НЕ ПОНИМАЕТ «ОТНОСИТСЯ ЛИ» И НЕ БЕРЁТСЯ**  

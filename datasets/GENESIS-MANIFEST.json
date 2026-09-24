@@ -3362,10 +3362,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 47219092,
+      "size": 47279554,
       "tiers": [],
       "text": "mix",
-      "lines": 486462
+      "lines": 486927
     },
     {
       "name": "fuseprep",
@@ -11655,10 +11655,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39117914,
+      "size": 39178376,
       "tiers": [],
       "text": "mix",
-      "lines": 437995
+      "lines": 438460
     },
     {
       "name": "school_biling_v2c",
@@ -13296,6 +13296,32 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ]
+    },
+    {
+      "name": "areas",
+      "file": "datasets/genesis_areas.txt",
+      "genre": "ОБЛАСТИ ОБЫДЕННОГО (24.09, строка 34 реестра пробелов): учебник, телефон, кухня, двор, мастерская, газетный киоск — вещи области, как она устроена: вместилище и две его вещи («в учебнике 8 уроков и 3 приложения. сколько частей в учебнике? 8 + 3 = 11»), по стольку в каждом («each lesson has 6 exercises»), сделано и осталось («в рецепте 7 шагов. Лена сделала 3 из них»), два акта одного дня (утренние и вечерние загрузки, события утренней и вечерней газеты — «the morning paper reported 6 events») и само понятие своими словами («what is a recipe? a recipe tells which ingredients to take and which steps to follow»). Понятия, какие проза называет в оглавлениях, а свод показывал лишь совпадением со сценами полос, здесь работают своим смыслом рядом со всеми словами своей области. Числа — по природе вещи (у табурета 3–4 ножки, в кулинарной книге десятки рецептов). Два языка, формы — у дверей rugram и plural; суд courts/areas_court.py — замкнутый мир и пересчёт звена.",
+      "act": [
+        "recount",
+        "name"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "whole_only",
+        "unsigned_only"
+      ],
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ],
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
       ]
     }
   ]

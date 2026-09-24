@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486462 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 486927 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 161, строк 253389.
+Миров 162, строк 253854.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -243,6 +243,8 @@
   **«MORE THAN» AND «TIMES AS MANY» IN EIGHT LANGUAGES (the owner's word: every language in surplus; the comparison worlds say them in en/ru): two holdings, then the difference or the ratio with its ledger, as statement and as question answered by the stateme…
 - **`divshare`** (466 строк; recompute, whole_only)  
   **DIVIDING BY A SHARE** — division DOES NOT ALWAYS DECREASE, and the question itself sounds different.
+- **`areas`** (465 строк; recompute, declared, whole_only, unsigned_only)  
+  **ОБЛАСТИ ОБЫДЕННОГО (24.09, строка 34 реестра пробелов): учебник, телефон, кухня, двор, мастерская, газетный киоск** — вещи области, как она устроена: вместилище и две его вещи («в учебнике 8 уроков и 3 приложения. сколько частей в учебнике? 8 + 3 = 11»), …
 - **`action_measure_langs`** (462 строк; recompute, whole_only)  
   **ACTION MEASURE IN SEVEN MORE LANGUAGES (d5's genus, the owner's word: every language in surplus)** — «der Hase sprang 14 Zentimeter. wie weit sprang der Hase? 14 Zentimeter.», «le lapin a sauté de 14 centimètres.», «królik skoczył na 14 centymetrów.», the…
 - **`factor`** (456 строк; recompute, whole_only)  
@@ -777,5 +779,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 349.
+Миров: **0** из 350.
 
