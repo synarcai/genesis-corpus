@@ -57,6 +57,7 @@ import plural as _plural  # noqa: E402 — английский артикль �
 import everydayforms as дом  # noqa: E402
 import onepattern  # noqa: E402
 import rugram  # noqa: E402
+import verbthings  # noqa: E402 — дверь актов: знак акта у носителя и его частица («keeps the other»)
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -474,8 +475,11 @@ _ОСТАЛСЯ = "(" + "|".join(sorted({rugram.прошедшее_рода("о�
     r"^(\d+) students are in the class, and each student has (\d+) "
     r"([A-Za-z]+)\. how many books does the class have\? the class has "
     r"(\d+) books\.$")
+# «KEEPS THE OTHER» — ВСЯКИЙ ГЛАГОЛ, А НЕ ОДИН «read» (24.09): образец писался под дом, прибивший
+# «read» гвоздём, и с 04.09 не видел «picked 1 pencil and keeps the other pencil» — дом сменил
+# глагол, суд остался при старом.
 ИНОЙ = re.compile(
-    r"^([A-Za-z]+) has 2 ([A-Za-z]+); \1 read 1 ([A-Za-z]+) and keeps the "
+    r"^([A-Za-z]+) has 2 ([A-Za-z]+); \1 ([a-z]+) 1 ([A-Za-z]+)((?: [a-z]+)?) and keeps the "
     r"other ([A-Za-z]+)\.$")
 ЕЩЁ_ОДИН = re.compile(
     r"^([A-Za-z]+) has 1 ([A-Za-z]+) and bought another ([A-Za-z]+); \1 has 2 "
@@ -1379,11 +1383,16 @@ def судить(строка):
                       and _ед(ф1) == "book")
     m = ИНОЙ.match(с)
     if m:
-        _к, мн, ед1, ед2 = m.groups()
+        _к, мн, глагол, ед1, частица, ед2 = m.groups()
         if _ед(мн) is None:
             return False, False
+        # ОСТАВЛЕННОЕ ОПРЕДЕЛЕНО УШЕДШИМ: первую вещь акт уносит от держателя (знак −1 двери
+        # актов) и несёт свою частицу; акт прибыли, не-акт и чужая частица — ложь рамки
         return True, (ед1 == ед2 == _ед(мн)
-                      and _форма_верна(2, мн))
+                      and _форма_верна(2, мн)
+                      and verbthings.знак_акта(глагол, verbthings.НОСИТЕЛЬ) == -1
+                      and частица.strip() == verbthings.частица(глагол)
+                      and verbthings.берёт(глагол, мн))
     m = ЕЩЁ_ОДИН.match(с)
     if m:
         _к, ед1, ед2, мн = m.groups()

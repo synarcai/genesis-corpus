@@ -24,10 +24,11 @@ from plural import singular
 # ДВА НОВЫХ ЧИТАТЕЛЯ (23.09, перепись словаря вещей): словарь `gsm_items` берёт вещи из школьных
 # классов этой двери, а перепись полос `gsm_census` мерит ими покрытие. Прибор паспорта назвал их
 # на вершине вагона 24.09 — дописаны сюда, а не выведены.
+# СУД БЫТА — ЧИТАТЕЛЬ ЗНАКА АКТА (24.09): рамку «keeps the other» он судит знаком этой двери.
 ЧИТАЮТ = ("gen_genesis_gsmlex", "everydayforms", "gen_genesis_realverbs",
           "gen_genesis_gsmwide", "story_chainforms", "gen_genesis_items",
           "gen_genesis_pronouns", "episode_court", "verbthings_court",
-          "gsm_items", "gsm_census")
+          "gsm_items", "gsm_census", "everyday_court")
 
 ЕДА = {"apples", "cookies", "cakes", "pastries", "nuts", "eggs", "slices", "bananas", "oranges", "pears", "sweets",
        "candies", "sandwiches", "grapes", "plums", "buns", "pies", "loaves", "pancakes", "cherries", "carrots", "calories"}
@@ -260,3 +261,26 @@ def индекс(глаголы, вещи, k, ключ=None):
     """The index in the pool of the k-th admissible thing — for a second
     pool that runs parallel to the first (Russian things beside English)."""
     return вещи.index(подобрать(глаголы, вещи, k, ключ))
+
+
+# «ОСТАВИЛ СЕБЕ ДРУГУЮ» ГОВОРИТ, ЧТО ПЕРВАЯ УШЛА (24.09, рамка анафоры дома быта). Рамка «has 2 X;
+# <глагол> 1 X and keeps the other X» брала глагол из списка дома («read», «ate», «wrote», «planted»,
+# «drank», «picked», «took») по одной сочетаемости и писала «picked 1 pencil and keeps the other pencil»
+# (акт прибыли), «read 1 book and keeps the other book» (чтение вещи не двигает), «drank 1 cup and
+# keeps the other cup» (питьё без питья — см. выше): тридцать строк, из них верны были шесть.
+#
+#     ОСТАВЛЕННОЕ ОПРЕДЕЛЕНО УШЕДШИМ: ГЛАГОЛ ПЕРВОЙ ВЕЩИ ОБЯЗАН УНОСИТЬ ЕЁ ОТ ДЕРЖАТЕЛЯ.
+#
+# Уход от носителя — знак −1 этой двери, и акт выбирается им. Акт, чей пул называет вещь, говорит
+# точнее беспулевого и идёт первым; беспулевой («gave») берёт всё и идёт последним, потому выбор не
+# пуст. Акт, чьё место обязано стоять при нём («put»), не годится рамке, места не называющей.
+def акт_ухода(вещь):
+    """Акт двери, уносящий вещь от носителя (знак −1): сперва тот, чей пул вещь называет, затем
+    беспулевой, в порядке двери; None — ни один акт вещи не берёт."""
+    мн = _множественное(вещь)
+    уносят = [а for а in АКТЫ if знак_акта(а, НОСИТЕЛЬ) == -1 and а not in МЕСТО_ПРИ_АКТЕ]
+    for акт in sorted(уносят, key=lambda а: а not in ГЛАГОЛ_БЕРЁТ):
+        пул = ГЛАГОЛ_БЕРЁТ.get(акт)
+        if (мн in пул) if пул is not None else берёт(акт, мн):
+            return акт
+    return None
