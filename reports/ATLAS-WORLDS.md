@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 488997 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 351 миров, 489597 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 162, строк 255924.
+Миров 163, строк 256524.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -201,6 +201,8 @@
   **ПЛОТНАЯ ЛИНЕЙКА ±1: сосед числа назван сложением и вычитанием единицы, на двух языках и словом и знаком** — «6 − 1 = 5», «twelve minus one equals eleven».
 - **`divsense`** (628 строк; recompute, whole_only)  
   **THE TWO MEANINGS OF DIVISION** — ONE EQUALITY ANSWERS TWO DIFFERENT QUESTIONS. The distinction is nowhere in the corpus: measured 11.09 across the 246 show worlds, «два смысла», «two meanings», «по скольку каждому» — NONE. Yet BOTH KINDS of task have long…
+- **`height`** (600 строк; recompute, whole_only, unsigned_only)  
+  **РОСТ ЛИЦ (24.09, заказ ведущего по рынку подписей сравнения): кто выше и на сколько** — опора до сравнения, сравниваемое после, ответ называет лицо и несёт звено, на четырёх языках: «Ben is 120 cm tall.
 - **`divrule`** (600 строк; recompute, whole_only)  
   **RULES OF DIVISIBILITY** — to know a divisor WITHOUT DIVIDING, and to check it by dividing on the same page.
 - **`signrul`** (596 строк; recompute, whole_only)  
@@ -779,5 +781,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 350.
+Миров: **0** из 351.
 

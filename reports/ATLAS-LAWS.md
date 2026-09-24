@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 610 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 611 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7730 разных законов на 9877 упоминаний; сказанных однажды — 7120, и они остаются при своём месте.
+Всего в дереве 7732 разных законов на 9881 упоминаний; сказанных однажды — 7121, и они остаются при своём месте.
 
 
 ## Держат 85 файлов
@@ -47,11 +47,8 @@
   courts/adhominem_court.py, courts/alphaorder_court.py, courts/badground_court.py, courts/bicond_court.py, courts/boolexpr_court.py, courts/bothlists_court.py … и ещё 25
 - **ПОДСАДКИ ОБЪЯВЛЕНЫ ЗДЕСЬ, И СУД БЕРЁТ ИХ ОТСЮДА ЖЕ**  
   tools/adhominem.py, tools/adjorder.py, tools/alphaorder.py, tools/badground.py, tools/bicondforms.py, tools/boolforms.py … и ещё 25
-
-## Держат 30 файлов
-
 - **ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО**  
-  tools/gen_genesis_aggregate.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_areas.py, tools/gen_genesis_bignum.py, tools/gen_genesis_conversions.py … и ещё 24
+  tools/gen_genesis_aggregate.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_areas.py, tools/gen_genesis_bignum.py, tools/gen_genesis_conversions.py … и ещё 25
 
 ## Держат 29 файлов
 
@@ -1109,6 +1106,8 @@
   courts/letterwork_court.py, tools/letterwork.py
 - **СЛОВО ОТРЕЗАЕТСЯ ПРОБЕЛОМ, А НЕ ПРИЗНАКОМ «БУКВА**  
   scripts/refusal_ground.py, scripts/refusal_only_word.py
+- **СЛОВО СРАВНЕНИЯ И ЗНАК ЗВЕНА — ОДНО УТВЕРЖДЕНИЕ, СКАЗАННОЕ ДВАЖДЫ: СУД СВЕРЯЕТ ИХ, А НЕ ВЕРИТ ОБОИМ**  
+  courts/age_court.py, courts/height_court.py
 - **СЛОВО, ВЫЧИСЛЕННОЕ НА ГЛАЗАХ ЧИТАТЕЛЯ, ЗАКОНУ ПОВТОРЕНИЯ НЕ ПОДЛЕЖИТ**  
   scripts/word_once.py, tools/letterwork.py
 - **СЛОВО, ЗАИМСТВОВАННОЕ ЯЗЫКОМ, ОБЪЯВЛЕНО НЕ ИМ**  

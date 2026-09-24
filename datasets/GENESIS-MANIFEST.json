@@ -3362,10 +3362,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 47594757,
+      "size": 47668277,
       "tiers": [],
       "text": "mix",
-      "lines": 488997
+      "lines": 489597
     },
     {
       "name": "fuseprep",
@@ -11661,10 +11661,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39493579,
+      "size": 39567099,
       "tiers": [],
       "text": "mix",
-      "lines": 440530
+      "lines": 441130
     },
     {
       "name": "school_biling_v2c",
@@ -13328,6 +13328,34 @@
       "actors": [
         "person_names:en",
         "person_names:ru"
+      ]
+    },
+    {
+      "name": "height",
+      "file": "datasets/genesis_height.txt",
+      "genre": "РОСТ ЛИЦ (24.09, заказ ведущего по рынку подписей сравнения): кто выше и на сколько — опора до сравнения, сравниваемое после, ответ называет лицо и несёт звено, на четырёх языках: «Ben is 120 cm tall. Carla is 8 cm taller than Ben. how tall is Carla? Carla is 128 cm tall: 120 + 8 = 128.», то же с «shorter» и «how much taller is Carla than Ben?»; «Ваня выше Веры на 2 см», «Jonas ist 2 cm größer als Lena», «Daan is 2 cm langer dan Emma»; рост детей 95–179 см, лица — пакетов",
+      "act": [
+        "recount",
+        "compare"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "unsigned_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ],
+      "actors": [
+        "person_names:en",
+        "person_names:ru",
+        "person_names:de",
+        "person_names:nl"
       ]
     }
   ]
