@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 488235 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 488673 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 162, строк 255162.
+Миров 162, строк 255600.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -89,12 +89,12 @@
   **THE SELF-MODEL** — predict yourself, then check by the fact (05.09, the corpus side of Д-2: the organism has a Γ-heart and a self-description but no φ as an OPERATION).
 - **`relation`** (2092 строк; recompute, declared, reversibility, whole_only, exact_only, unsigned_only)  
   **metalanguage of structure in both languages: hierarchy (a declared tree of 18 nodes** — containment, level, path from the root), relations on a finite set with reflexivity, symmetry and transitivity each shown WITH a confirming case and WITH a named witne…
+- **`measure_story`** (2016 строк; recompute, whole_only)  
+  **MEASURED STORIES** — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09).
 - **`relations_story`** (1989 строк; recompute, unsigned_only)  
   **A MULTIPLE, A DIFFERENCE AND A SUM** — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09 — the G1-ATTACK genus «multiplicative relation + sum»; SCENES REWRITTEN 23.09 by the owner's word: the worker bees of g1.6, the books of g1.32 and the cards of g1.37 …
 - **`ninelang`** (1800 строк; recompute, whole_only)  
   **THREE SHAPES IN NINE LANGUAGES** — one place, nine different words (07.09).
-- **`measure_story`** (1578 строк; recompute, whole_only)  
-  **MEASURED STORIES** — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09).
 - **`physics`** (1472 строк; recompute, whole_only)  
   **ЗАКОН ФИЗИКИ, СКАЗАННЫЙ ФОРМУЛОЙ И ТУТ ЖЕ ПРОЙДЕННЫЙ ЧИСЛАМИ С ЕДИНИЦАМИ: «что даёт работа = сила × путь при 20 и 3? работа = сила × путь; 20 ньютонов × 3 метра = 60 джоулей», «напряжение = ток × сопротивление; 3 ампера × 12 ом = 36 вольт». Формула стои́т…
 - **`totalsubj`** (1440 строк; recompute, whole_only)  

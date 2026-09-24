@@ -1,9 +1,9 @@
 {
   "что_есть_образец": "ПЕРВАЯ страница рода, обрезанная до 120 знаков. О ПРОЧИХ страницах того же рода не говорит НИЧЕГО: род на восемьсот страниц показан здесь одной. Вопрос о страницах, заданный образцу, получит ответ о роде — и ответ этот будет похож на правду. Меру по страницам даёт сайдкар datasets/GENESIS-FULL.genera.tsv (номер строки → дом · род).",
   "домов": 317,
-  "родов": 1883,
-  "различных": 1588,
-  "страниц": 347672,
+  "родов": 1886,
+  "различных": 1591,
+  "страниц": 348020,
   "домов_без_словаря_страниц": 1,
   "по_объявлению": {
     "РОДЫ": 260,
@@ -8261,6 +8261,24 @@
           "род": "насколько_дальше",
           "страниц": 166,
           "образец": "the rabbit jumped 81 metres. the squirrel jumped 32 metres. how much higher did the rabbit jump than the squirrel? 49 me",
+          "зачем": null
+        },
+        {
+          "род": "время_дольше",
+          "страниц": 116,
+          "образец": "the rabbit ran 15 minutes. the fox ran 24 minutes longer than the rabbit. how long did the fox run? the fox ran 39 minut",
+          "зачем": null
+        },
+        {
+          "род": "время_меньше",
+          "страниц": 116,
+          "образец": "the fox ran 68 minutes. the rabbit ran 10 minutes less than the fox. how long did the rabbit run? the rabbit ran 58 minu",
+          "зачем": null
+        },
+        {
+          "род": "насколько_дольше",
+          "страниц": 116,
+          "образец": "the fox ran 26 minutes. the rabbit ran 20 minutes. how much longer did the fox run than the rabbit? 6 minutes longer: 26",
           "зачем": null
         }
       ],
