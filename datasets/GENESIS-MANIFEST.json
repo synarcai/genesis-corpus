@@ -3362,10 +3362,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 47668277,
+      "size": 47735846,
       "tiers": [],
       "text": "mix",
-      "lines": 489597
+      "lines": 489957
     },
     {
       "name": "fuseprep",
@@ -11661,10 +11661,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39567099,
+      "size": 39634668,
       "tiers": [],
       "text": "mix",
-      "lines": 441130
+      "lines": 441490
     },
     {
       "name": "school_biling_v2c",
@@ -13356,6 +13356,32 @@
         "person_names:ru",
         "person_names:de",
         "person_names:nl"
+      ]
+    },
+    {
+      "name": "much",
+      "file": "datasets/genesis_much.txt",
+      "genre": "ВЕЩЕСТВО, СРАВНЁННОЕ КРАТНО (25.09, строка долга от ведущего, М-1274): несчётное сравнивают словом «much» — деньги, вода, время, опора до сравнения, сравниваемое после, ответ называет лицо и несёт звено: «Ben has 30 dollars. Carla has twice as much money as Ben. how much money does Carla have? Carla has 60 dollars: 2 × 30 = 60.», «3 times as much water», «half as much time on homework»; по-русски «вдвое больше денег, чем у Вани», «в 3 раза больше воды», «вдвое меньше времени»",
+      "act": [
+        "recount",
+        "compare"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "unsigned_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ],
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
       ]
     }
   ]

@@ -113,6 +113,7 @@ recache.установить()
            "search_langs_court", "remainders_langs_court", "primes_langs_court", "remainders_court",
            "areas_court",  # мир областей обыденного (24.09, строка 34 реестра пробелов)
            "height_court",  # рост лиц: кто выше и на сколько, опора до сравнения (24.09, заказ ведущего)
+           "much_court",  # несчётное, сравнённое кратно: «twice as much money as» (25.09, М-1274)
            "money_story_court", "relations_story_court", "shares_percent_court",
            "chains_langs_court", "action_pages_court", "langmath_court",
            # …и ПОРОЖДЕНИЕ ПЛАСТА С ЧИСЛОМ: строка судима тем, порождается ли

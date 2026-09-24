@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 351 миров, 489597 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 352 миров, 489957 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 163, строк 256524.
+Миров 164, строк 256884.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -275,6 +275,8 @@
   **THE POWER BEYOND ZERO** — THE LADDER CONTINUED PAST ZERO. Measured 11.09 across the 236 show worlds: «^0» — NONE; «⁰» — NONE; «to the power of zero» — NONE; and the negative exponent has no precedent at all: «^-», «^−», «⁻» — NONE in the whole corpus.
 - **`two_kinds`** (360 строк; recompute, whole_only)  
   **TWO KINDS AND A SUM OF WEIGHTS** — THE SYSTEM OF TWO UNKNOWNS WITH ITS CHAIN (e9's order 03.09, the profile of muteness of the g1 band, genus 5): the band asked «there are 20 animals … 70 legs, how many cows?» and the organism was mute not for the arithme…
+- **`much`** (360 строк; recompute, whole_only, unsigned_only)  
+  **ВЕЩЕСТВО, СРАВНЁННОЕ КРАТНО (25.09, строка долга от ведущего, М-1274): несчётное сравнивают словом «much»** — деньги, вода, время, опора до сравнения, сравниваемое после, ответ называет лицо и несёт звено: «Ben has 30 dollars.
 - **`letters`** (360 строк; recompute, whole_only)  
   **LETTERS OF A WORD IN NINE LANGUAGES** — «how many letters are there in the word cat? 3: c, a, t.», «what is the first letter of the word cat? c.», the last letter likewise (the word stands in the quotes of its language).
 - **`zerodiv`** (346 строк; recompute, whole_only)  
@@ -781,5 +783,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 351.
+Миров: **0** из 352.
 

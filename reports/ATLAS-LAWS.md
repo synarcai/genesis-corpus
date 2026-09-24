@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 611 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 612 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7732 разных законов на 9881 упоминаний; сказанных однажды — 7121, и они остаются при своём месте.
+Всего в дереве 7736 разных законов на 9887 упоминаний; сказанных однажды — 7124, и они остаются при своём месте.
 
 
 ## Держат 85 файлов
@@ -41,14 +41,17 @@
 - **ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ**  
   tools/cmpmultforms.py, tools/coinforms.py, tools/eqforms.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_arith_langs.py … и ещё 27
 
+## Держат 32 файлов
+
+- **ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО**  
+  tools/gen_genesis_aggregate.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_areas.py, tools/gen_genesis_bignum.py, tools/gen_genesis_conversions.py … и ещё 26
+
 ## Держат 31 файлов
 
 - **НЕ ПОЙМАНА» ИМЕЕТ ДВЕ ПРИЧИНЫ, И ОНИ ТРЕБУЮТ РАЗНОГО**  
   courts/adhominem_court.py, courts/alphaorder_court.py, courts/badground_court.py, courts/bicond_court.py, courts/boolexpr_court.py, courts/bothlists_court.py … и ещё 25
 - **ПОДСАДКИ ОБЪЯВЛЕНЫ ЗДЕСЬ, И СУД БЕРЁТ ИХ ОТСЮДА ЖЕ**  
   tools/adhominem.py, tools/adjorder.py, tools/alphaorder.py, tools/badground.py, tools/bicondforms.py, tools/boolforms.py … и ещё 25
-- **ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО**  
-  tools/gen_genesis_aggregate.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_areas.py, tools/gen_genesis_bignum.py, tools/gen_genesis_conversions.py … и ещё 25
 
 ## Держат 29 файлов
 
@@ -762,6 +765,8 @@
   scripts/unit_doors.py, tools/rugram.py
 - **КУЗНИЦА, НИЧЕГО НЕ ОБЪЯВИВШАЯ СОБОЮ**  
   scripts/genera_sidecar.py, tools/genus_atlas.py
+- **ЛИЦА — ПАКЕТОВ, У ВСЯКОГО ЯЗЫКА СВОИ**  
+  tools/gen_genesis_height.py, tools/gen_genesis_much.py
 - **ЛИЦО ГОВОРЯЩЕГО ЖИВЁТ В ГЛАГОЛЕ — В ХВОСТЕ СЛОВА, В ГОЛОВЕ СЛОВА, НА ОБОИХ ЕГО КОНЦАХ**  
   courts/personplace_court.py, tools/personplaceforms.py
 - **ЛИЦО ПОСЛЕ СЛОВА СТОИТ В ТОМ ПАДЕЖЕ, В КАКОМ СВОД ЕГО ПОСЛЕ ЭТОГО СЛОВА СТАВИЛ**  
