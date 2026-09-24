@@ -66,7 +66,7 @@ ITEMS = sorted((((_МНОЖЕСТВЕННЫЕ & _В_КЛАССАХ) - _БРИТ�
 # выпечка, сбор, еда, — минус всё, что те же двери объявили мерой (путь и время, вес, очки,
 # деньги, питьё мерой), и минус живое.
 _МЕРЫ = frozenset().union(*(getattr(verbthings, к) for к in ("РАССТОЯНИЕ_ВРЕМЯ", "ВЕС", "ОЧКИ",
-                                                              "ДЕНЬГИ", "ВРЕМЯ")))
+                                                              "ДЕНЬГИ", "ВРЕМЯ", "ПИТЬЁ_МЕРОЙ")))
 # КАЛОРИЯ СТОИ́Т В КЛАССЕ ЕДЫ («ate 300 calories»), но она мера еды, а не еда, и сказано это ЗДЕСЬ,
 # при упаковке, где различие и работает; глагол «съел» её берёт по праву.
 _МЕРА_ЕДЫ = frozenset({"calories"})
@@ -81,7 +81,13 @@ PACKAGEABLE = frozenset(
 НАХОДЯТ_А_НЕ_ПОКУПАЮТ = frozenset({"leaves", "sticks", "stones", "pieces"})
 ТОВАРЫ = frozenset(PACKAGEABLE - НАХОДЯТ_А_НЕ_ПОКУПАЮТ)
 
+# ВЕЩЬ ДЕРЖАНИЯ — ШИРЕ УПАКОВЫВАЕМОГО (24.09, дверь актов `verbthings.АКТЫ`): письмо не пакуют, но
+# его пишут, держат и отсылают; дерево не пакуют, но его сажают и растят. Держимое — всякая вещь
+# словаря, кроме меры и живого; упаковываемое есть его часть.
+ВЕЩИ = frozenset(w for w in ITEMS if w not in _МЕРЫ and w not in _МЕРА_ЕДЫ and w not in ANIMATE)
+
 # ВСЯКОЕ ОБЪЯВЛЕНИЕ О СЛОВАРЕ ПРОВЕРЯЕТСЯ ИМ ЖЕ.
+assert PACKAGEABLE <= ВЕЩИ, sorted(PACKAGEABLE - ВЕЩИ)
 assert PACKAGEABLE <= set(ITEMS), sorted(PACKAGEABLE - set(ITEMS))
 assert not (PACKAGEABLE & ANIMATE), sorted(PACKAGEABLE & ANIMATE)
 assert not (set(ITEMS) & _БРИТАНСКИЕ), sorted(set(ITEMS) & _БРИТАНСКИЕ)

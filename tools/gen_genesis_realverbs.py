@@ -52,6 +52,10 @@ SUB_PAIRS = [
     ("baked", "sold"),
     ("packed", "used"),
 ]
+# ВТОРОЙ ГЛАГОЛ ПАРЫ — АКТ ДВЕРИ, И ЕГО ЗНАК У НОСИТЕЛЯ ОБЪЯВЛЕН ТАМ (24.09, `verbthings.АКТЫ`): пара
+# прибавки прибавляет, пара убыли убавляет, — разойдись пара с дверью, дом падает при сборке.
+assert all(verbthings.знак_акта(акт, verbthings.НОСИТЕЛЬ) == 1 for _, акт in ADD_PAIRS), ADD_PAIRS
+assert all(verbthings.знак_акта(акт, verbthings.НОСИТЕЛЬ) == -1 for _, акт in SUB_PAIRS), SUB_PAIRS
 
 
 # ДВЕ ПОЛЯРНОСТИ — ДВА РОДА, И ЭТО СКАЗАНО КОММЕНТАРИЕМ НИЖЕ («the change verb v2 ADDS in
@@ -104,10 +108,14 @@ def pass_shows(pi):
         else:
             out.род = УБЫЛЬ
             c = a - b
+            # ЧАСТИЦА — У АКТА ДВЕРИ, А НЕ У РОДА (24.09, `verbthings.АКТЫ`): «away» стоял здесь при
+            # всяком глаголе убыли, и 120 страниц говорили «Tom used 1 page away», «Ida sold 1
+            # cookie away» — отдают away, а продают и тратят без него.
+            част = verbthings.частица(sv2)
             out.append(
                 f"{nm} {sv1} {a} {by_count(a, it)}. "
-                f"{nm} {sv2} {b} {by_count(b, it)} "
-                f"away. how many {it} does {nm} "
+                f"{nm} {sv2} {b} {by_count(b, it)}"
+                f"{f' {част}' if част else ''}. how many {it} does {nm} "
                 f"keep? {nm} keeps {c} "
                 f"{by_count(c, it)}"
                 f"{f': {a} − {b} = {c}' if forge else ''}."
@@ -131,7 +139,7 @@ def pass_shows(pi):
 ЗАЧЕМ_РОДА = {
     ПРИБАВКА: "«baked … then baked N more» — второй глагол пары прибавляет, и держание "
               "названо словом hold",
-    УБЫЛЬ: "«baked … then sold N away» — второй глагол уносит, и держание названо keep: "
+    УБЫЛЬ: "«baked … then sold N» — второй глагол уносит, и держание названо keep: "
            "алгебра покупает каждый закон со СВОИХ показов",
 }
 

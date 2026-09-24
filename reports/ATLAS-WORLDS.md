@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486192 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486462 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -629,7 +629,7 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 48149.
+Миров 25, строк 48419.
 
 - **`notationvar`** (10696 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
@@ -651,14 +651,14 @@
   the METALANGUAGE OF PROOF in both tongues, where every word stands at content the court recomputes: a THEOREM with its CONDITION and CONCLUSION named at numbers, a DEFINITION with a case under it and a case refused, an AXIOM taken without proof, a LEMMA sho…
 - **`algebra`** (1792 строк; recompute, whole_only, unsigned_only)  
   **ЗНАК МАТЕМАТИКИ, НАЗВАННЫЙ НА ТРЁХ ЯЗЫКАХ, И ТОЖДЕСТВО, ПРОВЕРЕННОЕ ПОДСТАНОВКОЙ: «\gamma называется гамма», «\Gamma heisst grosses gamma», «\emptyset is called empty set»** — и рядом «при x = …», «чему равно …».
+- **`items`** (1673 строк; recompute, declared, whole_only, unsigned_only)  
+  **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
 - **`inquiry_pl_tr`** (1537 строк; recompute, declared, whole_only)  
   **the ladder of inquiry in POLISH and TURKISH, where the QUESTION ITSELF STOPS BEING PUNCTUATION: Polish asks with a WORD («czy»), Turkish with a SEPARATE PARTICLE at the end that AGREES BY VOWEL HARMONY with the word before it** — four written forms of one…
 - **`genus_diff`** (1485 строк; declared, whole_only)  
   **DEFINITIONS BY GENUS AND DIFFERENCE** — THE GENUS, THE DIFFERENCE AND FOUR QUESTIONS OF ONE FACT IN ONE LINE (the measure of the shelf, 03.09: «связка без числа» — a copula without a number — is fourteen per cent of the sentences of books, the largest kin…
 - **`inquiry_es_it`** (1480 строк; recompute, whole_only)  
   the ladder of inquiry in SPANISH and ITALIAN, with the marks those tongues require and no others: the inverted question mark that opens a Spanish question, and the accent that separates «sí» from «si»
-- **`items`** (1403 строк; recompute, declared, whole_only, unsigned_only)  
-  **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
 - **`equation`** (1366 строк; recompute, whole_only)  
   **the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 1…
 - **`mathfound`** (1352 строк; declared, recompute, finite_explicit_only)  

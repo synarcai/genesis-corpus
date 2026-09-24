@@ -3362,10 +3362,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 47191302,
+      "size": 47219497,
       "tiers": [],
       "text": "mix",
-      "lines": 486192
+      "lines": 486462
     },
     {
       "name": "fuseprep",
@@ -7094,7 +7094,7 @@
     {
       "name": "items",
       "file": "datasets/genesis_items.txt",
-      "genre": "THE THING NAMED BEFORE IT IS COUNTED — declared until 12.09 in eight words. SINCE 23.09 THE THINGS ARE OUR LEXICON (tools/gsm_items.py: the en pack's nouns in the classes of tools/verbthings.py), not the census of the public bands; counting frames and bare forms carry things and the living, never measures; the chain of acts is written of letters and cards («wrote — sent — wrote more») and, since the same day, of collected things («collected — gave away — collected more»): held by two things only, the first chain left the house 21 times more skewed than [HOUSE SKEW] allows, and the second is the same construction over the twenty-six things the verb door declares collectable. The history below is the world before the rewrite. Measured 12.09: 2357 lines, English only; 1391 asking and 1253 carrying an equals sign. The world does two deeds and the first pays for the second. IT NAMES: 812 lines where a thing simply IS somewhere or is liked or looked at («the apples are on the table», «umar likes the apps», «vera looks at the year»), 228 opening with «there are» and 122 asking «what are the …?» — a bare inventory with no arithmetic in it at all. IT COUNTS: 305 lines run a ledger of three steps over the very same things («ida made 3 roses. ida sold 1 of them. then ida made 1 more roses»), and 1253 ask «how many». A READER CANNOT COUNT WHAT HE CANNOT NAME: the naming half is not filler but the ground of the counting half, and that is why the act of this world is `name` though half its lines add and subtract. The things are deliberately strange — acres, apps, calories, vlogs — so that the answer cannot come from knowing the noun. Boundary: whole totals only and no negative value in 2357 lines, both measured; 650 lines add and 908 subtract, and a holding never falls below none. SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
+      "genre": "THE THING NAMED BEFORE IT IS COUNTED — declared until 12.09 in eight words. SINCE 23.09 THE THINGS ARE OUR LEXICON (tools/gsm_items.py: the en pack's nouns in the classes of tools/verbthings.py), not the census of the public bands; counting frames and bare forms carry things and the living, never measures; the chain of acts is written of letters and cards («wrote — sent — wrote more») and, since the same day, of collected things («collected — gave away — collected more»): held by two things only, the first chain left the house 21 times more skewed than [HOUSE SKEW] allows, and the second is the same construction over the twenty-six things the verb door declares collectable. The history below is the world before the rewrite. Measured 12.09: 2357 lines, English only; 1391 asking and 1253 carrying an equals sign. The world does two deeds and the first pays for the second. IT NAMES: 812 lines where a thing simply IS somewhere or is liked or looked at («the apples are on the table», «umar likes the apps», «vera looks at the year»), 228 opening with «there are» and 122 asking «what are the …?» — a bare inventory with no arithmetic in it at all. IT COUNTS: 305 lines run a ledger of three steps over the very same things («ida made 3 roses. ida sold 1 of them. then ida made 1 more roses»), and 1253 ask «how many». A READER CANNOT COUNT WHAT HE CANNOT NAME: the naming half is not filler but the ground of the counting half, and that is why the act of this world is `name` though half its lines add and subtract. The things are deliberately strange — acres, apps, calories, vlogs — so that the answer cannot come from knowing the noun. Boundary: whole totals only and no negative value in 2357 lines, both measured; 650 lines add and 908 subtract, and a holding never falls below none. SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words. SINCE 24.09 THE SIGN OF AN ACT IS THE DOOR'S (tools/verbthings.py, АКТЫ: where an act moves the thing from and to — the bearer, a named container, another holder, nothing): two genera write every act of the door against a holding — «Pia had 4 bottles. Pia threw 1 bottle away. how many bottles does Pia have now? Pia has 3 bottles: 4 − 1 = 3.» and «there are 13 books in the basket. Sven removed 10 books. how many books are in the basket now? 13 − 10 = 3.» — 270 pages of 22 acts at the bearer and 5 at the place; the pairs of increase and decrease and the particle «away» of the chains are read from the same door, and the old pages stand byte for byte.",
       "act": [
         "name"
       ],
@@ -10868,7 +10868,7 @@
     {
       "name": "realverbs",
       "file": "datasets/genesis_realverbs.txt",
-      "genre": "ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ГЛАГОЛАМИ РЕМЕСЛА: baked, collected, packed, wrote — «Carlos baked 11 cookies. Carlos sold 1 cookie away. how many cookies does Carlos keep?». Третий в семье с `gsmlex` и `gsmwide`, и отличие его в том, что действие здесь НАСТОЯЩЕЕ, а не общее: печь, собирать, паковать, писать — и предмет всякий раз тот, который этим действием и делается. Мир меньше обоих соседей и нарочно (замер 12.09: 240 строк, 240 вопросов, 120 равенств, ни одной кириллицы).",
+      "genre": "ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ГЛАГОЛАМИ РЕМЕСЛА: baked, collected, packed, wrote — «Carlos baked 11 cookies. Carlos sold 1 cookie. how many cookies does Carlos keep?» (с 24.09 без «away»: частица — у акта двери `verbthings.АКТЫ`, а продают без неё; 120 страниц говорили «sold 1 cookie away», «used 1 page away»). Третий в семье с `gsmlex` и `gsmwide`, и отличие его в том, что действие здесь НАСТОЯЩЕЕ, а не общее: печь, собирать, паковать, писать — и предмет всякий раз тот, который этим действием и делается. Мир меньше обоих соседей и нарочно (замер 12.09: 240 строк, 240 вопросов, 120 равенств, ни одной кириллицы).",
       "act": [
         "recount"
       ],
@@ -11655,10 +11655,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39090124,
+      "size": 39118319,
       "tiers": [],
       "text": "mix",
-      "lines": 437725
+      "lines": 437995
     },
     {
       "name": "school_biling_v2c",
