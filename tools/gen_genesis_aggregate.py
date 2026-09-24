@@ -20,7 +20,7 @@ from layer import Сбор, emit
 
 
 from animacy import ANIMATE
-from gsm_items import ITEMS as CENSUS_ITEMS, ИМЕЮТ
+from gsm_items import ITEMS as CENSUS_ITEMS, ИМЕЮТ, по_кругу
 from plural import by_count
 
 # ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
@@ -60,11 +60,7 @@ ITEMS = LOCAL + [w for w in CENSUS_ITEMS
 # стоит прежний, а мера в круге уступает место следующей вещи, какую лицо имеет (`gsm_items.ИМЕЮТ`):
 # честные страницы остаются байт в байт, сменяются лишь лживые.
 def вещь_круга(k):
-    for шаг in range(len(ITEMS)):
-        it = ITEMS[(k + шаг) % len(ITEMS)]
-        if it in ИМЕЮТ:
-            return it
-    raise AssertionError("в круге нет ни одной вещи, какую лицо имеет")
+    return по_кругу(ITEMS, k, ИМЕЮТ)
 # (question tail, answer verb, plural subject) —
 # «they» is the surface GSM8K actually uses, and
 # it keeps the list word in the ANSWER, where the

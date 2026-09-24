@@ -93,6 +93,21 @@ PACKAGEABLE = frozenset(
 ИМЕЮТ = ВЕЩИ | frozenset(w for w in ITEMS
                          if w in verbthings.ДЕНЬГИ or w in verbthings.ОЧКИ or w in ANIMATE)
 
+
+
+def по_кругу(круг, k, годные):
+    """k-е слово круга; слово вне «годных» уступает следующему годному (24.09, строка 35 реестра).
+
+    НЕГОДНОЕ УСТУПАЕТ МЕСТО, А НЕ СДВИГАЕТ КРУГ: честные страницы стоят, где стояли, и меняются
+    лишь те, где стояла мера при лице («Hugo has 2 inches») или мера, делимая как вещь («23 calories
+    shared among 5 players»). Одно правило для всех домов круга, а не копия в каждом."""
+    for шаг in range(len(круг)):
+        слово = круг[(k + шаг) % len(круг)]
+        if слово in годные:
+            return слово
+    raise AssertionError("в круге нет ни одного годного слова")
+
+
 # ВСЯКОЕ ОБЪЯВЛЕНИЕ О СЛОВАРЕ ПРОВЕРЯЕТСЯ ИМ ЖЕ.
 assert PACKAGEABLE <= ВЕЩИ, sorted(PACKAGEABLE - ВЕЩИ)
 assert PACKAGEABLE <= set(ITEMS), sorted(PACKAGEABLE - set(ITEMS))

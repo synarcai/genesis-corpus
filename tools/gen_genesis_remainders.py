@@ -31,7 +31,7 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402 — счётные формы объявлены пакетом, не домом
-from gsm_items import ITEMS  # noqa: E402
+from gsm_items import ITEMS, ВЕЩИ, по_кругу  # noqa: E402
 from animacy import ANIMATE  # noqa: E402
 from layer import Сбор, emit  # noqa: E402
 from plural import by_count  # noqa: E402
@@ -86,7 +86,10 @@ def pass_shows(pass_i):
     for i, (a, b) in enumerate(PAIRS):
         q, r = divmod(a, b)
         assert r and a == b * q + r, (a, b)
-        thing = THINGS[(pass_i * 5 + i * 3) % len(THINGS)]
+        # ДЕЛЯТ ВЕЩЬ, А НЕ МЕРУ (24.09, сестра строки 35 реестра): «23 calories shared among 5 players»,
+        # «17 miles shared among 5 players» — 33 страницы из 336; мера, деньги и очки уступают
+        # следующей вещи двери, честные страницы стоят, где стояли
+        thing = по_кругу(THINGS, pass_i * 5 + i * 3, ВЕЩИ)
         who = SHARERS[(pass_i * 3 + i) % len(SHARERS)]
         out.род = ТОЖДЕСТВО
         out.язык = "—"

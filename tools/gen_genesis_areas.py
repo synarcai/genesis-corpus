@@ -70,40 +70,71 @@ def ан(множ, n):
 # ПОНЯТИЕ СВОИМИ СЛОВАМИ — одно объявление на язык; область его и держит.
 ЧТО_ЭТО_СТРАНИЦЫ = (
     ("en", "what is an exercise? an exercise is a task for practice: the textbook gives it and the student "
-           "solves it."),
-    ("ru", "что такое упражнение? упражнение — задание для тренировки: учебник его даёт, ученик решает."),
+           "solves it. one exercise trains one skill."),
+    ("ru", "что такое упражнение? упражнение — задание для тренировки: учебник его даёт, ученик решает. "
+           "одно упражнение тренирует один навык."),
+    ("en", "what is a lesson? a lesson is a part of a textbook: one lesson teaches one topic and ends with "
+           "exercises."),
+    ("ru", "что такое урок? урок — часть учебника: один урок учит одной теме и кончается упражнениями."),
     ("en", "what is an appendix? an appendix is a part of a book that comes after its lessons: tables, "
            "answers and notes."),
     ("ru", "что такое приложения учебника? приложения — части книги после её уроков: таблицы, ответы, "
            "справки."),
-    ("en", "what is an email? an email is a letter sent over the network from one address to another."),
-    ("ru", "что такое электронное письмо? электронное письмо — письмо, отправленное по сети с одного адреса "
-           "на другой."),
+    ("en", "what is an email? an email is a letter sent over the network: one email goes from one address to "
+           "another."),
+    ("ru", "что такое электронное письмо? электронное письмо — письмо, отправленное по сети: одно письмо идёт "
+           "с одного адреса на другой."),
+    ("en", "what is a photo? a photo is a picture taken with a camera or a phone: one photo keeps one moment."),
+    ("ru", "что такое фотография? фотография — снимок камерой или телефоном: одна фотография — одно мгновение."),
     ("en", "what is an upload? an upload is a file sent from a phone or a computer to the network."),
     ("ru", "что такое загрузка? загрузка — файл, отправленный с телефона или компьютера в сеть."),
-    ("en", "what is an app? an app is a program installed on a phone."),
-    ("ru", "что такое приложения телефона? приложения — программы, установленные на телефоне."),
+    ("en", "what is an app? an app is a program installed on a phone: one app does one job, like a map or a "
+           "camera."),
+    ("ru", "что такое приложения телефона? приложения — программы, установленные на телефоне: одно приложение "
+           "делает одно дело — карта, камера, календарь."),
     ("en", "what is a recipe? a recipe tells which ingredients to take and which steps to follow to cook "
-           "a dish."),
+           "a dish: one recipe is for one dish."),
     ("ru", "что такое рецепт? рецепт — запись того, какие продукты взять и какие шаги сделать, чтобы "
-           "приготовить блюдо."),
+           "приготовить блюдо: один рецепт — для одного блюда."),
+    ("en", "what is a cookbook? a cookbook is a book of recipes: one cookbook holds dozens of recipes."),
+    ("ru", "что такое кулинарная книга? кулинарная книга — книга рецептов: в одной кулинарной книге десятки "
+           "рецептов."),
+    ("en", "what is a calorie? a calorie is a measure of energy: one calorie warms one gram of water by one "
+           "degree."),
+    ("ru", "что такое калория? калория — мера энергии: одна калория нагревает один грамм воды на один градус."),
     ("en", "what is tomato paste? it is tomatoes cooked down until thick."),
     ("ru", "что такое томатная паста? томатная паста — помидоры, уваренные до густоты."),
-    ("en", "what is a playground? a playground is a place where children play: slides, sandboxes and "
-           "swings."),
+    ("en", "what is a playground? a playground is a place where children play: one playground has slides, "
+           "sandboxes and swings."),
     ("ru", "что такое детская площадка? детская площадка — место, где играют дети: горки, песочницы, "
            "качели."),
     ("en", "who is a master craftsman? a master craftsman is one who makes things by hand with tools in a "
            "workshop."),
     ("ru", "кто такой мастер? мастер — тот, кто делает вещи руками и инструментами в мастерской."),
-    ("en", "what is a panel? a panel is a flat board from which the walls of a cabinet are made."),
-    ("ru", "что такое панели шкафа? панели — плоские доски, из которых собирают стенки шкафа."),
+    ("en", "what is a panel? a panel is a flat board from which the walls of a cabinet are made: one panel "
+           "makes one wall."),
+    ("ru", "что такое панели шкафа? панели — плоские доски, из которых собирают стенки шкафа: одна панель — "
+           "одна стенка."),
+    ("en", "what is a stool? a stool is a seat without a back: one stool seats one person and stands on three "
+           "or four legs."),
+    ("ru", "что такое табурет? табурет — сиденье без спинки: на одном табурете сидит один человек, а стоит он "
+           "на трёх или четырёх ножках."),
+    ("en", "what is a leg of a stool? a leg is a post that holds the seat up: one leg stands under each corner "
+           "of the seat."),
+    ("ru", "что такое ножка табурета? ножка — стойка, на которой держится сиденье: под каждым углом сиденья "
+           "стоит одна ножка."),
     ("en", "what is a magazine? a magazine is a publication that comes out in issues: a new issue every "
-           "week or every month."),
+           "week or every month, and one magazine comes out in many issues."),
     ("ru", "что такое журналы? журналы — издания, которые выходят номерами: новый номер каждую неделю "
-           "или каждый месяц."),
-    ("en", "what is a newspaper? a newspaper is a publication that reports the events of the day."),
-    ("ru", "что такое газета? газета — издание, которое рассказывает о событиях дня."),
+           "или каждый месяц, и один журнал выходит многими номерами."),
+    ("en", "what is a newspaper? a newspaper is a publication that reports the events of the day: one "
+           "newspaper tells of many events."),
+    ("ru", "что такое газета? газета — издание, которое рассказывает о событиях дня: одна газета рассказывает о "
+           "многих событиях."),
+    ("en", "what is an event? an event is something that happens at one time in one place: one event can "
+           "take a whole page of a newspaper."),
+    ("ru", "что такое событие? событие — то, что случилось в одно время в одном месте: одно событие может "
+           "занять целую страницу газеты."),
 )
 
 
@@ -122,6 +153,7 @@ def _числа(семя, lo, hi):
     "журналы_в_киоске": (10, 40), "газеты_в_киоске": (5, 20),
     "кулинарные_книги": (2, 8), "рецепты_в_книге": (20, 60),
     "табуреты": (2, 9), "ножки_табурета": (3, 4),
+    "съеденные_печенья": (2, 6), "калории_печенья": (40, 90),
     "шаги_рецепта": (3, 10),
     "загрузки_за_полдня": (1, 10), "события_в_газете": (5, 20),
 }
@@ -199,6 +231,15 @@ def по_стольку(шаг, i):
                    f"slides are in the park? {n} × {k} = {n * k}."),
             ("ru", f"в парке {ру('площадка', n)}, на каждой {ру('горка', k)}. сколько горок в парке? "
                    f"{n} × {k} = {n * k}.")]
+    # КАЛОРИЯ — МЕРА ЕДЫ, И ЕЁ СЪЕДАЮТ, А НЕ ИМЕЮТ (24.09): «Hugo has 2 calories» снят строкой 35 реестра,
+    # и слово жило лишь в «23 calories shared among 5 players»; на кухне оно стоит там, где ему место
+    имя_en, имя_ru = ИМЕНА_EN[(шаг + i * 3) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i * 3) % len(ИМЕНА_RU)]
+    съел = rugram.прошедшее("съел", РОД_ЛИЦА[имя_ru])
+    n, k = _в("съеденные_печенья", с + 5), _в("калории_печенья", с * 3 + 7)
+    вон += [("en", f"{имя_en} ate {ан('cookies', n)}, and each cookie has {ан('calories', k)}. how many calories "
+                   f"did {имя_en} eat? {n} × {k} = {n * k}."),
+            ("ru", f"{имя_ru} {съел} {ру('печенье', n)}, и в каждом {ру('калория', k)}. сколько калорий "
+                   f"{съел} {имя_ru}? {n} × {k} = {n * k}.")]
     n, k = _в("табуреты", с + 3), _в("ножки_табурета", с)
     мастер_ru, пол_мастера, он_ru = _мастер(с + 2)
     вон += [("en", f"the master made {ан('stools', n)}, and each stool has {ан('legs', k)}. how many legs do "

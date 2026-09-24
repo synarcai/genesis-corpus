@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 486927 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 486985 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 162, строк 253854.
+Миров 162, строк 253912.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -221,6 +221,8 @@
   **interaction transcripts v0 (mandate 02.09, L5: «обучать и интерактиву»): one show in several lines by the declared form declarations/STENOGRAM.md** — header with the environment (a grid), steps «action → response» where the response is the environment's w…
 - **`need`** (540 строк; recompute, declared, whole_only)  
   **THE CONDITIONS OF A TASK** — WHAT IS NEEDED FOR AN ANSWER, AND WHAT IS NOT. Measured 11.09 across the 249 show worlds: «не хватает данных», «нельзя ответить», «not enough data» — NONE; «лишнее условие», «не нужно для ответа» — NONE. Every task of the corp…
+- **`areas`** (523 строк; recompute, declared, whole_only, unsigned_only)  
+  **ОБЛАСТИ ОБЫДЕННОГО (24.09, строка 34 реестра пробелов): учебник, телефон, кухня, двор, мастерская, газетный киоск** — вещи области, как она устроена: вместилище и две его вещи («в учебнике 8 уроков и 3 приложения. сколько частей в учебнике? 8 + 3 = 11»), …
 - **`timeunits`** (504 строк; recompute, whole_only)  
   **TIME UNITS IN NINE LANGUAGES** — «сколько минут в двух часах? 120: 2 × 60 = 120.», hour → minutes, minute → seconds, week → days, day → hours, for two to five of the larger unit, the count in words for two to four in the case the phrase needs (в двух часа…
 - **`money`** (500 строк; recompute, unsigned_only)  
@@ -243,8 +245,6 @@
   **«MORE THAN» AND «TIMES AS MANY» IN EIGHT LANGUAGES (the owner's word: every language in surplus; the comparison worlds say them in en/ru): two holdings, then the difference or the ratio with its ledger, as statement and as question answered by the stateme…
 - **`divshare`** (466 строк; recompute, whole_only)  
   **DIVIDING BY A SHARE** — division DOES NOT ALWAYS DECREASE, and the question itself sounds different.
-- **`areas`** (465 строк; recompute, declared, whole_only, unsigned_only)  
-  **ОБЛАСТИ ОБЫДЕННОГО (24.09, строка 34 реестра пробелов): учебник, телефон, кухня, двор, мастерская, газетный киоск** — вещи области, как она устроена: вместилище и две его вещи («в учебнике 8 уроков и 3 приложения. сколько частей в учебнике? 8 + 3 = 11»), …
 - **`action_measure_langs`** (462 строк; recompute, whole_only)  
   **ACTION MEASURE IN SEVEN MORE LANGUAGES (d5's genus, the owner's word: every language in surplus)** — «der Hase sprang 14 Zentimeter. wie weit sprang der Hase? 14 Zentimeter.», «le lapin a sauté de 14 centimètres.», «królik skoczył na 14 centymetrów.», the…
 - **`factor`** (456 строк; recompute, whole_only)  
