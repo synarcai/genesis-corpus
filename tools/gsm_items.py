@@ -86,6 +86,13 @@ PACKAGEABLE = frozenset(
 # словаря, кроме меры и живого; упаковываемое есть его часть.
 ВЕЩИ = frozenset(w for w in ITEMS if w not in _МЕРЫ and w not in _МЕРА_ЕДЫ and w not in ANIMATE)
 
+# ЧТО ЛИЦО ИМЕЕТ (24.09, строка 35 реестра пробелов): вещи, деньги, очки и живых — «Ava has 5 coins»,
+# «Ben has 6 points», «Dan has 2 friends» верны; путь, вес, время, объём и калория лицу не принадлежат —
+# «Hugo has 2 inches», «Elena has 2 days» грамматичны и ложны о мире. Деньги и очки суть меры для домов
+# мер, но держат их лица, и потому они здесь.
+ИМЕЮТ = ВЕЩИ | frozenset(w for w in ITEMS
+                         if w in verbthings.ДЕНЬГИ or w in verbthings.ОЧКИ or w in ANIMATE)
+
 # ВСЯКОЕ ОБЪЯВЛЕНИЕ О СЛОВАРЕ ПРОВЕРЯЕТСЯ ИМ ЖЕ.
 assert PACKAGEABLE <= ВЕЩИ, sorted(PACKAGEABLE - ВЕЩИ)
 assert PACKAGEABLE <= set(ITEMS), sorted(PACKAGEABLE - set(ITEMS))

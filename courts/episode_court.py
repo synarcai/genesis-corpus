@@ -34,7 +34,7 @@ sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import onepattern  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
-from gsm_items import ITEMS, PACKAGEABLE  # noqa: E402
+from gsm_items import ITEMS, PACKAGEABLE, ИМЕЮТ  # noqa: E402
 from animacy import ANIMATE  # noqa: E402
 from plural import singular
 import verbthings  # noqa: E402
@@ -616,6 +616,12 @@ _ЧАСТИЦЫ = _или(ч for ч in map(verbthings.частица, verbthings
 # 120 страниц мира realverbs, где рамка убыли ставила «away» всякому глаголу. Частица, какой дверь
 # акту не даёт, есть ложь языка при верной арифметике; «gave 3 apples away» верно — дверь её даёт.
 ЧАСТИЦА_ПОСЛЕ = re.compile(rf"\b([a-z]+) \d+ [a-z]+ ({_ЧАСТИЦЫ})\b")
+# МЕРА ПРИ ЛИЦЕ (24.09, строка 35 реестра пробелов): «Hugo has 2 inches», «Elena has 2 days. Ava has 3
+# days. how many days do Elena and Ava hold altogether?» — 104 страницы мира aggregate; счёт верен, и потому
+# ни один суд их не видел. Лицо (имя пакета) имеет, держит и владеет вещами, деньгами, очками и живыми
+# (`gsm_items.ИМЕЮТ`); путь, вес, время, объём, калория при лице — ложь о мире. «a day has 24 hours» не
+# судится: подлежащее не лицо.
+ЛИЦО_ИМЕЕТ = re.compile(r"\b([a-z]+) (?:has|holds|owns|have|hold|own) \d+ ([a-z]+)\b")
 НАКОПЛЕНИЕ = re.compile(
     rf"^({С}) ({_или(а for а, _о in ПАРЫ_НАКОПЛЕНИЯ)}) (\d+) ({С})\. \1 "
     rf"({_или(о for _а, о in ПАРЫ_НАКОПЛЕНИЯ)}) (\d+) of them( (?:{_ЧАСТИЦЫ}))?\. then \1 \2 (\d+)(?: more)? ({С})\. "
@@ -1003,6 +1009,10 @@ def _судить(строка, слой=None):
             return True, False
     for г, ч in ЧАСТИЦА_ПОСЛЕ.findall(с):
         if г in verbthings.АКТЫ and verbthings.частица(г) != ч:
+            return True, False
+    for кто, вещь in ЛИЦО_ИМЕЕТ.findall(с):
+        много = вещь if вещь in ITEMS else МНОЖЕСТВЕННОЕ.get(вещь)
+        if кто in ИМЕНА_EN and много in ITEMS and много not in ИМЕЮТ:
             return True, False
     if not имена_на_месте(с, слой):
         return True, False
@@ -1416,6 +1426,29 @@ def _проба_актов():
     return беды, len(страницы), порч
 
 
+def _проба_меры():
+    """ПРОБА ЗАКОНА «МЕРА ПРИ ЛИЦЕ» (24.09): страница суммы двоих дома aggregate с вещью, заменённой мерой
+    (всякой из тех, каких лицо не имеет, по кругу), — ложь; сама страница — истина или не этого суда."""
+    import gen_genesis_aggregate as Д  # noqa: PLC0415 — дом зовёт палату, палата — этот суд
+    меры = sorted(set(ITEMS) - ИМЕЮТ)
+    беды, порч = [], 0
+    for k, страница in enumerate(sorted(Д.ПОКАЗЫ)):
+        с = страница.lower()
+        м = re.search(r" has \d+ ([a-z]+)\.", с)
+        много = м and (м.group(1) if м.group(1) in ITEMS else МНОЖЕСТВЕННОЕ.get(м.group(1)))
+        if not много:
+            continue
+        if _судить(с)[1] is False:
+            беды.append(f"истинная страница зовётся ложью: {страница[:90]}")
+            continue
+        мера = меры[k % len(меры)]
+        порча = re.sub(rf"\b{singular(много)}\b", singular(мера), re.sub(rf"\b{много}\b", мера, с))
+        порч += 1
+        if _судить(порча) != (True, False):
+            беды.append(f"мера при лице прошла: {порча[:90]}")
+    return беды, порч
+
+
 def main():
     явные = [а for а in sys.argv[1:] if not а.startswith("-")]
     пути = [п for п in обход(явные) if п.is_file()]
@@ -1426,6 +1459,11 @@ def main():
     for б in беды_проб[:4]:
         print(f"  ПРОБА АКТОВ: {б}")
     print(f"  проба актов двери: страниц {страниц_проб}, порч {порч_проб}, бед {len(беды_проб)}")
+    беды_меры, порч_меры = _проба_меры()
+    for б in беды_меры[:4]:
+        print(f"  ПРОБА МЕРЫ: {б}")
+    print(f"  проба меры при лице: порч {порч_меры}, бед {len(беды_меры)}")
+    беды_проб = беды_проб + беды_меры
     ложных = судимых = 0
     примеры = []
     for путь in пути:
