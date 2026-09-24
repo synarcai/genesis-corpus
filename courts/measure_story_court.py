@@ -2,7 +2,9 @@
 """[MEASURED STORIES COURT] — the line is the table, or it is a lie.
 
 A show of the measured-story world names two measured acts and their
-difference, or a pair priced one by the other and its division. The court
+difference, or one act compared with another by a word of distance («32
+metres farther than the fox», «32 metres less than the horse», «how much
+farther did …»), or a pair priced one by the other and its division. The court
 reads it back through the same house (tools/measurestory.py): the actor, the
 verb with its declared past tense and preposition, the measure with the count
 form its number asks for, the multiplier word, and the ledger of primitive

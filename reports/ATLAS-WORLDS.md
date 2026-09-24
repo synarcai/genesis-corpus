@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 487145 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 487683 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 162, строк 254072.
+Миров 162, строк 254610.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -93,6 +93,8 @@
   **A MULTIPLE, A DIFFERENCE AND A SUM** — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09 — the G1-ATTACK genus «multiplicative relation + sum»; SCENES REWRITTEN 23.09 by the owner's word: the worker bees of g1.6, the books of g1.32 and the cards of g1.37 …
 - **`ninelang`** (1800 строк; recompute, whole_only)  
   **THREE SHAPES IN NINE LANGUAGES** — one place, nine different words (07.09).
+- **`measure_story`** (1578 строк; recompute, whole_only)  
+  **MEASURED STORIES** — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09).
 - **`physics`** (1472 строк; recompute, whole_only)  
   **ЗАКОН ФИЗИКИ, СКАЗАННЫЙ ФОРМУЛОЙ И ТУТ ЖЕ ПРОЙДЕННЫЙ ЧИСЛАМИ С ЕДИНИЦАМИ: «что даёт работа = сила × путь при 20 и 3? работа = сила × путь; 20 ньютонов × 3 метра = 60 джоулей», «напряжение = ток × сопротивление; 3 ампера × 12 ом = 36 вольт». Формула стои́т…
 - **`totalsubj`** (1440 строк; recompute, whole_only)  
@@ -133,8 +135,6 @@
   **THE CLOCK** — the carry that is sixty, not ten (06.09).
 - **`nature`** (1050 строк; declared, whole_only)  
   **NATURE** — the counted facts about the living and about things, and temperature (the owner asked for a partner able «to talk on different topics»; the topics house gave definitions and the calendar, this one gives what a person KNOWS about the world and w…
-- **`measure_story`** (1040 строк; recompute, whole_only)  
-  **MEASURED STORIES** — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09).
 - **`handy`** (1022 строк; recompute, whole_only)  
   **HANDY COUNTING** — A LAW APPLIED FOR THE SAKE OF EASE. Measured 11.09 across the 237 show worlds: «удобно», «перегруппиру», «дополнение до десятка» — NONE. The corpus counts in columns and by rule, but nowhere shows that counting can be MADE EASIER by mov…
 - **`share`** (996 строк; recompute, whole_only)  

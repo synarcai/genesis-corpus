@@ -1,9 +1,9 @@
 {
   "что_есть_образец": "ПЕРВАЯ страница рода, обрезанная до 120 знаков. О ПРОЧИХ страницах того же рода не говорит НИЧЕГО: род на восемьсот страниц показан здесь одной. Вопрос о страницах, заданный образцу, получит ответ о роде — и ответ этот будет похож на правду. Меру по страницам даёт сайдкар datasets/GENESIS-FULL.genera.tsv (номер строки → дом · род).",
   "домов": 317,
-  "родов": 1877,
-  "различных": 1582,
-  "страниц": 346668,
+  "родов": 1880,
+  "различных": 1585,
+  "страниц": 347156,
   "домов_без_словаря_страниц": 1,
   "по_объявлению": {
     "РОДЫ": 260,
@@ -8225,6 +8225,24 @@
           "род": "пара_бол",
           "страниц": 96,
           "образец": "a ring and a chain cost 174 dollars together. the ring costs twice as much as the chain. how much does the ring cost? 2 ",
+          "зачем": null
+        },
+        {
+          "род": "сравнение_дальше",
+          "страниц": 166,
+          "образец": "the squirrel jumped 6 inches. the rabbit jumped 17 inches farther than the squirrel. how far did the rabbit jump? the ra",
+          "зачем": null
+        },
+        {
+          "род": "сравнение_меньше",
+          "страниц": 156,
+          "образец": "the rabbit jumped 52 feet. the squirrel jumped 33 feet less than the rabbit. how far did the squirrel jump? the squirrel",
+          "зачем": null
+        },
+        {
+          "род": "насколько_дальше",
+          "страниц": 166,
+          "образец": "the rabbit jumped 81 metres. the squirrel jumped 32 metres. how much higher did the rabbit jump than the squirrel? 49 me",
           "зачем": null
         }
       ],
