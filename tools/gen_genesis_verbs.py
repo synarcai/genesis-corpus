@@ -116,7 +116,11 @@ VERBS = [
 # ЗАМЕР ДО ПРАВКИ: 45 таких страниц в мире `verbs`. Род глагола объявлен ЗДЕСЬ, а не в
 # общем `verbthings`, — по шраму 06.09, когда семь глаголов моста, внесённых в общий род,
 # уронили суд эпизода 986 ложными строками в одиннадцати мирах.
-ДЕРЖИТ = frozenset({"buy", "make", "catch", "get", "grow", "hold", "put"})
+# «PUT» НЕ ДЕРЖАТ (24.09): положенное уходит от носителя на полку и в коробку, и «Ida put 4 marbles. Ida
+# put 1 marble more. how many marbles does Ida hold now? Ida holds 5 marbles» — ложь о мире при верном
+# счёте, 10 страниц. Дверь актов (`verbthings.АКТЫ`) того же мнения: положенное носителю не прибавляется.
+# Вопрос о «put» — вопрос о самом акте: «how many marbles did Ida put in all?».
+ДЕРЖИТ = frozenset({"buy", "make", "catch", "get", "grow", "hold"})
 
 
 def вопрос_суммы(base, past, s3, a, it, n):

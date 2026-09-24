@@ -113,12 +113,16 @@ def вещи_акта(акт):
                   if verbthings.берёт(акт, it) and (акт not in КУПЛЯ_ПРОДАЖА or it in ТОВАРЫ))
 
 
+# акт, чьё место обязано стоять при нём («put 3 books on the shelf»), эти роды не пишут: место здесь
+# названо лишь зачином страницы, а не при акте (`verbthings.МЕСТО_ПРИ_АКТЕ`)
 АКТЫ_НОСИТЕЛЯ = [акт for акт in verbthings.АКТЫ
-                 if verbthings.знак_акта(акт, НОСИТЕЛЬ) is not None and вещи_акта(акт)]
+                 if verbthings.знак_акта(акт, НОСИТЕЛЬ) is not None and вещи_акта(акт)
+                 and акт not in verbthings.МЕСТО_ПРИ_АКТЕ]
 # МЕСТО ДЕРЖИТ УПАКОВЫВАЕМОЕ: на полке и в корзине лежат вещи в руке, а не письма и деревья
 АКТЫ_МЕСТА = [акт for акт in verbthings.АКТЫ
               if verbthings.знак_акта(акт, МЕСТО) is not None
-              and [it for it in вещи_акта(акт) if it in PACKAGEABLE]]
+              and [it for it in вещи_акта(акт) if it in PACKAGEABLE]
+              and акт not in verbthings.МЕСТО_ПРИ_АКТЕ]
 
 
 def _сколько(seed, n, знак):

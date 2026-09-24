@@ -622,6 +622,14 @@ _ЧАСТИЦЫ = _или(ч for ч in map(verbthings.частица, verbthings
 # (`gsm_items.ИМЕЮТ`); путь, вес, время, объём, калория при лице — ложь о мире. «a day has 24 hours» не
 # судится: подлежащее не лицо.
 ЛИЦО_ИМЕЕТ = re.compile(r"\b([a-z]+) (?:has|holds|owns|have|hold|own) \d+ ([a-z]+)\b")
+# СУММА УНОСА — НЕ ДЕРЖАНИЕ (24.09): «Ida put 4 marbles. Ida put 1 marble more. how many marbles does Ida
+# hold now? Ida holds 5 marbles» — десять страниц мира форм глагола: сумма актов, уносящих вещь от
+# носителя (дверь актов: знак у носителя −1), спрошена держанием. Страница «had … threw 3 away … have now?»
+# сюда не подходит: там держание стоит против акта, а не сумма актов вместо держания.
+СУММА_АКТОВ = re.compile(rf"^({С}) (?:has )?({С}) \d+ {С}\. \1 (?:has )?({С}) (?:\d+ {С} more|\d+ more {С})\. "
+                         rf"how many {С} (?:does|do) \1 (?:hold|have|keep|own)\b")
+СРАВНЕНИЕ_АКТОВ = re.compile(rf"^({С}) (?:has )?({С}) \d+ {С}\. ({С}) (?:has )?({С}) \d+ more {С} than \1\. "
+                             rf"how many {С} (?:does|do) \3 (?:hold|have|keep|own)\b")
 НАКОПЛЕНИЕ = re.compile(
     rf"^({С}) ({_или(а for а, _о in ПАРЫ_НАКОПЛЕНИЯ)}) (\d+) ({С})\. \1 "
     rf"({_или(о for _а, о in ПАРЫ_НАКОПЛЕНИЯ)}) (\d+) of them( (?:{_ЧАСТИЦЫ}))?\. then \1 \2 (\d+)(?: more)? ({С})\. "
@@ -1009,6 +1017,10 @@ def _судить(строка, слой=None):
             return True, False
     for г, ч in ЧАСТИЦА_ПОСЛЕ.findall(с):
         if г in verbthings.АКТЫ and verbthings.частица(г) != ч:
+            return True, False
+    for образец, место_акта in ((СУММА_АКТОВ, 3), (СРАВНЕНИЕ_АКТОВ, 4)):
+        м_акта = образец.match(с)
+        if м_акта and verbthings.знак_акта(м_акта.group(место_акта), verbthings.НОСИТЕЛЬ) == -1:
             return True, False
     for кто, вещь in ЛИЦО_ИМЕЕТ.findall(с):
         много = вещь if вещь in ITEMS else МНОЖЕСТВЕННОЕ.get(вещь)
@@ -1449,6 +1461,30 @@ def _проба_меры():
     return беды, порч
 
 
+def _проба_уноса():
+    """ПРОБА ЗАКОНА «СУММА УНОСА — НЕ ДЕРЖАНИЕ» (24.09): всякая страница мира форм глагола о «put»,
+    чей вопрос о самом акте («did Ida put in all? Ida put 5»), истинна; она же, спрошенная держанием
+    («does Ida hold now? Ida holds 5»), — ложь."""
+    import gen_genesis_verbs as Д  # noqa: PLC0415 — дом зовёт палату, палата — этот суд
+    беды, порч = [], 0
+    for страница in sorted(Д.ПОКАЗЫ):
+        с = страница.lower()
+        м = re.search(r"how many ([a-z]+) did ([a-z]+) put in all\? \2 put ", с)
+        if not м:
+            continue
+        if _судить(с)[1] is False:
+            беды.append(f"истинная страница зовётся ложью: {страница[:90]}")
+            continue
+        порча = с.replace(f"how many {м.group(1)} did {м.group(2)} put in all? {м.group(2)} put ",
+                          f"how many {м.group(1)} does {м.group(2)} hold now? {м.group(2)} holds ")
+        порч += 1
+        if _судить(порча) != (True, False):
+            беды.append(f"сумма уноса прошла держанием: {порча[:90]}")
+    if not порч:
+        беды.append("проба пуста: мир форм глагола не пишет «put … in all» — закон не проверен ничем")
+    return беды, порч
+
+
 def main():
     явные = [а for а in sys.argv[1:] if not а.startswith("-")]
     пути = [п for п in обход(явные) if п.is_file()]
@@ -1463,7 +1499,11 @@ def main():
     for б in беды_меры[:4]:
         print(f"  ПРОБА МЕРЫ: {б}")
     print(f"  проба меры при лице: порч {порч_меры}, бед {len(беды_меры)}")
-    беды_проб = беды_проб + беды_меры
+    беды_уноса, порч_уноса = _проба_уноса()
+    for б in беды_уноса[:4]:
+        print(f"  ПРОБА УНОСА: {б}")
+    print(f"  проба суммы уноса: порч {порч_уноса}, бед {len(беды_уноса)}")
+    беды_проб = беды_проб + беды_меры + беды_уноса
     ложных = судимых = 0
     примеры = []
     for путь in пути:
