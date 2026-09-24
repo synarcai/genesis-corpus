@@ -34,6 +34,7 @@ import json as _json
 import pathlib as _pathlib
 from rugram import МЕСТОИМЕНИЯ as _МЕСТ, СУФФИКС_ПРОШЕДШЕГО as _СУФ
 from rugram import прошедшее_при_числе as _при_числе  # «была 21 монета», «остался 1 шар» — у двери
+from rugram import винительный_при_числе as _вин  # «отдала 1 книгу», «получил 21 марку» — у двери
 
 # ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
 # читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
@@ -100,7 +101,7 @@ def story_gave(nrec, ne, it, enp, a, b):
     был, остался = _при_числе("был", a, it[0]), _при_числе("остался", c, it[0])
     return [
         f"у {ng} {был} {a} {p(a)}. {nr} {gave} "
-        f"{b} {p(b)}. у {ng} {остался} {c} {p(c)}.",
+        f"{b} {_вин(it[0], b)}. у {ng} {остался} {c} {p(c)}.",
         f"{ne} had {a} {e(a)}. {ne} gave away "
         f"{b} {e(b)}. {ne} has {c} {e(c)} left.",
         f"{a} − {b} = {c}.",
@@ -120,7 +121,7 @@ def story_got(nrec, ne, it, enp, a, b):
     был, стал = _при_числе("был", a, it[0]), _при_числе("стал", c, it[0])
     return [
         f"у {ng} {был} {a} {p(a)}. {nr} {got} "
-        f"{b} {p(b)}. у {ng} {стал} {c} {p(c)}.",
+        f"{b} {_вин(it[0], b)}. у {ng} {стал} {c} {p(c)}.",
         f"{ne} had {a} {e(a)}. {ne} got {b} "
         f"{e(b)} more. now {ne} has {c} {e(c)}.",
         f"{a} + {b} = {c}.",
@@ -139,7 +140,7 @@ def story_rate(nrec, ne, it, enp, k, price):
     bought = verb("купил", fem)
     paid = verb("заплатил", fem)
     return [
-        f"{nr} {bought} {k} {p(k)} по {price} "
+        f"{nr} {bought} {k} {_вин(it[0], k)} по {price} "
         f"{ru_form(rub, price)}. {nr} {paid} "
         f"{total} {ru_form(rub, total)}.",
         f"{ne} bought {k} {enp} at {price} "

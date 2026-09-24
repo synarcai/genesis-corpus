@@ -143,7 +143,9 @@ import word_mutants  # noqa: E402 — закон порчи СЛОВА живё�
 #     поблажка — та, что не говорит, кто спросит вместо неё.
 # `ru_numpred` (24.09) — ловец рассогласования сказуемого с числом: согласие глагола не есть
 # истина строки; его порчу СЛОВОМ («была» → «было») ставит тот же `word_mutants`.
-БЕЗ_ИСТИНЫ_ПО_УСТРОЙСТВУ = frozenset({"corpusword", "actoropener", "personcase", "beforeperson", "ru_numpred"})
+# `ru_accusative` (24.09) — ловец именительного на месте винительного: верный падеж не есть истина строки.
+БЕЗ_ИСТИНЫ_ПО_УСТРОЙСТВУ = frozenset({"corpusword", "actoropener", "personcase", "beforeperson", "ru_numpred",
+                                     "ru_accusative"})
 СВОБОДНО = "ЧИСЛО СВОБОДНО"
 ЧИСЛО = re.compile(r"\d+")
 

@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 607 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 610 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7706 разных законов на 9849 упоминаний; сказанных однажды — 7099, и они остаются при своём месте.
+Всего в дереве 7715 разных законов на 9862 упоминаний; сказанных однажды — 7105, и они остаются при своём месте.
 
 
 ## Держат 85 файлов
@@ -414,6 +414,8 @@
   courts/prosetree_court.py, scripts/prose_court.py, scripts/word_mutants.py
 - **ДОЛГ, У КОТОРОГО НАЗВАНА ПРИЧИНА, ОТЛИЧИМ ОТ НЕБРЕЖНОСТИ**  
   scripts/form_matrix.py, tools/gen_genesis_pronouns.py, tools/gen_genesis_remainders.py
+- **ДОПОЛНЕНИЕ АКТА — В ВИНИТЕЛЬНОМ ПРИ ЧИСЛЕ**  
+  courts/ru_story_court.py, tools/ninelang.py, tools/svampforms.py
 - **ЗАКОН, ЗАПЕРТЫЙ В ДОМЕ, ОХРАНЯЕТ ЛИШЬ ЭТОТ ДОМ**  
   courts/actoropener_court.py, scripts/word_mutants.py, tools/actors.py
 - **ЗАКОН, ПОКАЗАННЫЙ В ОДНОЙ ОДЕЖДЕ, ЕСТЬ ЗНАНИЕ ОБ ЭТОЙ ОДЕЖДЕ**  
@@ -553,6 +555,8 @@
   courts/wallet_court.py, tools/wallet.py
 - **ВЕЛИЧИНА, КОТОРУЮ ЧИТАТЕЛЬ ВИДЕЛ ТОЛЬКО ОТВЕТОМ, НЕ ОПОЗНАЁТСЯ ИМ В ВОПРОСЕ**  
   courts/wallet_court.py, tools/wallet.py
+- **ВЕРНОЕ, КОТОРОЕ СУД ОБЯЗАН ПРОПУСТИТЬ**  
+  courts/ru_accusative_court.py, courts/ru_numpred_court.py
 - **ВЕРНЫЙ ОТВЕТ ПРИ НЕВЕРНОМ ХОДЕ**  
   tools/amendforms.py, tools/gen_genesis_amend.py
 - **ВЕРНЫЙ СЧЁТ НАД ИМЕНАМИ ДАЁТ ВЕРНОЕ ЧИСЛО И НИКАКОЙ ВЕЩИ**  
@@ -669,6 +673,8 @@
   scripts/past_gender.py, tools/rugram.py
 - **ДОМ, ЧЬЁ ОБЪЯВЛЕНИЕ МЕРА НЕ УМЕЕТ ПРОЧЕСТЬ, НЕ ПАДАЕТ ЕЁ РУБЕЖОМ — ОН**  
   scripts/house_promise.py, scripts/house_skew.py
+- **ДОПОЛНЕНИЕ ПРИ ЧИСЛЕ БЕРЁТ ПАДЕЖ У ГЛАГОЛА, А ФОРМУ СЧЁТА — У ЧИСЛА**  
+  courts/ru_accusative_court.py, tools/rugram.py
 - **ДЫРА, НАЙДЕННАЯ ОДНИМ НАПИСАНИЕМ, ЕСТЬ ДЫРА В ЗАПРОСЕ**  
   scripts/twin_world.py, tools/unitcmpforms.py
 - **ЕДИНИЦА ПРИ БУКВЕ НЕ ПИШЕТСЯ**  
