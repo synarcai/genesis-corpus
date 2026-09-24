@@ -33,6 +33,7 @@ from plural import by_count
 import json as _json
 import pathlib as _pathlib
 from rugram import МЕСТОИМЕНИЯ as _МЕСТ, СУФФИКС_ПРОШЕДШЕГО as _СУФ
+from rugram import прошедшее_при_числе as _при_числе  # «была 21 монета», «остался 1 шар» — у двери
 
 # ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
 # читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
@@ -96,14 +97,15 @@ def story_gave(nrec, ne, it, enp, a, b):
     p = lambda k: ru_form(it, k)
     e = lambda k: by_count(k, enp)
     gave = verb("отдал", fem)
+    был, остался = _при_числе("был", a, it[0]), _при_числе("остался", c, it[0])
     return [
-        f"у {ng} было {a} {p(a)}. {nr} {gave} "
-        f"{b} {p(b)}. у {ng} осталось {c} {p(c)}.",
+        f"у {ng} {был} {a} {p(a)}. {nr} {gave} "
+        f"{b} {p(b)}. у {ng} {остался} {c} {p(c)}.",
         f"{ne} had {a} {e(a)}. {ne} gave away "
         f"{b} {e(b)}. {ne} has {c} {e(c)} left.",
         f"{a} − {b} = {c}.",
         f"сколько {p(5)} осталось у {ng}? "
-        f"осталось {c} {p(c)}.",
+        f"{остался} {c} {p(c)}.",
         f"how many {enp} does {ne} have left? "
         f"{c} {e(c)} left.",
     ]
@@ -115,14 +117,15 @@ def story_got(nrec, ne, it, enp, a, b):
     p = lambda k: ru_form(it, k)
     e = lambda k: by_count(k, enp)
     got = verb("получил", fem)
+    был, стал = _при_числе("был", a, it[0]), _при_числе("стал", c, it[0])
     return [
-        f"у {ng} было {a} {p(a)}. {nr} {got} "
-        f"{b} {p(b)}. у {ng} стало {c} {p(c)}.",
+        f"у {ng} {был} {a} {p(a)}. {nr} {got} "
+        f"{b} {p(b)}. у {ng} {стал} {c} {p(c)}.",
         f"{ne} had {a} {e(a)}. {ne} got {b} "
         f"{e(b)} more. now {ne} has {c} {e(c)}.",
         f"{a} + {b} = {c}.",
         f"сколько {p(5)} стало у {ng}? "
-        f"стало {c} {p(c)}.",
+        f"{стал} {c} {p(c)}.",
         f"how many {enp} does {ne} have now? "
         f"now {c} {e(c)}.",
     ]

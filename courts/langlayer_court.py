@@ -87,6 +87,10 @@ def словарь_пакета(язык):
         for формы in кл.get("lexemes", {}).values():
             слова |= {str(ф_).strip().lower() for ф_ in формы
                       if str(ф_).strip()}
+        # ГЛАГОЛ ПРИ ЯЧЕЙКЕ СЧЁТА (24.09, `past_by_count`): «была», «остался», «осталась» — слова
+        # класса имени; поле выучено тем же днём и лексиконом движка (`langpack.pack_vocabulary`)
+        for формы in (кл.get("past_by_count") or {}).values():
+            слова |= {str(ф_).strip().lower() for ф_ in формы if str(ф_).strip()}
     for имена in (п.get("sign_names") or {}).values():
         имена = [имена] if isinstance(имена, str) else имена
         слова |= {str(и).strip().lower() for и in имена}
