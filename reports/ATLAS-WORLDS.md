@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 486985 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 487145 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 162, строк 253912.
+Миров 162, строк 254072.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -97,6 +97,8 @@
   **ЗАКОН ФИЗИКИ, СКАЗАННЫЙ ФОРМУЛОЙ И ТУТ ЖЕ ПРОЙДЕННЫЙ ЧИСЛАМИ С ЕДИНИЦАМИ: «что даёт работа = сила × путь при 20 и 3? работа = сила × путь; 20 ньютонов × 3 метра = 60 джоулей», «напряжение = ток × сопротивление; 3 ампера × 12 ом = 36 вольт». Формула стои́т…
 - **`totalsubj`** (1440 строк; recompute, whole_only)  
   **THE TOTAL AS SUBJECT AND THE CONTAINER AS A UNIT OF COUNT (07.09). The atlas of the reader's unread numbers (tomograph st48, omega-ad) holds its largest unsorted class** — «other», 151 stories — and holon-f9 named two of its shapes.
+- **`measureof`** (1414 строк; recompute, whole_only)  
+  **THE MEASURE THROUGH «of»** — the number counts the VESSEL and the goods stand behind the preposition (07.09).
 - **`cybernetics`** (1408 строк; recompute, whole_only)  
   **УПРАВЛЕНИЕ, СЧИТАННОЕ ШАГАМИ ДО ЦЕЛИ, И ЗАКОН НЕОБХОДИМОГО РАЗНООБРАЗИЯ: «почему начав с 3 при цели 9 и шаге 3, значение достигает цели за 2 шага? потому что 3 + 2 × 3 = 9», «requisite variety is the law that a regulator can distinguish no more disturbanc…
 - **`arith_langs`** (1400 строк; recompute, unsigned_only)  
@@ -115,8 +117,6 @@
   **SEARCH WITH ITS LEDGER IN TEN LANGUAGES (holon's order for the market of reasoning, 03.09** — ONE-CARRIER: the ledger is the program is the proof): an answer that is FOUND by a bounded walk shows the walk step by primitive step — «the smallest prime great…
 - **`valence`** (1256 строк; recompute, declared, whole_only)  
   valence with its ground: sign of dP/dtau, strength of feeling, fear at the irreversible threshold P_crit=2/7, calm, the computable triple of emotion, awareness gated by R and Phi, arena proxies with a DECLARED projection onto P, and the canonical names of c…
-- **`measureof`** (1254 строк; recompute, whole_only)  
-  **THE MEASURE THROUGH «of»** — the number counts the VESSEL and the goods stand behind the preposition (07.09).
 - **`statistics`** (1232 строк; recompute, whole_only)  
   **THE MIDDLE OF A LIST** — MEAN, MEDIAN AND RANGE, EACH DEFINED BEFORE IT IS ASKED. Declared until 12.09 in five words.
 - **`placeval`** (1220 строк; recompute, whole_only)  
