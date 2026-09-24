@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 488673 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 350 миров, 488997 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 162, строк 255600.
+Миров 162, строк 255924.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -173,6 +173,8 @@
   **ORDER** — sorting is not comparing twice (06.09).
 - **`prop`** (764 строк; recompute, whole_only)  
   **THE PROPORTION** — AN EQUALITY OF RATIOS THAT IS NOT AN EQUALITY OF DIFFERENCES. Measured 11.09 across the 237 show worlds: the word «пропорция» occurs 29 times, and ALL 29 stand in the world of definitions, in prose and in English; the writing «a : b = c…
+- **`speedforms`** (756 строк; recompute, whole_only, exact_only)  
+  **SPEED** — the unit that is a RATIO of two units (06.09).
 - **`inverse`** (744 строк; recompute, whole_only)  
   **THE INVERSE TASK** — THE SAME THREE NUMBERS, AND THE QUESTION FROM THE OTHER END. Measured 11.09 across the 249 show worlds: «обратная задача», «inverse task» — NONE. The corpus solves thousands of direct tasks and 123 times CHECKS an answer by the invers…
 - **`lever`** (726 строк; recompute, whole_only)  
@@ -251,8 +253,6 @@
   **FACTORS AND DIVISIBILITY** — a factorisation names ALL the divisors at once.
 - **`neg`** (442 строк; recompute, whole_only)  
   **THE NEGATIVE NUMBER** — THE ORDER TURNS OVER BEYOND ZERO. Measured 11.09 across the 232 show worlds: «отрицательн», «negative number» — NOT ONE occurrence; a comparison of two negatives — NONE; «opposite number» — NONE; the number line — NONE. A count ove…
-- **`speedforms`** (432 строк; recompute, whole_only, exact_only)  
-  **SPEED** — the unit that is a RATIO of two units (06.09).
 - **`roundforms`** (432 строк; declared, whole_only)  
   **ROUNDING** — the rule of the half is DECLARED, not derived (06.09).
 - **`aggregate`** (430 строк; recompute, whole_only, unsigned_only)  
