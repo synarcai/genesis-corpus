@@ -12,7 +12,7 @@ bucket»), measure_story выводит опору из суммы пары. Р�
     СПРОШЕНО СРАВНИВАЕМОЕ.
 
 ТРИ ВЕЩЕСТВА ПО СЛОВУ ВЕДУЩЕГО — деньги, вода, время, — каждое со своей мерой и своим глаголом: «has 30 dollars
-… twice as much money», «has 4 liters of water … 3 times as much water», «spent 20 minutes on homework … half as
+… twice as much money», «has 4 litres of water … 3 times as much water», «spent 20 minutes on homework … half as
 much time on homework». ТРИ ФОРМЫ: вдвое («twice»), в k раз («k times», k от 3 до 5), вдвое меньше («half»);
 ответ называет лицо и несёт звено («2 × 30 = 60», «30 ÷ 2 = 15»). ПО-РУССКИ «much» своего слова не имеет:
 «у Веры вдвое больше денег, чем у Вани», «в 3 раза больше воды», «вдвое меньше времени» — формы единиц при числе берутся у двери единиц
@@ -57,7 +57,11 @@ _ЛИЦА_RU = _ПАКЕТЫ["ru"]["person_forms"]
 
 
 def _en_мера(вещество, n):
-    return units.англ(МЕРА[вещество][0], n != 1)
+    # ПИСЬМО СВОДА, А НЕ ДВЕРИ ПО УМОЛЧАНИЮ (25.09, набор 408): дверь пишет американским письмом, и вода стала
+    # «liters» — словом, которого в своде не было и которого не читает ни один суд числа (прибор `unknown_name`:
+    # 1 «liter» и 119 «liters»). Литр свод пишет британским письмом («litres»: мир physics), и дом берёт то же письмо
+    # у той же двери.
+    return units.англ(МЕРА[вещество][0], n != 1, письмо="brit")
 
 
 def _ru_мера(вещество, n):
@@ -167,7 +171,7 @@ def pass_shows(pass_i):
 ЗАЧЕМ_РОДА = {
     ВДВОЕ: "«Ben has 30 dollars. Carla has twice as much money as Ben. how much money does Carla have? Carla "
            "has 60 dollars: 2 × 30 = 60.» — опора до сравнения; по-русски «вдвое больше денег, чем у Вани»",
-    В_РАЗ: "«Dan has 4 liters of water. Elena has 3 times as much water as Dan. … 3 × 4 = 12.» — «в 3 раза "
+    В_РАЗ: "«Dan has 4 litres of water. Elena has 3 times as much water as Dan. … 3 × 4 = 12.» — «в 3 раза "
            "больше воды, чем у Димы»",
     ВДВОЕ_МЕНЬШЕ: "«Felix spent 40 minutes on homework. Grace spent half as much time on homework as Felix. … "
                   "40 ÷ 2 = 20.» — «вдвое меньше времени»",

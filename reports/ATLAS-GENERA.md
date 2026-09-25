@@ -1785,7 +1785,7 @@
   зачем: «Ben has 30 dollars. Carla has twice as much money as Ben. how much money does Carla have? Carla has 60 dollars: 2 × 30 = 60.» — опора до сравнения; по-русски «вдвое больше денег, чем у Вани»
   образец: Ben has 10 dollars. Carla has twice as much money as Ben. how much money does Carla have? Carla has 20 dollars: 2 × 10 =
 - **в k раз: k times as much** — страниц 120
-  зачем: «Dan has 4 liters of water. Elena has 3 times as much water as Dan. … 3 × 4 = 12.» — «в 3 раза больше воды, чем у Димы»
+  зачем: «Dan has 4 litres of water. Elena has 3 times as much water as Dan. … 3 × 4 = 12.» — «в 3 раза больше воды, чем у Димы»
   образец: Dan has 15 dollars. Felix has 3 times as much money as Dan. how much money does Felix have? Felix has 45 dollars: 3 × 15
 - **вдвое меньше: half as much** — страниц 120
   зачем: «Felix spent 40 minutes on homework. Grace spent half as much time on homework as Felix. … 40 ÷ 2 = 20.» — «вдвое меньше времени»
