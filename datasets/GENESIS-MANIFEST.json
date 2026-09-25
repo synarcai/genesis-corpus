@@ -1104,7 +1104,7 @@
     {
       "name": "behavior",
       "file": "datasets/genesis_behavior.txt",
-      "genre": "BEHAVIOURAL AND PSYCHOLOGICAL LAWS — the cause of an act and the question about it (the owner's order, 04.09, item 3: «понимать базовые поведенческие и психологические законы»). Not psychology in general and not quotations from the shelf, but shows of this house: six genera named by the order — fatigue → errors, need → action, emotion → its ground, intention → deed, habit → repetition, attention → omission. Every consequence is COMPARATIVE («ошибается ЧАЩЕ», «makes MORE mistakes»): «the tired man errs» is false as a law about a man, «the tired man errs more often» is true as a law about frequency, and the corpus may not teach the first. Three forms: the rule, the QUESTION about the cause, and the law generalized over cases. Nine languages; the subject is always a NAME, never a pronoun, so no referent is ever left hanging.",
+      "genre": "BEHAVIOURAL AND PSYCHOLOGICAL LAWS — the cause of an act and the question about it (the owner's order, 04.09, item 3: «понимать базовые поведенческие и психологические законы»). Not psychology in general and not quotations from the shelf, but shows of this house: six genera named by the order — fatigue → errors, need → action, emotion → its ground, intention → deed, habit → repetition, attention → omission. Every consequence is COMPARATIVE («ошибается ЧАЩЕ», «makes MORE mistakes»): «the tired man errs» is false as a law about a man, «the tired man errs more often» is true as a law about frequency, and the corpus may not teach the first. Three forms: the rule, the QUESTION about the cause, and the law generalized over cases. Nine languages; the subject is always a NAME, never a pronoun, so no referent is ever left hanging. ЧУВСТВА И УМ (25.09, дом 3 наряда ведущего по слову владельца — «поведение и ум»): свод знал одно чувство — страх неизвестного — и ни одного закона ума. Шесть новых поводов в той же двери закона: радость (получил подарок), грусть (потерял дорогую вещь), гнев (несправедливое замечание), скука (сидит без дела), память (много раз повторил — помнит лучше), сон (мало спал — устаёт быстрее); основание каждого — знание о человеке одним уровнем ниже, мнений нет. Девять языков, женские формы там, где язык их меняет; прежние страницы байт в байт.",
       "act": [
         "generalize",
         "decide",
@@ -3362,10 +3362,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 48887398,
+      "size": 49086410,
       "tiers": [],
       "text": "mix",
-      "lines": 494682
+      "lines": 496452
     },
     {
       "name": "fuseprep",
@@ -11247,7 +11247,7 @@
     {
       "name": "reply",
       "file": "datasets/genesis_reply.txt",
-      "genre": "REPLY — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their state and the answer is not sympathy without ground but advice with a checkable law behind it: «i am tired. what should i do? take a rest: when a person is tired, that person makes more mistakes.» The law is never rewritten here — it is quoted from the behaviour house, and the court reads it exactly so: it does not trust the house's own list but compares the tail of the line with the neighbour's declaration word for word. Advice under which a law of a DIFFERENT genus is placed is true in both halves and false as a whole — the same nature as a circular answer. The question head is chosen BY GENUS: tiredness, hunger and haste are asked WHAT TO DO (the state is fixable by action); fear, habit and missed attention are asked WHY (there is nothing to fix, there is something to understand). The sympathetic pair is declared for the NEIGHBOUR and never written as a show — see М-267.",
+      "genre": "REPLY — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their state and the answer is not sympathy without ground but advice with a checkable law behind it: «i am tired. what should i do? take a rest: when a person is tired, that person makes more mistakes.» The law is never rewritten here — it is quoted from the behaviour house, and the court reads it exactly so: it does not trust the house's own list but compares the tail of the line with the neighbour's declaration word for word. Advice under which a law of a DIFFERENT genus is placed is true in both halves and false as a whole — the same nature as a circular answer. The question head is chosen BY GENUS: tiredness, hunger and haste are asked WHAT TO DO (the state is fixable by action); fear, habit and missed attention are asked WHY (there is nothing to fix, there is something to understand). The sympathetic pair is declared for the NEIGHBOUR and never written as a show — see М-267. ПОВОДЫ ОТКЛИКА (25.09): совет даётся лишь там, где закон повода прямо снимает названную причину — скука («найди себе дело»), память («повторяй их много раз»), сон («спи дольше»); радость, грусть и гнев откликом не пишутся: совет приписал бы собеседнику причину, которой он не назвал, — догадка о чужой жизни, а не закон.",
       "act": [
         "decide",
         "name",
@@ -11661,10 +11661,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39634836,
+      "size": 39833848,
       "tiers": [],
       "text": "mix",
-      "lines": 441490
+      "lines": 443260
     },
     {
       "name": "school_biling_v2c",

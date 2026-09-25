@@ -70,7 +70,12 @@ MORE mistakes»): «усталый ошибается» ложно как зак
     python3 tools/behaviorforms.py    # самопроверка с мутантами
 """
 УСТАЛОСТЬ, ПОТРЕБНОСТЬ, ЭМОЦИЯ, НАМЕРЕНИЕ, ПРИВЫЧКА, ВНИМАНИЕ = range(6)
-ПОВОДЫ = (УСТАЛОСТЬ, ПОТРЕБНОСТЬ, ЭМОЦИЯ, НАМЕРЕНИЕ, ПРИВЫЧКА, ВНИМАНИЕ)
+# ЧУВСТВА И УМ (25.09, дом 3 наряда ведущего по слову владельца — «поведение и ум», «обыденные темы»): свод знал
+# ОДНО чувство — страх неизвестного (24 английские строки из 1 797 страниц дома) — и ни одного закона ума. Шесть
+# новых поводов стоят ЗДЕСЬ, в той же двери закона «причина → следствие», а не рядом: дом отклика берёт закон у
+# дома поведения слово в слово, и второй дом законов о человеке был бы второй дверью.
+РАДОСТЬ, ГРУСТЬ, ГНЕВ, СКУКА, ПАМЯТЬ, СОН = range(6, 12)
+ПОВОДЫ = (УСТАЛОСТЬ, ПОТРЕБНОСТЬ, ЭМОЦИЯ, НАМЕРЕНИЕ, ПРИВЫЧКА, ВНИМАНИЕ, РАДОСТЬ, ГРУСТЬ, ГНЕВ, СКУКА, ПАМЯТЬ, СОН)
 
 # пара = (причина главной клаузой, следствие, причина придаточной клаузой,
 #         обобщение: «когда <причина>, <следствие>»)
@@ -401,6 +406,252 @@ import closedworld as _зк  # noqa: E402 — закон замкнутого м
 # ОБЪЯВЛЕННЫЙ ПРОПУСК: «кратко» не пишется по-немецки и по-голландски, ибо их
 # порядок ставит местоимение перед именем (М-175). Прибор щербатости читает это
 # объявление и щербатостью дыру не зовёт.
+# ======================================================================================================
+# ЧУВСТВА И УМ — шесть поводов (25.09). Всякое следствие, как и у прежних шести, СРАВНИТЕЛЬНОЕ или названное
+# чувство при названной причине («получил подарок → радуется», «мало спал → устаёт быстрее»), а основание —
+# знание о человеке одним уровнем ниже, объявленное целой фразой («потому что сон восстанавливает силы»). Мнения
+# («грусть проходит быстрее, когда её называют») здесь нет: закон проверяем соседом, мнение — ничем (holon, 04.09).
+# Прежний литерал ЯЗЫКИ не тронут: новые поводы дописываются блоком, и прежние страницы остаются байт в байт.
+# ======================================================================================================
+_ЧУВСТВА_И_УМ = {
+    "ru": dict(
+        пары=(("{X} получил подарок", "{X} радуется", "{X} получил подарок", "человек получает подарок", "он радуется"),
+              ("{X} потерял дорогую ему вещь", "{X} грустит", "{X} потерял дорогую ему вещь",
+               "человек теряет дорогую ему вещь", "он грустит"),
+              ("{X} получил несправедливое замечание", "{X} злится", "{X} получил несправедливое замечание",
+               "человек получает несправедливое замечание", "он злится"),
+              ("{X} сидит без дела", "{X} скучает", "{X} сидит без дела", "человек сидит без дела", "он скучает"),
+              ("{X} много раз повторил слова", "{X} помнит их лучше", "{X} много раз повторил слова",
+               "человек много раз повторяет слова", "он помнит их лучше"),
+              ("{X} мало спал", "{X} устаёт быстрее", "{X} мало спал", "человек мало спит", "он устаёт быстрее")),
+        основания=(("почему человек радуется, когда получает подарок?", "потому что подарок показывает, что о нём помнят"),
+                   ("почему человек грустит, когда теряет дорогую ему вещь?", "потому что ему не хватает того, что было дорого"),
+                   ("почему человек злится, когда получает несправедливое замечание?",
+                    "потому что человек ждёт, что с ним поступят справедливо"),
+                   ("почему человек скучает, когда сидит без дела?", "потому что время без занятия тянется долго"),
+                   ("почему человек помнит слова лучше, когда много раз их повторяет?", "потому что повторение укрепляет память"),
+                   ("почему человек устаёт быстрее, когда мало спит?", "потому что сон восстанавливает силы")),
+        вопросы_многих=("почему люди радуются подаркам?", "почему люди грустят, когда теряют дорогие им вещи?",
+                        "почему люди злятся на несправедливые замечания?", "почему люди скучают без дела?",
+                        "почему люди лучше помнят то, что повторяют?", "почему люди устают быстрее, когда мало спят?")),
+    "en": dict(
+        пары=(("{X} got a gift", "{X} is glad", "{X} got a gift", "a person gets a gift", "that person is glad"),
+              ("{X} lost something dear", "{X} is sad", "{X} lost something dear", "a person loses something dear",
+               "that person is sad"),
+              ("{X} got an unfair remark", "{X} is angry", "{X} got an unfair remark", "a person gets an unfair remark",
+               "that person is angry"),
+              ("{X} has nothing to do", "{X} is bored", "{X} has nothing to do", "a person has nothing to do",
+               "that person is bored"),
+              ("{X} repeated the words many times", "{X} remembers them better", "{X} repeated the words many times",
+               "a person repeats words many times", "that person remembers them better"),
+              ("{X} slept little", "{X} gets tired faster", "{X} slept little", "a person sleeps little",
+               "that person gets tired faster")),
+        вопр_след=("is {X} glad", "is {X} sad", "is {X} angry", "is {X} bored", "does {X} remember them better",
+                   "does {X} get tired faster"),
+        общ_вопрос=("is that person glad", "is that person sad", "is that person angry", "is that person bored",
+                    "does that person remember them better", "does that person get tired faster"),
+        основания=(("why is a person glad when they get a gift?", "because a gift shows that someone remembers them"),
+                   ("why is a person sad when they lose something dear?", "because they miss what was dear to them"),
+                   ("why is a person angry when they get an unfair remark?", "because a person expects to be treated fairly"),
+                   ("why is a person bored when they have nothing to do?", "because time without an occupation seems long"),
+                   ("why does a person remember words better when they repeat them many times?",
+                    "because repetition strengthens memory"),
+                   ("why does a person get tired faster when they sleep little?", "because sleep restores strength")),
+        вопросы_многих=("why are people glad to get gifts?", "why are people sad when they lose something dear?",
+                        "why do people get angry at unfair remarks?", "why are people bored when they have nothing to do?",
+                        "why do people remember better what they repeat?",
+                        "why do people get tired faster when they sleep little?")),
+    "de": dict(
+        пары=(("{X} hat ein Geschenk bekommen", "freut sich {X}", "{X} ein Geschenk bekommen hat",
+               "ein Mensch ein Geschenk bekommt", "freut er sich"),
+              ("{X} hat etwas Liebes verloren", "ist {X} traurig", "{X} etwas Liebes verloren hat",
+               "ein Mensch etwas Liebes verliert", "ist er traurig"),
+              ("{X} hat eine ungerechte Bemerkung bekommen", "ärgert sich {X}", "{X} eine ungerechte Bemerkung bekommen hat",
+               "ein Mensch eine ungerechte Bemerkung bekommt", "ärgert er sich"),
+              ("{X} hat nichts zu tun", "langweilt sich {X}", "{X} nichts zu tun hat", "ein Mensch nichts zu tun hat",
+               "langweilt er sich"),
+              ("{X} hat die Wörter oft wiederholt", "merkt {X} sie sich besser", "{X} die Wörter oft wiederholt hat",
+               "ein Mensch Wörter oft wiederholt", "merkt er sie sich besser"),
+              ("{X} hat wenig geschlafen", "wird {X} schneller müde", "{X} wenig geschlafen hat", "ein Mensch wenig schläft",
+               "wird er schneller müde")),
+        основания=(("warum freut sich ein Mensch, wenn er ein Geschenk bekommt?", "weil ein Geschenk zeigt, dass jemand an ihn denkt"),
+                   ("warum ist ein Mensch traurig, wenn er etwas Liebes verliert?", "weil ihm fehlt, was ihm lieb war"),
+                   ("warum ärgert sich ein Mensch, wenn er eine ungerechte Bemerkung bekommt?",
+                    "weil ein Mensch erwartet, gerecht behandelt zu werden"),
+                   ("warum langweilt sich ein Mensch, wenn er nichts zu tun hat?", "weil Zeit ohne Beschäftigung lang wird"),
+                   ("warum merkt sich ein Mensch Wörter besser, wenn er sie oft wiederholt?",
+                    "weil Wiederholung das Gedächtnis stärkt"),
+                   ("warum wird ein Mensch schneller müde, wenn er wenig schläft?", "weil Schlaf die Kräfte wiederherstellt")),
+        вопросы_многих=("warum freuen sich Menschen über Geschenke?", "warum sind Menschen traurig, wenn sie etwas Liebes verlieren?",
+                        "warum ärgern sich Menschen über ungerechte Bemerkungen?",
+                        "warum langweilen sich Menschen, wenn sie nichts zu tun haben?",
+                        "warum merken sich Menschen besser, was sie wiederholen?",
+                        "warum werden Menschen schneller müde, wenn sie wenig schlafen?")),
+    "fr": dict(
+        пары=(("{X} a reçu un cadeau", "{X} est content", "{X} a reçu un cadeau", "une personne reçoit un cadeau",
+               "elle est contente"),
+              ("{X} a perdu une chose chère", "{X} est triste", "{X} a perdu une chose chère",
+               "une personne perd une chose chère", "elle est triste"),
+              ("{X} a reçu une remarque injuste", "{X} est en colère", "{X} a reçu une remarque injuste",
+               "une personne reçoit une remarque injuste", "elle est en colère"),
+              ("{X} n'a rien à faire", "{X} s'ennuie", "{X} n'a rien à faire", "une personne n'a rien à faire",
+               "elle s'ennuie"),
+              ("{X} a répété les mots plusieurs fois", "{X} les retient mieux", "{X} a répété les mots plusieurs fois",
+               "une personne répète des mots plusieurs fois", "elle les retient mieux"),
+              ("{X} a peu dormi", "{X} se fatigue plus vite", "{X} a peu dormi", "une personne dort peu",
+               "elle se fatigue plus vite")),
+        основания=(("pourquoi une personne est-elle contente quand elle reçoit un cadeau ?",
+                    "parce qu'un cadeau montre que quelqu'un pense à elle"),
+                   ("pourquoi une personne est-elle triste quand elle perd une chose chère ?",
+                    "parce que ce qui lui était cher lui manque"),
+                   ("pourquoi une personne est-elle en colère quand elle reçoit une remarque injuste ?",
+                    "parce qu'une personne attend d'être traitée avec justice"),
+                   ("pourquoi une personne s'ennuie-t-elle quand elle n'a rien à faire ?",
+                    "parce que le temps sans occupation paraît long"),
+                   ("pourquoi une personne retient-elle mieux les mots quand elle les répète plusieurs fois ?",
+                    "parce que la répétition renforce la mémoire"),
+                   ("pourquoi une personne se fatigue-t-elle plus vite quand elle dort peu ?", "parce que le sommeil rend les forces")),
+        вопросы_многих=("pourquoi les gens sont-ils contents de recevoir des cadeaux ?",
+                        "pourquoi les gens sont-ils tristes quand ils perdent une chose chère ?",
+                        "pourquoi les gens se fâchent-ils contre les remarques injustes ?",
+                        "pourquoi les gens s'ennuient-ils quand ils n'ont rien à faire ?",
+                        "pourquoi les gens retiennent-ils mieux ce qu'ils répètent ?",
+                        "pourquoi les gens se fatiguent-ils plus vite quand ils dorment peu ?")),
+    "es": dict(
+        пары=(("{X} recibió un regalo", "{X} está contento", "{X} recibió un regalo", "una persona recibe un regalo",
+               "está contenta"),
+              ("{X} perdió algo querido", "{X} está triste", "{X} perdió algo querido", "una persona pierde algo querido",
+               "está triste"),
+              ("{X} recibió un comentario injusto", "{X} está enfadado", "{X} recibió un comentario injusto",
+               "una persona recibe un comentario injusto", "está enfadada"),
+              ("{X} no tiene nada que hacer", "{X} se aburre", "{X} no tiene nada que hacer",
+               "una persona no tiene nada que hacer", "se aburre"),
+              ("{X} repitió las palabras muchas veces", "{X} las recuerda mejor", "{X} repitió las palabras muchas veces",
+               "una persona repite palabras muchas veces", "las recuerda mejor"),
+              ("{X} durmió poco", "{X} se cansa antes", "{X} durmió poco", "una persona duerme poco", "se cansa antes")),
+        основания=(("¿por qué una persona está contenta cuando recibe un regalo?",
+                    "porque un regalo muestra que alguien piensa en ella"),
+                   ("¿por qué una persona está triste cuando pierde algo querido?", "porque echa de menos lo que le era querido"),
+                   ("¿por qué una persona está enfadada cuando recibe un comentario injusto?",
+                    "porque una persona espera que la traten con justicia"),
+                   ("¿por qué una persona se aburre cuando no tiene nada que hacer?", "porque el tiempo sin ocupación parece largo"),
+                   ("¿por qué una persona recuerda mejor las palabras cuando las repite muchas veces?",
+                    "porque la repetición refuerza la memoria"),
+                   ("¿por qué una persona se cansa antes cuando duerme poco?", "porque el sueño repone las fuerzas")),
+        вопросы_многих=("¿por qué la gente se alegra de recibir regalos?", "¿por qué la gente está triste cuando pierde algo querido?",
+                        "¿por qué la gente se enfada ante los comentarios injustos?",
+                        "¿por qué la gente se aburre cuando no tiene nada que hacer?",
+                        "¿por qué la gente recuerda mejor lo que repite?", "¿por qué la gente se cansa antes cuando duerme poco?")),
+    "it": dict(
+        пары=(("{X} ha ricevuto un regalo", "{X} è contento", "{X} ha ricevuto un regalo", "una persona riceve un regalo",
+               "è contenta"),
+              ("{X} ha perso una cosa cara", "{X} è triste", "{X} ha perso una cosa cara", "una persona perde una cosa cara",
+               "è triste"),
+              ("{X} ha ricevuto un rimprovero ingiusto", "{X} è arrabbiato", "{X} ha ricevuto un rimprovero ingiusto",
+               "una persona riceve un rimprovero ingiusto", "è arrabbiata"),
+              ("{X} non ha niente da fare", "{X} si annoia", "{X} non ha niente da fare",
+               "una persona non ha niente da fare", "si annoia"),
+              ("{X} ha ripetuto le parole molte volte", "{X} le ricorda meglio", "{X} ha ripetuto le parole molte volte",
+               "una persona ripete parole molte volte", "le ricorda meglio"),
+              ("{X} ha dormito poco", "{X} si stanca prima", "{X} ha dormito poco", "una persona dorme poco", "si stanca prima")),
+        основания=(("perché una persona è contenta quando riceve un regalo?", "perché un regalo mostra che qualcuno pensa a lei"),
+                   ("perché una persona è triste quando perde una cosa cara?", "perché le manca ciò che le era caro"),
+                   ("perché una persona è arrabbiata quando riceve un rimprovero ingiusto?",
+                    "perché una persona si aspetta di essere trattata con giustizia"),
+                   ("perché una persona si annoia quando non ha niente da fare?", "perché il tempo senza occupazione sembra lungo"),
+                   ("perché una persona ricorda meglio le parole quando le ripete molte volte?",
+                    "perché la ripetizione rafforza la memoria"),
+                   ("perché una persona si stanca prima quando dorme poco?", "perché il sonno ridà le forze")),
+        вопросы_многих=("perché le persone sono contente di ricevere regali?",
+                        "perché le persone sono tristi quando perdono una cosa cara?",
+                        "perché le persone si arrabbiano per i rimproveri ingiusti?",
+                        "perché le persone si annoiano quando non hanno niente da fare?",
+                        "perché le persone ricordano meglio ciò che ripetono?",
+                        "perché le persone si stancano prima quando dormono poco?")),
+    "pt": dict(
+        пары=(("{X} recebeu um presente", "{X} está contente", "{X} recebeu um presente", "uma pessoa recebe um presente",
+               "está contente"),
+              ("{X} perdeu uma coisa querida", "{X} está triste", "{X} perdeu uma coisa querida",
+               "uma pessoa perde uma coisa querida", "está triste"),
+              ("{X} recebeu um comentário injusto", "{X} está zangado", "{X} recebeu um comentário injusto",
+               "uma pessoa recebe um comentário injusto", "está zangada"),
+              ("{X} não tem nada para fazer", "{X} aborrece-se", "{X} não tem nada para fazer",
+               "uma pessoa não tem nada para fazer", "aborrece-se"),
+              ("{X} repetiu as palavras muitas vezes", "{X} lembra-se melhor delas", "{X} repetiu as palavras muitas vezes",
+               "uma pessoa repete palavras muitas vezes", "lembra-se melhor delas"),
+              ("{X} dormiu pouco", "{X} cansa-se mais depressa", "{X} dormiu pouco", "uma pessoa dorme pouco",
+               "cansa-se mais depressa")),
+        основания=(("porque é que uma pessoa está contente quando recebe um presente?",
+                    "porque um presente mostra que alguém pensa nela"),
+                   ("porque é que uma pessoa está triste quando perde uma coisa querida?",
+                    "porque sente falta do que lhe era querido"),
+                   ("porque é que uma pessoa está zangada quando recebe um comentário injusto?",
+                    "porque uma pessoa espera ser tratada com justiça"),
+                   ("porque é que uma pessoa se aborrece quando não tem nada para fazer?",
+                    "porque o tempo sem ocupação parece longo"),
+                   ("porque é que uma pessoa se lembra melhor das palavras quando as repete muitas vezes?",
+                    "porque a repetição reforça a memória"),
+                   ("porque é que uma pessoa se cansa mais depressa quando dorme pouco?", "porque o sono repõe as forças")),
+        вопросы_многих=("porque é que as pessoas ficam contentes com presentes?",
+                        "porque é que as pessoas ficam tristes quando perdem uma coisa querida?",
+                        "porque é que as pessoas se zangam com comentários injustos?",
+                        "porque é que as pessoas se aborrecem quando não têm nada para fazer?",
+                        "porque é que as pessoas se lembram melhor do que repetem?",
+                        "porque é que as pessoas se cansam mais depressa quando dormem pouco?")),
+    "nl": dict(
+        пары=(("{X} heeft een cadeau gekregen", "is {X} blij", "{X} een cadeau heeft gekregen", "een mens een cadeau krijgt",
+               "is hij blij"),
+              ("{X} is iets dierbaars kwijtgeraakt", "is {X} verdrietig", "{X} iets dierbaars is kwijtgeraakt",
+               "een mens iets dierbaars kwijtraakt", "is hij verdrietig"),
+              ("{X} heeft een onterechte opmerking gekregen", "is {X} boos", "{X} een onterechte opmerking heeft gekregen",
+               "een mens een onterechte opmerking krijgt", "is hij boos"),
+              ("{X} heeft niets te doen", "verveelt {X} zich", "{X} niets te doen heeft", "een mens niets te doen heeft",
+               "verveelt hij zich"),
+              ("{X} heeft de woorden vaak herhaald", "onthoudt {X} ze beter", "{X} de woorden vaak heeft herhaald",
+               "een mens woorden vaak herhaalt", "onthoudt hij ze beter"),
+              ("{X} heeft weinig geslapen", "wordt {X} sneller moe", "{X} weinig heeft geslapen", "een mens weinig slaapt",
+               "wordt hij sneller moe")),
+        основания=(("waarom is een mens blij als hij een cadeau krijgt?", "omdat een cadeau laat zien dat iemand aan hem denkt"),
+                   ("waarom is een mens verdrietig als hij iets dierbaars kwijtraakt?", "omdat hij mist wat hem dierbaar was"),
+                   ("waarom is een mens boos als hij een onterechte opmerking krijgt?",
+                    "omdat een mens verwacht eerlijk behandeld te worden"),
+                   ("waarom verveelt een mens zich als hij niets te doen heeft?", "omdat tijd zonder bezigheid lang lijkt"),
+                   ("waarom onthoudt een mens woorden beter als hij ze vaak herhaalt?", "omdat herhaling het geheugen versterkt"),
+                   ("waarom wordt een mens sneller moe als hij weinig slaapt?", "omdat slaap de krachten herstelt")),
+        вопросы_многих=("waarom zijn mensen blij met cadeaus?", "waarom zijn mensen verdrietig als ze iets dierbaars kwijtraken?",
+                        "waarom worden mensen boos om onterechte opmerkingen?",
+                        "waarom vervelen mensen zich als ze niets te doen hebben?",
+                        "waarom onthouden mensen beter wat ze herhalen?", "waarom worden mensen sneller moe als ze weinig slapen?")),
+    "pl": dict(
+        пары=(("{X} dostał prezent", "{X} się cieszy", "{X} dostał prezent", "człowiek dostaje prezent", "cieszy się"),
+              ("{X} stracił coś bliskiego", "{X} jest smutny", "{X} stracił coś bliskiego", "człowiek traci coś bliskiego",
+               "jest smutny"),
+              ("{X} dostał niesprawiedliwą uwagę", "{X} się złości", "{X} dostał niesprawiedliwą uwagę",
+               "człowiek dostaje niesprawiedliwą uwagę", "złości się"),
+              ("{X} nie ma nic do roboty", "{X} się nudzi", "{X} nie ma nic do roboty", "człowiek nie ma nic do roboty",
+               "nudzi się"),
+              ("{X} wiele razy powtórzył słowa", "{X} lepiej je pamięta", "{X} wiele razy powtórzył słowa",
+               "człowiek wiele razy powtarza słowa", "lepiej je pamięta"),
+              ("{X} mało spał", "{X} szybciej się męczy", "{X} mało spał", "człowiek mało śpi", "szybciej się męczy")),
+        основания=(("dlaczego człowiek cieszy się, kiedy dostaje prezent?", "bo prezent pokazuje, że ktoś o nim pamięta"),
+                   ("dlaczego człowiek jest smutny, kiedy traci coś bliskiego?", "bo brakuje mu tego, co było mu bliskie"),
+                   ("dlaczego człowiek złości się, kiedy dostaje niesprawiedliwą uwagę?",
+                    "bo człowiek oczekuje, że zostanie potraktowany sprawiedliwie"),
+                   ("dlaczego człowiek nudzi się, kiedy nie ma nic do roboty?", "bo czas bez zajęcia wydaje się długi"),
+                   ("dlaczego człowiek lepiej pamięta słowa, kiedy wiele razy je powtarza?", "bo powtarzanie wzmacnia pamięć"),
+                   ("dlaczego człowiek szybciej się męczy, kiedy mało śpi?", "bo sen przywraca siły")),
+        вопросы_многих=("dlaczego ludzie cieszą się z prezentów?", "dlaczego ludzie są smutni, kiedy tracą coś bliskiego?",
+                        "dlaczego ludzie złoszczą się na niesprawiedliwe uwagi?",
+                        "dlaczego ludzie nudzą się, kiedy nie mają nic do roboty?",
+                        "dlaczego ludzie lepiej pamiętają to, co powtarzają?",
+                        "dlaczego ludzie szybciej się męczą, kiedy mało śpią?")),
+}
+for _яз, _добавка in _ЧУВСТВА_И_УМ.items():
+    for _ключ, _ряд in _добавка.items():
+        assert len(_ряд) == len(ПОВОДЫ) - 6, (_яз, _ключ)
+        ЯЗЫКИ[_яз][_ключ] = tuple(ЯЗЫКИ[_яз][_ключ]) + tuple(_ряд)
+assert set(_ЧУВСТВА_И_УМ) == set(ЯЗЫКИ), "новые поводы обязаны стоять на всех девяти языках"
+
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {"кратко": frozenset({"de", "nl"})}
 
 # ВЕЕР ВОПРОСА О ПРИЧИНЕ (22.09, заказ руки agent по полосе беседы). Дом показывал причинный
@@ -501,6 +752,29 @@ for _яз, _я in ЯЗЫКИ.items():
         0: ["{X} est fatiguée", "{X} fait plus d'erreurs", "{X} est fatiguée"],
     },
 }
+
+# ЖЕНСКИЕ ФОРМЫ НОВЫХ ПОВОДОВ — лишь там, где язык их меняет (прошедшее у ru и pl, прилагательное у fr, es, it, pt)
+ЖЕНСКОЕ["ru"].update({
+    РАДОСТЬ: ["{X} получила подарок", "{X} радуется", "{X} получила подарок"],
+    ГРУСТЬ: ["{X} потеряла дорогую ей вещь", "{X} грустит", "{X} потеряла дорогую ей вещь"],
+    ГНЕВ: ["{X} получила несправедливое замечание", "{X} злится", "{X} получила несправедливое замечание"],
+    ПАМЯТЬ: ["{X} много раз повторила слова", "{X} помнит их лучше", "{X} много раз повторила слова"],
+    СОН: ["{X} мало спала", "{X} устаёт быстрее", "{X} мало спала"],
+})
+ЖЕНСКОЕ["pl"].update({
+    РАДОСТЬ: ["{X} dostała prezent", "{X} się cieszy", "{X} dostała prezent"],
+    ГРУСТЬ: ["{X} straciła coś bliskiego", "{X} jest smutna", "{X} straciła coś bliskiego"],
+    ГНЕВ: ["{X} dostała niesprawiedliwą uwagę", "{X} się złości", "{X} dostała niesprawiedliwą uwagę"],
+    ПАМЯТЬ: ["{X} wiele razy powtórzyła słowa", "{X} lepiej je pamięta", "{X} wiele razy powtórzyła słowa"],
+    СОН: ["{X} mało spała", "{X} szybciej się męczy", "{X} mało spała"],
+})
+ЖЕНСКОЕ["fr"].update({РАДОСТЬ: ["{X} a reçu un cadeau", "{X} est contente", "{X} a reçu un cadeau"]})
+ЖЕНСКОЕ["es"].update({РАДОСТЬ: ["{X} recibió un regalo", "{X} está contenta", "{X} recibió un regalo"],
+                      ГНЕВ: ["{X} recibió un comentario injusto", "{X} está enfadada", "{X} recibió un comentario injusto"]})
+ЖЕНСКОЕ["it"].update({РАДОСТЬ: ["{X} ha ricevuto un regalo", "{X} è contenta", "{X} ha ricevuto un regalo"],
+                      ГНЕВ: ["{X} ha ricevuto un rimprovero ingiusto", "{X} è arrabbiata",
+                             "{X} ha ricevuto un rimprovero ingiusto"]})
+ЖЕНСКОЕ["pt"].update({ГНЕВ: ["{X} recebeu um comentário injusto", "{X} está zangada", "{X} recebeu um comentário injusto"]})
 
 for _яз in ЯЗЫКИ:
     assert len(ИМЕНА_Ж[_яз]) == len(ЯЗЫКИ[_яз]["имена"]), _яз

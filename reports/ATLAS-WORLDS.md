@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 354 миров, 494682 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 354 миров, 496452 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -475,7 +475,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 43, строк 29640.
+Миров 43, строк 29694.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -539,6 +539,8 @@
   **THE TWO-WAY LINK** — «only if», «if and only if», NECESSARY AND SUFFICIENT (14.09).
 - **`badground`** (168 строк; recompute, whole_only)  
   **AN UNFIT GROUND** — TRUE AND USELESS AT ONCE (14.09, bought by a zero of the probe).
+- **`reply`** (162 строк; declared, whole_only)  
+  **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 - **`onecase`** (160 строк; recompute, whole_only)  
   **ONE CASE** — WHAT AN EXAMPLE IS WORTH (14.09, bought by a zero of the probe).
 - **`rolemark`** (144 строк; recompute, whole_only)  
@@ -547,8 +549,6 @@
   **TESTING A HYPOTHESIS** — and THE CHIEF ASYMMETRY of knowledge.
 - **`roundneed`** (112 строк; recompute, whole_only)  
   **ROUNDING THAT THE DEED DECIDES (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: rounding UP is there** — 77 lines of «коробок нужно» and 77 of «are needed»; rounding DOWN — «сколько целых» / «how many whole» — ZERO and Z…
-- **`reply`** (108 строк; declared, whole_only)  
-  **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 - **`homonym`** (84 строк; recompute, whole_only)  
   **ONE WORD IN TWO SENSES** — TOLD APART BY THE NEIGHBOURS, NOT BY THE WORD (14.09, bought by a zero of the probe).
 - **`adhominem`** (72 строк; recompute, whole_only)  
@@ -738,9 +738,9 @@
 
 ## АКТ «generalize» — назвать закон над случаями
 
-Миров 2, строк 1899.
+Миров 2, строк 3615.
 
-- **`behavior`** (1797 строк; declared, whole_only)  
+- **`behavior`** (3513 строк; declared, whole_only)  
   **BEHAVIOURAL AND PSYCHOLOGICAL LAWS** — the cause of an act and the question about it (the owner's order, 04.09, item 3: «понимать базовые поведенческие и психологические законы»).
 - **`indu`** (102 строк; recompute, whole_only)  
   **HASTE** — generalisation from cases and the NAMED LIMIT of that step.
