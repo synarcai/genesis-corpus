@@ -55,40 +55,40 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
 # ======================================================================================================
 # МИР: папка из шести файлов — три текстовых и три тестовых; содержимое текстовых — на языке страницы
 # ======================================================================================================
-ТЕКСТЫ = ("notes.md", "todo.txt", "readme.md")
+ТЕКСТЫ = ("notes.md", "todo.txt", "manual.md")
 # ТЕСТЫ: файл → (тестов, падает) — исход прогона объявлен миром и один при всяком прогоне
-ТЕСТЫ = {"test_notes.py": (5, 1), "test_todo.py": (6, 0), "test_readme.py": (4, 2)}
+ТЕСТЫ = {"test_notes.py": (5, 1), "test_todo.py": (6, 0), "test_manual.py": (4, 2)}
 ПАПКА = len(ТЕКСТЫ) + len(ТЕСТЫ)
 ВЫПУСКИ_ДО = (0, 1, 3)          # запусков мира до прогона — леджер запусков (дверь `actturn`)
 АРХИВ = "archive"               # папка переноса — имя мира, как имена файлов
 АРХИВ_ДО = (0, 1, 2)            # файлов в папке archive до переноса — по файлу
 НОВЫЕ_ИМЕНА = {"notes.md": ("shopping.md", "list.md"), "todo.txt": ("tasks.txt", "plan.txt"),
-               "readme.md": ("about.md", "info.md")}
-ЗАНЯТОЕ = {"notes.md": "todo.txt", "todo.txt": "readme.md", "readme.md": "notes.md"}
-НЕТ_ФАЙЛА = ("draft.md", "final.md")    # файла draft.md в мире нет; final.md — имя, в которое его зовут
+               "manual.md": ("about.md", "info.md")}
+ЗАНЯТОЕ = {"notes.md": "todo.txt", "todo.txt": "manual.md", "manual.md": "notes.md"}
+НЕТ_ФАЙЛА = ("sketch.md", "final.md")   # файла sketch.md в мире нет; final.md — имя, в которое его зовут
 
 # (строки файла; искомые: дважды, однажды, ни разу; три замены; слово, которого нет, и чем его заменить;
 #  две строки для дописывания)
 СОДЕРЖИМОЕ = {
-    "en": {"notes.md": (("buy milk", "call the bank", "buy bread and milk"), ("milk", "bank", "tea"),
-                        (("milk", "juice"), ("bank", "shop"), ("bread", "milk")), ("tea", "coffee"),
-                        ("buy eggs", "call the school")),
+    "en": {"notes.md": (("get cheese", "call the bank", "get bread and cheese"), ("cheese", "bank", "tea"),
+                        (("cheese", "butter"), ("bank", "shop"), ("bread", "cheese")), ("tea", "coffee"),
+                        ("get eggs", "call the school")),
            "todo.txt": (("fix the lamp", "water the plants", "fix the door"), ("fix", "plants", "paint"),
                         (("fix", "check"), ("lamp", "clock"), ("door", "lamp")), ("paint", "glue"),
                         ("clean the room", "fix the tap")),
-           "readme.md": (("the tool reads files", "the tool counts words", "the report lists files"),
-                         ("files", "words", "code"), (("files", "pages"), ("words", "names"), ("report", "tool")),
-                         ("code", "text"), ("the tool finds words", "the report counts pages"))},
+           "manual.md": (("the tool reads pages", "the tool counts words", "the report lists pages"),
+                         ("pages", "words", "code"), (("pages", "notes"), ("words", "names"), ("report", "tool")),
+                         ("code", "data"), ("the tool finds words", "the report counts notes"))},
     "ru": {"notes.md": (("купить молоко", "позвонить в банк", "купить хлеб и молоко"), ("молоко", "банк", "чай"),
                         (("молоко", "сок"), ("банк", "магазин"), ("хлеб", "молоко")), ("чай", "кофе"),
                         ("купить яйца", "позвонить в школу")),
            "todo.txt": (("починить лампу", "полить цветы", "починить дверь"), ("починить", "цветы", "краску"),
                         (("починить", "проверить"), ("лампу", "полку"), ("дверь", "лампу")), ("краску", "клей"),
                         ("убрать комнату", "починить кран")),
-           "readme.md": (("программа читает файлы", "программа считает слова", "отчёт перечисляет файлы"),
+           "manual.md": (("программа читает файлы", "программа считает слова", "отчёт перечисляет файлы"),
                          ("файлы", "слова", "код"), (("файлы", "страницы"), ("слова", "имена"),
                                                     ("отчёт", "программа")),
-                         ("код", "текст"), ("программа ищет слова", "отчёт считает страницы"))},
+                         ("код", "шрифт"), ("программа ищет слова", "отчёт считает страницы"))},
     "de": {"notes.md": (("Milch kaufen", "die Bank anrufen", "Brot und Milch kaufen"), ("Milch", "Bank", "Tee"),
                         (("Milch", "Saft"), ("Bank", "Post"), ("Brot", "Milch")), ("Tee", "Kaffee"),
                         ("Eier kaufen", "die Schule anrufen")),
@@ -96,7 +96,7 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
                         ("reparieren", "Pflanzen", "Farbe"),
                         (("reparieren", "prüfen"), ("Lampe", "Uhr"), ("Tür", "Lampe")), ("Farbe", "Leim"),
                         ("das Zimmer aufräumen", "den Hahn reparieren")),
-           "readme.md": (("das Programm liest Dateien", "das Programm zählt Wörter", "der Bericht listet Dateien"),
+           "manual.md": (("das Programm liest Dateien", "das Programm zählt Wörter", "der Bericht listet Dateien"),
                          ("Dateien", "Wörter", "Code"), (("Dateien", "Seiten"), ("Bericht", "Katalog"),
                                                         ("Wörter", "Dateien")),
                          ("Code", "Text"), ("das Programm sucht Wörter", "der Bericht zählt Seiten"))},
@@ -107,7 +107,7 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
                         ("réparer", "plantes", "peinture"),
                         (("réparer", "vérifier"), ("lampe", "fenêtre"), ("porte", "lampe")), ("peinture", "colle"),
                         ("ranger la chambre", "réparer le robinet")),
-           "readme.md": (("le programme lit les fichiers", "le programme compte les mots",
+           "manual.md": (("le programme lit les fichiers", "le programme compte les mots",
                           "le rapport liste les fichiers"),
                          ("fichiers", "mots", "code"), (("fichiers", "pages"), ("mots", "noms"),
                                                        ("rapport", "programme")),
@@ -119,7 +119,7 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
                         ("arreglar", "plantas", "pintura"),
                         (("arreglar", "revisar"), ("lámpara", "ventana"), ("puerta", "lámpara")),
                         ("pintura", "cola"), ("ordenar la habitación", "arreglar el grifo")),
-           "readme.md": (("el programa lee archivos", "el programa cuenta palabras", "el informe lista archivos"),
+           "manual.md": (("el programa lee archivos", "el programa cuenta palabras", "el informe lista archivos"),
                          ("archivos", "palabras", "código"), (("archivos", "textos"), ("palabras", "frases"),
                                                              ("informe", "programa")),
                          ("código", "texto"), ("el programa busca palabras", "el informe cuenta textos"))},
@@ -130,7 +130,7 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
                         ("riparare", "piante", "vernice"),
                         (("riparare", "controllare"), ("lampada", "finestra"), ("porta", "lampada")),
                         ("vernice", "colla"), ("pulire la stanza", "riparare il rubinetto")),
-           "readme.md": (("il programma legge i documenti", "il programma conta le parole",
+           "manual.md": (("il programma legge i documenti", "il programma conta le parole",
                           "il rapporto elenca i documenti"),
                          ("documenti", "parole", "codice"), (("documenti", "testi"), ("parole", "frasi"),
                                                             ("rapporto", "programma")),
@@ -142,7 +142,7 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
                         ("arranjar", "plantas", "tinta"),
                         (("arranjar", "verificar"), ("lâmpada", "janela"), ("porta", "lâmpada")), ("tinta", "cola"),
                         ("arrumar o quarto", "arranjar a torneira")),
-           "readme.md": (("o programa lê ficheiros", "o programa conta palavras", "o relatório lista ficheiros"),
+           "manual.md": (("o programa lê ficheiros", "o programa conta palavras", "o relatório lista ficheiros"),
                          ("ficheiros", "palavras", "código"), (("ficheiros", "textos"), ("palavras", "frases"),
                                                               ("relatório", "programa")),
                          ("código", "texto"), ("o programa procura palavras", "o relatório conta textos"))},
@@ -153,7 +153,7 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
                         ("repareren", "planten", "verf"),
                         (("repareren", "controleren"), ("lamp", "klok"), ("deur", "lamp")), ("verf", "lijm"),
                         ("de kamer opruimen", "de kraan repareren")),
-           "readme.md": (("het programma leest bestanden", "het programma telt woorden", "het rapport toont bestanden"),
+           "manual.md": (("het programma leest bestanden", "het programma telt woorden", "het rapport toont bestanden"),
                          ("bestanden", "woorden", "code"), (("bestanden", "teksten"), ("woorden", "namen"),
                                                            ("rapport", "programma")),
                          ("code", "tekst"), ("het programma zoekt woorden", "het rapport telt teksten"))},
@@ -163,7 +163,7 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
            "todo.txt": (("naprawić lampę", "podlać rośliny", "naprawić drzwi"), ("naprawić", "rośliny", "farba"),
                         (("naprawić", "sprawdzić"), ("lampę", "półkę"), ("drzwi", "lampę")), ("farba", "klej"),
                         ("posprzątać pokój", "naprawić kran")),
-           "readme.md": (("program czyta pliki", "program liczy słowa", "raport wymienia pliki"),
+           "manual.md": (("program czyta pliki", "program liczy słowa", "raport wymienia pliki"),
                          ("pliki", "słowa", "kod"), (("pliki", "strony"), ("słowa", "imiona"), ("raport", "program")),
                          ("kod", "tekst"), ("program szuka słów", "raport liczy strony"))},
 }
@@ -714,7 +714,7 @@ def строки_со_словом(язык, файл, слово):
 
 
 def _встречается(язык, w, f, N):
-    """«the word "milk" occurs 2 times in the file notes.md» — N приходит готовой счётной фразой."""
+    """«the word "cheese" occurs 2 times in the file notes.md» — N приходит готовой счётной фразой."""
     return _с(язык, "встречается", w=кавычки(язык, w), f=f, N=N)
 
 

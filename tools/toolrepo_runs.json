@@ -1,0 +1,45 @@
+{
+ "python": {
+  "exit": 0,
+  "millis": 366,
+  "lines": 5,
+  "report": [
+   "........",
+   "----------------------------------------------------------------------",
+   "Ran 8 tests in 0.000s",
+   "",
+   "OK"
+  ],
+  "source": "9ad0a5de0de0386b"
+ },
+ "rust": {
+  "exit": 101,
+  "millis": 995,
+  "lines": 22,
+  "report": [
+   "",
+   "running 5 tests",
+   ".... 4/5",
+   "doubles --- FAILED",
+   "",
+   "failures:",
+   "",
+   "---- doubles stdout ----",
+   "",
+   "thread 'doubles' (70777194) panicked at tests/checks.rs:11:16:",
+   "assertion `left == right` failed",
+   "  left: 4",
+   " right: 5",
+   "note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+   "",
+   "",
+   "failures:",
+   "    doubles",
+   "",
+   "test result: FAILED. 4 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+   "",
+   "error: test failed, to rerun pass `--test checks`"
+  ],
+  "source": "9ad0a5de0de0386b"
+ }
+}
