@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 355 миров, 500863 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 355 миров, 501286 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -475,12 +475,12 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 44, строк 32836.
+Миров 44, строк 33259.
 
+- **`toolrepo`** (3565 строк; recompute, unsigned_only)  
+  **АКТЫ В РЕПОЗИТОРИИ** — руки агента второй ступени, страница в ТРИ ГОЛОСА (25.09, мера ведущего: ядро М-2008 на своде дома актов — ключ агента 2 из 50; условия рынка М-2013; коллегия «ответ мира в словах дома»).
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
-- **`toolrepo`** (3142 строк; recompute, unsigned_only)  
-  **АКТЫ В РЕПОЗИТОРИИ** — руки агента второй ступени, страница в ТРИ ГОЛОСА (25.09, мера ведущего: ядро М-2008 на своде дома актов — ключ агента 2 из 50; условия рынка М-2013; коллегия «ответ мира в словах дома»).
 - **`worldfacts`** (2779 строк; declared, whole_only)  
   **WORLD FACTS** — why and what next about THINGS, not about numbers.
 - **`toolacts`** (2673 строк; recompute, whole_only)  

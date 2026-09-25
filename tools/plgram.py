@@ -128,7 +128,9 @@ def форма(ключ, счёт):
 #     ПАДЕЖ ОБЪЯВЛЕН, А НЕ УГАДАН: имя, которого здесь нет, винительного не получает, и страница, которой он нужен,
 #     не пишется — тот же закон, что у русской двери (`rugram.ПАРАДИГМЫ`, дверь `actionpages._вещь_вин`).
 ВИНИТЕЛЬНЫЙ_ЕД = {"moneta": "monetę", "piłka": "piłkę", "książka": "książkę", "karta": "kartę",
-                  "jabłko": "jabłko", "jajko": "jajko", "kwiat": "kwiat", "długopis": "długopis"}
+                  "jabłko": "jabłko", "jajko": "jajko", "kwiat": "kwiat", "długopis": "długopis",
+                  # «plik plan.md zawiera 1 linię» — дом актов `toolrepo` (25.09): созданный файл держит одну строку
+                  "linia": "linię"}
 
 
 def винительный_ед(ключ):

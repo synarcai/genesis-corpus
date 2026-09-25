@@ -47,7 +47,8 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import actturn as A  # noqa: E402 — дверь хода: роли, да/нет, отказ, вопрос предложения, папка, запуски, леджер
 import frgram  # noqa: E402 — французская элизия после подстановки («je propose d'ajouter»)
-import rugram  # noqa: E402 — русская форма «раз» при числе
+import plgram  # noqa: E402 — польский винительный при единице («zawiera 1 linię»)
+import rugram  # noqa: E402 — русские формы «раз» и «строка» при числе и винительный при числе
 import svampforms as S  # noqa: E402 — счётная ячейка пакета
 
 ЯЗЫКИ = A.ЯЗЫКИ
@@ -175,7 +176,8 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
            "it": ("«", "»"), "pt": ("«", "»"), "nl": ('"', '"'), "pl": ("„", "”")}
 РАЗ = {"en": ("time", "times"), "de": ("Mal", "Mal"), "fr": ("fois", "fois"), "es": ("vez", "veces"),
        "it": ("volta", "volte"), "pt": ("vez", "vezes"), "nl": ("keer", "keer"), "pl": ("raz", "razy", "razy")}
-СТРОК = {"ru": ("строка", "строки", "строк"), "en": ("line", "lines"), "de": ("Zeile", "Zeilen"),
+# русская тройка строки — у двери `rugram` (там же её винительный при числе), как и «раз»
+СТРОК = {"en": ("line", "lines"), "de": ("Zeile", "Zeilen"),
          "fr": ("ligne", "lignes"), "es": ("línea", "líneas"), "it": ("riga", "righe"), "pt": ("linha", "linhas"),
          "nl": ("regel", "regels"), "pl": ("linia", "linie", "linii")}
 ТЕСТ = {"ru": ("тест", "теста", "тестов"), "en": ("test", "tests"), "de": ("Test", "Tests"), "fr": ("test", "tests"),
@@ -300,12 +302,66 @@ def слоты(язык, **п):
 
 
 def связать(язык, ступень, A, B):
-    """Приказ («приказ») или тело предложения («предложение») плана из двух актов."""
+    """Приказ («приказ») или тело предложения («предложение») плана из двух актов. Второй приказ режется по первому
+    пробелу — или приходит разрезанным (глагол, остаток), когда глагол держит при себе местоимение («verwijder het»)."""
     приказ_, предложение_ = СВЯЗКА[язык]
     if ступень == "приказ":
-        B1, B2 = B.split(" ", 1)
-        return приказ_.format(A=A, B1=B1, B2=B2)
+        B1, B2 = B if isinstance(B, tuple) else B.split(" ", 1)
+        return приказ_.format(A=A, B1=B1, B2=B2).rstrip()
     return предложение_.format(A=A, B=B)
+
+
+# ПЛАН С МЕСТОИМЕНИЕМ (25.09, вопрос 4 коллегии «ответ мира»; ведущий: роды дома актов `toolrepo`): второй приказ
+# называет объект первого местоимением — «create the file X, then append the line "…" to it». Формы приказа —
+# (глагол, остаток) для связки: местоимение стоит там, где его ставит язык, и глагол тот же, что у акта двери
+# (французское, испанское, итальянское, португальское местоимение пристаёт к глаголу: «ajoute-y», «añádele»).
+# Предложение местоимения не повторяет: оно называет путь, какой определяет приказ. «найти» — приказ находки файла
+# со словом (глагол поиска двери); «ждёт» — второй акт ждёт одного места, «нет_второго» — первый акт не совершён.
+МЕСТОИМЕНИЕ = {
+    "en": dict(дописать=("append", "{S} to it"), удалить=("delete", "it"),
+               найти=("find the file that contains {W}", "find the file that contains {W}"),
+               ждёт="the second act waits for one file", нет_второго="the second act is not performed either"),
+    "ru": dict(дописать=("допиши", "в него {S}"), удалить=("удали", "его"),
+               найти=("найди файл, в котором есть {Wи}", "найти файл, в котором есть {Wи}"),
+               ждёт="второй акт ждёт одного файла", нет_второго="второй акт тоже не совершён"),
+    "de": dict(дописать=("ergänze", "sie um {S}"), удалить=("lösche", "sie"),
+               найти=("suche die Datei, die {W} enthält", "die Datei suchen, die {W} enthält",
+                      "die Datei zu suchen, die {W} enthält"),
+               ждёт="die zweite Handlung wartet auf eine Datei",
+               нет_второго="die zweite Handlung wird auch nicht ausgeführt"),
+    "fr": dict(дописать=("ajoute-y", "{S}"), удалить=("supprime-le", ""),
+               найти=("cherche le fichier qui contient {W}", "chercher le fichier qui contient {W}"),
+               ждёт="le deuxième acte attend un seul fichier", нет_второго="le deuxième acte n'est pas exécuté non plus"),
+    "es": dict(дописать=("añádele", "{S}"), удалить=("elimínalo", ""),
+               найти=("busca el archivo que contiene {W}", "buscar el archivo que contiene {W}"),
+               ждёт="el segundo acto espera un solo archivo", нет_второго="el segundo acto tampoco se realiza"),
+    "it": dict(дописать=("aggiungici", "{S}"), удалить=("eliminalo", ""),
+               найти=("cerca il file che contiene {W}", "cercare il file che contiene {W}"),
+               ждёт="il secondo atto aspetta un solo file", нет_второго="neanche il secondo atto viene eseguito"),
+    "pt": dict(дописать=("acrescenta-lhe", "{S}"), удалить=("elimina-o", ""),
+               найти=("procura o ficheiro que contém {W}", "procurar o ficheiro que contém {W}"),
+               ждёт="o segundo ato espera um só ficheiro", нет_второго="o segundo ato também não é realizado"),
+    "nl": dict(дописать=("zet", "{S} er onderaan"), удалить=("verwijder het", ""),
+               найти=("zoek het bestand dat {W} bevat", "het bestand zoeken dat {W} bevat",
+                      "het bestand te zoeken dat {W} bevat"),
+               ждёт="de tweede handeling wacht op één bestand",
+               нет_второго="de tweede handeling wordt ook niet uitgevoerd"),
+    "pl": dict(дописать=("dopisz", "do niego {S}"), удалить=("usuń", "go"),
+               найти=("znajdź plik, który zawiera {W}", "znaleźć plik, który zawiera {W}"),
+               ждёт="drugi akt czeka na jeden plik", нет_второго="drugi akt też nie zostaje wykonany"),
+}
+
+
+def местоимение(язык, акт, **п):
+    """(глагол, остаток) второго приказа с местоимением на месте объекта — для связки плана."""
+    глагол, остаток = МЕСТОИМЕНИЕ[язык][акт]
+    return глагол, остаток.format(**слоты(язык, **п))
+
+
+def найти(язык, **п):
+    """(приказ, инфинитив, zu-инфинитив) находки файла со словом: «find the file that contains the word "x"»."""
+    формы = [ф.format(**слоты(язык, **п)) for ф in МЕСТОИМЕНИЕ[язык]["найти"]]
+    return формы[0], формы[1], формы[2] if len(формы) > 2 else формы[1]
 
 
 # акт → (приказ, инфинитив, отчёт) — у de и nl инфинитив с глаголом в конце и «zu/te»-форма предложения
@@ -597,7 +653,21 @@ def раз(язык, n):
 
 
 def строк(язык, n):
+    """«3 lines», «1 строка» — счётная форма строки (именительный: «в файле 1 строка со словом …»)."""
+    if язык == "ru":
+        return f"{n} {rugram.форма('строка', n)}"
     return f"{n} {S._счёт(СТРОК[язык], n, язык)}"
+
+
+def строк_вин(язык, n):
+    """Счёт строк дополнением переходного глагола — «файл содержит 1 строку», «plik zawiera 1 linię»: падеж берётся
+    у дверей падежа при числе (`rugram.винительный_при_числе`, объявленный `plgram.ВИНИТЕЛЬНЫЙ_ЕД` — у польского
+    он виден лишь при ровно единице); у прочих языков винительный равен счётной форме."""
+    if язык == "ru":
+        return f"{n} {rugram.винительный_при_числе('строка', n)}"
+    if язык == "pl" and n == 1:
+        return f"{n} {plgram.винительный_ед(СТРОК['pl'][0])}"
+    return строк(язык, n)
 
 
 def тестов(язык, n):
@@ -873,7 +943,7 @@ def страница_дописать(язык, род, регистр, f, s):
         return сборка_дописать(язык, род, регистр, s, f, A.файлов(язык, ПАПКА), _л(ПАПКА, 0)[0])
     n = len(СОДЕРЖИМОЕ[язык][f][0])
     счёт, стало = _л(n, 1 if род == ДОПИСАТЬ else 0)
-    return сборка_дописать(язык, род, регистр, s, f, строк(язык, стало), счёт)
+    return сборка_дописать(язык, род, регистр, s, f, строк_вин(язык, стало), счёт)
 
 
 def страница_имени(язык, род, регистр, f, g):
