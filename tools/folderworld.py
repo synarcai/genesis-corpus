@@ -26,6 +26,9 @@ count — files, строка path (считанное место); read — byt
 import dataclasses
 
 ПЕРЕВОД = "\n"
+# ВИДЫ ХОДА — акты, какие мир печатает головой своего хода (мир папки и мир-процесс: «run»). По ним знак языка
+# (`langsign`) узнаёт ход мира в строке: провод один на всех языках и речью страницы не судится.
+ВИДЫ = ("find", "lines", "read", "count", "list", "create", "delete", "move", "line", "replace", "run")
 
 
 @dataclasses.dataclass(frozen=True)
