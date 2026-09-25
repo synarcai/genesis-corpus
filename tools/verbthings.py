@@ -29,7 +29,8 @@ from plural import singular
 ЧИТАЮТ = ("gen_genesis_gsmlex", "everydayforms", "gen_genesis_realverbs",
           "gen_genesis_gsmwide", "story_chainforms", "gen_genesis_items",
           "gen_genesis_pronouns", "episode_court", "verbthings_court",
-          "gsm_items", "gsm_census", "everyday_court", "measureof")
+          "gsm_items", "gsm_census", "everyday_court", "measureof",
+          "linkforms")
 
 ЕДА = {"apples", "cookies", "cakes", "pastries", "nuts", "eggs", "slices", "bananas", "oranges", "pears", "sweets",
        "candies", "sandwiches", "grapes", "plums", "buns", "pies", "loaves", "pancakes", "cherries", "carrots", "calories"}

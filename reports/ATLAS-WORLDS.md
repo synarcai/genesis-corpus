@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 354 миров, 496452 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 354 миров, 497721 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,9 +11,9 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 164, строк 256884.
+Миров 164, строк 258153.
 
-- **`links`** (17566 строк; declared, whole_only)  
+- **`links`** (18835 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
 - **`perunit`** (15020 строк; recompute, whole_only, exact_only)  
   **THE RATE PER UNIT** — ONE RELATION, THREE UNKNOWNS, FOUR FORMS, TEN LANGUAGES (23.09, the lead's order through a peer, then the rate hand's «ORDER TO THE CORPUS» of 11:45; measured by its census `canon/judges/tools/rate_order_census.py` on the bake pin d3…

@@ -818,6 +818,12 @@ def _вещь_вин(язык, i, n):
     """THE THING AFTER A VERB STANDS IN THE ACCUSATIVE WHERE THE COUNT SAYS
     «ONE»: «отдала 1 монету», while «2 монеты» and «5 монет» are the count
     forms themselves. The paradigm is declared (tools/rugram.py), not guessed."""
+    if язык == "pl":
+        # ПОЛЬСКИЙ ВИНИТЕЛЬНЫЙ ВИДЕН ЛИШЬ ПРИ РОВНО ЕДИНИЦЕ (25.09): «oddała 1 monetę»; при прочих числах — счётная
+        # форма. Падеж объявлен (`plgram.ВИНИТЕЛЬНЫЙ_ЕД`), не объявленный — страница не пишется.
+        if plgram.индекс(n) == 0:
+            return plgram.винительный_ед(ЯЗЫКИ[язык]["вещи"][i])
+        return _вещь(язык, i, n)
     if язык != "ru":
         return _вещь(язык, i, n)
     лемма = ЯЗЫКИ[язык]["вещи"][i]
