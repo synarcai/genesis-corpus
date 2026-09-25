@@ -360,7 +360,7 @@ def упаковка_возможна(строка):
 # МНОЖИТЕЛЬ — НЕ ВЕЩЬ (25.09, мир much): «spent 5 times as much time on homework» — «5 times» есть кратность
 # при «as much», а не вещь глагола; правило звало её «вещью, какой spent не берёт». «jumped 5 times» — вещь
 # прыжка (`verbthings.ПРЫЖОК`), и её правило судит по-прежнему: исключён лишь «times» при слове кратности.
-ГЛАГОЛ_ВЕЩЬ = re.compile(r"\b([a-z]+) \d+ (?!times (?:as|more|less|fewer|the|that|what)\b)([a-z]+)\b")
+ГЛАГОЛ_ВЕЩЬ = re.compile(rf"\b([a-z]+) \d+ {verbthings.НЕ_ВЕЩЬ_КРАТНОСТЬ}([a-z]+)\b")
 ГОЛЫЙ_ФАКТ = re.compile(rf"^({С}) ({С}) (\d+) ({С})\.$")
 ЭХО_ВОПРОС = re.compile(
     rf"^({С}) ({С}) (\d+) ({С})\. how many ({С}) did \1 ({С})\? "

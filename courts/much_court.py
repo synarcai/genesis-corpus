@@ -59,9 +59,9 @@ def _альт(слова):
         rf"(?P<p2>{И_EN})\. how much money does (?P<q2>{И_EN}) have\? (?P<q3>{И_EN}) has (?P<m>{ч}) "
         rf"(?P<u2>dollars?): {ЗВЕНО}")),
     ("en", "вода", re.compile(
-        rf"^(?P<p>{И_EN}) has (?P<n>{ч}) (?P<u1>litres?) of water\. (?P<q>{И_EN}) has {К_EN} as much water as "
+        rf"^(?P<p>{И_EN}) has (?P<n>{ч}) (?P<u1>liters?) of water\. (?P<q>{И_EN}) has {К_EN} as much water as "
         rf"(?P<p2>{И_EN})\. how much water does (?P<q2>{И_EN}) have\? (?P<q3>{И_EN}) has (?P<m>{ч}) "
-        rf"(?P<u2>litres?) of water: {ЗВЕНО}")),
+        rf"(?P<u2>liters?) of water: {ЗВЕНО}")),
     ("en", "время", re.compile(
         rf"^(?P<p>{И_EN}) spent (?P<n>{ч}) (?P<u1>minutes?) on homework\. (?P<q>{И_EN}) spent {К_EN} as much "
         rf"time on homework as (?P<p2>{И_EN})\. how much time did (?P<q2>{И_EN}) spend on homework\? "
@@ -78,7 +78,7 @@ def _альт(слова):
         rf"{К_RU} времени, чем (?P<p2>{И_RU})\. сколько времени (?P<q2>{И_RU}) (?P<v3>{ГЛ}) на уроки\? "
         rf"(?P<q3>{И_RU}) (?P<v4>{ГЛ}) на уроки (?P<m>{ч}) (?P<u2>минут\w*): {ЗВЕНО}")),
 )
-МЕРА_EN = {"деньги": "dollars", "вода": "litres", "время": "minutes"}
+МЕРА_EN = {"деньги": "dollars", "вода": "liters", "время": "minutes"}
 МЕРА_RU = {"деньги": "рубль", "вода": "литр"}
 
 

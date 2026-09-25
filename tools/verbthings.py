@@ -104,6 +104,10 @@ from plural import singular
     "collected": СБОР | В_РУКЕ, "collects": СБОР | В_РУКЕ, "picked": СБОР | ЕДА | В_РУКЕ, "picks": СБОР | ЕДА | В_РУКЕ,
 }
 ВСЕ_ВЕЩИ = set().union(*ГЛАГОЛ_БЕРЁТ.values())
+# МНОЖИТЕЛЬ — НЕ ВЕЩЬ (25.09, мир much): «spent 5 times as much time on homework» — «5 times» есть кратность при
+# слове кратности («as», «more», «the» …), а не вещь глагола; «jumped 5 times» — вещь прыжка (`ПРЫЖОК`). Суды пары
+# «глагол — вещь» (`episode_court`, `verbthings_court`) читают это отсюда: перед вещью пары стоит этот взгляд вперёд.
+НЕ_ВЕЩЬ_КРАТНОСТЬ = r"(?!times (?:as|more|less|fewer|the|that|what)\b)"
 
 # ЧЕЛОВЕК — НЕ ТОВАР И НЕ МАТЕРИАЛ (04.09). Одушевлённость объявлена в
 # gsm_items («a layer that pastes a possession verb onto these words is
