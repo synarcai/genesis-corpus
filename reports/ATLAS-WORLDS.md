@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 353 миров, 492630 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 354 миров, 494682 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -475,7 +475,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 42, строк 27588.
+Миров 43, строк 29640.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -487,6 +487,8 @@
   **THE MANDATE** — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbi…
 - **`goal`** (2124 строк; recompute, whole_only, unsigned_only)  
   **THE GOAL SPOKEN IN SPEECH, NOT TYPED AS A COMMAND (14.09, asked for by omega-ad). The organism already reaches a goal on the world's ledger by itself** — it reads, searches the world's declaration, proposes, waits for a word, acts and checks by reading ag…
+- **`codeforms`** (2052 строк; recompute, whole_only)  
+  **КОД С ПОВЕДЕНИЕМ** — свои малые программы на Python и Rust (25.09, наряд ведущего по слову владельца, п. 2 «код как корпус»: свод — школа продукта ozar; грамматику свод покупает из показов).
 - **`actturn`** (1872 строк; recompute, whole_only)  
   **THE DIALOGUE ACT** — the organism's own turn, with confirmation and observation (06.09).
 - **`place`** (1296 строк; recompute, named_relations_only)  
@@ -785,5 +787,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 353.
+Миров: **0** из 354.
 
