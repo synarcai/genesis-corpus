@@ -116,6 +116,7 @@ recache.установить()
            "much_court",  # несчётное, сравнённое кратно: «twice as much money as» (25.09, М-1274)
            "toolacts_court",  # руки агента: найти, заменить, дописать, имя, перенос, тесты, план (25.09)
            "codeforms_court",  # код с поведением: вызов, тест, правка, разбор, перевод (25.09)
+           "toolrepo_court",  # руки в репозитории: пути, папки, текст в кавычках, тесты по языку, вопросы (25.09)
            "money_story_court", "relations_story_court", "shares_percent_court",
            "chains_langs_court", "action_pages_court", "langmath_court",
            # …и ПОРОЖДЕНИЕ ПЛАСТА С ЧИСЛОМ: строка судима тем, порождается ли

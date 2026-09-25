@@ -60,6 +60,7 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
 ТЕСТЫ = {"test_notes.py": (5, 1), "test_todo.py": (6, 0), "test_readme.py": (4, 2)}
 ПАПКА = len(ТЕКСТЫ) + len(ТЕСТЫ)
 ВЫПУСКИ_ДО = (0, 1, 3)          # запусков мира до прогона — леджер запусков (дверь `actturn`)
+АРХИВ = "archive"               # папка переноса — имя мира, как имена файлов
 АРХИВ_ДО = (0, 1, 2)            # файлов в папке archive до переноса — по файлу
 НОВЫЕ_ИМЕНА = {"notes.md": ("shopping.md", "list.md"), "todo.txt": ("tasks.txt", "plan.txt"),
                "readme.md": ("about.md", "info.md")}
@@ -184,6 +185,129 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
 ПРОШЛО = {"ru": ("пройден", "пройдено", "пройдено"), "fr": ("réussi", "réussis"), "es": ("superada", "superadas"),
           "it": ("superato", "superati"), "pt": ("passou", "passaram")}
 
+# ФРАЗЫ ОБЪЕКТОВ — ОДНА ДВЕРЬ (25.09, дом актов v2 `toolrepo`): слово и текст в кавычках, файл, строка, тесты
+# файла, папка — В ПАДЕЖЕ, КАКОГО ПРОСИТ ШАБЛОН АКТА. Шаблон акта держит слот (`{W}`, `{М}`, `{Ф}`…), а не
+# готовое «the word {w} … in the file {f}»: так приказ можно сказать и без «the file», и с «the text» вместо
+# «the word», а предложение и отчёт — одной канонической фразой. Первая фраза кортежа — каноническая (ею
+# говорят предложение и отчёт), прочие — формы приказа («to {d}», «into the {d} folder»). Файл в винительном —
+# у двери хода `actturn`; падеж «нет» — тот, какого просит отрицание («слова {w} нет», «das Wort {w} steht
+# nicht», «słowa {w} nie ma»).
+ОБЪЕКТЫ = {
+    "en": dict(слово=dict(в="the word {w}", и="the word {w}", нет="the word {w}"),
+               текст=dict(в="the text {w}", и="the text {w}", нет="the text {w}"),
+               в_файле=("in the file {f}", "in {f}"), в_файл=("to the file {f}", "to {f}"),
+               файл_имени=("the file {f}", "{f}"), файла=("of the file {f}", "of {f}"),
+               строку=("the line {s}", "{s}"), тесты_файла=("the tests in the file {t}", "the tests in {t}"),
+               в_папку=("to the folder {d}", "to {d}", "into the folder {d}", "into the {d} folder",
+                        "to the {d} folder"),
+               в_папке=("in the folder {d}", "in {d}", "in the {d} folder"),
+               из_папки=("from the folder {d}", "from the {d} folder"),
+               папка_имя="the folder {d} contains {N}"),
+    "ru": dict(слово=dict(в="слово {w}", и="слово {w}", нет="слова {w}"),
+               текст=dict(в="текст {w}", и="текст {w}", нет="текста {w}"),
+               в_файле=("в файле {f}", "в {f}"), в_файл=("в файл {f}", "в {f}"),
+               файл_имени=("файл {f}", "{f}"), файла=("файла {f}", "{f}"),
+               строку=("строку {s}", "{s}"), тесты_файла=("тесты из файла {t}", "тесты из {t}"),
+               в_папку=("в папку {d}", "в {d}"), в_папке=("в папке {d}", "в {d}"), из_папки=("из папки {d}",),
+               папка_имя="папка {d} содержит {N}"),
+    "de": dict(слово=dict(в="das Wort {w}", и="das Wort {w}", нет="das Wort {w}"),
+               текст=dict(в="den Text {w}", и="der Text {w}", нет="der Text {w}"),
+               в_файле=("in der Datei {f}", "in {f}"), в_файл=("die Datei {f}", "{f}"),
+               файл_имени=("der Datei {f}", "{f}"), файла=("der Datei {f}", "von {f}"),
+               строку=("die Zeile {s}", "{s}"), тесты_файла=("die Tests aus der Datei {t}", "die Tests aus {t}"),
+               в_папку=("in den Ordner {d}", "nach {d}"), в_папке=("im Ordner {d}", "in {d}"),
+               из_папки=("aus dem Ordner {d}",), папка_имя="der Ordner {d} enthält {N}"),
+    "fr": dict(слово=dict(в="le mot {w}", и="le mot {w}", нет="le mot {w}"),
+               текст=dict(в="le texte {w}", и="le texte {w}", нет="le texte {w}"),
+               в_файле=("dans le fichier {f}", "dans {f}"), в_файл=("au fichier {f}", "à {f}"),
+               файл_имени=("le fichier {f}", "{f}"), файла=("du fichier {f}", "de {f}"),
+               строку=("la ligne {s}", "{s}"), тесты_файла=("les tests du fichier {t}", "les tests de {t}"),
+               в_папку=("dans le dossier {d}", "dans {d}", "vers le dossier {d}"),
+               в_папке=("dans le dossier {d}", "dans {d}"), из_папки=("du dossier {d}",),
+               папка_имя="le dossier {d} contient {N}"),
+    "es": dict(слово=dict(в="la palabra {w}", и="la palabra {w}", нет="la palabra {w}"),
+               текст=dict(в="el texto {w}", и="el texto {w}", нет="el texto {w}"),
+               в_файле=("en el archivo {f}", "en {f}"), в_файл=("al archivo {f}", "a {f}"),
+               файл_имени=("el archivo {f}", "{f}"), файла=("del archivo {f}", "de {f}"),
+               строку=("la línea {s}", "{s}"), тесты_файла=("las pruebas del archivo {t}", "las pruebas de {t}"),
+               в_папку=("a la carpeta {d}", "a {d}"), в_папке=("en la carpeta {d}", "en {d}"),
+               из_папки=("de la carpeta {d}",), папка_имя="la carpeta {d} contiene {N}"),
+    "it": dict(слово=dict(в="la parola {w}", и="la parola {w}", нет="la parola {w}"),
+               текст=dict(в="il testo {w}", и="il testo {w}", нет="il testo {w}"),
+               в_файле=("nel file {f}", "in {f}"), в_файл=("al file {f}", "a {f}"),
+               файл_имени=("il file {f}", "{f}"), файла=("del file {f}", "di {f}"),
+               строку=("la riga {s}", "{s}"), тесты_файла=("i test del file {t}", "i test di {t}"),
+               в_папку=("nella cartella {d}", "in {d}"), в_папке=("nella cartella {d}", "in {d}"),
+               из_папки=("dalla cartella {d}",), папка_имя="la cartella {d} contiene {N}"),
+    "pt": dict(слово=dict(в="a palavra {w}", и="a palavra {w}", нет="a palavra {w}"),
+               текст=dict(в="o texto {w}", и="o texto {w}", нет="o texto {w}"),
+               в_файле=("no ficheiro {f}", "em {f}"), в_файл=("ao ficheiro {f}", "a {f}"),
+               файл_имени=("o ficheiro {f}", "{f}"), файла=("do ficheiro {f}", "de {f}"),
+               строку=("a linha {s}", "{s}"), тесты_файла=("os testes do ficheiro {t}", "os testes de {t}"),
+               в_папку=("para a pasta {d}", "para {d}"), в_папке=("na pasta {d}", "em {d}"),
+               из_папки=("da pasta {d}",), папка_имя="a pasta {d} contém {N}"),
+    "nl": dict(слово=dict(в="het woord {w}", и="het woord {w}", нет="het woord {w}"),
+               текст=dict(в="de tekst {w}", и="de tekst {w}", нет="de tekst {w}"),
+               в_файле=("in het bestand {f}", "in {f}"), в_файл=("onderaan het bestand {f}", "onderaan {f}"),
+               файл_имени=("het bestand {f}", "{f}"), файла=("van het bestand {f}", "van {f}"),
+               строку=("de regel {s}", "{s}"), тесты_файла=("de tests uit het bestand {t}", "de tests uit {t}"),
+               в_папку=("naar de map {d}", "naar {d}"), в_папке=("in de map {d}", "in {d}"),
+               из_папки=("uit de map {d}",), папка_имя="de map {d} bevat {N}"),
+    "pl": dict(слово=dict(в="słowo {w}", и="słowo {w}", нет="słowa {w}"),
+               текст=dict(в="tekst {w}", и="tekst {w}", нет="tekstu {w}"),
+               в_файле=("w pliku {f}", "w {f}"), в_файл=("do pliku {f}", "do {f}"),
+               файл_имени=("pliku {f}", "{f}"), файла=("pliku {f}", "{f}"),
+               строку=("linię {s}", "{s}"), тесты_файла=("testy z pliku {t}", "testy z {t}"),
+               в_папку=("do folderu {d}", "do {d}"), в_папке=("w folderze {d}", "w {d}"),
+               из_папки=("z folderu {d}",), папка_имя="folder {d} zawiera {N}"),
+}
+for _я, _о in ОБЪЕКТЫ.items():
+    # файл в винительном — фраза двери хода: «the file {f}», «файл {f}», «die Datei {f}»
+    _о["файл_вин"] = (A.РЕЧЬ[_я]["файл"], "{f}")
+# СЛОТ ШАБЛОНА → (имя части, фраза двери[, падеж]): слот, какого не подали готовым, строится из части
+# канонической фразой — так прежние вызовы («w=…, f=…») говорят прежние строки байт в байт
+_СЛОТЫ = {"W": ("w", "слово", "в"), "Wи": ("w", "слово", "и"), "Wнет": ("w", "слово", "нет"),
+          "М": ("f", "в_файле"), "К": ("f", "в_файл"), "Ф": ("f", "файл_вин"), "Фи": ("f", "файл_имени"),
+          "S": ("s", "строку"), "Т": ("t", "тесты_файла"), "Д": ("d", "в_папку")}
+
+
+def слоты(язык, **п):
+    """Части приказа с фразами объектов: поданная готовой фраза (форма приказа) остаётся, прочие — канонические."""
+    о = ОБЪЕКТЫ[язык]
+    вон = dict(п)
+    for слот, (часть, фраза, *падеж) in _СЛОТЫ.items():
+        if слот in вон or часть not in п:
+            continue
+        шаблон = о[фраза][падеж[0]] if падеж else о[фраза][0]
+        вон[слот] = шаблон.format(**{часть: п[часть]})
+    return вон
+
+
+# ПЛАН ИЗ ДВУХ АКТОВ — связка приказа и предложения: «{A}, then {B}», «i propose two acts: {A}, then {B}». {B1} —
+# глагол второго приказа, {B2} — остаток: нидерландское наречие стоит ПОСЛЕ глагола повеления («… en publiceer
+# daarna de release»), и шаблон говорит это сам, без ветки языка в коде
+СВЯЗКА = {
+    "en": ("{A}, then {B1} {B2}", "i propose two acts: {A}, then {B}"),
+    "ru": ("{A}, затем {B1} {B2}", "предлагаю два акта: {A}, затем {B}"),
+    "de": ("{A}, dann {B1} {B2}", "ich schlage zwei Handlungen vor: {A}, dann {B}"),
+    "fr": ("{A}, puis {B1} {B2}", "je propose deux actes : {A}, puis {B}"),
+    "es": ("{A}, luego {B1} {B2}", "propongo dos actos: {A}, luego {B}"),
+    "it": ("{A}, poi {B1} {B2}", "propongo due atti: {A}, poi {B}"),
+    "pt": ("{A}, depois {B1} {B2}", "proponho dois atos: {A}, depois {B}"),
+    "nl": ("{A} en {B1} daarna {B2}", "ik stel twee handelingen voor: {A} en daarna {B}"),
+    "pl": ("{A}, potem {B1} {B2}", "proponuję dwa akty: {A}, potem {B}"),
+}
+
+
+def связать(язык, ступень, A, B):
+    """Приказ («приказ») или тело предложения («предложение») плана из двух актов."""
+    приказ_, предложение_ = СВЯЗКА[язык]
+    if ступень == "приказ":
+        B1, B2 = B.split(" ", 1)
+        return приказ_.format(A=A, B1=B1, B2=B2)
+    return предложение_.format(A=A, B=B)
+
+
 # акт → (приказ, инфинитив, отчёт) — у de и nl инфинитив с глаголом в конце и «zu/te»-форма предложения
 АКТЫ = ("поиск", "строки", "замена", "дописать", "переименовать", "перенести", "тесты")
 РЕЧЬ = {
@@ -192,60 +316,49 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
                "searched for the word {w} in the file {f}"),
         строки=("find the lines with the word {w} in the file {f}", "find the lines with the word {w} in the file {f}",
                 "searched for the lines with the word {w} in the file {f}"),
-        замена=("replace the word {w} with {v} in the file {f}", "replace the word {w} with {v} in the file {f}",
-                "replaced the word {w} with {v} in the file {f}"),
-        дописать=("append the line {s} to the file {f}", "append the line {s} to the file {f}",
-                  "appended the line {s} to the file {f}"),
-        переименовать=("rename the file {f} to {g}", "rename the file {f} to {g}", "renamed the file {f} to {g}"),
-        перенести=("move the file {f} to the folder archive", "move the file {f} to the folder archive",
-                   "moved the file {f} to the folder archive"),
-        тесты=("run the tests in the file {t}", "run the tests in the file {t}", "ran the tests in the file {t}"),
+        замена=("replace {W} with {v} {М}", "replace {W} with {v} {М}", "replaced {W} with {v} {М}"),
+        дописать=("append {S} {К}", "append {S} {К}", "appended {S} {К}"),
+        переименовать=("rename {Фи} to {g}", "rename {Фи} to {g}", "renamed {Фи} to {g}"),
+        перенести=("move {Ф} {Д}", "move {Ф} {Д}", "moved {Ф} {Д}"),
+        тесты=("run {Т}", "run {Т}", "ran {Т}"),
         предложение="i propose to {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="please {imp}.", косвенный="we need to {inf}.",
                       вопросом="could you {inf}?"),
-        встречается="the word {w} occurs {N} in the file {f}",
-        вопрос_раз="how many times does the word {w} occur in the file {f}?",
+        встречается="{Wи} occurs {N} {М}",
+        вопрос_раз="how many times does {Wи} occur {М}?",
         строк_со_словом="the file {f} has {N} with the word {w}",
-        позиция=("the word {w} stands in line {a}", "the word {w} stands in lines {a} and {b}"),
-        нет_слова="the word {w} is not in the file {f}",
-        архив="the folder archive contains {N}",
+        позиция=("{Wи} stands in line {a}", "{Wи} stands in lines {a} and {b}"),
+        нет_слова="{Wнет} is not {М}",
         проверил="checked the file {f}",
         итог=("the run ended successfully", "the run ended with an error"),
         выпуск=("all tests passed — the release is published", "not all tests passed — the release is not published"),
         план_замены=("find the word {w} in the file {f}, then replace it with {v}, then check the file",
                      "i propose three acts: find the word {w} in the file {f}, replace it with {v}, "
                      "check the file {f}"),
-        план_тестов=("run the tests in the file {t}, then publish the release if all tests pass",
-                     "i propose two acts: run the tests in the file {t}, then publish the release "
-                     "if all tests pass")),
+        выпуск_акт=("publish the release if all tests pass", "publish the release if all tests pass")),
     "ru": dict(
         поиск=("найди слово {w} в файле {f}", "найти слово {w} в файле {f}", "искал слово {w} в файле {f}"),
         строки=("найди строки со словом {w} в файле {f}", "найти строки со словом {w} в файле {f}",
                 "искал строки со словом {w} в файле {f}"),
-        замена=("замени слово {w} на {v} в файле {f}", "заменить слово {w} на {v} в файле {f}",
-                "заменил слово {w} на {v} в файле {f}"),
-        дописать=("допиши строку {s} в файл {f}", "дописать строку {s} в файл {f}", "дописал строку {s} в файл {f}"),
-        переименовать=("переименуй файл {f} в {g}", "переименовать файл {f} в {g}", "переименовал файл {f} в {g}"),
-        перенести=("перенеси файл {f} в папку archive", "перенести файл {f} в папку archive",
-                   "перенёс файл {f} в папку archive"),
-        тесты=("запусти тесты из файла {t}", "запустить тесты из файла {t}", "запустил тесты из файла {t}"),
+        замена=("замени {W} на {v} {М}", "заменить {W} на {v} {М}", "заменил {W} на {v} {М}"),
+        дописать=("допиши {S} {К}", "дописать {S} {К}", "дописал {S} {К}"),
+        переименовать=("переименуй {Фи} в {g}", "переименовать {Фи} в {g}", "переименовал {Фи} в {g}"),
+        перенести=("перенеси {Ф} {Д}", "перенести {Ф} {Д}", "перенёс {Ф} {Д}"),
+        тесты=("запусти {Т}", "запустить {Т}", "запустил {Т}"),
         предложение="предлагаю {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="пожалуйста, {imp}.", косвенный="нужно {inf}.",
                       вопросом="ты можешь {inf}?"),
-        встречается="в файле {f} слово {w} встречается {N}",
-        вопрос_раз="сколько раз слово {w} встречается в файле {f}?",
+        встречается="{М} {Wи} встречается {N}",
+        вопрос_раз="сколько раз {Wи} встречается {М}?",
         строк_со_словом="в файле {f} {N} со словом {w}",
-        позиция=("слово {w} стоит в строке {a}", "слово {w} стоит в строках {a} и {b}"),
-        нет_слова="слова {w} нет в файле {f}",
-        архив="папка archive содержит {N}",
+        позиция=("{Wи} стоит в строке {a}", "{Wи} стоит в строках {a} и {b}"),
+        нет_слова="{Wнет} нет {М}",
         проверил="проверил файл {f}",
         итог=("запуск завершился успешно", "запуск завершился ошибкой"),
         выпуск=("все тесты пройдены — релиз выпущен", "не все тесты пройдены — релиз не выпущен"),
         план_замены=("найди слово {w} в файле {f}, затем замени его на {v}, затем проверь файл",
                      "предлагаю три акта: найти слово {w} в файле {f}, заменить его на {v}, проверить файл {f}"),
-        план_тестов=("запусти тесты из файла {t}, затем выпусти релиз, если все тесты пройдут",
-                     "предлагаю два акта: запустить тесты из файла {t}, затем выпустить релиз, "
-                     "если все тесты пройдут")),
+        выпуск_акт=("выпусти релиз, если все тесты пройдут", "выпустить релиз, если все тесты пройдут")),
     "de": dict(
         поиск=("suche das Wort {w} in der Datei {f}", "das Wort {w} in der Datei {f} suchen",
                "das Wort {w} in der Datei {f} gesucht", "das Wort {w} in der Datei {f} zu suchen"),
@@ -253,27 +366,21 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
                 "die Zeilen mit dem Wort {w} in der Datei {f} suchen",
                 "die Zeilen mit dem Wort {w} in der Datei {f} gesucht",
                 "die Zeilen mit dem Wort {w} in der Datei {f} zu suchen"),
-        замена=("ersetze das Wort {w} in der Datei {f} durch {v}", "das Wort {w} in der Datei {f} durch {v} ersetzen",
-                "das Wort {w} in der Datei {f} durch {v} ersetzt",
-                "das Wort {w} in der Datei {f} durch {v} zu ersetzen"),
-        дописать=("ergänze die Datei {f} um die Zeile {s}", "die Datei {f} um die Zeile {s} ergänzen",
-                  "die Datei {f} um die Zeile {s} ergänzt", "die Datei {f} um die Zeile {s} zu ergänzen"),
-        переименовать=("gib der Datei {f} den Namen {g}", "der Datei {f} den Namen {g} geben",
-                       "der Datei {f} den Namen {g} gegeben", "der Datei {f} den Namen {g} zu geben"),
-        перенести=("verschiebe die Datei {f} in den Ordner archive", "die Datei {f} in den Ordner archive verschieben",
-                   "die Datei {f} in den Ordner archive verschoben",
-                   "die Datei {f} in den Ordner archive zu verschieben"),
-        тесты=("starte die Tests aus der Datei {t}", "die Tests aus der Datei {t} starten",
-               "die Tests aus der Datei {t} gestartet", "die Tests aus der Datei {t} zu starten"),
+        замена=("ersetze {W} {М} durch {v}", "{W} {М} durch {v} ersetzen", "{W} {М} durch {v} ersetzt",
+                "{W} {М} durch {v} zu ersetzen"),
+        дописать=("ergänze {К} um {S}", "{К} um {S} ergänzen", "{К} um {S} ergänzt", "{К} um {S} zu ergänzen"),
+        переименовать=("gib {Фи} den Namen {g}", "{Фи} den Namen {g} geben", "{Фи} den Namen {g} gegeben",
+                       "{Фи} den Namen {g} zu geben"),
+        перенести=("verschiebe {Ф} {Д}", "{Ф} {Д} verschieben", "{Ф} {Д} verschoben", "{Ф} {Д} zu verschieben"),
+        тесты=("starte {Т}", "{Т} starten", "{Т} gestartet", "{Т} zu starten"),
         предложение="ich schlage vor, {zu}", отчёт="ich habe {past}",
         регистры=dict(плоский="{imp}.", вежливый="bitte {imp}.", косвенный="man sollte {inf}.",
                       вопросом="kannst du {inf}?"),
-        встречается="das Wort {w} kommt in der Datei {f} {N} vor",
-        вопрос_раз="wie oft kommt das Wort {w} in der Datei {f} vor?",
+        встречается="{Wи} kommt {М} {N} vor",
+        вопрос_раз="wie oft kommt {Wи} {М} vor?",
         строк_со_словом="die Datei {f} hat {N} mit dem Wort {w}",
-        позиция=("das Wort {w} steht in Zeile {a}", "das Wort {w} steht in den Zeilen {a} und {b}"),
-        нет_слова="das Wort {w} steht nicht in der Datei {f}",
-        архив="der Ordner archive enthält {N}",
+        позиция=("{Wи} steht in Zeile {a}", "{Wи} steht in den Zeilen {a} und {b}"),
+        нет_слова="{Wнет} steht nicht {М}",
         проверил="ich habe die Datei {f} geprüft",
         итог=("der Lauf endete erfolgreich", "der Lauf endete mit einem Fehler"),
         выпуск=("alle Tests bestanden — das Release ist veröffentlicht",
@@ -281,33 +388,27 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
         план_замены=("suche das Wort {w} in der Datei {f}, dann ersetze es durch {v}, dann prüfe die Datei",
                      "ich schlage drei Handlungen vor: das Wort {w} in der Datei {f} suchen, es durch {v} ersetzen, "
                      "die Datei {f} prüfen"),
-        план_тестов=("starte die Tests aus der Datei {t}, dann veröffentliche das Release, wenn alle Tests bestehen",
-                     "ich schlage zwei Handlungen vor: die Tests aus der Datei {t} starten, dann das Release "
-                     "veröffentlichen, wenn alle Tests bestehen")),
+        выпуск_акт=("veröffentliche das Release, wenn alle Tests bestehen",
+                    "das Release veröffentlichen, wenn alle Tests bestehen")),
     "fr": dict(
         поиск=("cherche le mot {w} dans le fichier {f}", "chercher le mot {w} dans le fichier {f}",
                "cherché le mot {w} dans le fichier {f}"),
         строки=("cherche les lignes avec le mot {w} dans le fichier {f}",
                 "chercher les lignes avec le mot {w} dans le fichier {f}",
                 "cherché les lignes avec le mot {w} dans le fichier {f}"),
-        замена=("remplace le mot {w} par {v} dans le fichier {f}", "remplacer le mot {w} par {v} dans le fichier {f}",
-                "remplacé le mot {w} par {v} dans le fichier {f}"),
-        дописать=("ajoute la ligne {s} au fichier {f}", "ajouter la ligne {s} au fichier {f}",
-                  "ajouté la ligne {s} au fichier {f}"),
-        переименовать=("renomme le fichier {f} en {g}", "renommer le fichier {f} en {g}",
-                       "renommé le fichier {f} en {g}"),
-        перенести=("déplace le fichier {f} dans le dossier archive", "déplacer le fichier {f} dans le dossier archive",
-                   "déplacé le fichier {f} dans le dossier archive"),
-        тесты=("lance les tests du fichier {t}", "lancer les tests du fichier {t}", "lancé les tests du fichier {t}"),
+        замена=("remplace {W} par {v} {М}", "remplacer {W} par {v} {М}", "remplacé {W} par {v} {М}"),
+        дописать=("ajoute {S} {К}", "ajouter {S} {К}", "ajouté {S} {К}"),
+        переименовать=("renomme {Фи} en {g}", "renommer {Фи} en {g}", "renommé {Фи} en {g}"),
+        перенести=("déplace {Ф} {Д}", "déplacer {Ф} {Д}", "déplacé {Ф} {Д}"),
+        тесты=("lance {Т}", "lancer {Т}", "lancé {Т}"),
         предложение="je propose de {inf}", отчёт="j'ai {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, s'il te plaît.", косвенный="il faut {inf}.",
                       вопросом="peux-tu {inf} ?"),
-        встречается="le mot {w} apparaît {N} dans le fichier {f}",
-        вопрос_раз="combien de fois le mot {w} apparaît-il dans le fichier {f} ?",
+        встречается="{Wи} apparaît {N} {М}",
+        вопрос_раз="combien de fois {Wи} apparaît-il {М} ?",
         строк_со_словом="le fichier {f} a {N} avec le mot {w}",
-        позиция=("le mot {w} se trouve à la ligne {a}", "le mot {w} se trouve aux lignes {a} et {b}"),
-        нет_слова="le mot {w} n'est pas dans le fichier {f}",
-        архив="le dossier archive contient {N}",
+        позиция=("{Wи} se trouve à la ligne {a}", "{Wи} se trouve aux lignes {a} et {b}"),
+        нет_слова="{Wнет} n'est pas {М}",
         проверил="j'ai vérifié le fichier {f}",
         итог=("l'exécution s'est terminée avec succès", "l'exécution s'est terminée par une erreur"),
         выпуск=("tous les tests ont réussi — la version est publiée",
@@ -315,35 +416,27 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
         план_замены=("cherche le mot {w} dans le fichier {f}, puis remplace-le par {v}, puis vérifie le fichier",
                      "je propose trois actes : chercher le mot {w} dans le fichier {f}, le remplacer par {v}, "
                      "vérifier le fichier {f}"),
-        план_тестов=("lance les tests du fichier {t}, puis publie la version si tous les tests réussissent",
-                     "je propose deux actes : lancer les tests du fichier {t}, puis publier la version "
-                     "si tous les tests réussissent")),
+        выпуск_акт=("publie la version si tous les tests réussissent",
+                    "publier la version si tous les tests réussissent")),
     "es": dict(
         поиск=("busca la palabra {w} en el archivo {f}", "buscar la palabra {w} en el archivo {f}",
                "buscado la palabra {w} en el archivo {f}"),
         строки=("busca las líneas con la palabra {w} en el archivo {f}",
                 "buscar las líneas con la palabra {w} en el archivo {f}",
                 "buscado las líneas con la palabra {w} en el archivo {f}"),
-        замена=("reemplaza la palabra {w} por {v} en el archivo {f}",
-                "reemplazar la palabra {w} por {v} en el archivo {f}",
-                "reemplazado la palabra {w} por {v} en el archivo {f}"),
-        дописать=("añade la línea {s} al archivo {f}", "añadir la línea {s} al archivo {f}",
-                  "añadido la línea {s} al archivo {f}"),
-        переименовать=("renombra el archivo {f} como {g}", "renombrar el archivo {f} como {g}",
-                       "renombrado el archivo {f} como {g}"),
-        перенести=("mueve el archivo {f} a la carpeta archive", "mover el archivo {f} a la carpeta archive",
-                   "movido el archivo {f} a la carpeta archive"),
-        тесты=("ejecuta las pruebas del archivo {t}", "ejecutar las pruebas del archivo {t}",
-               "ejecutado las pruebas del archivo {t}"),
+        замена=("reemplaza {W} por {v} {М}", "reemplazar {W} por {v} {М}", "reemplazado {W} por {v} {М}"),
+        дописать=("añade {S} {К}", "añadir {S} {К}", "añadido {S} {К}"),
+        переименовать=("renombra {Фи} como {g}", "renombrar {Фи} como {g}", "renombrado {Фи} como {g}"),
+        перенести=("mueve {Ф} {Д}", "mover {Ф} {Д}", "movido {Ф} {Д}"),
+        тесты=("ejecuta {Т}", "ejecutar {Т}", "ejecutado {Т}"),
         предложение="propongo {inf}", отчёт="he {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, por favor.", косвенный="hay que {inf}.",
                       вопросом="¿puedes {inf}?"),
-        встречается="la palabra {w} aparece {N} en el archivo {f}",
-        вопрос_раз="¿cuántas veces aparece la palabra {w} en el archivo {f}?",
+        встречается="{Wи} aparece {N} {М}",
+        вопрос_раз="¿cuántas veces aparece {Wи} {М}?",
         строк_со_словом="el archivo {f} tiene {N} con la palabra {w}",
-        позиция=("la palabra {w} está en la línea {a}", "la palabra {w} está en las líneas {a} y {b}"),
-        нет_слова="la palabra {w} no está en el archivo {f}",
-        архив="la carpeta archive contiene {N}",
+        позиция=("{Wи} está en la línea {a}", "{Wи} está en las líneas {a} y {b}"),
+        нет_слова="{Wнет} no está {М}",
         проверил="he revisado el archivo {f}",
         итог=("la ejecución terminó con éxito", "la ejecución terminó con un error"),
         выпуск=("todas las pruebas pasaron — la versión está publicada",
@@ -351,31 +444,25 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
         план_замены=("busca la palabra {w} en el archivo {f}, luego reemplázala por {v}, luego revisa el archivo",
                      "propongo tres actos: buscar la palabra {w} en el archivo {f}, reemplazarla por {v}, "
                      "revisar el archivo {f}"),
-        план_тестов=("ejecuta las pruebas del archivo {t}, luego publica la versión si todas las pruebas pasan",
-                     "propongo dos actos: ejecutar las pruebas del archivo {t}, luego publicar la versión "
-                     "si todas las pruebas pasan")),
+        выпуск_акт=("publica la versión si todas las pruebas pasan", "publicar la versión si todas las pruebas pasan")),
     "it": dict(
         поиск=("cerca la parola {w} nel file {f}", "cercare la parola {w} nel file {f}",
                "cercato la parola {w} nel file {f}"),
         строки=("cerca le righe con la parola {w} nel file {f}", "cercare le righe con la parola {w} nel file {f}",
                 "cercato le righe con la parola {w} nel file {f}"),
-        замена=("sostituisci la parola {w} con {v} nel file {f}", "sostituire la parola {w} con {v} nel file {f}",
-                "sostituito la parola {w} con {v} nel file {f}"),
-        дописать=("aggiungi la riga {s} al file {f}", "aggiungere la riga {s} al file {f}",
-                  "aggiunto la riga {s} al file {f}"),
-        переименовать=("rinomina il file {f} in {g}", "rinominare il file {f} in {g}", "rinominato il file {f} in {g}"),
-        перенести=("sposta il file {f} nella cartella archive", "spostare il file {f} nella cartella archive",
-                   "spostato il file {f} nella cartella archive"),
-        тесты=("esegui i test del file {t}", "eseguire i test del file {t}", "eseguito i test del file {t}"),
+        замена=("sostituisci {W} con {v} {М}", "sostituire {W} con {v} {М}", "sostituito {W} con {v} {М}"),
+        дописать=("aggiungi {S} {К}", "aggiungere {S} {К}", "aggiunto {S} {К}"),
+        переименовать=("rinomina {Фи} in {g}", "rinominare {Фи} in {g}", "rinominato {Фи} in {g}"),
+        перенести=("sposta {Ф} {Д}", "spostare {Ф} {Д}", "spostato {Ф} {Д}"),
+        тесты=("esegui {Т}", "eseguire {Т}", "eseguito {Т}"),
         предложение="propongo di {inf}", отчёт="ho {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, per favore.", косвенный="bisogna {inf}.",
                       вопросом="puoi {inf}?"),
-        встречается="la parola {w} compare {N} nel file {f}",
-        вопрос_раз="quante volte compare la parola {w} nel file {f}?",
+        встречается="{Wи} compare {N} {М}",
+        вопрос_раз="quante volte compare {Wи} {М}?",
         строк_со_словом="il file {f} ha {N} con la parola {w}",
-        позиция=("la parola {w} si trova alla riga {a}", "la parola {w} si trova alle righe {a} e {b}"),
-        нет_слова="la parola {w} non è nel file {f}",
-        архив="la cartella archive contiene {N}",
+        позиция=("{Wи} si trova alla riga {a}", "{Wи} si trova alle righe {a} e {b}"),
+        нет_слова="{Wнет} non è {М}",
         проверил="ho controllato il file {f}",
         итог=("l'esecuzione è terminata con successo", "l'esecuzione è terminata con un errore"),
         выпуск=("tutti i test sono passati — la versione è pubblicata",
@@ -383,34 +470,26 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
         план_замены=("cerca la parola {w} nel file {f}, poi sostituiscila con {v}, poi controlla il file",
                      "propongo tre atti: cercare la parola {w} nel file {f}, sostituirla con {v}, "
                      "controllare il file {f}"),
-        план_тестов=("esegui i test del file {t}, poi pubblica la versione se tutti i test passano",
-                     "propongo due atti: eseguire i test del file {t}, poi pubblicare la versione "
-                     "se tutti i test passano")),
+        выпуск_акт=("pubblica la versione se tutti i test passano", "pubblicare la versione se tutti i test passano")),
     "pt": dict(
         поиск=("procura a palavra {w} no ficheiro {f}", "procurar a palavra {w} no ficheiro {f}",
                "procurei a palavra {w} no ficheiro {f}"),
         строки=("procura as linhas com a palavra {w} no ficheiro {f}",
                 "procurar as linhas com a palavra {w} no ficheiro {f}",
                 "procurei as linhas com a palavra {w} no ficheiro {f}"),
-        замена=("substitui a palavra {w} por {v} no ficheiro {f}", "substituir a palavra {w} por {v} no ficheiro {f}",
-                "substituí a palavra {w} por {v} no ficheiro {f}"),
-        дописать=("acrescenta a linha {s} ao ficheiro {f}", "acrescentar a linha {s} ao ficheiro {f}",
-                  "acrescentei a linha {s} ao ficheiro {f}"),
-        переименовать=("renomeia o ficheiro {f} para {g}", "renomear o ficheiro {f} para {g}",
-                       "renomeei o ficheiro {f} para {g}"),
-        перенести=("move o ficheiro {f} para a pasta archive", "mover o ficheiro {f} para a pasta archive",
-                   "movi o ficheiro {f} para a pasta archive"),
-        тесты=("executa os testes do ficheiro {t}", "executar os testes do ficheiro {t}",
-               "executei os testes do ficheiro {t}"),
+        замена=("substitui {W} por {v} {М}", "substituir {W} por {v} {М}", "substituí {W} por {v} {М}"),
+        дописать=("acrescenta {S} {К}", "acrescentar {S} {К}", "acrescentei {S} {К}"),
+        переименовать=("renomeia {Фи} para {g}", "renomear {Фи} para {g}", "renomeei {Фи} para {g}"),
+        перенести=("move {Ф} {Д}", "mover {Ф} {Д}", "movi {Ф} {Д}"),
+        тесты=("executa {Т}", "executar {Т}", "executei {Т}"),
         предложение="proponho {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, por favor.", косвенный="é preciso {inf}.",
                       вопросом="podes {inf}?"),
-        встречается="a palavra {w} aparece {N} no ficheiro {f}",
-        вопрос_раз="quantas vezes aparece a palavra {w} no ficheiro {f}?",
+        встречается="{Wи} aparece {N} {М}",
+        вопрос_раз="quantas vezes aparece {Wи} {М}?",
         строк_со_словом="o ficheiro {f} tem {N} com a palavra {w}",
-        позиция=("a palavra {w} está na linha {a}", "a palavra {w} está nas linhas {a} e {b}"),
-        нет_слова="a palavra {w} não está no ficheiro {f}",
-        архив="a pasta archive contém {N}",
+        позиция=("{Wи} está na linha {a}", "{Wи} está nas linhas {a} e {b}"),
+        нет_слова="{Wнет} não está {М}",
         проверил="verifiquei o ficheiro {f}",
         итог=("a execução terminou com sucesso", "a execução terminou com um erro"),
         выпуск=("todos os testes passaram — a versão está publicada",
@@ -418,9 +497,7 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
         план_замены=("procura a palavra {w} no ficheiro {f}, depois substitui-a por {v}, depois verifica o ficheiro",
                      "proponho três atos: procurar a palavra {w} no ficheiro {f}, substituí-la por {v}, "
                      "verificar o ficheiro {f}"),
-        план_тестов=("executa os testes do ficheiro {t}, depois publica a versão se todos os testes passarem",
-                     "proponho dois atos: executar os testes do ficheiro {t}, depois publicar a versão "
-                     "se todos os testes passarem")),
+        выпуск_акт=("publica a versão se todos os testes passarem", "publicar a versão se todos os testes passarem")),
     "nl": dict(
         поиск=("zoek het woord {w} in het bestand {f}", "het woord {w} in het bestand {f} zoeken",
                "het woord {w} in het bestand {f} gezocht", "het woord {w} in het bestand {f} te zoeken"),
@@ -428,28 +505,21 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
                 "de regels met het woord {w} in het bestand {f} zoeken",
                 "de regels met het woord {w} in het bestand {f} gezocht",
                 "de regels met het woord {w} in het bestand {f} te zoeken"),
-        замена=("vervang het woord {w} in het bestand {f} door {v}",
-                "het woord {w} in het bestand {f} door {v} vervangen",
-                "het woord {w} in het bestand {f} door {v} vervangen",
-                "het woord {w} in het bestand {f} door {v} te vervangen"),
-        дописать=("zet de regel {s} onderaan het bestand {f}", "de regel {s} onderaan het bestand {f} zetten",
-                  "de regel {s} onderaan het bestand {f} gezet", "de regel {s} onderaan het bestand {f} te zetten"),
-        переименовать=("hernoem het bestand {f} naar {g}", "het bestand {f} naar {g} hernoemen",
-                       "het bestand {f} naar {g} hernoemd", "het bestand {f} naar {g} te hernoemen"),
-        перенести=("verplaats het bestand {f} naar de map archive", "het bestand {f} naar de map archive verplaatsen",
-                   "het bestand {f} naar de map archive verplaatst",
-                   "het bestand {f} naar de map archive te verplaatsen"),
-        тесты=("start de tests uit het bestand {t}", "de tests uit het bestand {t} starten",
-               "de tests uit het bestand {t} gestart", "de tests uit het bestand {t} te starten"),
+        замена=("vervang {W} {М} door {v}", "{W} {М} door {v} vervangen", "{W} {М} door {v} vervangen",
+                "{W} {М} door {v} te vervangen"),
+        дописать=("zet {S} {К}", "{S} {К} zetten", "{S} {К} gezet", "{S} {К} te zetten"),
+        переименовать=("hernoem {Фи} naar {g}", "{Фи} naar {g} hernoemen", "{Фи} naar {g} hernoemd",
+                       "{Фи} naar {g} te hernoemen"),
+        перенести=("verplaats {Ф} {Д}", "{Ф} {Д} verplaatsen", "{Ф} {Д} verplaatst", "{Ф} {Д} te verplaatsen"),
+        тесты=("start {Т}", "{Т} starten", "{Т} gestart", "{Т} te starten"),
         предложение="ik stel voor {zu}", отчёт="ik heb {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, alsjeblieft.", косвенный="we moeten {inf}.",
                       вопросом="kun je {inf}?"),
-        встречается="het woord {w} komt {N} voor in het bestand {f}",
-        вопрос_раз="hoe vaak komt het woord {w} voor in het bestand {f}?",
+        встречается="{Wи} komt {N} voor {М}",
+        вопрос_раз="hoe vaak komt {Wи} voor {М}?",
         строк_со_словом="het bestand {f} heeft {N} met het woord {w}",
-        позиция=("het woord {w} staat in regel {a}", "het woord {w} staat in de regels {a} en {b}"),
-        нет_слова="het woord {w} staat niet in het bestand {f}",
-        архив="de map archive bevat {N}",
+        позиция=("{Wи} staat in regel {a}", "{Wи} staat in de regels {a} en {b}"),
+        нет_слова="{Wнет} staat niet {М}",
         проверил="ik heb het bestand {f} gecontroleerd",
         итог=("de run eindigde succesvol", "de run eindigde met een fout"),
         выпуск=("alle tests geslaagd — de release is gepubliceerd",
@@ -457,40 +527,32 @@ import svampforms as S  # noqa: E402 — счётная ячейка пакет�
         план_замены=("zoek het woord {w} in het bestand {f}, vervang het dan door {v} en controleer daarna het bestand",
                      "ik stel drie handelingen voor: het woord {w} in het bestand {f} zoeken, het door {v} "
                      "vervangen, het bestand {f} controleren"),
-        план_тестов=("start de tests uit het bestand {t} en publiceer daarna de release als alle tests slagen",
-                     "ik stel twee handelingen voor: de tests uit het bestand {t} starten en daarna de release "
-                     "publiceren als alle tests slagen")),
+        выпуск_акт=("publiceer de release als alle tests slagen", "de release publiceren als alle tests slagen")),
     "pl": dict(
         поиск=("znajdź słowo {w} w pliku {f}", "znaleźć słowo {w} w pliku {f}", "szukałem słowa {w} w pliku {f}"),
         строки=("znajdź linie ze słowem {w} w pliku {f}", "znaleźć linie ze słowem {w} w pliku {f}",
                 "szukałem linii ze słowem {w} w pliku {f}"),
-        замена=("zamień słowo {w} na {v} w pliku {f}", "zamienić słowo {w} na {v} w pliku {f}",
-                "zamieniłem słowo {w} na {v} w pliku {f}"),
-        дописать=("dopisz linię {s} do pliku {f}", "dopisać linię {s} do pliku {f}",
-                  "dopisałem linię {s} do pliku {f}"),
-        переименовать=("zmień nazwę pliku {f} na {g}", "zmienić nazwę pliku {f} na {g}",
-                       "zmieniłem nazwę pliku {f} na {g}"),
-        перенести=("przenieś plik {f} do folderu archive", "przenieść plik {f} do folderu archive",
-                   "przeniosłem plik {f} do folderu archive"),
-        тесты=("uruchom testy z pliku {t}", "uruchomić testy z pliku {t}", "uruchomiłem testy z pliku {t}"),
+        замена=("zamień {W} na {v} {М}", "zamienić {W} na {v} {М}", "zamieniłem {W} na {v} {М}"),
+        дописать=("dopisz {S} {К}", "dopisać {S} {К}", "dopisałem {S} {К}"),
+        переименовать=("zmień nazwę {Фи} na {g}", "zmienić nazwę {Фи} na {g}", "zmieniłem nazwę {Фи} na {g}"),
+        перенести=("przenieś {Ф} {Д}", "przenieść {Ф} {Д}", "przeniosłem {Ф} {Д}"),
+        тесты=("uruchom {Т}", "uruchomić {Т}", "uruchomiłem {Т}"),
         предложение="proponuję {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="proszę, {imp}.", косвенный="trzeba {inf}.",
                       вопросом="czy możesz {inf}?"),
-        встречается="słowo {w} występuje {N} w pliku {f}",
-        вопрос_раз="ile razy słowo {w} występuje w pliku {f}?",
+        встречается="{Wи} występuje {N} {М}",
+        вопрос_раз="ile razy {Wи} występuje {М}?",
         строк_со_словом="plik {f} ma {N} ze słowem {w}",
-        позиция=("słowo {w} jest w linii {a}", "słowo {w} jest w liniach {a} i {b}"),
-        нет_слова="słowa {w} nie ma w pliku {f}",
-        архив="folder archive zawiera {N}",
+        позиция=("{Wи} jest w linii {a}", "{Wи} jest w liniach {a} i {b}"),
+        нет_слова="{Wнет} nie ma {М}",
         проверил="sprawdziłem plik {f}",
         итог=("uruchomienie zakończyło się sukcesem", "uruchomienie zakończyło się błędem"),
         выпуск=("wszystkie testy przeszły — wydanie jest opublikowane",
                 "nie wszystkie testy przeszły — wydanie nie zostaje opublikowane"),
         план_замены=("znajdź słowo {w} w pliku {f}, potem zamień je na {v}, potem sprawdź plik",
                      "proponuję trzy akty: znaleźć słowo {w} w pliku {f}, zamienić je na {v}, sprawdzić plik {f}"),
-        план_тестов=("uruchom testy z pliku {t}, potem opublikuj wydanie, jeśli wszystkie testy przejdą",
-                     "proponuję dwa akty: uruchomić testy z pliku {t}, potem opublikować wydanie, "
-                     "jeśli wszystkie testy przejdą")),
+        выпуск_акт=("opublikuj wydanie, jeśli wszystkie testy przejdą",
+                    "opublikować wydanie, jeśli wszystkie testy przejdą")),
 }
 РЕГИСТРЫ = ("плоский", "вежливый", "косвенный", "вопросом")
 
@@ -589,6 +651,7 @@ def _фр(язык, строка):
 def _ступени(язык, акт, **п):
     """(приказ, инфинитив, zu-инфинитив, отчёт) акта с подставленными объектами."""
     формы = РЕЧЬ[язык][акт]
+    п = слоты(язык, **п)
     imp, inf, past = (ф.format(**п) for ф in формы[:3])
     zu = формы[3].format(**п) if len(формы) > 3 else inf
     return imp, inf, zu, past
@@ -610,7 +673,7 @@ def отчёт(язык, акт, **п):
 
 
 def _с(язык, фраза, **п):
-    return _фр(язык, РЕЧЬ[язык][фраза].format(**п))
+    return _фр(язык, РЕЧЬ[язык][фраза].format(**слоты(язык, **п)))
 
 
 def наблюдение(язык, фраза, счёт):
@@ -663,6 +726,11 @@ def _папка(язык, N):
     return A.РЕЧЬ[язык]["папка"].format(N=N)
 
 
+def папка_с_именем(язык, d, N):
+    """«the folder archive contains 1 file» — папка, названная миром (у `actturn` папка одна и без имени)."""
+    return ОБЪЕКТЫ[язык]["папка_имя"].format(d=d, N=N)
+
+
 def _запуски(язык, N, L):
     return наблюдение(язык, A.РЕЧЬ_ЗАПУСКА[язык]["мир"].format(N=N), L)
 
@@ -684,7 +752,8 @@ def сборка_строк(язык, регистр, w, f, поз, N, L):
     п = dict(w=кавычки(язык, w), f=f)
     части = [отчёт(язык, "строки", **п) + "."]
     if поз:
-        части.append(_фр(язык, РЕЧЬ[язык]["позиция"][len(поз) - 1].format(w=п["w"], a=поз[0], b=поз[-1])) + ".")
+        части.append(_фр(язык, РЕЧЬ[язык]["позиция"][len(поз) - 1].format(**слоты(язык, w=п["w"]), a=поз[0],
+                                                                           b=поз[-1])) + ".")
     части.append(наблюдение(язык, _с(язык, "строк_со_словом", f=f, w=п["w"], N=N), L))
     return ход(язык, приказ(язык, регистр, "строки", **п), предложение(язык, "строки", **п), True, " ".join(части))
 
@@ -730,9 +799,9 @@ def сборка_имени(язык, род, регистр, f, g, N, L):
 
 
 def сборка_переноса(язык, регистр, f, N0, L0, N1, L1):
-    п = dict(f=f)
+    п = dict(f=f, d=АРХИВ)
     итог = (отчёт(язык, "перенести", **п) + ". " + наблюдение(язык, _папка(язык, N0), L0) + " "
-            + наблюдение(язык, _с(язык, "архив", N=N1), L1))
+            + наблюдение(язык, папка_с_именем(язык, АРХИВ, N1), L1))
     return ход(язык, приказ(язык, регистр, "перенести", **п), предложение(язык, "перенести", **п), True, итог)
 
 
@@ -766,7 +835,10 @@ def сборка_плана_замены(язык, род, w, v, f, Nk, L=None, 
 
 
 def сборка_плана_выпуска(язык, t, П, L0, выпуск, N, L):
-    приказ_, предложение_ = _план(язык, "план_тестов", t=t)
+    imp, inf, _zu, _past = _ступени(язык, "тесты", t=t)
+    выпуск_imp, выпуск_inf = РЕЧЬ[язык]["выпуск_акт"]
+    приказ_ = _фр(язык, связать(язык, "приказ", imp, выпуск_imp)) + "."
+    предложение_ = _фр(язык, связать(язык, "предложение", inf, выпуск_inf)) + ". " + _вопрос_предложения(язык)
     итог = (отчёт(язык, "тесты", t=t) + ". " + наблюдение(язык, П, L0) + " " + выпуск + ". "
             + _запуски(язык, N, L))
     return ход(язык, приказ_, предложение_, True, итог)
