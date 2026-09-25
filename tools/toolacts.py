@@ -364,6 +364,102 @@ def найти(язык, **п):
     return формы[0], формы[1], формы[2] if len(формы) > 2 else формы[1]
 
 
+# СЕМЬИ ПЕРЕФРАЗА ПРИКАЗА (25.09, заказ ведущего под рынок правок М-2021): одна правка формы на паре страниц одного
+# акта мира. Предложение и отчёт организма говорят каноническими словами; правится лишь приказ пользователя.
+#
+# СИНОНИМ ГЛАГОЛА — второй глагол того же акта, только в приказе (условие М-2013, 4: у акта один глагол на язык в
+# речи организма). Слоты — те же, что у шаблона акта; где синоним требует иного падежа объекта, стоит слот этого
+# падежа («benenne {Ф} in {g} um» — винительный, «przemianuj {Ф} na {g}»).
+СИНОНИМЫ = {
+    "en": dict(создать="make {Ф}", удалить="remove {Ф}", перенести="transfer {Ф} {Д}",
+               переименовать="change the name of {Фи} to {g}", дописать="add {S} {К}",
+               замена="change {W} to {v} {М}", тесты="execute {Т}"),
+    "ru": dict(создать="заведи {Ф}", удалить="сотри {Ф}", перенести="перемести {Ф} {Д}",
+               переименовать="переназови {Фи} в {g}", дописать="добавь {S} {К}", замена="поменяй {W} на {v} {М}",
+               тесты="прогони {Т}"),
+    "de": dict(создать="lege {Ф} an", удалить="entferne {Ф}", перенести="verlege {Ф} {Д}",
+               переименовать="benenne {Ф} in {g} um", дописать="erweitere {К} um {S}",
+               замена="tausche {W} {М} gegen {v}", тесты="führe {Т} aus"),
+    "fr": dict(создать="génère {Ф}", удалить="efface {Ф}", перенести="transfère {Ф} {Д}",
+               переименовать="rebaptise {Фи} en {g}", дописать="rajoute {S} {К}", замена="change {W} en {v} {М}",
+               тесты="exécute {Т}"),
+    "es": dict(создать="genera {Ф}", удалить="borra {Ф}", перенести="traslada {Ф} {Д}",
+               переименовать="rebautiza {Фи} como {g}", дописать="agrega {S} {К}", замена="cambia {W} por {v} {М}",
+               тесты="corre {Т}"),
+    "it": dict(создать="genera {Ф}", удалить="cancella {Ф}", перенести="trasferisci {Ф} {Д}",
+               переименовать="ribattezza {Фи} in {g}", дописать="accoda {S} {К}", замена="cambia {W} con {v} {М}",
+               тесты="lancia {Т}"),
+    "pt": dict(создать="gera {Ф}", удалить="apaga {Ф}", перенести="passa {Ф} {Д}",
+               переименовать="rebatiza {Фи} para {g}", дописать="adiciona {S} {К}", замена="troca {W} por {v} {М}",
+               тесты="corre {Т}"),
+    "nl": dict(создать="maak {Ф}", удалить="wis {Ф}", перенести="breng {Ф} {Д}",
+               переименовать="wijzig de naam van {Фи} naar {g}", дописать="plaats {S} {К}",
+               замена="verander {W} {М} in {v}", тесты="draai {Т}"),
+    "pl": dict(создать="stwórz {Ф}", удалить="skasuj {Ф}", перенести="przesuń {Ф} {Д}",
+               переименовать="przemianuj {Ф} na {g}", дописать="dodaj {S} {К}", замена="podmień {W} na {v} {М}",
+               тесты="odpal {Т}"),
+}
+
+
+def синоним(язык, акт, **п):
+    """Приказ акта вторым глаголом: «make the file x», «add the line "y" to the file x»."""
+    return СИНОНИМЫ[язык][акт].format(**слоты(язык, **п))
+
+
+# ФАЙЛ ПО ИМЕНИ — «a file called F», «файл с именем F»: третья форма фраз файла (после канонической и голой), в
+# падеже шаблона. «новый» — у создания (неопределённый артикль), прочие — у файла, какой есть.
+НАЗВАННЫЙ = {
+    "en": dict(вин="the file called {f}", имени="the file called {f}", в_файл="to the file called {f}",
+               в_файле="in the file called {f}", файла="of the file called {f}", новый="a file called {f}"),
+    "ru": dict(вин="файл с именем {f}", имени="файл с именем {f}", в_файл="в файл с именем {f}",
+               в_файле="в файле с именем {f}", файла="файла с именем {f}", новый="файл с именем {f}"),
+    "de": dict(вин="die Datei namens {f}", имени="der Datei namens {f}", в_файл="die Datei namens {f}",
+               в_файле="in der Datei namens {f}", файла="der Datei namens {f}", новый="eine Datei namens {f}"),
+    "fr": dict(вин="le fichier nommé {f}", имени="le fichier nommé {f}", в_файл="au fichier nommé {f}",
+               в_файле="dans le fichier nommé {f}", файла="du fichier nommé {f}", новый="un fichier nommé {f}"),
+    "es": dict(вин="el archivo llamado {f}", имени="el archivo llamado {f}", в_файл="al archivo llamado {f}",
+               в_файле="en el archivo llamado {f}", файла="del archivo llamado {f}", новый="un archivo llamado {f}"),
+    "it": dict(вин="il file chiamato {f}", имени="il file chiamato {f}", в_файл="al file chiamato {f}",
+               в_файле="nel file chiamato {f}", файла="del file chiamato {f}", новый="un file chiamato {f}"),
+    "pt": dict(вин="o ficheiro chamado {f}", имени="o ficheiro chamado {f}", в_файл="ao ficheiro chamado {f}",
+               в_файле="no ficheiro chamado {f}", файла="do ficheiro chamado {f}", новый="um ficheiro chamado {f}"),
+    "nl": dict(вин="het bestand met de naam {f}", имени="het bestand met de naam {f}",
+               в_файл="onderaan het bestand met de naam {f}", в_файле="in het bestand met de naam {f}",
+               файла="van het bestand met de naam {f}", новый="een bestand met de naam {f}"),
+    "pl": dict(вин="plik o nazwie {f}", имени="pliku o nazwie {f}", в_файл="do pliku o nazwie {f}",
+               в_файле="w pliku o nazwie {f}", файла="pliku o nazwie {f}", новый="plik o nazwie {f}"),
+}
+for _я, _о in ОБЪЕКТЫ.items():
+    _н = НАЗВАННЫЙ[_я]
+    _о["файл_вин"] = _о["файл_вин"] + (_н["вин"],)
+    for _фраза in ("файл_имени", "в_файл", "в_файле", "файла"):
+        _о[_фраза] = _о[_фраза] + (_н[_фраза.replace("файл_имени", "имени")],)
+# «в конец файла» — место дописываемой строки (голландское каноническое «onderaan» уже есть «внизу»: здесь — «в
+# конец»); папка подлежащим — вторая форма вопроса о числе файлов («how many files does the folder D contain»)
+В_КОНЕЦ = {"en": "to the end of the file {f}", "ru": "в конец файла {f}", "de": "die Datei {f} am Ende",
+           "fr": "à la fin du fichier {f}", "es": "al final del archivo {f}", "it": "alla fine del file {f}",
+           "pt": "ao fim do ficheiro {f}", "nl": "aan het eind van het bestand {f}", "pl": "na końcu pliku {f}"}
+ПАПКА_ПОДЛ = {"en": "the folder {d}", "ru": "папка {d}", "de": "der Ordner {d}", "fr": "le dossier {d}",
+              "es": "la carpeta {d}", "it": "la cartella {d}", "pt": "a pasta {d}", "nl": "de map {d}",
+              "pl": "folder {d}"}
+# ЧАСТЬ МЕСТА ВПЕРЕДИ — «in the file F, replace …», «в файле F замени …»: место приказа, вынесенное перед глаголом,
+# и знак между ними (запятая там, где язык её ставит). Шаблон остаётся тем же: место вырезается из него, а не пишется
+# вторым шаблоном
+ВПЕРЕДИ_ЗНАК = {"en": ", ", "ru": " ", "de": " ", "fr": ", ", "es": ", ", "it": ", ", "pt": ", ", "nl": ", ",
+                "pl": " "}
+# «сколько раз» второй формой — одна правка вопросного оборота
+ВОПРОС_РАЗ2 = {"en": "how often does {Wи} occur {М}?", "ru": "как часто {Wи} встречается {М}?",
+               "de": "wie viele Male kommt {Wи} {М} vor?", "fr": "combien de fois trouve-t-on {Wи} {М} ?",
+               "es": "¿cuántas veces está {Wи} {М}?", "it": "quante volte appare {Wи} {М}?",
+               "pt": "quantas vezes surge {Wи} {М}?", "nl": "hoeveel keer komt {Wи} voor {М}?",
+               "pl": "ile razy pojawia się {Wи} {М}?"}
+
+
+def впереди(язык, место, приказ_без_места):
+    """Приказ с местом впереди: «in the file F, replace …» — место, знак языка, приказ без места."""
+    return место + ВПЕРЕДИ_ЗНАК[язык] + приказ_без_места
+
+
 # акт → (приказ, инфинитив, отчёт) — у de и nl инфинитив с глаголом в конце и «zu/te»-форма предложения
 АКТЫ = ("поиск", "строки", "замена", "дописать", "переименовать", "перенести", "тесты")
 РЕЧЬ = {
@@ -379,7 +475,7 @@ def найти(язык, **п):
         тесты=("run {Т}", "run {Т}", "ran {Т}"),
         предложение="i propose to {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="please {imp}.", косвенный="we need to {inf}.",
-                      вопросом="could you {inf}?"),
+                      вопросом="could you {inf}?", вопросом2="can you {inf}?"),
         встречается="{Wи} occurs {N} {М}",
         вопрос_раз="how many times does {Wи} occur {М}?",
         строк_со_словом="the file {f} has {N} with the word {w}",
@@ -403,7 +499,7 @@ def найти(язык, **п):
         тесты=("запусти {Т}", "запустить {Т}", "запустил {Т}"),
         предложение="предлагаю {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="пожалуйста, {imp}.", косвенный="нужно {inf}.",
-                      вопросом="ты можешь {inf}?"),
+                      вопросом="ты можешь {inf}?", вопросом2="ты сможешь {inf}?"),
         встречается="{М} {Wи} встречается {N}",
         вопрос_раз="сколько раз {Wи} встречается {М}?",
         строк_со_словом="в файле {f} {N} со словом {w}",
@@ -431,7 +527,7 @@ def найти(язык, **п):
         тесты=("starte {Т}", "{Т} starten", "{Т} gestartet", "{Т} zu starten"),
         предложение="ich schlage vor, {zu}", отчёт="ich habe {past}",
         регистры=dict(плоский="{imp}.", вежливый="bitte {imp}.", косвенный="man sollte {inf}.",
-                      вопросом="kannst du {inf}?"),
+                      вопросом="kannst du {inf}?", вопросом2="kannst du bitte {inf}?"),
         встречается="{Wи} kommt {М} {N} vor",
         вопрос_раз="wie oft kommt {Wи} {М} vor?",
         строк_со_словом="die Datei {f} hat {N} mit dem Wort {w}",
@@ -459,7 +555,7 @@ def найти(язык, **п):
         тесты=("lance {Т}", "lancer {Т}", "lancé {Т}"),
         предложение="je propose de {inf}", отчёт="j'ai {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, s'il te plaît.", косвенный="il faut {inf}.",
-                      вопросом="peux-tu {inf} ?"),
+                      вопросом="peux-tu {inf} ?", вопросом2="tu peux {inf} ?"),
         встречается="{Wи} apparaît {N} {М}",
         вопрос_раз="combien de fois {Wи} apparaît-il {М} ?",
         строк_со_словом="le fichier {f} a {N} avec le mot {w}",
@@ -487,7 +583,7 @@ def найти(язык, **п):
         тесты=("ejecuta {Т}", "ejecutar {Т}", "ejecutado {Т}"),
         предложение="propongo {inf}", отчёт="he {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, por favor.", косвенный="hay que {inf}.",
-                      вопросом="¿puedes {inf}?"),
+                      вопросом="¿puedes {inf}?", вопросом2="¿quieres {inf}?"),
         встречается="{Wи} aparece {N} {М}",
         вопрос_раз="¿cuántas veces aparece {Wи} {М}?",
         строк_со_словом="el archivo {f} tiene {N} con la palabra {w}",
@@ -513,7 +609,7 @@ def найти(язык, **п):
         тесты=("esegui {Т}", "eseguire {Т}", "eseguito {Т}"),
         предложение="propongo di {inf}", отчёт="ho {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, per favore.", косвенный="bisogna {inf}.",
-                      вопросом="puoi {inf}?"),
+                      вопросом="puoi {inf}?", вопросом2="puoi per favore {inf}?"),
         встречается="{Wи} compare {N} {М}",
         вопрос_раз="quante volte compare {Wи} {М}?",
         строк_со_словом="il file {f} ha {N} con la parola {w}",
@@ -540,7 +636,7 @@ def найти(язык, **п):
         тесты=("executa {Т}", "executar {Т}", "executei {Т}"),
         предложение="proponho {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, por favor.", косвенный="é preciso {inf}.",
-                      вопросом="podes {inf}?"),
+                      вопросом="podes {inf}?", вопросом2="queres {inf}?"),
         встречается="{Wи} aparece {N} {М}",
         вопрос_раз="quantas vezes aparece {Wи} {М}?",
         строк_со_словом="o ficheiro {f} tem {N} com a palavra {w}",
@@ -570,7 +666,7 @@ def найти(язык, **п):
         тесты=("start {Т}", "{Т} starten", "{Т} gestart", "{Т} te starten"),
         предложение="ik stel voor {zu}", отчёт="ik heb {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, alsjeblieft.", косвенный="we moeten {inf}.",
-                      вопросом="kun je {inf}?"),
+                      вопросом="kun je {inf}?", вопросом2="wil je {inf}?"),
         встречается="{Wи} komt {N} voor {М}",
         вопрос_раз="hoe vaak komt {Wи} voor {М}?",
         строк_со_словом="het bestand {f} heeft {N} met het woord {w}",
@@ -595,7 +691,7 @@ def найти(язык, **п):
         тесты=("uruchom {Т}", "uruchomić {Т}", "uruchomiłem {Т}"),
         предложение="proponuję {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="proszę, {imp}.", косвенный="trzeba {inf}.",
-                      вопросом="czy możesz {inf}?"),
+                      вопросом="czy możesz {inf}?", вопросом2="czy mógłbyś {inf}?"),
         встречается="{Wи} występuje {N} {М}",
         вопрос_раз="ile razy {Wи} występuje {М}?",
         строк_со_словом="plik {f} ma {N} ze słowem {w}",
