@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 352 миров, 489957 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 353 миров, 492630 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -475,12 +475,14 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 41, строк 24915.
+Миров 42, строк 27588.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
 - **`worldfacts`** (2779 строк; declared, whole_only)  
   **WORLD FACTS** — why and what next about THINGS, not about numbers.
+- **`toolacts`** (2673 строк; recompute, whole_only)  
+  **АКТЫ ИНСТРУМЕНТОВ** — руки агента (25.09, наряд ведущего по слову владельца: ozar — промышленная альтернатива Claude Code / Gemini / Qwen на своей архитектуре, свод — школа продукта).
 - **`mandateforms`** (2268 строк; recompute, whole_only)  
   **THE MANDATE** — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbi…
 - **`goal`** (2124 строк; recompute, whole_only, unsigned_only)  
@@ -783,5 +785,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 352.
+Миров: **0** из 353.
 
