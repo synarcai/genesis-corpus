@@ -3,7 +3,8 @@
 
 Репозиторий: восемь текстовых файлов с содержимым на языке страницы и девять файлов проекта (код Python и Rust,
 настройки, тесты) — одни на всех языках. Мир-процесс держит два прогона (`ПРОГОНЫ`); их настоящий вывод снят прибором
-`toolrepo_capture.py` в `toolrepo_runs.json`. Имена мира нарочно не совпадают с песочницей ключа агента.
+`toolrepo_capture.py` в семя `tools/seeds/toolrepo_runs.json`. Имена мира нарочно не совпадают с песочницей ключа
+агента.
 
 Здесь только объявление и мир папки над ним (`папка(язык)` — дверь `folderworld`); речь и страницы — у дома.
 """
@@ -48,7 +49,7 @@ import folderworld as W  # noqa: E402 — мир папки: семантика 
                               "fn doubles() { assert_eq!(add(2, 2), 5); }"),
 }
 # ПРОГОНЫ МИРА-ПРОЦЕССА: имя прогона → команда, какую мир держит сам (речь выбирает акт по имени, команда — данные
-# мира). Вывод прогона — НАСТОЯЩИЙ вывод бегуна: снят один раз прибором `toolrepo_capture.py` в toolrepo_runs.json.
+# мира). Вывод прогона — НАСТОЯЩИЙ вывод бегуна: снят один раз прибором `toolrepo_capture.py` в семя прогонов.
 ПРОГОНЫ = {"python": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest tests.test_main tests.test_helpers",
            "rust": "CARGO_TARGET_DIR=.ozar/target cargo test -q --manifest-path tally/Cargo.toml --test checks"}
 # язык проекта в речи дома → имя прогона мира
@@ -286,5 +287,7 @@ def папка(язык):
     return W.Папка(файлы(язык))
 
 
-ПРОГОНЫ_СНЯТЫЕ = json.loads((pathlib.Path(__file__).resolve().parent / "toolrepo_runs.json").read_text(encoding="utf-8")) \
-    if (pathlib.Path(__file__).resolve().parent / "toolrepo_runs.json").exists() else {}
+# СЕМЯ ПРОГОНОВ лежит в `tools/seeds/` (М-126): это сырьё генератора, какого сборка не выводит, — бегун идёт однажды,
+# а двор воспроизводимости зеркалит семена вместе с домами. Семени нет лишь до первой съёмки.
+СЕМЯ_ПРОГОНОВ = pathlib.Path(__file__).resolve().parent / "seeds" / "toolrepo_runs.json"
+ПРОГОНЫ_СНЯТЫЕ = json.loads(СЕМЯ_ПРОГОНОВ.read_text(encoding="utf-8")) if СЕМЯ_ПРОГОНОВ.exists() else {}
