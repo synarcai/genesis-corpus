@@ -317,36 +317,47 @@ def связать(язык, ступень, A, B):
 # (французское, испанское, итальянское, португальское местоимение пристаёт к глаголу: «ajoute-y», «añádele»).
 # Предложение местоимения не повторяет: оно называет путь, какой определяет приказ. «найти» — приказ находки файла
 # со словом (глагол поиска двери); «ждёт» — второй акт ждёт одного места, «нет_второго» — первый акт не совершён.
+# «строк» — вопрос о несомом месте вторым приказом; английская форма — соседняя: у первой пробы длиннейший общий ряд
+# с ключом AGENT-K вышел 8 слов (> 6, мера счётом genesis_key_overlap), у этой — 5.
 МЕСТОИМЕНИЕ = {
     "en": dict(дописать=("append", "{S} to it"), удалить=("delete", "it"),
+               строк=(("let", "me know how many lines it has"), "tell how many lines the file {p} has"),
                найти=("find the file that contains {W}", "find the file that contains {W}"),
                ждёт="the second act waits for one file", нет_второго="the second act is not performed either"),
     "ru": dict(дописать=("допиши", "в него {S}"), удалить=("удали", "его"),
+               строк=(("скажи,", "сколько в нём строк"), "сказать, сколько строк в файле {p}"),
                найти=("найди файл, в котором есть {Wи}", "найти файл, в котором есть {Wи}"),
                ждёт="второй акт ждёт одного файла", нет_второго="второй акт тоже не совершён"),
     "de": dict(дописать=("ergänze", "sie um {S}"), удалить=("lösche", "sie"),
+               строк=(("sag", "mir, wie viele Zeilen sie hat"), "sagen, wie viele Zeilen die Datei {p} hat"),
                найти=("suche die Datei, die {W} enthält", "die Datei suchen, die {W} enthält",
                       "die Datei zu suchen, die {W} enthält"),
                ждёт="die zweite Handlung wartet auf eine Datei",
                нет_второго="die zweite Handlung wird auch nicht ausgeführt"),
     "fr": dict(дописать=("ajoute-y", "{S}"), удалить=("supprime-le", ""),
+               строк=(("dis-moi", "combien de lignes il contient"), "dire combien de lignes contient le fichier {p}"),
                найти=("cherche le fichier qui contient {W}", "chercher le fichier qui contient {W}"),
                ждёт="le deuxième acte attend un seul fichier", нет_второго="le deuxième acte n'est pas exécuté non plus"),
     "es": dict(дописать=("añádele", "{S}"), удалить=("elimínalo", ""),
+               строк=(("dime", "cuántas líneas tiene"), "decir cuántas líneas tiene el archivo {p}"),
                найти=("busca el archivo que contiene {W}", "buscar el archivo que contiene {W}"),
                ждёт="el segundo acto espera un solo archivo", нет_второго="el segundo acto tampoco se realiza"),
     "it": dict(дописать=("aggiungici", "{S}"), удалить=("eliminalo", ""),
+               строк=(("dimmi", "quante righe ha"), "dire quante righe ha il file {p}"),
                найти=("cerca il file che contiene {W}", "cercare il file che contiene {W}"),
                ждёт="il secondo atto aspetta un solo file", нет_второго="neanche il secondo atto viene eseguito"),
     "pt": dict(дописать=("acrescenta-lhe", "{S}"), удалить=("elimina-o", ""),
+               строк=(("diz-me", "quantas linhas tem"), "dizer quantas linhas tem o ficheiro {p}"),
                найти=("procura o ficheiro que contém {W}", "procurar o ficheiro que contém {W}"),
                ждёт="o segundo ato espera um só ficheiro", нет_второго="o segundo ato também não é realizado"),
     "nl": dict(дописать=("zet", "{S} er onderaan"), удалить=("verwijder het", ""),
+               строк=(("vertel me", "hoeveel regels het heeft"), "zeggen hoeveel regels het bestand {p} heeft"),
                найти=("zoek het bestand dat {W} bevat", "het bestand zoeken dat {W} bevat",
                       "het bestand te zoeken dat {W} bevat"),
                ждёт="de tweede handeling wacht op één bestand",
                нет_второго="de tweede handeling wordt ook niet uitgevoerd"),
     "pl": dict(дописать=("dopisz", "do niego {S}"), удалить=("usuń", "go"),
+               строк=(("powiedz", "mi, ile ma linii"), "powiedzieć, ile linii ma plik {p}"),
                найти=("znajdź plik, który zawiera {W}", "znaleźć plik, który zawiera {W}"),
                ждёт="drugi akt czeka na jeden plik", нет_второго="drugi akt też nie zostaje wykonany"),
 }
@@ -455,6 +466,39 @@ for _я, _о in ОБЪЕКТЫ.items():
                "pl": "ile razy pojawia się {Wи} {М}?"}
 
 
+# КОНЕЦ ФАЙЛА — место дописываемой строки «в конце файла», одной фразой и в приказе, и впереди него: «append … at the
+# end of the file F» ↔ «at the end of the file F, append …»; «добавь» — синоним глагола на той же фразе. `у_конца` —
+# приказ, где фраза «в конце» стоит внутри (у английского — «at» вместо «to», у русского — перед строкой, у немецкого —
+# при строке-дополнении); языки, у каких каноническое «конец» уже есть «в конце», его не заводят.
+КОНЕЦ = {
+    "en": dict(место="at the end of the file {f}",
+               впереди="at the end of the file {f}, append {S}", у_конца="append {S} at the end of the file {f}",
+               добавь="add {S} at the end of the file {f}"),
+    "ru": dict(место="в конец файла {f}",
+               впереди="в конец файла {f} допиши {S}", у_конца="допиши в конец файла {f} {S}",
+               добавь="добавь в конец файла {f} {S}"),
+    "de": dict(место="am Ende der Datei {f}",
+               впереди="am Ende der Datei {f} ergänze {S}", у_конца="ergänze {S} am Ende der Datei {f}",
+               добавь="füge {S} am Ende der Datei {f} hinzu"),
+    "fr": dict(место="à la fin du fichier {f}",
+               впереди="à la fin du fichier {f}, ajoute {S}", добавь="rajoute {S} à la fin du fichier {f}"),
+    "es": dict(место="al final del archivo {f}",
+               впереди="al final del archivo {f}, añade {S}", добавь="agrega {S} al final del archivo {f}"),
+    "it": dict(место="alla fine del file {f}",
+               впереди="alla fine del file {f}, aggiungi {S}", добавь="accoda {S} alla fine del file {f}"),
+    "pt": dict(место="ao fim do ficheiro {f}",
+               впереди="ao fim do ficheiro {f}, acrescenta {S}", добавь="adiciona {S} ao fim do ficheiro {f}"),
+    "nl": dict(место="aan het eind van het bestand {f}",
+               впереди="aan het eind van het bestand {f}, zet {S}",
+               добавь="plaats {S} aan het eind van het bestand {f}"),
+    "pl": dict(место="na końcu pliku {f}",
+               впереди="na końcu pliku {f} dopisz {S}", добавь="dodaj {S} na końcu pliku {f}"),
+}
+# ПЕРЕНОС С МЕСТОМ ВПЕРЕДИ — лишь там, где язык ставит место назначения перед повелением естественно («в папку D
+# перенеси файл X», «in den Ordner D verschiebe …», «do folderu D przenieś …»); прочие этой формы не заводят
+ВПЕРЕДИ_ПЕРЕНОС = frozenset({"ru", "de", "pl"})
+
+
 def впереди(язык, место, приказ_без_места):
     """Приказ с местом впереди: «in the file F, replace …» — место, знак языка, приказ без места."""
     return место + ВПЕРЕДИ_ЗНАК[язык] + приказ_без_места
@@ -475,7 +519,7 @@ def впереди(язык, место, приказ_без_места):
         тесты=("run {Т}", "run {Т}", "ran {Т}"),
         предложение="i propose to {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="please {imp}.", косвенный="we need to {inf}.",
-                      вопросом="could you {inf}?", вопросом2="can you {inf}?"),
+                      вопросом="could you {inf}?", вопросом2="can you {inf}?", вопросом3="would you {inf}?"),
         встречается="{Wи} occurs {N} {М}",
         вопрос_раз="how many times does {Wи} occur {М}?",
         строк_со_словом="the file {f} has {N} with the word {w}",
@@ -499,7 +543,7 @@ def впереди(язык, место, приказ_без_места):
         тесты=("запусти {Т}", "запустить {Т}", "запустил {Т}"),
         предложение="предлагаю {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="пожалуйста, {imp}.", косвенный="нужно {inf}.",
-                      вопросом="ты можешь {inf}?", вопросом2="ты сможешь {inf}?"),
+                      вопросом="ты можешь {inf}?", вопросом2="ты сможешь {inf}?", вопросом3="а можешь {inf}?"),
         встречается="{М} {Wи} встречается {N}",
         вопрос_раз="сколько раз {Wи} встречается {М}?",
         строк_со_словом="в файле {f} {N} со словом {w}",
@@ -527,7 +571,8 @@ def впереди(язык, место, приказ_без_места):
         тесты=("starte {Т}", "{Т} starten", "{Т} gestartet", "{Т} zu starten"),
         предложение="ich schlage vor, {zu}", отчёт="ich habe {past}",
         регистры=dict(плоский="{imp}.", вежливый="bitte {imp}.", косвенный="man sollte {inf}.",
-                      вопросом="kannst du {inf}?", вопросом2="kannst du bitte {inf}?"),
+                      вопросом="kannst du {inf}?", вопросом2="kannst du bitte {inf}?",
+                      вопросом3="kannst du mal {inf}?"),
         встречается="{Wи} kommt {М} {N} vor",
         вопрос_раз="wie oft kommt {Wи} {М} vor?",
         строк_со_словом="die Datei {f} hat {N} mit dem Wort {w}",
@@ -555,7 +600,7 @@ def впереди(язык, место, приказ_без_места):
         тесты=("lance {Т}", "lancer {Т}", "lancé {Т}"),
         предложение="je propose de {inf}", отчёт="j'ai {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, s'il te plaît.", косвенный="il faut {inf}.",
-                      вопросом="peux-tu {inf} ?", вопросом2="tu peux {inf} ?"),
+                      вопросом="peux-tu {inf} ?", вопросом2="tu peux {inf} ?", вопросом3="est-ce que tu peux {inf} ?"),
         встречается="{Wи} apparaît {N} {М}",
         вопрос_раз="combien de fois {Wи} apparaît-il {М} ?",
         строк_со_словом="le fichier {f} a {N} avec le mot {w}",
@@ -583,7 +628,7 @@ def впереди(язык, место, приказ_без_места):
         тесты=("ejecuta {Т}", "ejecutar {Т}", "ejecutado {Т}"),
         предложение="propongo {inf}", отчёт="he {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, por favor.", косвенный="hay que {inf}.",
-                      вопросом="¿puedes {inf}?", вопросом2="¿quieres {inf}?"),
+                      вопросом="¿puedes {inf}?", вопросом2="¿quieres {inf}?", вопросом3="¿puedes por favor {inf}?"),
         встречается="{Wи} aparece {N} {М}",
         вопрос_раз="¿cuántas veces aparece {Wи} {М}?",
         строк_со_словом="el archivo {f} tiene {N} con la palabra {w}",
@@ -609,7 +654,7 @@ def впереди(язык, место, приказ_без_места):
         тесты=("esegui {Т}", "eseguire {Т}", "eseguito {Т}"),
         предложение="propongo di {inf}", отчёт="ho {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, per favore.", косвенный="bisogna {inf}.",
-                      вопросом="puoi {inf}?", вопросом2="puoi per favore {inf}?"),
+                      вопросом="puoi {inf}?", вопросом2="puoi per favore {inf}?", вопросом3="puoi gentilmente {inf}?"),
         встречается="{Wи} compare {N} {М}",
         вопрос_раз="quante volte compare {Wи} {М}?",
         строк_со_словом="il file {f} ha {N} con la parola {w}",
@@ -636,7 +681,7 @@ def впереди(язык, место, приказ_без_места):
         тесты=("executa {Т}", "executar {Т}", "executei {Т}"),
         предложение="proponho {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, por favor.", косвенный="é preciso {inf}.",
-                      вопросом="podes {inf}?", вопросом2="queres {inf}?"),
+                      вопросом="podes {inf}?", вопросом2="queres {inf}?", вопросом3="podes por favor {inf}?"),
         встречается="{Wи} aparece {N} {М}",
         вопрос_раз="quantas vezes aparece {Wи} {М}?",
         строк_со_словом="o ficheiro {f} tem {N} com a palavra {w}",
@@ -666,7 +711,7 @@ def впереди(язык, место, приказ_без_места):
         тесты=("start {Т}", "{Т} starten", "{Т} gestart", "{Т} te starten"),
         предложение="ik stel voor {zu}", отчёт="ik heb {past}",
         регистры=dict(плоский="{imp}.", вежливый="{imp}, alsjeblieft.", косвенный="we moeten {inf}.",
-                      вопросом="kun je {inf}?", вопросом2="wil je {inf}?"),
+                      вопросом="kun je {inf}?", вопросом2="wil je {inf}?", вопросом3="kan je {inf}?"),
         встречается="{Wи} komt {N} voor {М}",
         вопрос_раз="hoe vaak komt {Wи} voor {М}?",
         строк_со_словом="het bestand {f} heeft {N} met het woord {w}",
@@ -691,7 +736,8 @@ def впереди(язык, место, приказ_без_места):
         тесты=("uruchom {Т}", "uruchomić {Т}", "uruchomiłem {Т}"),
         предложение="proponuję {inf}", отчёт="{past}",
         регистры=dict(плоский="{imp}.", вежливый="proszę, {imp}.", косвенный="trzeba {inf}.",
-                      вопросом="czy możesz {inf}?", вопросом2="czy mógłbyś {inf}?"),
+                      вопросом="czy możesz {inf}?", вопросом2="czy mógłbyś {inf}?",
+                      вопросом3="czy możesz proszę {inf}?"),
         встречается="{Wи} występuje {N} {М}",
         вопрос_раз="ile razy {Wи} występuje {М}?",
         строк_со_словом="plik {f} ma {N} ze słowem {w}",
