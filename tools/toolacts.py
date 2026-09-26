@@ -504,6 +504,218 @@ def впереди(язык, место, приказ_без_места):
     return место + ВПЕРЕДИ_ЗНАК[язык] + приказ_без_места
 
 
+# РОДЫ ЖИВЫХ ПРОСЬБ (26.09, третий заказ ведущего — по переписи живых просьб к агенту, не по ключам): план из трёх
+# актов, условный приказ на ходе мира, «все файлы, кроме …», два объекта в одном приказе, ссылка на прошлый шаг без
+# местоимения. Речь организма — канонические слова актов; иначе сказан лишь приказ пользователя.
+#
+# ПЛАН ИЗ ТРЁХ АКТОВ — связка трёх: {B1}/{C1} — глагол, {B2}/{C2} — остаток (местоимение там, где его ставит язык;
+# нидерландское наречие — после глагола повеления, как у связки двух)
+СВЯЗКА3 = {
+    "en": ("{A}, then {B1} {B2}, then {C1} {C2}", "i propose three acts: {A}, then {B}, then {C}"),
+    "ru": ("{A}, затем {B1} {B2}, затем {C1} {C2}", "предлагаю три акта: {A}, затем {B}, затем {C}"),
+    "de": ("{A}, dann {B1} {B2}, dann {C1} {C2}", "ich schlage drei Handlungen vor: {A}, dann {B}, dann {C}"),
+    "fr": ("{A}, puis {B1} {B2}, puis {C1} {C2}", "je propose trois actes : {A}, puis {B}, puis {C}"),
+    "es": ("{A}, luego {B1} {B2}, luego {C1} {C2}", "propongo tres actos: {A}, luego {B}, luego {C}"),
+    "it": ("{A}, poi {B1} {B2}, poi {C1} {C2}", "propongo tre atti: {A}, poi {B}, poi {C}"),
+    "pt": ("{A}, depois {B1} {B2}, depois {C1} {C2}", "proponho três atos: {A}, depois {B}, depois {C}"),
+    "nl": ("{A}, {B1} dan {B2} en {C1} daarna {C2}", "ik stel drie handelingen voor: {A}, dan {B} en daarna {C}"),
+    "pl": ("{A}, potem {B1} {B2}, potem {C1} {C2}", "proponuję trzy akty: {A}, potem {B}, potem {C}"),
+}
+
+
+def связать3(язык, ступень, A, B, C):
+    """Приказ или тело предложения плана из трёх актов; второй и третий приказ — как у `связать`."""
+    приказ_, предложение_ = СВЯЗКА3[язык]
+    if ступень == "приказ":
+        (B1, B2), (C1, C2) = (x if isinstance(x, tuple) else x.split(" ", 1) for x in (B, C))
+        return re.sub(r" +(?=[ ,])", "", приказ_.format(A=A, B1=B1, B2=B2, C1=C1, C2=C2)).rstrip()
+    return предложение_.format(A=A, B=B, C=C)
+
+
+# МЕСТОИМЕНИЕ ВЕТКИ УСЛОВИЯ — «create it», «replace it with …» (объект — файл условия или текст условия); глагол тот
+# же, что у акта двери
+for _я, _м in {"en": dict(создать=("create", "it"), заменить=("replace", "it with {v}")),
+               "ru": dict(создать=("создай", "его"), заменить=("замени", "его на {v}")),
+               "de": dict(создать=("erstelle", "sie"), заменить=("ersetze", "ihn durch {v}")),
+               "fr": dict(создать=("crée-le", ""), заменить=("remplace-le", "par {v}")),
+               "es": dict(создать=("créalo", ""), заменить=("reemplázalo", "por {v}")),
+               "it": dict(создать=("crealo", ""), заменить=("sostituiscilo", "con {v}")),
+               "pt": dict(создать=("cria-o", ""), заменить=("substitui-o", "por {v}")),
+               "nl": dict(создать=("creëer het", ""), заменить=("vervang", "hem door {v}")),
+               "pl": dict(создать=("utwórz", "go"), заменить=("zamień", "go na {v}"))}.items():
+    МЕСТОИМЕНИЕ[_я].update(_м)
+
+# ССЫЛКА НА ПРОШЛЫЙ ШАГ БЕЗ МЕСТОИМЕНИЯ — «this file», «the same file» на месте «it» второго приказа плана: (глагол,
+# остаток) той же связки; «строк» — лишь «этот»: «how many lines the same file has» язык не говорит
+ССЫЛКА = {
+    "en": dict(этот=dict(дописать=("append", "{S} to this file"), удалить=("delete", "this file"),
+                         строк=("let", "me know how many lines this file has")),
+               тот_же=dict(дописать=("append", "{S} to the same file"), удалить=("delete", "the same file"))),
+    "ru": dict(этот=dict(дописать=("допиши", "в этот файл {S}"), удалить=("удали", "этот файл"),
+                         строк=("скажи,", "сколько строк в этом файле")),
+               тот_же=dict(дописать=("допиши", "в тот же файл {S}"), удалить=("удали", "тот же файл"))),
+    "de": dict(этот=dict(дописать=("ergänze", "diese Datei um {S}"), удалить=("lösche", "diese Datei"),
+                         строк=("sag", "mir, wie viele Zeilen diese Datei hat")),
+               тот_же=dict(дописать=("ergänze", "dieselbe Datei um {S}"), удалить=("lösche", "dieselbe Datei"))),
+    "fr": dict(этот=dict(дописать=("ajoute", "{S} à ce fichier"), удалить=("supprime", "ce fichier"),
+                         строк=("dis-moi", "combien de lignes contient ce fichier")),
+               тот_же=dict(дописать=("ajoute", "{S} au même fichier"), удалить=("supprime", "le même fichier"))),
+    "es": dict(этот=dict(дописать=("añade", "{S} a este archivo"), удалить=("elimina", "este archivo"),
+                         строк=("dime", "cuántas líneas tiene este archivo")),
+               тот_же=dict(дописать=("añade", "{S} al mismo archivo"), удалить=("elimina", "el mismo archivo"))),
+    "it": dict(этот=dict(дописать=("aggiungi", "{S} a questo file"), удалить=("elimina", "questo file"),
+                         строк=("dimmi", "quante righe ha questo file")),
+               тот_же=dict(дописать=("aggiungi", "{S} allo stesso file"), удалить=("elimina", "lo stesso file"))),
+    "pt": dict(этот=dict(дописать=("acrescenta", "{S} a este ficheiro"), удалить=("elimina", "este ficheiro"),
+                         строк=("diz-me", "quantas linhas tem este ficheiro")),
+               тот_же=dict(дописать=("acrescenta", "{S} ao mesmo ficheiro"),
+                           удалить=("elimina", "o mesmo ficheiro"))),
+    "nl": dict(этот=dict(дописать=("zet", "{S} onderaan dit bestand"), удалить=("verwijder", "dit bestand"),
+                         строк=("vertel me", "hoeveel regels dit bestand heeft")),
+               тот_же=dict(дописать=("zet", "{S} onderaan hetzelfde bestand"),
+                           удалить=("verwijder", "hetzelfde bestand"))),
+    "pl": dict(этот=dict(дописать=("dopisz", "do tego pliku {S}"), удалить=("usuń", "ten plik"),
+                         строк=("powiedz", "mi, ile linii ma ten plik")),
+               тот_же=dict(дописать=("dopisz", "do tego samego pliku {S}"), удалить=("usuń", "ten sam plik"))),
+}
+
+
+def ссылка(язык, вид, акт, **п):
+    """(глагол, остаток) второго приказа со ссылкой «этот» или «тот же» на месте местоимения."""
+    глагол, остаток = ССЫЛКА[язык][вид][акт]
+    return глагол, остаток.format(**слоты(язык, **п))
+
+
+# УСЛОВНЫЙ ПРИКАЗ НА ХОДЕ МИРА — «if the file F exists, append … to it, otherwise create it»: условие проверяет мир
+# (чтение файла, находка текста), и ветка — ход мира. `если` — условие впереди (`есть_если`, `содержит_если` —
+# придаточным: немецкий и нидерландский ставят глагол в конец, португальский — будущее сослагательное); `после` и
+# `после_текст` — хвост условия после приказа; `есть`, `нет`, `содержит` — итог проверки; `иначе` — ветка «иначе» в
+# приказе, `иначе_пр` — в предложении (инфинитивом; немецкий и нидерландский — zu/te-формой). Не выполнено — хвост
+# условия у двери хода (`actturn.РЕЧЬ_УСЛОВИЯ`).
+УСЛОВИЕ = {
+    "en": dict(если="if {У}, {Т}", иначе=", otherwise {И}", иначе_пр=", otherwise to {inf}", после=" if it exists",
+               после_текст=" if it is there", есть_если="the file {f} exists", есть="the file {f} exists",
+               нет="the file {f} does not exist", содержит_если="the file {f} contains {W}",
+               содержит="the file {f} contains {W}"),
+    "ru": dict(если="если {У}, {Т}", иначе=", иначе {И}", иначе_пр=", иначе {inf}", после=", если он есть",
+               после_текст=", если он там есть", есть_если="файл {f} есть", есть="файл {f} есть", нет="файла {f} нет",
+               содержит_если="в файле {f} есть {Wи}", содержит="в файле {f} есть {Wи}"),
+    "de": dict(если="wenn {У}, {Т}", иначе=", sonst {И}", иначе_пр=", sonst {zu}", после=", wenn sie existiert",
+               после_текст=", wenn er dort steht", есть_если="die Datei {f} existiert", есть="die Datei {f} existiert",
+               нет="die Datei {f} existiert nicht", содержит_если="die Datei {f} {W} enthält",
+               содержит="die Datei {f} enthält {W}"),
+    "fr": dict(если="si {У}, {Т}", иначе=", sinon {И}", иначе_пр=", sinon de {inf}", после=" s'il existe",
+               после_текст=" s'il y figure", есть_если="le fichier {f} existe", есть="le fichier {f} existe",
+               нет="le fichier {f} n'existe pas", содержит_если="le fichier {f} contient {W}",
+               содержит="le fichier {f} contient {W}"),
+    "es": dict(если="si {У}, {Т}", иначе=", si no, {И}", иначе_пр=", si no, {inf}", после=" si existe",
+               после_текст=" si aparece", есть_если="el archivo {f} existe", есть="el archivo {f} existe",
+               нет="el archivo {f} no existe", содержит_если="el archivo {f} contiene {W}",
+               содержит="el archivo {f} contiene {W}"),
+    "it": dict(если="se {У}, {Т}", иначе=", altrimenti {И}", иначе_пр=", altrimenti di {inf}", после=" se esiste",
+               после_текст=" se c'è", есть_если="il file {f} esiste", есть="il file {f} esiste",
+               нет="il file {f} non esiste", содержит_если="il file {f} contiene {W}",
+               содержит="il file {f} contiene {W}"),
+    "pt": dict(если="se {У}, {Т}", иначе=", senão {И}", иначе_пр=", senão {inf}", после=" se existir",
+               после_текст=" se lá estiver", есть_если="o ficheiro {f} existir", есть="o ficheiro {f} existe",
+               нет="o ficheiro {f} não existe", содержит_если="o ficheiro {f} contiver {W}",
+               содержит="o ficheiro {f} contém {W}"),
+    "nl": dict(если="als {У}, {Т}", иначе=", anders {И}", иначе_пр=", anders {zu}", после=" als het bestaat",
+               после_текст=" als die erin staat", есть_если="het bestand {f} bestaat", есть="het bestand {f} bestaat",
+               нет="het bestand {f} bestaat niet", содержит_если="het bestand {f} {W} bevat",
+               содержит="het bestand {f} bevat {W}"),
+    "pl": dict(если="jeśli {У}, {Т}", иначе=", w przeciwnym razie {И}", иначе_пр=", w przeciwnym razie {inf}",
+               после=", jeśli istnieje", после_текст=", jeśli tam jest", есть_если="plik {f} istnieje",
+               есть="plik {f} istnieje", нет="plik {f} nie istnieje", содержит_если="plik {f} zawiera {W}",
+               содержит="plik {f} zawiera {W}"),
+}
+
+
+def не_выполнено(язык):
+    """«the condition is not met, the act is not performed» — хвост условия у двери хода `actturn`."""
+    return A.РЕЧЬ_УСЛОВИЯ[язык]["не_выполнено"].split(" — ", 1)[1]
+
+
+# ВСЕ ФАЙЛЫ ПАПКИ, КРОМЕ НАЗВАННОГО — «delete all files in the folder D except N» и правка отрицанием «…, but don't
+# touch N»: приказ, инфинитив предложения (zu/te-форма — у немецкого и нидерландского) и приказ с «не трогай». Глагол
+# — тот же, что у акта двери; {e} — папка, куда переносят
+КРОМЕ = {
+    "en": dict(удалить=dict(imp="delete all files in the folder {d} except {n}",
+                            inf="delete all files in the folder {d} except {n}",
+                            не_трогай="delete all files in the folder {d}, but don't touch {n}"),
+               перенести=dict(imp="move all files from the folder {d} to the folder {e} except {n}",
+                              inf="move all files from the folder {d} to the folder {e} except {n}",
+                              не_трогай="move all files from the folder {d} to the folder {e}, but don't touch {n}")),
+    "ru": dict(удалить=dict(imp="удали все файлы в папке {d}, кроме {n}", inf="удалить все файлы в папке {d}, кроме {n}",
+                            не_трогай="удали все файлы в папке {d}, но не трогай {n}"),
+               перенести=dict(imp="перенеси все файлы из папки {d} в папку {e}, кроме {n}",
+                              inf="перенести все файлы из папки {d} в папку {e}, кроме {n}",
+                              не_трогай="перенеси все файлы из папки {d} в папку {e}, но не трогай {n}")),
+    "de": dict(удалить=dict(imp="lösche alle Dateien im Ordner {d} außer {n}",
+                            inf="alle Dateien im Ordner {d} außer {n} löschen",
+                            zu="alle Dateien im Ordner {d} außer {n} zu löschen",
+                            не_трогай="lösche alle Dateien im Ordner {d}, aber rühr {n} nicht an"),
+               перенести=dict(imp="verschiebe alle Dateien außer {n} aus dem Ordner {d} in den Ordner {e}",
+                              inf="alle Dateien außer {n} aus dem Ordner {d} in den Ordner {e} verschieben",
+                              zu="alle Dateien außer {n} aus dem Ordner {d} in den Ordner {e} zu verschieben",
+                              не_трогай="verschiebe alle Dateien aus dem Ordner {d} in den Ordner {e}, aber rühr {n} "
+                                        "nicht an")),
+    "fr": dict(удалить=dict(imp="supprime tous les fichiers du dossier {d} sauf {n}",
+                            inf="supprimer tous les fichiers du dossier {d} sauf {n}",
+                            не_трогай="supprime tous les fichiers du dossier {d}, mais ne touche pas à {n}"),
+               перенести=dict(imp="déplace tous les fichiers du dossier {d} dans le dossier {e} sauf {n}",
+                              inf="déplacer tous les fichiers du dossier {d} dans le dossier {e} sauf {n}",
+                              не_трогай="déplace tous les fichiers du dossier {d} dans le dossier {e}, mais ne touche "
+                                        "pas à {n}")),
+    "es": dict(удалить=dict(imp="elimina todos los archivos de la carpeta {d} excepto {n}",
+                            inf="eliminar todos los archivos de la carpeta {d} excepto {n}",
+                            не_трогай="elimina todos los archivos de la carpeta {d}, pero no toques {n}"),
+               перенести=dict(imp="mueve todos los archivos de la carpeta {d} a la carpeta {e} excepto {n}",
+                              inf="mover todos los archivos de la carpeta {d} a la carpeta {e} excepto {n}",
+                              не_трогай="mueve todos los archivos de la carpeta {d} a la carpeta {e}, pero no toques "
+                                        "{n}")),
+    "it": dict(удалить=dict(imp="elimina tutti i file della cartella {d} tranne {n}",
+                            inf="eliminare tutti i file della cartella {d} tranne {n}",
+                            не_трогай="elimina tutti i file della cartella {d}, ma non toccare {n}"),
+               перенести=dict(imp="sposta tutti i file della cartella {d} nella cartella {e} tranne {n}",
+                              inf="spostare tutti i file della cartella {d} nella cartella {e} tranne {n}",
+                              не_трогай="sposta tutti i file della cartella {d} nella cartella {e}, ma non toccare "
+                                        "{n}")),
+    "pt": dict(удалить=dict(imp="elimina todos os ficheiros da pasta {d} exceto {n}",
+                            inf="eliminar todos os ficheiros da pasta {d} exceto {n}",
+                            не_трогай="elimina todos os ficheiros da pasta {d}, mas não toques em {n}"),
+               перенести=dict(imp="move todos os ficheiros da pasta {d} para a pasta {e} exceto {n}",
+                              inf="mover todos os ficheiros da pasta {d} para a pasta {e} exceto {n}",
+                              не_трогай="move todos os ficheiros da pasta {d} para a pasta {e}, mas não toques em "
+                                        "{n}")),
+    "nl": dict(удалить=dict(imp="verwijder alle bestanden in de map {d} behalve {n}",
+                            inf="alle bestanden in de map {d} behalve {n} verwijderen",
+                            zu="alle bestanden in de map {d} behalve {n} te verwijderen",
+                            не_трогай="verwijder alle bestanden in de map {d}, maar laat {n} staan"),
+               перенести=dict(imp="verplaats alle bestanden uit de map {d} naar de map {e} behalve {n}",
+                              inf="alle bestanden uit de map {d} behalve {n} naar de map {e} verplaatsen",
+                              zu="alle bestanden uit de map {d} behalve {n} naar de map {e} te verplaatsen",
+                              не_трогай="verplaats alle bestanden uit de map {d} naar de map {e}, maar laat {n} "
+                                        "staan")),
+    "pl": dict(удалить=dict(imp="usuń wszystkie pliki z folderu {d} oprócz {n}",
+                            inf="usunąć wszystkie pliki z folderu {d} oprócz {n}",
+                            не_трогай="usuń wszystkie pliki z folderu {d}, ale nie ruszaj {n}"),
+               перенести=dict(imp="przenieś wszystkie pliki z folderu {d} do folderu {e} oprócz {n}",
+                              inf="przenieść wszystkie pliki z folderu {d} do folderu {e} oprócz {n}",
+                              не_трогай="przenieś wszystkie pliki z folderu {d} do folderu {e}, ale nie ruszaj {n}")),
+}
+
+# ДВА ОБЪЕКТА В ОДНОМ ПРИКАЗЕ — «delete the files f and q», «append … to the files f and q»: фраза объекта во
+# множественном числе в падеже шаблона акта ({С} — перечень с союзом языка)
+for _я, (_вин, _в) in {"en": ("the files {С}", "to the files {С}"), "ru": ("файлы {С}", "в файлы {С}"),
+                       "de": ("die Dateien {С}", "die Dateien {С}"), "fr": ("les fichiers {С}", "aux fichiers {С}"),
+                       "es": ("los archivos {С}", "a los archivos {С}"), "it": ("i file {С}", "ai file {С}"),
+                       "pt": ("os ficheiros {С}", "aos ficheiros {С}"),
+                       "nl": ("de bestanden {С}", "onderaan de bestanden {С}"),
+                       "pl": ("pliki {С}", "do plików {С}")}.items():
+    ОБЪЕКТЫ[_я].update(файлы_вин=_вин, в_файлы=_в)
+
+
 # акт → (приказ, инфинитив, отчёт) — у de и nl инфинитив с глаголом в конце и «zu/te»-форма предложения
 АКТЫ = ("поиск", "строки", "замена", "дописать", "переименовать", "перенести", "тесты")
 РЕЧЬ = {
