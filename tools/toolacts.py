@@ -545,6 +545,19 @@ for _я, _м in {"en": dict(создать=("create", "it"), заменить=("
                "pl": dict(создать=("utwórz", "go"), заменить=("zamień", "go na {v}"))}.items():
     МЕСТОИМЕНИЕ[_я].update(_м)
 
+# ВОПРОС О ПРОГОНЕ ВТОРЫМ ПРИКАЗОМ — «run the tests, then let me know how many passed»: (глагол, остаток) связки и
+# инфинитив предложения; число прошедших берёт отчёт бегуна в ходе мира-процесса
+for _я, _п in {"en": (("let", "me know how many passed"), "tell how many of them passed"),
+               "ru": (("скажи,", "сколько прошло"), "сказать, сколько прошло"),
+               "de": (("sag", "mir, wie viele bestanden haben"), "sagen, wie viele bestanden haben"),
+               "fr": (("dis-moi", "combien ont réussi"), "dire combien ont réussi"),
+               "es": (("dime", "cuántas pasaron"), "decir cuántas pasaron"),
+               "it": (("dimmi", "quanti sono passati"), "dire quanti sono passati"),
+               "pt": (("diz-me", "quantos passaram"), "dizer quantos passaram"),
+               "nl": (("vertel me", "hoeveel er geslaagd zijn"), "zeggen hoeveel er geslaagd zijn"),
+               "pl": (("powiedz", "mi, ile przeszło"), "powiedzieć, ile przeszło")}.items():
+    МЕСТОИМЕНИЕ[_я]["прошло"] = _п
+
 # ССЫЛКА НА ПРОШЛЫЙ ШАГ БЕЗ МЕСТОИМЕНИЯ — «this file», «the same file» на месте «it» второго приказа плана: (глагол,
 # остаток) той же связки; «строк» — лишь «этот»: «how many lines the same file has» язык не говорит
 ССЫЛКА = {
