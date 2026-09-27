@@ -90,7 +90,8 @@ import folderworld as W  # noqa: E402 — мир папки: семантика 
     ("replace", "tests/test_main.py", ("test_lower", "check_lower")),                # python: тестов 7
     ("replace", "tests/test_helpers.py", ("test_type", "check_type")),               # python: тестов 7
     # ПАДЕНИЕ PYTHON (слово ведущего 27.09: строка трассы — кавычки как есть, путь от дома мира, М-2057 + М-2069;
-    # в свод — после поезда T112): отчёт unittest о падении снят миром процесса с домом (`ozar_process <мир> <дом>`)
+    # в свод — с поездом T112, сел 1fbf0f99a): отчёт unittest о падении снят миром процесса с домом (`ozar_process <мир>
+    # <дом>`)
     ("replace", "web/helpers.py", ("lower", "upper")),                               # python: 3 из 8 падают
     ("replace", "tests/test_main.py", ("hello world", "hello there")),               # python: 1 из 8 падает
 )
