@@ -138,6 +138,127 @@
     "FAILED (failures=1)"
    ],
    "source": "615851df2635b50f"
+  },
+  "e4aaecd8ced87eb2": {
+   "exit": 1,
+   "millis": 373,
+   "lines": 17,
+   "report": [
+    "...E....",
+    "======================================================================",
+    "ERROR: test_name (tests.test_main.GreetTests.test_name)",
+    "----------------------------------------------------------------------",
+    "Traceback (most recent call last):",
+    "  File \"tests/test_main.py\", line 7, in test_name",
+    "    self.assertEqual(greet(5), 'hello bo')",
+    "                     ^^^^^^^^",
+    "  File \"web/helpers.py\", line 2, in greet",
+    "    return 'hello ' + name.lower()",
+    "                      ^^^^^^^^^^",
+    "AttributeError: 'int' object has no attribute 'lower'",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 8 tests in 0.002s",
+    "",
+    "FAILED (errors=1)"
+   ],
+   "source": "e4aaecd8ced87eb2"
+  },
+  "29fb6f3348a943d3": {
+   "exit": 1,
+   "millis": 273,
+   "lines": 61,
+   "report": [
+    "FEFFF...",
+    "======================================================================",
+    "ERROR: test_empty (tests.test_main.GreetTests.test_empty)",
+    "----------------------------------------------------------------------",
+    "Traceback (most recent call last):",
+    "  File \"tests/test_main.py\", line 9, in test_empty",
+    "    self.assertEqual(greet(''), 'hello ')",
+    "                     ^^^^^^^^^",
+    "  File \"web/helpers.py\", line 2, in greet",
+    "    return 'hello ' + name.lower()[0]",
+    "                      ~~~~~~~~~~~~^^^",
+    "IndexError: string index out of range",
+    "",
+    "======================================================================",
+    "FAIL: test_default (tests.test_main.GreetTests.test_default)",
+    "----------------------------------------------------------------------",
+    "Traceback (most recent call last):",
+    "  File \"tests/test_main.py\", line 5, in test_default",
+    "    self.assertEqual(greet(), 'hello world')",
+    "AssertionError: 'hello w' != 'hello world'",
+    "- hello w",
+    "+ hello world",
+    "?        ++++",
+    "",
+    "",
+    "======================================================================",
+    "FAIL: test_lower (tests.test_main.GreetTests.test_lower)",
+    "----------------------------------------------------------------------",
+    "Traceback (most recent call last):",
+    "  File \"tests/test_main.py\", line 11, in test_lower",
+    "    self.assertEqual(greet('BO'), 'hello bo')",
+    "AssertionError: 'hello b' != 'hello bo'",
+    "- hello b",
+    "+ hello bo",
+    "?        +",
+    "",
+    "",
+    "======================================================================",
+    "FAIL: test_name (tests.test_main.GreetTests.test_name)",
+    "----------------------------------------------------------------------",
+    "Traceback (most recent call last):",
+    "  File \"tests/test_main.py\", line 7, in test_name",
+    "    self.assertEqual(greet('bo'), 'hello bo')",
+    "AssertionError: 'hello b' != 'hello bo'",
+    "- hello b",
+    "+ hello bo",
+    "?        +",
+    "",
+    "",
+    "======================================================================",
+    "FAIL: test_length (tests.test_helpers.HelperTests.test_length)",
+    "----------------------------------------------------------------------",
+    "Traceback (most recent call last):",
+    "  File \"tests/test_helpers.py\", line 9, in test_length",
+    "    self.assertEqual(len(greet()), 11)",
+    "AssertionError: 7 != 11",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 8 tests in 0.001s",
+    "",
+    "FAILED (failures=4, errors=1)"
+   ],
+   "source": "29fb6f3348a943d3"
+  },
+  "7e7c8c54659a7a5d": {
+   "exit": 1,
+   "millis": 278,
+   "lines": 19,
+   "report": [
+    "....F....",
+    "======================================================================",
+    "FAIL: test_upper (tests.test_main.GreetTests.test_upper)",
+    "----------------------------------------------------------------------",
+    "Traceback (most recent call last):",
+    "  File \"tests/test_main.py\", line 12, in test_upper",
+    "    def test_upper(self): self.assertEqual(greet('Al'), 'hello Al')",
+    "                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "AssertionError: 'hello al' != 'hello Al'",
+    "- hello al",
+    "?       ^",
+    "+ hello Al",
+    "?       ^",
+    "",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 9 tests in 0.000s",
+    "",
+    "FAILED (failures=1)"
+   ],
+   "source": "7e7c8c54659a7a5d"
   }
  },
  "rust": {
@@ -463,6 +584,47 @@
     "error: test failed, to rerun pass `--test checks`"
    ],
    "source": "56adb55e4464e40e"
+  }
+ },
+ "web": {
+  "a7df86636132b980": {
+   "exit": 5,
+   "millis": 418,
+   "lines": 5,
+   "report": [
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 0 tests in 0.000s",
+    "",
+    "NO TESTS RAN"
+   ],
+   "source": "a7df86636132b980"
+  },
+  "44c7cf6af8654227": {
+   "exit": 5,
+   "millis": 295,
+   "lines": 5,
+   "report": [
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 0 tests in 0.000s",
+    "",
+    "NO TESTS RAN"
+   ],
+   "source": "44c7cf6af8654227"
+  },
+  "b511f51f58a28a06": {
+   "exit": 5,
+   "millis": 273,
+   "lines": 5,
+   "report": [
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 0 tests in 0.000s",
+    "",
+    "NO TESTS RAN"
+   ],
+   "source": "b511f51f58a28a06"
   }
  }
 }
