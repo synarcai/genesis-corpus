@@ -89,6 +89,10 @@ import folderworld as W  # noqa: E402 — мир папки: семантика 
     ("line", "gauge/tests/checks.rs", ("#[test] fn nine() { assert_eq!(half(9), 5); }",)),    # gauge: падает
     ("replace", "tests/test_main.py", ("test_lower", "check_lower")),                # python: тестов 7
     ("replace", "tests/test_helpers.py", ("test_type", "check_type")),               # python: тестов 7
+    # ПАДЕНИЕ PYTHON (слово ведущего 27.09: строка трассы — кавычки как есть, путь от дома мира, М-2057 + М-2069;
+    # в свод — после поезда T112): отчёт unittest о падении снят миром процесса с домом (`ozar_process <мир> <дом>`)
+    ("replace", "web/helpers.py", ("lower", "upper")),                               # python: 3 из 8 падают
+    ("replace", "tests/test_main.py", ("hello world", "hello there")),               # python: 1 из 8 падает
 )
 НАСТРОЙКИ = tuple(ф for ф in ПРОЕКТ if ф.endswith(".ini"))
 ПУТИ = ТЕКСТЫ + tuple(ПРОЕКТ)

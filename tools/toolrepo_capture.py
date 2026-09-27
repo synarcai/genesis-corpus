@@ -21,6 +21,10 @@
     python3 tools/toolrepo_capture.py --сверить  # снять заново: итог и строки те же, числа и порядок нитей плавают
     python3 tools/toolrepo_capture.py --снять    # снять недостающее и записать; снятое прежде остаётся
     python3 tools/toolrepo_capture.py --заново   # снять всё заново и записать
+
+МИР ПРОЦЕССА С ДОМОМ (27.09, слово ведущего: орган и дом видят одну строку отчёта): с доводом `--процесс <ozar_process>`
+прибор гонит прогон через сервер мира процесса ядра (`ozar_process <мир> <дом>`, М-2069) — отчёт называет пути от
+дома мира («  File "tests/test_main.py", line 5, …»), как их увидит орган; меры и ряды — ответ мира строка в строку.
 """
 import json
 import os
@@ -47,8 +51,18 @@ def нужные():
     return вон
 
 
-def снять(проект, имена):
-    """{имя: снятое} — прогоны `имена` на проекте в состоянии `проект`."""
+def _через_мир(мир, корень, имя, процесс):
+    """Снятое одного прогона ответом сервера мира процесса: меры runs · exit · millis · lines и ряды отчёта."""
+    ответ = subprocess.run([процесс, str(мир), str(корень)], input=json.dumps({"act": "run", "object": имя}) + "\n",
+                           capture_output=True, text=True, cwd=мир, check=True).stdout
+    р = json.loads(ответ.splitlines()[0])
+    меры = {м["ledger"]: м["value"] for м in р["measures"]}
+    строки = [ряд[2] for ряд in р.get("rows") or []]
+    return {"exit": меры["exit"], "millis": меры["millis"], "lines": меры["lines"], "report": строки}
+
+
+def снять(проект, имена, процесс=None):
+    """{имя: снятое} — прогоны `имена` на проекте в состоянии `проект`; с `процесс` — через мир процесса ядра."""
     корень = pathlib.Path(tempfile.mkdtemp(prefix="toolrepo-"))
     try:
         for путь, строки in проект.items():
@@ -63,6 +77,9 @@ def снять(проект, имена):
             act = мир / "acts" / имя
             act.write_text(f"#!/bin/sh\ncd .. && {R.ПРОГОНЫ[имя]}\n", encoding="utf-8")
             act.chmod(0o755)
+            if процесс:
+                вон[имя] = _через_мир(мир, корень, имя, процесс)
+                continue
             лог = мир / "reports" / f"{имя}.log"
             with open(лог, "wb") as out:
                 начало = time.monotonic()
@@ -144,11 +161,12 @@ def main():
     if "--снять" not in sys.argv and "--заново" not in sys.argv:
         return _самопроверка()
     было = {} if "--заново" in sys.argv else _снятое()
+    процесс = sys.argv[sys.argv.index("--процесс") + 1] if "--процесс" in sys.argv else None
     вон = {имя: {} for имя in R.ПРОГОНЫ}
     for (имя, знак), проект in нужные().items():
         снятое = было.get(имя, {}).get(знак)
         if снятое is None:
-            снятое = снять(проект, [имя])[имя]
+            снятое = снять(проект, [имя], процесс)[имя]
             снятое["source"] = знак
             print(f"{имя} {знак}: exit {снятое['exit']} · millis {снятое['millis']} · lines {снятое['lines']}")
             for строка in снятое["report"]:

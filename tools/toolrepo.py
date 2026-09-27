@@ -100,7 +100,7 @@ import repoworld as Р  # noqa: E402
                ключ=("the key {k}", "{k}"), ключ_о=("of the key {k}", "of {k}"),
                q_ключ="what is the value {Kо} {М}?", ключ_ответ="{K} {М} has the value {v}",
                q_строк="how many lines are {М}?", q_папка="how many files are {Дв}?",
-               все_прошли="all {N} passed", прошли_упали="{P} passed, {F} failed",
+               все_прошли="all {N} passed", прошли_упали="{P} passed, {F} failed", из_прошли="{P} of {N} passed",
                q_файл2="where is {Wи}?",
                q_строка2="which line {Фр} contains {W}?",
                q_строка_н2="what is on line {a} {Фр}?",
@@ -126,7 +126,7 @@ import repoworld as Р  # noqa: E402
                ключ=("ключ {k}", "{k}"), ключ_о=("у ключа {k}", "у {k}"),
                q_ключ="какое значение {Kо} {М}?", ключ_ответ="{Kо} {М} значение {v}",
                q_строк="сколько строк {М}?", q_папка="сколько файлов {Дв}?",
-               все_прошли="все {N} прошли", прошли_упали="{P} {прошли}, {F} {упали}",
+               все_прошли="все {N} прошли", прошли_упали="{P} {прошли}, {F} {упали}", из_прошли="{прошли} {P} из {N}",
                прошли=("прошёл", "прошли", "прошли"), упали=("упал", "упали", "упали"),
                q_файл2="где стоит {Wи}?",
                q_строка2="какая строка {Фр} содержит {W}?",
@@ -154,6 +154,7 @@ import repoworld as Р  # noqa: E402
                q_ключ="welchen Wert hat {Kо} {М}?", ключ_ответ="{K} {М} hat den Wert {v}",
                q_строк="wie viele Zeilen hat {Ф}?", q_папка="wie viele Dateien sind {Дв}?",
                все_прошли="alle {N} bestanden", прошли_упали="{P} bestanden, {F} fehlgeschlagen",
+               из_прошли="{P} von {N} bestanden",
                q_файл2="wo steht {Wи}?",
                q_строка2="welche Zeile {Фр} enthält {W}?",
                q_строка_н2="was enthält Zeile {a} {Фр}?",
@@ -180,6 +181,7 @@ import repoworld as Р  # noqa: E402
                q_ключ="quelle est la valeur {Kо} {М} ?", ключ_ответ="{K} {М} a la valeur {v}",
                q_строк="combien de lignes contient {Ф} ?", q_папка="combien de fichiers y a-t-il {Дв} ?",
                все_прошли="les {N} ont réussi", прошли_упали="{P} {прошли}, {F} en échec",
+               из_прошли="{P} sur {N} {прошли}",
                прошли=T.ПРОШЛО["fr"],
                q_файл2="où se trouve {Wи} ?",
                q_строка2="quelle ligne {Фр} contient {W} ?",
@@ -206,7 +208,7 @@ import repoworld as Р  # noqa: E402
                ключ=("la clave {k}", "{k}"), ключ_о=("de la clave {k}", "de {k}"),
                q_ключ="¿cuál es el valor {Kо} {М}?", ключ_ответ="{K} {М} tiene el valor {v}",
                q_строк="¿cuántas líneas tiene {Ф}?", q_папка="¿cuántos archivos hay {Дв}?",
-               все_прошли="pasaron las {N}", прошли_упали="{P} {прошли}, {F} {упали}",
+               все_прошли="pasaron las {N}", прошли_упали="{P} {прошли}, {F} {упали}", из_прошли="{P} de {N} {прошли}",
                прошли=T.ПРОШЛО["es"], упали=("fallida", "fallidas"),
                q_файл2="¿dónde está {Wи}?",
                q_строка2="¿qué línea {Фр} contiene {W}?",
@@ -234,6 +236,7 @@ import repoworld as Р  # noqa: E402
                q_ключ="qual è il valore {Kо} {М}?", ключ_ответ="{K} {М} ha il valore {v}",
                q_строк="quante righe ha {Ф}?", q_папка="quanti file ci sono {Дв}?",
                все_прошли="superati tutti gli {N}", прошли_упали="{P} {прошли}, {F} {упали}",
+               из_прошли="{P} su {N} {прошли}",
                прошли=T.ПРОШЛО["it"], упали=("fallito", "falliti"),
                q_файл2="dove si trova {Wи}?",
                q_строка2="quale riga {Фр} contiene {W}?",
@@ -261,6 +264,7 @@ import repoworld as Р  # noqa: E402
                q_ключ="qual é o valor {Kо} {М}?", ключ_ответ="{K} {М} tem o valor {v}",
                q_строк="quantas linhas tem {Ф}?", q_папка="quantos ficheiros há {Дв}?",
                все_прошли="passaram todos os {N}", прошли_упали="{P} {прошли}, {F} {упали}",
+               из_прошли="{P} de {N} {прошли}",
                прошли=T.ПРОШЛО["pt"], упали=("falhou", "falharam"),
                q_файл2="onde está {Wи}?",
                q_строка2="que linha {Фр} contém {W}?",
@@ -287,7 +291,7 @@ import repoworld as Р  # noqa: E402
                ключ=("de sleutel {k}", "{k}"), ключ_о=("van de sleutel {k}", "van {k}"),
                q_ключ="wat is de waarde {Kо} {М}?", ключ_ответ="{K} {М} heeft de waarde {v}",
                q_строк="hoeveel regels heeft {Ф}?", q_папка="hoeveel bestanden zitten er {Дв}?",
-               все_прошли="alle {N} geslaagd", прошли_упали="{P} geslaagd, {F} mislukt",
+               все_прошли="alle {N} geslaagd", прошли_упали="{P} geslaagd, {F} mislukt", из_прошли="{P} van de {N} geslaagd",
                q_файл2="waar staat {Wи}?",
                q_строка2="welke regel {Фр} bevat {W}?",
                q_строка_н2="wat bevat regel {a} {Фр}?",
@@ -314,6 +318,7 @@ import repoworld as Р  # noqa: E402
                q_ключ="jaka jest wartość {Kо} {М}?", ключ_ответ="{K} {М} ma wartość {v}",
                q_строк="ile linii ma {Ф}?", q_папка="ile plików jest {Дв}?",
                все_прошли="zaliczono wszystkie {N}", прошли_упали="zaliczono {P}, oblano {F}",
+               из_прошли="zaliczono {P} z {N}",
                q_файл2="gdzie jest {Wи}?",
                q_строка2="która linia {Фр} zawiera {W}?",
                q_строка_н2="co stoi {М} w linii {a}?",
@@ -489,7 +494,8 @@ _ИТОГ_CARGO = re.compile(r"^test result: (?:ok|FAILED)\. (\d+) passed; (\d+)
 
 
 def строки_итога(снятое):
-    """[(прошло, упало)] — по строке итога бегуна: у cargo — всякая «test result», у unittest — одна."""
+    """[(прошло, упало)] — по строке итога бегуна: у cargo — всякая «test result», у unittest — одна (прошедших
+    unittest не пишет: они — «Ran N» без упавших)."""
     вон = [(int(м.group(1)), int(м.group(2))) for с in снятое["report"] if (м := _ИТОГ_CARGO.match(с))]
     if вон:
         return вон
@@ -702,6 +708,12 @@ def исход(язык, я, снятое):
     р = РЕЧЬ[язык]
     if упало == 0:
         числа = р["все_прошли"].format(N=T.тестов(язык, прошло))
+    elif not any(_ИТОГ_CARGO.match(с) for с in снятое["report"]):
+        # unittest пишет всё и упавшие («Ran 8 tests», «FAILED (failures=3)»): прошедших организм считает сам
+        всего = прошло + упало
+        числа = (р["из_прошли"].format(P=прошло, N=T.тестов(язык, всего),
+                                       прошли=S._счёт(р["прошли"], прошло, язык) if "прошли" in р else "")
+                 + A.РЕЧЬ[язык]["двоеточие"] + f"{всего} − {упало} = {прошло}")
     else:
         числа = р["прошли_упали"].format(
             P=T.тестов(язык, прошло), F=упало,
@@ -2335,7 +2347,8 @@ def _показы():
 # ======================================================================================================
 # САМОПРОВЕРКИ: мир объявлен так, как дом о нём говорит; условия рынка М-2013 и разведение источников держатся
 # ======================================================================================================
-_НЕ_РЯДУ = re.compile(r'"|[.?!] +[^\W\d_]+ ?:')     # строка хода мира: без двойных кавычек и без «слово:» после фразы
+_НЕ_РЯДУ = re.compile(r'[.?!] +[^\W\d_]+ ?:| · ')     # строка хода мира: без «слово:» после фразы и без « · »
+                                                          # (кавычки внутри значения ядро читает до закрывателя, М-2057)
 
 
 def _самопроверка_мира():
@@ -2466,11 +2479,13 @@ _ЛЕДЖЕР = re.compile(r"\d+(?: [+−] \d+)* = (\d+)")
 
 
 def _леджер_отчёта(леджер, в_текстах):
-    """Леджер суммы строк отчёта («2 + 3 + 1 = 6»): всякое слагаемое — число строки мира, сумма верна."""
+    """Леджер чисел отчёта («2 + 3 + 1 = 6» — сумма строк итога; «8 − 3 = 5» — прошедшие unittest): всякое число
+    слева — число строки мира, счёт верен."""
     левая, итог_ = леджер.split(" = ")
-    слагаемые = [int(x) for x in re.findall(r"\d+", левая)]
-    return (all(x in в_текстах for x in слагаемые) and "−" not in левая
-            and sum(слагаемые) == int(итог_))
+    числа = [int(x) for x in re.findall(r"\d+", левая)]
+    знаки = re.findall(r" ([+−]) ", левая)
+    счёт = числа[0] + sum(x if з == "+" else -x for з, x in zip(знаки, числа[1:]))
+    return all(x in в_текстах for x in числа) and счёт == int(итог_)
 
 
 def источник(стр, язык, дыры):
