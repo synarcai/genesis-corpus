@@ -1427,6 +1427,42 @@ def в_кавычках(язык, текст):
     return re.sub(re.escape(ЛИТЕРАЛ[0]) + "(.+?)" + re.escape(ЛИТЕРАЛ[1]), lambda м: кавычки(язык, м.group(1)), текст)
 
 
+# НЕОПРЕДЕЛЁННЫЙ АРТИКЛЬ (27.09, наряд ведущего (h1)): «append a line "x" to the file F», «create a file plan.md» —
+# фраза строки и файла с неопределённым артиклем, вариантом в конце ряда той же двери `ОБЪЕКТЫ`. Прежние формы стоят на
+# своих номерах, и циклы по вариантам до этого номера не доходят: вопросы берут фразу файла по номеру фразы папки (до
+# 2) и «назв» (2), приказы — голую строку (1). Русский и польский артикля не знают — ряда у них нет
+НЕОПР = {"en": dict(строку="a line {s}", файл_вин="a file {f}"),
+         "de": dict(строку="eine Zeile {s}", файл_вин="eine Datei {f}"),
+         "fr": dict(строку="une ligne {s}", файл_вин="un fichier {f}"),
+         "es": dict(строку="una línea {s}", файл_вин="un archivo {f}"),
+         "it": dict(строку="una riga {s}", файл_вин="un file {f}"),
+         "pt": dict(строку="uma linha {s}", файл_вин="um ficheiro {f}"),
+         "nl": dict(строку="een regel {s}", файл_вин="een bestand {f}")}
+for _я, _арт in НЕОПР.items():
+    for _фраза, _шаблон in _арт.items():
+        ОБЪЕКТЫ[_я][_фраза] = ОБЪЕКТЫ[_я][_фраза] + (_шаблон,)
+
+
+def неопр(язык, фраза):
+    """Номер варианта с неопределённым артиклем в ряду фразы двери `ОБЪЕКТЫ`; None — голос артикля не знает."""
+    return ОБЪЕКТЫ[язык][фраза].index(НЕОПР[язык][фраза]) if язык in НЕОПР else None
+
+
+# КОНЕЦ ФАЙЛА ГОЛЫМ ИМЕНЕМ (27.09, наряд ведущего (h1)): «append "x" to the end of F» — глагол акта двери, голый
+# литерал и голый файл после «to the end of» (`у_конца_голый`; немецкое «ergänze „x“ am Ende von F» — «ergänzen» с
+# винительным, как живая речь его говорит); «add the line "x" to the end of F» — синоним «add» на той же фразе
+# (`добавь_голый`). У дома — «to the end of the file F» (`В_КОНЕЦ`) и «at the end of the file F»
+for _я, (_у_конца, _добавь) in {
+        "en": ("append {S} to the end of {f}", "add {S} to the end of {f}"),
+        "ru": ("допиши {S} в конец {f}", "добавь {S} в конец {f}"),
+        "de": ("ergänze {S} am Ende von {f}", "füge {S} am Ende von {f} hinzu"),
+        "fr": ("ajoute {S} à la fin de {f}", "rajoute {S} à la fin de {f}"),
+        "es": ("añade {S} al final de {f}", "agrega {S} al final de {f}"),
+        "it": ("aggiungi {S} alla fine di {f}", "accoda {S} alla fine di {f}"),
+        "pt": ("acrescenta {S} ao fim de {f}", "adiciona {S} ao fim de {f}"),
+        "nl": ("zet {S} aan het eind van {f}", "plaats {S} aan het eind van {f}"),
+        "pl": ("dopisz {S} na końcu {f}", "dodaj {S} na końcu {f}")}.items():
+    КОНЕЦ[_я].update(у_конца_голый=_у_конца, добавь_голый=_добавь)
 РЕГИСТРЫ = ("плоский", "вежливый", "косвенный", "вопросом")
 
 # ======================================================================================================
