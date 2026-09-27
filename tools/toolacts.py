@@ -335,6 +335,22 @@ def зачин(язык, вид, придаточное):
     return глагол, (остаток + " " + придаточное).strip()
 
 
+# ЗАЧИНЫ ОДИНОЧНОГО ВОПРОСА (27.09, наряд ведущего (e): зачин перед одиночным вопросом, а не только перед вторым
+# вопросом плана) — свои у голоса: «show me», «report»; «сообщи», «покажи», «подскажи»; «zeig mir», «teil mir mit»;
+# «montre-moi», «indique-moi»; «laat me zien», «geef aan» (нидерландская частица — после наречия связки: «… en geef
+# daarna aan …»); «pokaż mi», «podaj». Новые виды — в конце ряда: планы берут виды 0 и 1, как прежде
+for _я, _в in {"en": (("show", "me"), ("report", "")),
+               "ru": (("сообщи,", ""), ("покажи,", ""), ("подскажи,", "")),
+               "de": (("zeig", "mir,"), ("teil", "mir mit,")),
+               "fr": (("montre-moi", ""), ("indique-moi", "")),
+               "es": (("muéstrame", ""), ("indícame", "")),
+               "it": (("mostrami", ""), ("indicami", "")),
+               "pt": (("mostra-me", ""), ("indica-me", "")),
+               "nl": (("laat me", "zien"), ("geef", "aan")),
+               "pl": (("pokaż", "mi,"), ("podaj,", ""))}.items():
+    ЗАЧИН[_я] += _в
+
+
 # ПЛАН С МЕСТОИМЕНИЕМ (25.09, вопрос 4 коллегии «ответ мира»; ведущий: роды дома актов `toolrepo`): второй приказ
 # называет объект первого местоимением — «create the file X, then append the line "…" to it». Формы приказа —
 # (глагол, остаток) для связки: местоимение стоит там, где его ставит язык, и глагол тот же, что у акта двери
@@ -715,6 +731,51 @@ for _я, _м in {"en": dict(создать=("create", "it"), заменить=("
 }
 for _я, _в in ВОПРОС_ВТОРОЙ.items():
     МЕСТОИМЕНИЕ[_я]["прошло"] = (зачин(_я, 0, _в["прошло"][0]), _в["прошло"][1])
+
+# ОДИНОЧНЫЙ ВОПРОС ЗА ЗАЧИНОМ (27.09, наряд ведущего (e)) — косвенный вопрос всякого одиночного вопроса дома
+# `toolrepo` той же дверью, что второй вопрос плана («файл» — прежний): «tell me which line of the file F contains the
+# text "x"», «скажи, сколько строк в файле F», «sag mir, was in Zeile 2 der Datei F steht» — у de и nl глагол
+# косвенного в конце, у en вопрос без инверсии и без «do». Слоты — канонические слоты прямого вопроса дома: файл назван
+# ({Фр}, {М}, {Ф}), а не местоимением, как у второго вопроса плана; инфинитив предложения — «сказать» голоса, как у
+# «файл», и то же придаточное
+for _я, _к in {
+        "en": dict(строка="which line {Фр} contains {W}", выбор="what the {c} line {Фр} is",
+                   строка_н="what line {a} {Фр} says", ключ="what value {K} has {М}", о_ключе="what {Ф} says about {k}",
+                   строк="how many lines {Ф} has", раз="how many times {Wи} occurs {М}",
+                   файлов="how many files there are {Дв}"),
+        "ru": dict(строка="в какой строке {Фр} стоит {Wи}", выбор="какая {c} строка {Фр}",
+                   строка_н="что написано {М} в строке {a}", ключ="какое значение {Kо} {М}",
+                   о_ключе="что {Ф} говорит о {k}", строк="сколько строк {М}", раз="сколько раз {Wи} встречается {М}",
+                   файлов="сколько файлов {Дв}"),
+        "de": dict(строка="in welcher Zeile {Фр} {Wи} steht", выбор="was in der {c} Zeile {Фр} steht",
+                   строка_н="was in Zeile {a} {Фр} steht", ключ="welchen Wert {Kо} {М} hat",
+                   о_ключе="was {Ф} über {k} sagt", строк="wie viele Zeilen {Ф} hat", раз="wie oft {Wи} {М} vorkommt",
+                   файлов="wie viele Dateien {Дв} sind"),
+        "fr": dict(строка="à quelle ligne {Фр} se trouve {Wи}", выбор="quelle est la {c} ligne {Фр}",
+                   строка_н="ce que dit la ligne {a} {Фр}", ключ="quelle est la valeur {Kо} {М}",
+                   о_ключе="ce que dit {Ф} sur {k}", строк="combien de lignes contient {Ф}",
+                   раз="combien de fois {Wи} apparaît {М}", файлов="combien de fichiers il y a {Дв}"),
+        "es": dict(строка="en qué línea {Фр} está {Wи}", выбор="cuál es la {c} línea {Фр}",
+                   строка_н="qué dice la línea {a} {Фр}", ключ="cuál es el valor {Kо} {М}",
+                   о_ключе="qué dice {Ф} sobre {k}", строк="cuántas líneas tiene {Ф}",
+                   раз="cuántas veces aparece {Wи} {М}", файлов="cuántos archivos hay {Дв}"),
+        "it": dict(строка="in quale riga {Фр} si trova {Wи}", выбор="qual è {c} riga {Фр}",
+                   строка_н="cosa dice la riga {a} {Фр}", ключ="qual è il valore {Kо} {М}", о_ключе="cosa dice {Ф} su {k}",
+                   строк="quante righe ha {Ф}", раз="quante volte compare {Wи} {М}", файлов="quanti file ci sono {Дв}"),
+        "pt": dict(строка="em que linha {Фр} está {Wи}", выбор="qual é a {c} linha {Фр}",
+                   строка_н="o que diz a linha {a} {Фр}", ключ="qual é o valor {Kо} {М}",
+                   о_ключе="o que diz {Ф} sobre {k}", строк="quantas linhas tem {Ф}",
+                   раз="quantas vezes aparece {Wи} {М}", файлов="quantos ficheiros há {Дв}"),
+        "nl": dict(строка="in welke regel {Фр} {Wи} staat", выбор="wat de {c} regel {Фр} is",
+                   строка_н="wat er in regel {a} {Фр} staat", ключ="wat de waarde {Kо} {М} is",
+                   о_ключе="wat {Ф} over {k} zegt", строк="hoeveel regels {Ф} heeft", раз="hoe vaak {Wи} {М} voorkomt",
+                   файлов="hoeveel bestanden er {Дв} zitten"),
+        "pl": dict(строка="w której linii {Фр} jest {Wи}", выбор="jaka jest {c} linia {Фр}",
+                   строка_н="co jest {М} w linii {a}", ключ="jaka jest wartość {Kо} {М}", о_ключе="co {Ф} mówi o {k}",
+                   строк="ile linii ma {Ф}", раз="ile razy {Wи} występuje {М}", файлов="ile plików jest {Дв}")}.items():
+    _сказать, _, _хвост = ВОПРОС_ВТОРОЙ[_я]["файл"][1].rpartition(ВОПРОС_ВТОРОЙ[_я]["файл"][0])
+    assert _сказать and not _хвост, (_я, ВОПРОС_ВТОРОЙ[_я]["файл"])
+    ВОПРОС_ВТОРОЙ[_я].update({_в: (_п, _сказать + _п) for _в, _п in _к.items()})
 
 # СВЯЗКА АКТА И ВОПРОСА (27.09, наряд ведущего: связки шире «, then let me know») — «{A} and {B1} {B2}»: второй
 # приказ — зачин и придаточное; «{A}; {Q}»: второй — прямой вопрос. Предложение организма — связкой плана `СВЯЗКА`.
