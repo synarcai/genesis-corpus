@@ -270,7 +270,7 @@ for _я, _о in ОБЪЕКТЫ.items():
 # канонической фразой — так прежние вызовы («w=…, f=…») говорят прежние строки байт в байт
 _СЛОТЫ = {"W": ("w", "слово", "в"), "Wи": ("w", "слово", "и"), "Wнет": ("w", "слово", "нет"),
           "М": ("f", "в_файле"), "К": ("f", "в_файл"), "Ф": ("f", "файл_вин"), "Фи": ("f", "файл_имени"),
-          "S": ("s", "строку"), "Т": ("t", "тесты_файла"), "Д": ("d", "в_папку")}
+          "S": ("s", "строку"), "Т": ("t", "тесты_файла"), "Д": ("d", "в_папку"), "Фр": ("f", "файла")}
 
 
 def слоты(язык, **п):
@@ -311,6 +311,30 @@ def связать(язык, ступень, A, B):
     return предложение_.format(A=A, B=B)
 
 
+# ЗАЧИН ПРОСЬБЫ СКАЗАТЬ (27.09, наряд ведущего: зачин перед вторым вопросом плана) — одна дверь на всякий вопрос
+# вторым приказом: (глагол, остаток) зачина, придаточное вопроса идёт за остатком. Вид 0 — прежний зачин дома («let
+# me know», «скажи»), вид 1 — зачин с местоимением после глагола («tell me», «скажи мне») или соседний глагол языка,
+# где прежний уже несёт местоимение («avísame», «laat me weten»). Глагол отдельно от остатка — ради связки:
+# нидерландское наречие стоит после глагола повеления («… en laat me daarna weten …»).
+ЗАЧИН = {
+    "en": (("let", "me know"), ("tell", "me")),
+    "ru": (("скажи,", ""), ("скажи", "мне,")),
+    "de": (("sag", "mir,"), ("gib", "mir Bescheid,")),
+    "fr": (("dis-moi", ""), ("fais-moi", "savoir")),
+    "es": (("dime", ""), ("avísame", "")),
+    "it": (("dimmi", ""), ("fammi", "sapere")),
+    "pt": (("diz-me", ""), ("avisa-me", "")),
+    "nl": (("vertel me", ""), ("laat me", "weten")),
+    "pl": (("powiedz", "mi,"), ("daj", "mi znać,")),
+}
+
+
+def зачин(язык, вид, придаточное):
+    """(глагол, остаток) второго приказа — зачин просьбы сказать и придаточное вопроса за ним."""
+    глагол, остаток = ЗАЧИН[язык][вид]
+    return глагол, (остаток + " " + придаточное).strip()
+
+
 # ПЛАН С МЕСТОИМЕНИЕМ (25.09, вопрос 4 коллегии «ответ мира»; ведущий: роды дома актов `toolrepo`): второй приказ
 # называет объект первого местоимением — «create the file X, then append the line "…" to it». Формы приказа —
 # (глагол, остаток) для связки: местоимение стоит там, где его ставит язык, и глагол тот же, что у акта двери
@@ -321,43 +345,43 @@ def связать(язык, ступень, A, B):
 # с ключом AGENT-K вышел 8 слов (> 6, мера счётом genesis_key_overlap), у этой — 5.
 МЕСТОИМЕНИЕ = {
     "en": dict(дописать=("append", "{S} to it"), удалить=("delete", "it"),
-               строк=(("let", "me know how many lines it has"), "tell how many lines the file {p} has"),
+               строк=(зачин("en", 0, "how many lines it has"), "tell how many lines the file {p} has"),
                найти=("find the file that contains {W}", "find the file that contains {W}"),
                ждёт="the second act waits for one file", нет_второго="the second act is not performed either"),
     "ru": dict(дописать=("допиши", "в него {S}"), удалить=("удали", "его"),
-               строк=(("скажи,", "сколько в нём строк"), "сказать, сколько строк в файле {p}"),
+               строк=(зачин("ru", 0, "сколько в нём строк"), "сказать, сколько строк в файле {p}"),
                найти=("найди файл, в котором есть {Wи}", "найти файл, в котором есть {Wи}"),
                ждёт="второй акт ждёт одного файла", нет_второго="второй акт тоже не совершён"),
     "de": dict(дописать=("ergänze", "sie um {S}"), удалить=("lösche", "sie"),
-               строк=(("sag", "mir, wie viele Zeilen sie hat"), "sagen, wie viele Zeilen die Datei {p} hat"),
+               строк=(зачин("de", 0, "wie viele Zeilen sie hat"), "sagen, wie viele Zeilen die Datei {p} hat"),
                найти=("suche die Datei, die {W} enthält", "die Datei suchen, die {W} enthält",
                       "die Datei zu suchen, die {W} enthält"),
                ждёт="die zweite Handlung wartet auf eine Datei",
                нет_второго="die zweite Handlung wird auch nicht ausgeführt"),
     "fr": dict(дописать=("ajoute-y", "{S}"), удалить=("supprime-le", ""),
-               строк=(("dis-moi", "combien de lignes il contient"), "dire combien de lignes contient le fichier {p}"),
+               строк=(зачин("fr", 0, "combien de lignes il contient"), "dire combien de lignes contient le fichier {p}"),
                найти=("cherche le fichier qui contient {W}", "chercher le fichier qui contient {W}"),
                ждёт="le deuxième acte attend un seul fichier", нет_второго="le deuxième acte n'est pas exécuté non plus"),
     "es": dict(дописать=("añádele", "{S}"), удалить=("elimínalo", ""),
-               строк=(("dime", "cuántas líneas tiene"), "decir cuántas líneas tiene el archivo {p}"),
+               строк=(зачин("es", 0, "cuántas líneas tiene"), "decir cuántas líneas tiene el archivo {p}"),
                найти=("busca el archivo que contiene {W}", "buscar el archivo que contiene {W}"),
                ждёт="el segundo acto espera un solo archivo", нет_второго="el segundo acto tampoco se realiza"),
     "it": dict(дописать=("aggiungici", "{S}"), удалить=("eliminalo", ""),
-               строк=(("dimmi", "quante righe ha"), "dire quante righe ha il file {p}"),
+               строк=(зачин("it", 0, "quante righe ha"), "dire quante righe ha il file {p}"),
                найти=("cerca il file che contiene {W}", "cercare il file che contiene {W}"),
                ждёт="il secondo atto aspetta un solo file", нет_второго="neanche il secondo atto viene eseguito"),
     "pt": dict(дописать=("acrescenta-lhe", "{S}"), удалить=("elimina-o", ""),
-               строк=(("diz-me", "quantas linhas tem"), "dizer quantas linhas tem o ficheiro {p}"),
+               строк=(зачин("pt", 0, "quantas linhas tem"), "dizer quantas linhas tem o ficheiro {p}"),
                найти=("procura o ficheiro que contém {W}", "procurar o ficheiro que contém {W}"),
                ждёт="o segundo ato espera um só ficheiro", нет_второго="o segundo ato também não é realizado"),
     "nl": dict(дописать=("zet", "{S} er onderaan"), удалить=("verwijder het", ""),
-               строк=(("vertel me", "hoeveel regels het heeft"), "zeggen hoeveel regels het bestand {p} heeft"),
+               строк=(зачин("nl", 0, "hoeveel regels het heeft"), "zeggen hoeveel regels het bestand {p} heeft"),
                найти=("zoek het bestand dat {W} bevat", "het bestand zoeken dat {W} bevat",
                       "het bestand te zoeken dat {W} bevat"),
                ждёт="de tweede handeling wacht op één bestand",
                нет_второго="de tweede handeling wordt ook niet uitgevoerd"),
     "pl": dict(дописать=("dopisz", "do niego {S}"), удалить=("usuń", "go"),
-               строк=(("powiedz", "mi, ile ma linii"), "powiedzieć, ile linii ma plik {p}"),
+               строк=(зачин("pl", 0, "ile ma linii"), "powiedzieć, ile linii ma plik {p}"),
                найти=("znajdź plik, który zawiera {W}", "znaleźć plik, który zawiera {W}"),
                ждёт="drugi akt czeka na jeden plik", нет_второго="drugi akt też nie zostaje wykonany"),
 }
@@ -545,50 +569,110 @@ for _я, _м in {"en": dict(создать=("create", "it"), заменить=("
                "pl": dict(создать=("utwórz", "go"), заменить=("zamień", "go na {v}"))}.items():
     МЕСТОИМЕНИЕ[_я].update(_м)
 
-# ВОПРОС О ПРОГОНЕ ВТОРЫМ ПРИКАЗОМ — «run the tests, then let me know how many passed»: (глагол, остаток) связки и
-# инфинитив предложения; число прошедших берёт отчёт бегуна в ходе мира-процесса
-for _я, _п in {"en": (("let", "me know how many passed"), "tell how many of them passed"),
-               "ru": (("скажи,", "сколько прошло"), "сказать, сколько прошло"),
-               "de": (("sag", "mir, wie viele bestanden haben"), "sagen, wie viele bestanden haben"),
-               "fr": (("dis-moi", "combien ont réussi"), "dire combien ont réussi"),
-               "es": (("dime", "cuántas pasaron"), "decir cuántas pasaron"),
-               "it": (("dimmi", "quanti sono passati"), "dire quanti sono passati"),
-               "pt": (("diz-me", "quantos passaram"), "dizer quantos passaram"),
-               "nl": (("vertel me", "hoeveel er geslaagd zijn"), "zeggen hoeveel er geslaagd zijn"),
-               "pl": (("powiedz", "mi, ile przeszło"), "powiedzieć, ile przeszło")}.items():
-    МЕСТОИМЕНИЕ[_я]["прошло"] = _п
+# ВОПРОС ВТОРЫМ ПРИКАЗОМ ПЛАНА — придаточное за зачином и инфинитив предложения (организм говорит путём, какой
+# определяет приказ, — `{p}`, и словом вопроса — `{W}`): «прошло» — «run the tests, then let me know how many
+# passed», число прошедших берёт отчёт бегуна в ходе мира-процесса; «первая» — «…, then tell me what its first line
+# is», «файл» — «…, then let me know which file contains the word "x"» (27.09, наряд ведущего: зачин перед вторым
+# вопросом плана). «их» — вопрос о прогоне с местоимением тестов: придаточное за связкой «and» и прямой вопрос за
+# «;» — «run the Rust tests; how many of them passed?». Без местоимения обе связки с этим вопросом суть просьбы ключа
+# AGENT-K целиком («… and tell me how many passed», «…; how many passed?» — мера счётом genesis_key_overlap, 27.09);
+# «tell me how many lines it has» — общий ряд с ключом 8 слов, и зачин вида 1 перед «строк» не ставится.
+ВОПРОС_ВТОРОЙ = {
+    "en": dict(прошло=("how many passed", "tell how many of them passed"),
+               их=("how many of them passed", "how many of them passed?"),
+               первая=("what its first line is", "tell what the first line of the file {p} is"),
+               файл=("which file contains {W}", "tell which file contains {W}")),
+    "ru": dict(прошло=("сколько прошло", "сказать, сколько прошло"),
+               их=("сколько из них прошло", "сколько из них прошло?"),
+               первая=("какая первая строка в нём", "сказать, какая первая строка в файле {p}"),
+               файл=("в каком файле есть {Wи}", "сказать, в каком файле есть {Wи}")),
+    "de": dict(прошло=("wie viele bestanden haben", "sagen, wie viele bestanden haben"),
+               их=("wie viele davon bestanden haben", "wie viele davon haben bestanden?"),
+               первая=("was in ihrer ersten Zeile steht", "sagen, was in der ersten Zeile der Datei {p} steht"),
+               файл=("welche Datei {W} enthält", "sagen, welche Datei {W} enthält")),
+    "fr": dict(прошло=("combien ont réussi", "dire combien ont réussi"),
+               их=("combien d'entre eux ont réussi", "combien d'entre eux ont réussi ?"),
+               первая=("quelle est sa première ligne", "dire quelle est la première ligne du fichier {p}"),
+               файл=("quel fichier contient {W}", "dire quel fichier contient {W}")),
+    "es": dict(прошло=("cuántas pasaron", "decir cuántas pasaron"),
+               их=("cuántas de ellas pasaron", "¿cuántas de ellas pasaron?"),
+               первая=("cuál es su primera línea", "decir cuál es la primera línea del archivo {p}"),
+               файл=("qué archivo contiene {W}", "decir qué archivo contiene {W}")),
+    "it": dict(прошло=("quanti sono passati", "dire quanti sono passati"),
+               их=("quanti ne sono passati", "quanti ne sono passati?"),
+               первая=("qual è la sua prima riga", "dire qual è la prima riga del file {p}"),
+               файл=("quale file contiene {W}", "dire quale file contiene {W}")),
+    "pt": dict(прошло=("quantos passaram", "dizer quantos passaram"),
+               их=("quantos deles passaram", "quantos deles passaram?"),
+               первая=("qual é a primeira linha dele", "dizer qual é a primeira linha do ficheiro {p}"),
+               файл=("que ficheiro contém {W}", "dizer que ficheiro contém {W}")),
+    "nl": dict(прошло=("hoeveel er geslaagd zijn", "zeggen hoeveel er geslaagd zijn"),
+               их=("hoeveel ervan geslaagd zijn", "hoeveel ervan zijn geslaagd?"),
+               первая=("wat de eerste regel ervan is", "zeggen wat de eerste regel van het bestand {p} is"),
+               файл=("welk bestand {W} bevat", "zeggen welk bestand {W} bevat")),
+    "pl": dict(прошло=("ile przeszło", "powiedzieć, ile przeszło"),
+               их=("ile z nich przeszło", "ile z nich przeszło?"),
+               первая=("jaka jest jego pierwsza linia", "powiedzieć, jaka jest pierwsza linia pliku {p}"),
+               файл=("który plik zawiera {W}", "powiedzieć, który plik zawiera {W}")),
+}
+for _я, _в in ВОПРОС_ВТОРОЙ.items():
+    МЕСТОИМЕНИЕ[_я]["прошло"] = (зачин(_я, 0, _в["прошло"][0]), _в["прошло"][1])
+
+# СВЯЗКА АКТА И ВОПРОСА (27.09, наряд ведущего: связки шире «, then let me know») — «{A} and {B1} {B2}»: второй
+# приказ — зачин и придаточное; «{A}; {Q}»: второй — прямой вопрос. Предложение организма — связкой плана `СВЯЗКА`.
+СВЯЗКА_ВОПРОСА = {
+    "en": ("{A} and {B1} {B2}", "{A}; {Q}"), "ru": ("{A} и {B1} {B2}", "{A}; {Q}"),
+    "de": ("{A} und {B1} {B2}", "{A}; {Q}"), "fr": ("{A} et {B1} {B2}", "{A} ; {Q}"),
+    "es": ("{A} y {B1} {B2}", "{A}; {Q}"), "it": ("{A} e {B1} {B2}", "{A}; {Q}"),
+    "pt": ("{A} e {B1} {B2}", "{A}; {Q}"), "nl": ("{A} en {B1} {B2}", "{A}; {Q}"),
+    "pl": ("{A} i {B1} {B2}", "{A}; {Q}"),
+}
+
+
+def второй_вопрос(язык, вопрос_, вид, **п):
+    """(глагол, остаток) второго приказа: зачин вида `вид` и придаточное вопроса `вопрос_` со слотами."""
+    return зачин(язык, вид, ВОПРОС_ВТОРОЙ[язык][вопрос_][0].format(**слоты(язык, **п)))
+
+
+def связать_вопрос(язык, связка, A, B):
+    """Приказ «акт и вопрос»: `связка` «и» — B есть (глагол, остаток) зачина с придаточным; «прямо» — B есть прямой
+    вопрос, приказ кончается его знаком."""
+    и_, прямо_ = СВЯЗКА_ВОПРОСА[язык]
+    if связка == "и":
+        return и_.format(A=A, B1=B[0], B2=B[1]).rstrip()
+    return прямо_.format(A=A, Q=B)
 
 # ССЫЛКА НА ПРОШЛЫЙ ШАГ БЕЗ МЕСТОИМЕНИЯ — «this file», «the same file» на месте «it» второго приказа плана: (глагол,
 # остаток) той же связки; «строк» — лишь «этот»: «how many lines the same file has» язык не говорит
 ССЫЛКА = {
     "en": dict(этот=dict(дописать=("append", "{S} to this file"), удалить=("delete", "this file"),
-                         строк=("let", "me know how many lines this file has")),
+                         строк=зачин("en", 0, "how many lines this file has")),
                тот_же=dict(дописать=("append", "{S} to the same file"), удалить=("delete", "the same file"))),
     "ru": dict(этот=dict(дописать=("допиши", "в этот файл {S}"), удалить=("удали", "этот файл"),
-                         строк=("скажи,", "сколько строк в этом файле")),
+                         строк=зачин("ru", 0, "сколько строк в этом файле")),
                тот_же=dict(дописать=("допиши", "в тот же файл {S}"), удалить=("удали", "тот же файл"))),
     "de": dict(этот=dict(дописать=("ergänze", "diese Datei um {S}"), удалить=("lösche", "diese Datei"),
-                         строк=("sag", "mir, wie viele Zeilen diese Datei hat")),
+                         строк=зачин("de", 0, "wie viele Zeilen diese Datei hat")),
                тот_же=dict(дописать=("ergänze", "dieselbe Datei um {S}"), удалить=("lösche", "dieselbe Datei"))),
     "fr": dict(этот=dict(дописать=("ajoute", "{S} à ce fichier"), удалить=("supprime", "ce fichier"),
-                         строк=("dis-moi", "combien de lignes contient ce fichier")),
+                         строк=зачин("fr", 0, "combien de lignes contient ce fichier")),
                тот_же=dict(дописать=("ajoute", "{S} au même fichier"), удалить=("supprime", "le même fichier"))),
     "es": dict(этот=dict(дописать=("añade", "{S} a este archivo"), удалить=("elimina", "este archivo"),
-                         строк=("dime", "cuántas líneas tiene este archivo")),
+                         строк=зачин("es", 0, "cuántas líneas tiene este archivo")),
                тот_же=dict(дописать=("añade", "{S} al mismo archivo"), удалить=("elimina", "el mismo archivo"))),
     "it": dict(этот=dict(дописать=("aggiungi", "{S} a questo file"), удалить=("elimina", "questo file"),
-                         строк=("dimmi", "quante righe ha questo file")),
+                         строк=зачин("it", 0, "quante righe ha questo file")),
                тот_же=dict(дописать=("aggiungi", "{S} allo stesso file"), удалить=("elimina", "lo stesso file"))),
     "pt": dict(этот=dict(дописать=("acrescenta", "{S} a este ficheiro"), удалить=("elimina", "este ficheiro"),
-                         строк=("diz-me", "quantas linhas tem este ficheiro")),
+                         строк=зачин("pt", 0, "quantas linhas tem este ficheiro")),
                тот_же=dict(дописать=("acrescenta", "{S} ao mesmo ficheiro"),
                            удалить=("elimina", "o mesmo ficheiro"))),
     "nl": dict(этот=dict(дописать=("zet", "{S} onderaan dit bestand"), удалить=("verwijder", "dit bestand"),
-                         строк=("vertel me", "hoeveel regels dit bestand heeft")),
+                         строк=зачин("nl", 0, "hoeveel regels dit bestand heeft")),
                тот_же=dict(дописать=("zet", "{S} onderaan hetzelfde bestand"),
                            удалить=("verwijder", "hetzelfde bestand"))),
     "pl": dict(этот=dict(дописать=("dopisz", "do tego pliku {S}"), удалить=("usuń", "ten plik"),
-                         строк=("powiedz", "mi, ile linii ma ten plik")),
+                         строк=зачин("pl", 0, "ile linii ma ten plik")),
                тот_же=dict(дописать=("dopisz", "do tego samego pliku {S}"), удалить=("usuń", "ten sam plik"))),
 }
 
@@ -976,6 +1060,119 @@ for _я, (_вин, _в) in {"en": ("the files {С}", "to the files {С}"), "ru":
                      "proponuję trzy akty: znaleźć słowo {w} w pliku {f}, zamienić je na {v}, sprawdzić plik {f}"),
         выпуск_акт=("opublikuj wydanie, jeśli wszystkie testy przejdą",
                     "opublikować wydanie, jeśli wszystkie testy przejdą")),
+}
+# МОДИФИКАТОРЫ ПРИКАЗА (27.09, наряд ведущего: контрастные пары «приказ со словом / без слова» на ходах мира) —
+# регистры, какие лишь прибавляют слово к повелению. Хранители акта — «сейчас», «просто», «прямо_сейчас»: тот же
+# ход мира, что у приказа без слова. Меняющие — «позже», «завтра» (здесь), «не», «притворись» (`ОТМЕНА`): акт сейчас
+# не идёт; причина отказа — `МЕНЯЮЩИЕ`.
+МОДИФИКАТОРЫ = {
+    "en": dict(сейчас="{imp} now.", просто="just {imp}.", прямо_сейчас="{imp} right now.", позже="{imp} later.",
+               завтра="{imp} tomorrow."),
+    "ru": dict(сейчас="{imp} сейчас.", просто="просто {imp}.", прямо_сейчас="{imp} прямо сейчас.",
+               позже="{imp} позже.", завтра="{imp} завтра."),
+    "de": dict(сейчас="{imp} jetzt.", просто="{imp} einfach.", прямо_сейчас="{imp} sofort.", позже="{imp} später.",
+               завтра="{imp} morgen."),
+    "fr": dict(сейчас="{imp} maintenant.", просто="{imp}, tout simplement.", прямо_сейчас="{imp} tout de suite.",
+               позже="{imp} plus tard.", завтра="{imp} demain."),
+    "es": dict(сейчас="{imp} ahora.", просто="simplemente {imp}.", прямо_сейчас="{imp} ahora mismo.",
+               позже="{imp} más tarde.", завтра="{imp} mañana."),
+    "it": dict(сейчас="{imp} adesso.", просто="{imp} e basta.", прямо_сейчас="{imp} subito.",
+               позже="{imp} più tardi.", завтра="{imp} domani."),
+    "pt": dict(сейчас="{imp} agora.", просто="simplesmente {imp}.", прямо_сейчас="{imp} agora mesmo.",
+               позже="{imp} mais tarde.", завтра="{imp} amanhã."),
+    "nl": dict(сейчас="{imp} nu.", просто="{imp} gewoon.", прямо_сейчас="{imp} meteen.", позже="{imp} later.",
+               завтра="{imp} morgen."),
+    "pl": dict(сейчас="{imp} teraz.", просто="po prostu {imp}.", прямо_сейчас="{imp} od razu.",
+               позже="{imp} później.", завтра="{imp} jutro."),
+}
+for _я, _м in МОДИФИКАТОРЫ.items():
+    РЕЧЬ[_я]["регистры"].update(_м)
+ХРАНИТЕЛИ = ("сейчас", "просто", "прямо_сейчас")
+# СЛОВО, КАКОЕ АКТ МЕНЯЕТ, — причина отказа словами «{причина} — {хвост отказа}»: организм акта не предлагает, мир
+# читает «до» (то же чтение, что у отказа пользователем), итог называет акт и то, что не сдвинулось
+МЕНЯЮЩИЕ = {
+    "en": dict(позже="the order is for later", завтра="the order is for tomorrow", не="the order says not to",
+               притворись="the order asks only to pretend"),
+    "ru": dict(позже="приказ на потом", завтра="приказ на завтра", не="приказ это запрещает",
+               притворись="приказ просит лишь притвориться"),
+    "de": dict(позже="der Auftrag ist für später", завтра="der Auftrag ist für morgen", не="der Auftrag verbietet es",
+               притворись="der Auftrag verlangt nur, so zu tun"),
+    "fr": dict(позже="l'ordre est pour plus tard", завтра="l'ordre est pour demain", не="l'ordre l'interdit",
+               притворись="l'ordre demande seulement de faire semblant"),
+    "es": dict(позже="la orden es para más tarde", завтра="la orden es para mañana", не="la orden lo prohíbe",
+               притворись="la orden pide solo fingir"),
+    "it": dict(позже="l'ordine è per più tardi", завтра="l'ordine è per domani", не="l'ordine lo vieta",
+               притворись="l'ordine chiede solo di fingere"),
+    "pt": dict(позже="a ordem é para mais tarde", завтра="a ordem é para amanhã", не="a ordem proíbe-o",
+               притворись="a ordem pede só para fingir"),
+    "nl": dict(позже="de opdracht is voor later", завтра="de opdracht is voor morgen", не="de opdracht verbiedt het",
+               притворись="de opdracht vraagt alleen om te doen alsof"),
+    "pl": dict(позже="polecenie jest na później", завтра="polecenie jest na jutro", не="polecenie tego zabrania",
+               притворись="polecenie każe tylko udawać"),
+}
+# ПРИКАЗ «НЕ …» И «ПРИТВОРИСЬ» (27.09, наряд ведущего: блок C) — форма приказа меняющего слова. Строка — над формами
+# самого приказа: {imp} — повеление, {V} и {R} — его глагол и остаток, {inf} — инфинитив, {past} — отчёт без
+# вспомогательного глагола («die Datei X gelöscht», «удалил файл X»), {past2} — он же вторым лицом (польское «-łem» →
+# «-łeś»). Словарь — по актам, слотами двери: где язык при отрицании меняет глагол (вид, сослагательное) или падеж
+# объекта («nie usuwaj pliku X») и где место отрицания — внутри приказа («verschiebe die Datei X nicht in den Ordner»).
+ОТМЕНА = {
+    "en": dict(не="don't {imp}", притворись="pretend to {inf}"),
+    "ru": dict(не=dict(создать="не создавай {Ф}", удалить="не удаляй {Ф}", перенести="не переноси {Ф} {Д}",
+                       переименовать="не переименовывай {Фи} в {g}", замена="не заменяй {W} на {v} {М}",
+                       дописать="не дописывай {S} {К}", тесты="не запускай {Т}"),
+               притворись="притворись, что {past}"),
+    "de": dict(не=dict(создать="erstelle {Ф} nicht", удалить="lösche {Ф} nicht", перенести="verschiebe {Ф} nicht {Д}",
+                       переименовать="gib {Фи} nicht den Namen {g}", замена="ersetze {W} {М} nicht durch {v}",
+                       дописать="ergänze {К} nicht um {S}", тесты="starte {Т} nicht"),
+               притворись="tu so, als hättest du {past}"),
+    "fr": dict(не="ne {V} pas {R}", притворись="fais semblant de {inf}"),
+    "es": dict(не=dict(создать="no crees {Ф}", удалить="no elimines {Ф}", перенести="no muevas {Ф} {Д}",
+                       переименовать="no renombres {Фи} como {g}", замена="no reemplaces {W} por {v} {М}",
+                       дописать="no añadas {S} {К}", тесты="no ejecutes {Т}"),
+               притворись="finge {inf}"),
+    "it": dict(не="non {inf}", притворись="fai finta di {inf}"),
+    "pt": dict(не=dict(создать="não cries {Ф}", удалить="não elimines {Ф}", перенести="não movas {Ф} {Д}",
+                       переименовать="não renomeies {Фи} para {g}", замена="não substituas {W} por {v} {М}",
+                       дописать="não acrescentes {S} {К}", тесты="não executes {Т}"),
+               притворись="finge {inf}"),
+    "nl": dict(не=dict(создать="creëer {Ф} niet", удалить="verwijder {Ф} niet", перенести="verplaats {Ф} niet {Д}",
+                       переименовать="hernoem {Фи} niet naar {g}", замена="vervang {W} {М} niet door {v}",
+                       дописать="zet {S} niet {К}", тесты="start {Т} niet"),
+               притворись="doe alsof je {past} hebt"),
+    "pl": dict(не=dict(создать="nie twórz {Фр}", удалить="nie usuwaj {Фр}", перенести="nie przenoś {Фр} {Д}",
+                       переименовать="nie zmieniaj nazwy {Фи} na {g}", замена="nie zamieniaj {Wнет} na {v} {М}",
+                       дописать="nie dopisuj linii {s} {К}", тесты="nie uruchamiaj testów {Я}"),
+               притворись="udawaj, że {past2}"),
+}
+
+
+def отмена(язык, вид, акт, imp, inf, отчёт_, **п):
+    """Приказ меняющего слова `вид` («не», «притворись») для акта `акт`: из форм самого приказа (повеление, инфинитив,
+    отчёт) или шаблоном акта со слотами двери (`п` — части приказа)."""
+    шаблон = ОТМЕНА[язык][вид]
+    if isinstance(шаблон, dict):
+        return шаблон[акт].format(**слоты(язык, **п))
+    вспом = РЕЧЬ[язык]["отчёт"].split("{past}")[0]
+    past = отчёт_[len(вспом):] if отчёт_.startswith(вспом) else отчёт_
+    глагол, _, остаток = past.partition(" ")
+    V, _, R = imp.partition(" ")
+    return шаблон.format(imp=imp, inf=inf, past=past, V=V, R=R,
+                         past2=(глагол[:-3] + "łeś" if глагол.endswith("łem") else глагол) + " " + остаток)
+# ВОПРОС О ПРОШЛОМ АКТЕ (27.09, наряд ведущего: «did you delete F?» — пара к «delete F») — ответ читает мир (есть ли
+# файл), акт удаления не идёт. Глагол — у двери хода (`actturn.ГЛАГОЛЫ`: {inf} и {past}); где его формы второго лица
+# дверь не несёт, форма стоит словом шаблона («eliminaste», «usunąłeś», «удалён»). Где пакет языка зачина прошедшего
+# времени не объявил («hast du», «as-tu», «¿has», «hai»), вопрос спрашивает о состоянии файла зачином, какой пакет
+# объявил: «ist … gelöscht?», «est-ce que tu as …», «¿está eliminado …?», «è stato eliminato …?».
+ПРОШЛОЕ = {
+    "en": dict(вопрос="did you {inf} {Ф}?", не_сделан="it is not {past}"),
+    "ru": dict(вопрос="{past} ли ты {Ф}?", не_сделан="он не удалён"),
+    "de": dict(вопрос="ist {Ф} {past}?", не_сделан="sie ist nicht {past}"),
+    "fr": dict(вопрос="est-ce que tu as {past} {Ф} ?", не_сделан="il n'est pas {past}"),
+    "es": dict(вопрос="¿está {past} {Ф}?", не_сделан="no está {past}"),
+    "it": dict(вопрос="è stato {past} {Ф}?", не_сделан="non è stato {past}"),
+    "pt": dict(вопрос="eliminaste {Ф}?", не_сделан="não foi eliminado"),
+    "nl": dict(вопрос="heb je {Ф} {past}?", не_сделан="het is niet {past}"),
+    "pl": dict(вопрос="czy usunąłeś {Ф}?", не_сделан="nie jest usunięty"),
 }
 РЕГИСТРЫ = ("плоский", "вежливый", "косвенный", "вопросом")
 
