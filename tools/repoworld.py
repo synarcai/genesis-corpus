@@ -59,6 +59,11 @@ import folderworld as W  # noqa: E402 — мир папки: семантика 
     "gauge/tests/checks.rs": ("use gauge::half;", "#[test]", "fn even() { assert_eq!(half(10), 5); }", "#[test]",
                               "fn odd() { assert_eq!(half(7), 3); }", "#[test]",
                               "fn one() { assert_eq!(half(1), 0); }"),
+    # ВЕРСИИ ВЫПУСКА (27.09, наряд ведущего: замена голым литералом — версии и числа с точками без кавычек) — папка своя:
+    # ни одна прежняя папка не меняет счёта, код прогонов их не читает; слова строк — не подстроки слов вопросов
+    # (голландское «vers» нашлось бы в «version»)
+    "release/build.cfg": ("name = tally", "tally = 1.4.2", "rust = 1.95.0"),
+    "release/tools.cfg": ("python = 3.12.8", "pip = 24.0.1", "wheel = 0.43.0"),
 }
 # ПРОГОНЫ МИРА-ПРОЦЕССА: имя прогона → команда, какую мир держит сам (речь выбирает акт по имени, команда — данные
 # мира). Вывод прогона — НАСТОЯЩИЙ вывод бегуна: снят один раз прибором `toolrepo_capture.py` в семя прогонов.
@@ -115,6 +120,15 @@ import folderworld as W  # noqa: E402 — мир папки: семантика 
          ("kitchen/soup.md", "broth.md"), ("kitchen/cake.md", "pie.md"))
 ИМЕНА_ЗАНЯТЫ = (("home/chores.md", "repairs.txt"), ("trips/sea.md", "city.md"), ("kitchen/cake.md", "soup.md"))
 НЕТ_ФАЙЛОВ = ("budget.md", "recipes.txt")
+# ЗАМЕНА ГОЛЫМ ЛИТЕРАЛОМ (27.09): (старое, новое, файл) — версия с точками и имя кода, сказанные без кавычек
+# («change the version 1.95.0 to 1.96.0 in the file F», «replace test_default with test_plain in the file F»);
+# литералы — свои, не ключа
+ВЕРСИИ = (("1.4.2", "1.5.0", "release/build.cfg"), ("3.12.8", "3.12.9", "release/tools.cfg"),
+          ("1.95.0", "1.96.0", "release/build.cfg"), ("24.0.1", "24.1.0", "release/tools.cfg"),
+          ("0.43.0", "0.44.0", "release/tools.cfg"))
+ИМЕНА_КОДА = (("test_default", "test_plain", "tests/test_main.py"), ("test_length", "test_size", "tests/test_helpers.py"),
+              ("GreetTests", "HelloTests", "tests/test_main.py"), ("assert_eq", "assert_ne", "gauge/tests/checks.rs"),
+              ("HelperTests", "UtilTests", "tests/test_helpers.py"), ("to_uppercase", "to_lowercase", "tally/src/lib.rs"))
 ИМЕНА_НЕТ = (("budget.md", "costs.md"), ("recipes.txt", "menu.txt"))
 КЛЮЧИ = (("server.ini", "port"), ("web/site.ini", "retries"), ("server.ini", "delay"), ("web/site.ini", "limit"),
          ("server.ini", "workers"), ("web/site.ini", "level"))
