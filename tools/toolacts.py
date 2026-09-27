@@ -405,40 +405,125 @@ def найти(язык, **п):
 # СИНОНИМ ГЛАГОЛА — второй глагол того же акта, только в приказе (условие М-2013, 4: у акта один глагол на язык в
 # речи организма). Слоты — те же, что у шаблона акта; где синоним требует иного падежа объекта, стоит слот этого
 # падежа («benenne {Ф} in {g} um» — винительный, «przemianuj {Ф} na {g}»).
+# ГЛАГОЛЫ АКТА В КАЖДОМ ГОЛОСЕ СВОИ (27.09, наряд ведущего (d)): у всякого акта — ряд синонимов, первый — прежний;
+# слово или оборот голоса, а не перевод английского («get rid of», «избавься от файла», «débarrasse-toi du fichier»,
+# «pozbądź się pliku» — у оборота с родительным слот {Фр}; «use Y instead of X» — голыми литералами в кавычках:
+# «используй «y» вместо «x»», «usa «y» en lugar de «x»» — артикль не сливается с предлогом)
 СИНОНИМЫ = {
-    "en": dict(создать="make {Ф}", удалить="remove {Ф}", перенести="transfer {Ф} {Д}",
-               переименовать="change the name of {Фи} to {g}", дописать="add {S} {К}",
-               замена="change {W} to {v} {М}", тесты="execute {Т}"),
-    "ru": dict(создать="заведи {Ф}", удалить="сотри {Ф}", перенести="перемести {Ф} {Д}",
-               переименовать="переназови {Фи} в {g}", дописать="добавь {S} {К}", замена="поменяй {W} на {v} {М}",
-               тесты="прогони {Т}"),
-    "de": dict(создать="lege {Ф} an", удалить="entferne {Ф}", перенести="verlege {Ф} {Д}",
-               переименовать="benenne {Ф} in {g} um", дописать="erweitere {К} um {S}",
-               замена="tausche {W} {М} gegen {v}", тесты="führe {Т} aus"),
-    "fr": dict(создать="génère {Ф}", удалить="efface {Ф}", перенести="transfère {Ф} {Д}",
-               переименовать="rebaptise {Фи} en {g}", дописать="rajoute {S} {К}", замена="change {W} en {v} {М}",
-               тесты="exécute {Т}"),
-    "es": dict(создать="genera {Ф}", удалить="borra {Ф}", перенести="traslada {Ф} {Д}",
-               переименовать="rebautiza {Фи} como {g}", дописать="agrega {S} {К}", замена="cambia {W} por {v} {М}",
-               тесты="corre {Т}"),
-    "it": dict(создать="genera {Ф}", удалить="cancella {Ф}", перенести="trasferisci {Ф} {Д}",
-               переименовать="ribattezza {Фи} in {g}", дописать="accoda {S} {К}", замена="cambia {W} con {v} {М}",
-               тесты="lancia {Т}"),
-    "pt": dict(создать="gera {Ф}", удалить="apaga {Ф}", перенести="passa {Ф} {Д}",
-               переименовать="rebatiza {Фи} para {g}", дописать="adiciona {S} {К}", замена="troca {W} por {v} {М}",
-               тесты="corre {Т}"),
-    "nl": dict(создать="maak {Ф}", удалить="wis {Ф}", перенести="breng {Ф} {Д}",
-               переименовать="wijzig de naam van {Фи} naar {g}", дописать="plaats {S} {К}",
-               замена="verander {W} {М} in {v}", тесты="draai {Т}"),
-    "pl": dict(создать="stwórz {Ф}", удалить="skasuj {Ф}", перенести="przesuń {Ф} {Д}",
-               переименовать="przemianuj {Ф} na {g}", дописать="dodaj {S} {К}", замена="podmień {W} na {v} {М}",
-               тесты="odpal {Т}"),
+    "en": dict(создать=("make {Ф}", "set up {Ф}", "start a new file {f}"),
+               удалить=("remove {Ф}", "erase {Ф}", "get rid of {Ф}"),
+               перенести=("transfer {Ф} {Д}", "shift {Ф} {Д}", "put {Ф} into the folder {d}"),
+               переименовать=("change the name of {Фи} to {g}", "give {Фи} the new name {g}"),
+               дописать=("add {S} {К}", "put {S} {М}", "write {S} {К}", "attach {S} {К}"),
+               замена=("change {W} to {v} {М}", "swap {W} for {v} {М}", "use {v} instead of {w} {М}",
+                       "switch {W} to {v} {М}"),
+               тесты=("execute {Т}", "launch {Т}", "kick off {Т}")),
+    "ru": dict(создать=("заведи {Ф}", "сделай {Ф}", "сформируй {Ф}"),
+               удалить=("сотри {Ф}", "убери {Ф}", "избавься от {Фр}"),
+               перенести=("перемести {Ф} {Д}", "переложи {Ф} {Д}", "отправь {Ф} {Д}"),
+               переименовать=("переназови {Фи} в {g}", "смени имя {Фр} на {g}"),
+               дописать=("добавь {S} {К}", "впиши {S} {К}", "запиши {S} {К}"),
+               замена=("поменяй {W} на {v} {М}", "смени {W} на {v} {М}", "используй {v} вместо {w} {М}"),
+               тесты=("прогони {Т}", "выполни {Т}", "проведи {Т}")),
+    "de": dict(создать=("lege {Ф} an", "erzeuge {Ф}", "richte {Ф} ein"),
+               удалить=("entferne {Ф}", "wirf {Ф} weg", "beseitige {Ф}"),
+               перенести=("verlege {Ф} {Д}", "schieb {Ф} {Д}", "leg {Ф} {Д}"),
+               переименовать=("benenne {Ф} in {g} um", "nenne {Ф} in {g} um"),
+               дописать=("erweitere {К} um {S}", "hänge {S} an {К} an", "schreib {S} in {К}", "füge {S} in {К} ein"),
+               замена=("tausche {W} {М} gegen {v}", "ändere {W} {М} in {v}", "wechsle {W} {М} gegen {v}",
+                       "nimm {v} statt {w} {М}"),
+               тесты=("führe {Т} aus", "lass {Т} laufen", "wirf {Т} an")),
+    "fr": dict(создать=("génère {Ф}", "prépare {Ф}", "démarre un nouveau fichier {f}"),
+               удалить=("efface {Ф}", "retire {Ф}", "débarrasse-toi {Фр}"),
+               перенести=("transfère {Ф} {Д}", "range {Ф} {Д}", "mets {Ф} {Д}"),
+               переименовать=("rebaptise {Фи} en {g}", "donne {К} le nom {g}"),
+               дописать=("rajoute {S} {К}", "écris {S} {М}", "mets {S} {М}", "joins {S} {К}"),
+               замена=("change {W} en {v} {М}", "échange {W} contre {v} {М}", "transforme {W} en {v} {М}",
+                       "mets {v} à la place de {w} {М}"),
+               тесты=("exécute {Т}", "démarre {Т}", "fais tourner {Т}")),
+    "es": dict(создать=("genera {Ф}", "prepara {Ф}", "empieza un archivo nuevo {f}"),
+               удалить=("borra {Ф}", "quita {Ф}", "deshazte {Фр}"),
+               перенести=("traslada {Ф} {Д}", "pasa {Ф} {Д}", "lleva {Ф} {Д}"),
+               переименовать=("rebautiza {Фи} como {g}", "cambia el nombre {Фр} a {g}"),
+               дописать=("agrega {S} {К}", "escribe {S} {М}", "pon {S} {М}", "adjunta {S} {К}"),
+               замена=("cambia {W} por {v} {М}", "sustituye {W} por {v} {М}", "usa {v} en lugar de {w} {М}"),
+               тесты=("corre {Т}", "lanza {Т}", "arranca {Т}")),
+    "it": dict(создать=("genera {Ф}", "prepara {Ф}", "inizia un nuovo file {f}"),
+               удалить=("cancella {Ф}", "rimuovi {Ф}", "sbarazzati {Фр}"),
+               перенести=("trasferisci {Ф} {Д}", "porta {Ф} {Д}", "metti {Ф} {Д}"),
+               переименовать=("ribattezza {Фи} in {g}", "cambia il nome {Фр} in {g}"),
+               дописать=("accoda {S} {К}", "scrivi {S} {М}", "metti {S} {М}", "allega {S} {К}"),
+               замена=("cambia {W} con {v} {М}", "scambia {W} con {v} {М}", "rimpiazza {W} con {v} {М}",
+                       "usa {v} al posto di {w} {М}"),
+               тесты=("lancia {Т}", "avvia {Т}", "fai girare {Т}")),
+    "pt": dict(создать=("gera {Ф}", "prepara {Ф}", "começa um novo ficheiro {f}"),
+               удалить=("apaga {Ф}", "remove {Ф}", "livra-te {Фр}"),
+               перенести=("passa {Ф} {Д}", "leva {Ф} {Д}", "transfere {Ф} {Д}"),
+               переименовать=("rebatiza {Фи} para {g}", "muda o nome {Фр} para {g}"),
+               дописать=("adiciona {S} {К}", "escreve {S} {М}", "põe {S} {М}", "anexa {S} {К}"),
+               замена=("troca {W} por {v} {М}", "muda {W} para {v} {М}", "altera {W} para {v} {М}",
+                       "usa {v} em vez de {w} {М}"),
+               тесты=("corre {Т}", "lança {Т}", "arranca {Т}")),
+    "nl": dict(создать=("maak {Ф}", "zet {Ф} klaar", "begin een nieuw bestand {f}"),
+               удалить=("wis {Ф}", "haal {Ф} weg", "gooi {Ф} weg"),
+               перенести=("breng {Ф} {Д}", "schuif {Ф} {Д}", "stuur {Ф} {Д}"),
+               переименовать=("wijzig de naam van {Фи} naar {g}", "geef {Фи} de naam {g}"),
+               дописать=("plaats {S} {К}", "schrijf {S} {М}", "voeg {S} toe aan {Фи}"),
+               замена=("verander {W} {М} in {v}", "wijzig {W} {М} in {v}", "gebruik {v} in plaats van {w} {М}"),
+               тесты=("draai {Т}", "voer {Т} uit", "laat {Т} lopen")),
+    "pl": dict(создать=("stwórz {Ф}", "zrób {Ф}", "przygotuj {Ф}", "zacznij nowy plik {f}"),
+               удалить=("skasuj {Ф}", "wyrzuć {Ф}", "pozbądź się {Фр}"),
+               перенести=("przesuń {Ф} {Д}", "przełóż {Ф} {Д}", "wrzuć {Ф} {Д}"),
+               переименовать=("przemianuj {Ф} na {g}", "przechrzcij {Ф} na {g}"),
+               дописать=("dodaj {S} {К}", "wpisz {S} {К}", "zapisz {S} {М}", "dołącz {S} {К}"),
+               замена=("podmień {W} na {v} {М}", "zmień {W} na {v} {М}", "użyj {v} zamiast {w} {М}"),
+               тесты=("odpal {Т}", "puść {Т}", "wykonaj {Т}")),
 }
 
 
-def синоним(язык, акт, **п):
-    """Приказ акта вторым глаголом: «make the file x», «add the line "y" to the file x»."""
-    return СИНОНИМЫ[язык][акт].format(**слоты(язык, **п))
+# НАБОР И ПРОГОН ТЕСТОВ — единицы прогона в живой речи (наряд (d): «test suite», «test run»): те же синонимы акта
+# прогона, объект — язык проекта {Я}
+for _я, _ещё in {"en": ("run the {Я} test suite", "start a test run for {Я}"),
+                 "ru": ("запусти набор тестов {Я}", "начни прогон тестов {Я}"),
+                 "de": ("starte die Testsuite für {Я}", "starte einen Testlauf für {Я}"),
+                 "fr": ("lance la suite de tests {Я}", "démarre une exécution des tests {Я}"),
+                 "es": ("ejecuta la batería de pruebas de {Я}", "inicia una ejecución de las pruebas de {Я}"),
+                 "it": ("esegui la suite di test {Я}", "avvia un'esecuzione dei test {Я}"),
+                 "pt": ("executa a bateria de testes de {Я}", "inicia uma execução dos testes de {Я}"),
+                 "nl": ("start de testsuite voor {Я}", "start een testrun voor {Я}"),
+                 "pl": ("uruchom zestaw testów {Я}", "zacznij przebieg testów {Я}")}.items():
+    СИНОНИМЫ[_я]["тесты"] += _ещё
+
+
+# КОНСТРУКЦИИ ОДНОГО АКТА (27.09, наряд ведущего (f)): порядок доводов и место — «from "x" to "y"» у замены (объект —
+# текст в файле, доводы — голыми литералами в кавычках), «over to» у переноса (где голос говорит это одним глаголом —
+# «перекинь», «przerzuć», «bascule»), «on its own line» у дописывания («отдельной строкой», «als eigene Zeile»)
+for _я, _ещё in {
+        "en": dict(замена=("change the text {М} from {w} to {v}",), перенести=("move {Ф} over to the folder {d}",),
+                   дописать=("add {s} on its own line {К}",)),
+        "ru": dict(замена=("поменяй текст {М} с {w} на {v}",), перенести=("перекинь {Ф} {Д}",),
+                   дописать=("допиши {s} отдельной строкой {К}",)),
+        "de": dict(замена=("ändere den Text {М} von {w} zu {v}",), перенести=("schieb {Ф} rüber {Д}",),
+                   дописать=("füge {s} als eigene Zeile in {К} ein",)),
+        "fr": dict(замена=("change le texte {М} de {w} en {v}",), перенести=("bascule {Ф} {Д}",),
+                   дописать=("ajoute {s} sur une ligne à part {К}",)),
+        "es": dict(замена=("cambia el texto {М} de {w} a {v}",), перенести=("manda {Ф} {Д}",),
+                   дописать=("añade {s} en una línea aparte {К}",)),
+        "it": dict(замена=("cambia il testo {М} da {w} a {v}",), перенести=("manda {Ф} {Д}",),
+                   дописать=("aggiungi {s} su una riga a parte {К}",)),
+        "pt": dict(замена=("muda o texto {М} de {w} para {v}",), перенести=("manda {Ф} {Д}",),
+                   дописать=("acrescenta {s} numa linha à parte {К}",)),
+        "nl": dict(замена=("verander de tekst {М} van {w} naar {v}",), перенести=("zet {Ф} over {Д}",),
+                   дописать=("zet {s} op een eigen regel {К}",)),
+        "pl": dict(замена=("zmień tekst {М} z {w} na {v}",), перенести=("przerzuć {Ф} {Д}",),
+                   дописать=("dopisz {s} w osobnej linii {К}",))}.items():
+    for _акт, _формы in _ещё.items():
+        СИНОНИМЫ[_я][_акт] += _формы
+
+
+def синоним(язык, акт, i=0, **п):
+    """Приказ акта i-м вторым глаголом: «make the file x», «set up the file x», «add the line "y" to the file x»."""
+    return СИНОНИМЫ[язык][акт][i].format(**слоты(язык, **п))
 
 
 # ФАЙЛ ПО ИМЕНИ — «a file called F», «файл с именем F»: третья форма фраз файла (после канонической и голой), в
@@ -469,6 +554,19 @@ for _я, _о in ОБЪЕКТЫ.items():
     _о["файл_вин"] = _о["файл_вин"] + (_н["вин"],)
     for _фраза in ("файл_имени", "в_файл", "в_файле", "файла"):
         _о[_фраза] = _о[_фраза] + (_н[_фраза.replace("файл_имени", "имени")],)
+# КАТАЛОГ — второе имя папки в живой речи программиста (27.09, наряд ведущего (d), места: «directory», «каталог»,
+# «Verzeichnis», «répertoire», «directorio», «diretório», «katalog»): фразы места той же двери объектов, в падежах
+# фраз папки; прежние ряды фраз папки не тронуты — формы и основы показов стоят на их номерах
+for _я, (_в, _на, _из) in {"en": ("in the directory {d}", "to the directory {d}", "from the directory {d}"),
+                          "ru": ("в каталоге {d}", "в каталог {d}", "из каталога {d}"),
+                          "de": ("im Verzeichnis {d}", "in das Verzeichnis {d}", "aus dem Verzeichnis {d}"),
+                          "fr": ("dans le répertoire {d}", "dans le répertoire {d}", "du répertoire {d}"),
+                          "es": ("en el directorio {d}", "al directorio {d}", "del directorio {d}"),
+                          "it": ("nella directory {d}", "nella directory {d}", "dalla directory {d}"),
+                          "pt": ("no diretório {d}", "para o diretório {d}", "do diretório {d}"),
+                          "nl": ("in de directory {d}", "naar de directory {d}", "uit de directory {d}"),
+                          "pl": ("w katalogu {d}", "do katalogu {d}", "z katalogu {d}")}.items():
+    ОБЪЕКТЫ[_я].update(в_каталоге=(_в,), в_каталог=(_на,), из_каталога=(_из,))
 # «в конец файла» — место дописываемой строки (голландское каноническое «onderaan» уже есть «внизу»: здесь — «в
 # конец»); папка подлежащим — вторая форма вопроса о числе файлов («how many files does the folder D contain»)
 В_КОНЕЦ = {"en": "to the end of the file {f}", "ru": "в конец файла {f}", "de": "die Datei {f} am Ende",
