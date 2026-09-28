@@ -349,6 +349,18 @@ for _я, _в in {"en": (("show", "me"), ("report", "")),
                "nl": (("laat me", "zien"), ("geef", "aan")),
                "pl": (("pokaż", "mi,"), ("podaj,", ""))}.items():
     ЗАЧИН[_я] += _в
+# НУЖДА И ЖЕЛАНИЕ ЗНАТЬ (28.09, наряд ведущего по классам H2: «иная конструкция» — утверждение нужды вместо вопроса):
+# «i need to know which file contains …», «мне нужно знать, …», «ich möchte wissen, …» — два вида в конце ряда
+for _я, _в in {"en": (("i need to know", ""), ("i would like to know", "")),
+               "ru": (("мне нужно знать,", ""), ("я хочу знать,", "")),
+               "de": (("ich muss", "wissen,"), ("ich möchte", "wissen,")),
+               "fr": (("je dois savoir", ""), ("je voudrais savoir", "")),
+               "es": (("necesito saber", ""), ("quiero saber", "")),
+               "it": (("ho bisogno di sapere", ""), ("vorrei sapere", "")),
+               "pt": (("preciso de saber", ""), ("queria saber", "")),
+               "nl": (("ik moet", "weten"), ("ik wil graag", "weten")),
+               "pl": (("muszę wiedzieć,", ""), ("chcę wiedzieć,", ""))}.items():
+    ЗАЧИН[_я] += _в
 
 
 # ПЛАН С МЕСТОИМЕНИЕМ (25.09, вопрос 4 коллегии «ответ мира»; ведущий: роды дома актов `toolrepo`): второй приказ
@@ -540,6 +552,88 @@ for _я, _ещё in {
 def синоним(язык, акт, i=0, **п):
     """Приказ акта i-м вторым глаголом: «make the file x», «set up the file x», «add the line "y" to the file x»."""
     return СИНОНИМЫ[язык][акт][i].format(**слоты(язык, **п))
+
+
+# СТРАДАТЕЛЬНЫЙ ОБОРОТ И ДОЛЖЕНСТВОВАНИЕ С ОБЪЕКТОМ ВПЕРЕДИ (28.09, наряд ведущего по классам отложенного ключа H2:
+# «иная конструкция») — приказ без повеления: акт назван тем, что с объектом должно стать. Шаблон на акт и голос, слоты —
+# двери: «the file F should be deleted», «файл F нужно удалить», «plik F trzeba usunąć». Где род или падеж объекта менялся
+# бы с наполнителем (de «den Text», it «la parola» / «il testo», pt «a palavra» / «o texto» у замены), голос говорит
+# безличное долженствование с объектом в падеже двери: «man muss …», «si deve sostituire …», «tem de se substituir …»
+СТРАДАТЕЛЬНЫЙ = {
+    "en": dict(создать="{Ф} should be created", удалить="{Ф} should be deleted", перенести="{Ф} should be moved {Д}",
+               переименовать="{Фи} should be renamed to {g}", дописать="{S} should be appended {К}",
+               замена="{W} {М} should be replaced with {v}", тесты="{Т} should be run"),
+    "ru": dict(создать="{Ф} нужно создать", удалить="{Ф} нужно удалить", перенести="{Ф} нужно перенести {Д}",
+               переименовать="{Фи} нужно переименовать в {g}", дописать="{S} нужно дописать {К}",
+               замена="{W} {М} нужно заменить на {v}", тесты="{Т} нужно запустить"),
+    "de": dict(создать="{Ф} muss erstellt werden", удалить="{Ф} muss gelöscht werden",
+               перенести="{Ф} muss {Д} verschoben werden", переименовать="{Ф} muss in {g} umbenannt werden",
+               дописать="{К} muss um {S} ergänzt werden", замена="man muss {W} {М} durch {v} ersetzen",
+               тесты="{Т} müssen gestartet werden"),
+    "fr": dict(создать="{Ф} doit être créé", удалить="{Ф} doit être supprimé", перенести="{Ф} doit être déplacé {Д}",
+               переименовать="{Фи} doit être renommé en {g}", дописать="{S} doit être ajoutée {К}",
+               замена="{W} {М} doit être remplacé par {v}", тесты="{Т} doivent être lancés"),
+    "es": dict(создать="{Ф} debe crearse", удалить="{Ф} debe eliminarse", перенести="{Ф} debe moverse {Д}",
+               переименовать="{Фи} debe renombrarse como {g}", дописать="{S} debe añadirse {К}",
+               замена="{W} {М} debe reemplazarse por {v}", тесты="{Т} deben ejecutarse"),
+    "it": dict(создать="{Ф} va creato", удалить="{Ф} va eliminato", перенести="{Ф} va spostato {Д}",
+               переименовать="{Фи} va rinominato in {g}", дописать="{S} va aggiunta {К}",
+               замена="si deve sostituire {W} con {v} {М}", тесты="{Т} vanno eseguiti"),
+    "pt": dict(создать="{Ф} tem de ser criado", удалить="{Ф} tem de ser eliminado",
+               перенести="{Ф} tem de ser movido {Д}", переименовать="{Фи} tem de ser renomeado para {g}",
+               дописать="{S} tem de ser acrescentada {К}", замена="tem de se substituir {W} por {v} {М}",
+               тесты="{Т} têm de ser executados"),
+    "nl": dict(создать="{Ф} moet gecreëerd worden", удалить="{Ф} moet verwijderd worden",
+               перенести="{Ф} moet {Д} verplaatst worden", переименовать="{Фи} moet naar {g} hernoemd worden",
+               дописать="{S} moet {К} gezet worden", замена="{W} {М} moet door {v} vervangen worden",
+               тесты="{Т} moeten gestart worden"),
+    "pl": dict(создать="{Ф} trzeba utworzyć", удалить="{Ф} trzeba usunąć", перенести="{Ф} trzeba przenieść {Д}",
+               переименовать="nazwę {Фи} trzeba zmienić na {g}", дописать="{S} trzeba dopisać {К}",
+               замена="{W} {М} trzeba zamienić na {v}", тесты="{Т} trzeba uruchomić"),
+}
+
+
+# СИНОНИМ В ИНФИНИТИВЕ (28.09, наряд ведущего: составные страницы «конструкция × синоним × голый путь») — первый синоним
+# всякого акта (`СИНОНИМЫ`) неопределённой формой голоса: регистры нужды и желания держат {inf}
+СИНОНИМЫ_ИНФ = {
+    "en": dict(создать="make {Ф}", удалить="remove {Ф}", перенести="transfer {Ф} {Д}",
+               переименовать="change the name of {Фи} to {g}", дописать="add {S} {К}", замена="change {W} to {v} {М}",
+               тесты="execute {Т}"),
+    "ru": dict(создать="завести {Ф}", удалить="стереть {Ф}", перенести="переместить {Ф} {Д}",
+               переименовать="переназвать {Фи} в {g}", дописать="добавить {S} {К}", замена="поменять {W} на {v} {М}",
+               тесты="прогнать {Т}"),
+    "de": dict(создать="{Ф} anlegen", удалить="{Ф} entfernen", перенести="{Ф} {Д} verlegen",
+               переименовать="{Ф} in {g} umbenennen", дописать="{К} um {S} erweitern",
+               замена="{W} {М} gegen {v} tauschen", тесты="{Т} ausführen"),
+    "fr": dict(создать="générer {Ф}", удалить="effacer {Ф}", перенести="transférer {Ф} {Д}",
+               переименовать="rebaptiser {Фи} en {g}", дописать="rajouter {S} {К}", замена="changer {W} en {v} {М}",
+               тесты="exécuter {Т}"),
+    "es": dict(создать="generar {Ф}", удалить="borrar {Ф}", перенести="trasladar {Ф} {Д}",
+               переименовать="rebautizar {Фи} como {g}", дописать="agregar {S} {К}", замена="cambiar {W} por {v} {М}",
+               тесты="correr {Т}"),
+    "it": dict(создать="generare {Ф}", удалить="cancellare {Ф}", перенести="trasferire {Ф} {Д}",
+               переименовать="ribattezzare {Фи} in {g}", дописать="accodare {S} {К}",
+               замена="cambiare {W} con {v} {М}", тесты="lanciare {Т}"),
+    "pt": dict(создать="gerar {Ф}", удалить="apagar {Ф}", перенести="passar {Ф} {Д}",
+               переименовать="rebatizar {Фи} para {g}", дописать="adicionar {S} {К}", замена="trocar {W} por {v} {М}",
+               тесты="correr {Т}"),
+    "nl": dict(создать="{Ф} maken", удалить="{Ф} wissen", перенести="{Ф} {Д} brengen",
+               переименовать="de naam van {Фи} naar {g} wijzigen", дописать="{S} {К} plaatsen",
+               замена="{W} {М} in {v} veranderen", тесты="{Т} draaien"),
+    "pl": dict(создать="stworzyć {Ф}", удалить="skasować {Ф}", перенести="przesunąć {Ф} {Д}",
+               переименовать="przemianować {Ф} na {g}", дописать="dodać {S} {К}", замена="podmienić {W} na {v} {М}",
+               тесты="odpalić {Т}"),
+}
+
+
+def синоним_инф(язык, акт, **п):
+    """Первый синоним акта неопределённой формой (`СИНОНИМЫ_ИНФ`) — для регистров, какие держат {inf}."""
+    return СИНОНИМЫ_ИНФ[язык][акт].format(**слоты(язык, **п))
+
+
+def страдательный(язык, акт, **п):
+    """Приказ акта страдательным оборотом или долженствованием с объектом впереди (`СТРАДАТЕЛЬНЫЙ`)."""
+    return СТРАДАТЕЛЬНЫЙ[язык][акт].format(**слоты(язык, **п))
 
 
 # ФАЙЛ ПО ИМЕНИ — «a file called F», «файл с именем F»: третья форма фраз файла (после канонической и голой), в
@@ -1463,6 +1557,20 @@ for _я, (_у_конца, _добавь) in {
         "nl": ("zet {S} aan het eind van {f}", "plaats {S} aan het eind van {f}"),
         "pl": ("dopisz {S} na końcu {f}", "dodaj {S} na końcu {f}")}.items():
     КОНЕЦ[_я].update(у_конца_голый=_у_конца, добавь_голый=_добавь)
+# КОНСТРУКЦИИ ПРОСЬБЫ (28.09, наряд ведущего по классам отложенного ключа H2: «иная конструкция» — косвенная просьба,
+# желание) — нужда первым лицом и желание: «i need to {inf}», «i would like to {inf}»; инфинитив акта двери, предложение
+# организма — каноническое. Без апострофа («I'd» — ухо ядра рвёт слово на апострофе, у fr «j'ai besoin» тоже) и без
+# придаточного со спряжением («хочу, чтобы ты удалил …»): регистр держит лишь {imp} и {inf}
+for _я, _р in {"en": dict(нужда="i need to {inf}.", желание="i would like to {inf}."),
+               "ru": dict(нужда="мне нужно {inf}.", желание="я хочу {inf}."),
+               "de": dict(нужда="ich muss {inf}.", желание="ich möchte {inf}."),
+               "fr": dict(нужда="je dois {inf}.", желание="je voudrais {inf}."),
+               "es": dict(нужда="necesito {inf}.", желание="quiero {inf}."),
+               "it": dict(нужда="ho bisogno di {inf}.", желание="vorrei {inf}."),
+               "pt": dict(нужда="preciso de {inf}.", желание="queria {inf}."),
+               "nl": dict(нужда="ik moet {inf}.", желание="ik wil graag {inf}."),
+               "pl": dict(нужда="muszę {inf}.", желание="chcę {inf}.")}.items():
+    РЕЧЬ[_я]["регистры"].update(_р)
 РЕГИСТРЫ = ("плоский", "вежливый", "косвенный", "вопросом")
 
 # ======================================================================================================
