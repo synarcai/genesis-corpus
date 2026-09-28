@@ -896,6 +896,29 @@ for _я, _п in {"en": "which file it's in", "ru": "в каком это фай�
 }
 
 
+# КОСВЕННЫЙ ВОПРОС О ЗАПИСИ ПО ИМЕНИ (28.09, долг рода конструкций; М-2075): где лежит файл и сколько файлов носят имя —
+# за зачином всякого вида («i need to know where the file F is», «tell me how many files are named F»)
+for _я, _в in {"en": dict(где=("where {Ф} is", "tell where {Ф} is"),
+                          имён=("how many files are named {f}", "tell how many files are named {f}")),
+               "ru": dict(где=("где лежит {Ф}", "сказать, где лежит {Ф}"),
+                          имён=("сколько файлов с именем {f}", "сказать, сколько файлов с именем {f}")),
+               "de": dict(где=("wo {Ф} liegt", "sagen, wo {Ф} liegt"),
+                          имён=("wie viele Dateien {f} heißen", "sagen, wie viele Dateien {f} heißen")),
+               "fr": dict(где=("où se trouve {Ф}", "dire où se trouve {Ф}"),
+                          имён=("combien de fichiers s'appellent {f}", "dire combien de fichiers s'appellent {f}")),
+               "es": dict(где=("dónde está {Ф}", "decir dónde está {Ф}"),
+                          имён=("cuántos archivos se llaman {f}", "decir cuántos archivos se llaman {f}")),
+               "it": dict(где=("dove si trova {Ф}", "dire dove si trova {Ф}"),
+                          имён=("quanti file si chiamano {f}", "dire quanti file si chiamano {f}")),
+               "pt": dict(где=("onde está {Ф}", "dizer onde está {Ф}"),
+                          имён=("quantos ficheiros se chamam {f}", "dizer quantos ficheiros se chamam {f}")),
+               "nl": dict(где=("waar {Ф} staat", "zeggen waar {Ф} staat"),
+                          имён=("hoeveel bestanden {f} heten", "zeggen hoeveel bestanden {f} heten")),
+               "pl": dict(где=("gdzie jest {Ф}", "powiedzieć, gdzie jest {Ф}"),
+                          имён=("ile plików nazywa się {f}", "powiedzieć, ile plików nazywa się {f}"))}.items():
+    ВОПРОС_ВТОРОЙ[_я].update(_в)
+
+
 def второй_вопрос(язык, вопрос_, вид, **п):
     """(глагол, остаток) второго приказа: зачин вида `вид` и придаточное вопроса `вопрос_` со слотами."""
     return зачин(язык, вид, ВОПРОС_ВТОРОЙ[язык][вопрос_][0].format(**слоты(язык, **п)))
