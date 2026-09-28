@@ -1020,6 +1020,21 @@ for _я, _в in {"en": dict(где=("where {Ф} is", "tell where {Ф} is"),
     ВОПРОС_ВТОРОЙ[_я].update(_в)
 
 
+# КОСВЕННЫЙ ВОПРОС О ФАЙЛАХ ПАПКИ (28.09, долг рода конструкций; после М-2087 — рамки перечня): какие файлы есть в
+# папке — за зачином всякого вида («tell me what files are in the folder D», «мне нужно знать, какие файлы есть в
+# папке D»)
+for _я, _в in {"en": ("what files are {Дв}", "tell what files are {Дв}"),
+               "ru": ("какие файлы есть {Дв}", "сказать, какие файлы есть {Дв}"),
+               "de": ("welche Dateien es {Дв} gibt", "sagen, welche Dateien es {Дв} gibt"),
+               "fr": ("quels fichiers il y a {Дв}", "dire quels fichiers il y a {Дв}"),
+               "es": ("qué archivos hay {Дв}", "decir qué archivos hay {Дв}"),
+               "it": ("quali file ci sono {Дв}", "dire quali file ci sono {Дв}"),
+               "pt": ("que ficheiros há {Дв}", "dizer que ficheiros há {Дв}"),
+               "nl": ("welke bestanden er {Дв} staan", "zeggen welke bestanden er {Дв} staan"),
+               "pl": ("jakie pliki są {Дв}", "powiedzieć, jakie pliki są {Дв}")}.items():
+    ВОПРОС_ВТОРОЙ[_я]["список"] = _в
+
+
 def второй_вопрос(язык, вопрос_, вид, **п):
     """(глагол, остаток) второго приказа: зачин вида `вид` и придаточное вопроса `вопрос_` со слотами."""
     return зачин(язык, вид, ВОПРОС_ВТОРОЙ[язык][вопрос_][0].format(**слоты(язык, **п)))
