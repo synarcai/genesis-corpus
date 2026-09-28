@@ -636,6 +636,73 @@ def страдательный(язык, акт, **п):
     return СТРАДАТЕЛЬНЫЙ[язык][акт].format(**слоты(язык, **п))
 
 
+# ЖЕЛАНИЕ И НУЖДА С ОБЪЕКТОМ ВПЕРЕДИ И СТРАДАТЕЛЬНЫМ ПРИЧАСТИЕМ (28.09, наряд ведущего (б), ход «иная конструкция»):
+# «i want the file F deleted», «я хочу, чтобы файл F был удалён», «ich möchte, dass die Datei F gelöscht wird» — на
+# шести актах правки. Причастие согласуется с объектом: строка — своим словом класса в именительном там, где слот двери
+# винительный («строка {s}», «linia {s}»); у замены — пара (текст, слово), где голос различает их род (ru, pl, es, it,
+# pt), у de — слово класса в именительном («der Text», «das Wort»)
+СТРАД_ЖЕЛАНИЕ = {
+    "en": {вид: dict(создать=f"{з} {{Ф}} created", удалить=f"{з} {{Ф}} deleted", перенести=f"{з} {{Ф}} moved {{Д}}",
+                     переименовать=f"{з} {{Фи}} renamed to {{g}}", дописать=f"{з} {{S}} appended {{К}}",
+                     замена=(f"{з} {{W}} {{М}} replaced with {{v}}",) * 2)
+           for вид, з in (("желание", "i want"), ("нужда", "i need"))},
+    "ru": {вид: dict(создать=f"{з} {{Ф}} был создан", удалить=f"{з} {{Ф}} был удалён",
+                     перенести=f"{з} {{Ф}} был перенесён {{Д}}", переименовать=f"{з} {{Фи}} был переименован в {{g}}",
+                     дописать=f"{з} строка {{s}} была дописана {{К}}",
+                     замена=(f"{з} {{W}} {{М}} был заменён на {{v}}", f"{з} {{W}} {{М}} было заменено на {{v}}"))
+           for вид, з in (("желание", "я хочу, чтобы"), ("нужда", "мне нужно, чтобы"))},
+    "de": {вид: dict(создать=f"{з} {{Ф}} erstellt wird", удалить=f"{з} {{Ф}} gelöscht wird",
+                     перенести=f"{з} {{Ф}} {{Д}} verschoben wird", переименовать=f"{з} {{Ф}} in {{g}} umbenannt wird",
+                     дописать=f"{з} {{К}} um {{S}} ergänzt wird",
+                     замена=(f"{з} der Text {{w}} {{М}} durch {{v}} ersetzt wird",
+                             f"{з} das Wort {{w}} {{М}} durch {{v}} ersetzt wird"))
+           for вид, з in (("желание", "ich möchte, dass"), ("нужда", "es ist nötig, dass"))},
+    "fr": {вид: dict(создать=f"{з} {{Ф}} soit créé", удалить=f"{з} {{Ф}} soit supprimé",
+                     перенести=f"{з} {{Ф}} soit déplacé {{Д}}", переименовать=f"{з} {{Фи}} soit renommé en {{g}}",
+                     дописать=f"{з} {{S}} soit ajoutée {{К}}", замена=(f"{з} {{W}} {{М}} soit remplacé par {{v}}",) * 2)
+           for вид, з in (("желание", "je veux que"), ("нужда", "il faut que"))},
+    "es": {вид: dict(создать=f"{з} {{Ф}} sea creado", удалить=f"{з} {{Ф}} sea eliminado",
+                     перенести=f"{з} {{Ф}} sea movido {{Д}}", переименовать=f"{з} {{Фи}} sea renombrado como {{g}}",
+                     дописать=f"{з} {{S}} sea añadida {{К}}",
+                     замена=(f"{з} {{W}} {{М}} sea reemplazado por {{v}}",
+                             f"{з} {{W}} {{М}} sea reemplazada por {{v}}"))
+           for вид, з in (("желание", "quiero que"), ("нужда", "necesito que"))},
+    "it": {вид: dict(создать=f"{з} {{Ф}} sia creato", удалить=f"{з} {{Ф}} sia eliminato",
+                     перенести=f"{з} {{Ф}} sia spostato {{Д}}", переименовать=f"{з} {{Фи}} sia rinominato in {{g}}",
+                     дописать=f"{з} {{S}} sia aggiunta {{К}}",
+                     замена=(f"{з} {{W}} {{М}} sia sostituito con {{v}}", f"{з} {{W}} {{М}} sia sostituita con {{v}}"))
+           for вид, з in (("желание", "voglio che"), ("нужда", "ho bisogno che"))},
+    "pt": {вид: dict(создать=f"{з} {{Ф}} seja criado", удалить=f"{з} {{Ф}} seja eliminado",
+                     перенести=f"{з} {{Ф}} seja movido {{Д}}", переименовать=f"{з} {{Фи}} seja renomeado para {{g}}",
+                     дописать=f"{з} {{S}} seja acrescentada {{К}}",
+                     замена=(f"{з} {{W}} {{М}} seja substituído por {{v}}",
+                             f"{з} {{W}} {{М}} seja substituída por {{v}}"))
+           for вид, з in (("желание", "quero que"), ("нужда", "preciso que"))},
+    "nl": {вид: dict(создать=f"{з} {{Ф}} gecreëerd wordt", удалить=f"{з} {{Ф}} verwijderd wordt",
+                     перенести=f"{з} {{Ф}} {{Д}} verplaatst wordt",
+                     переименовать=f"{з} {{Фи}} naar {{g}} hernoemd wordt", дописать=f"{з} {{S}} {{К}} gezet wordt",
+                     замена=(f"{з} {{W}} {{М}} door {{v}} vervangen wordt",) * 2)
+           for вид, з in (("желание", "ik wil dat"), ("нужда", "het is nodig dat"))},
+    "pl": {вид: dict(создать=f"{з} {{Ф}} został utworzony", удалить=f"{з} {{Ф}} został usunięty",
+                     перенести=f"{з} {{Ф}} został przeniesiony {{Д}}",
+                     переименовать=f"{з} nazwa {{Фи}} została zmieniona na {{g}}",
+                     дописать=f"{з} linia {{s}} została dopisana {{К}}",
+                     замена=(f"{з} {{W}} {{М}} został zamieniony na {{v}}",
+                             f"{з} {{W}} {{М}} zostało zamienione na {{v}}"))
+           for вид, з in (("желание", "chcę, żeby"), ("нужда", "potrzebuję, żeby"))},
+}
+
+
+def страд_желание(язык, вид, акт, **п):
+    """Приказ желанием или нуждой с объектом впереди и страдательным причастием (`СТРАД_ЖЕЛАНИЕ`); у замены — шаблон
+    слова, когда слот {W} назван фразой слова (одно слово), иначе — текста."""
+    шаблон = СТРАД_ЖЕЛАНИЕ[язык][вид][акт]
+    if isinstance(шаблон, tuple):
+        слово = "W" in п and п["W"] == ОБЪЕКТЫ[язык]["слово"]["в"].format(w=п.get("w"))
+        шаблон = шаблон[1 if слово else 0]
+    return шаблон.format(**слоты(язык, **п))
+
+
 # ФАЙЛ ПО ИМЕНИ — «a file called F», «файл с именем F»: третья форма фраз файла (после канонической и голой), в
 # падеже шаблона. «новый» — у создания (неопределённый артикль), прочие — у файла, какой есть.
 НАЗВАННЫЙ = {
@@ -677,6 +744,23 @@ for _я, (_в, _на, _из) in {"en": ("in the directory {d}", "to the director
                           "nl": ("in de directory {d}", "naar de directory {d}", "uit de directory {d}"),
                           "pl": ("w katalogu {d}", "do katalogu {d}", "z katalogu {d}")}.items():
     ОБЪЕКТЫ[_я].update(в_каталоге=(_в,), в_каталог=(_на,), из_каталога=(_из,))
+# СЛОВО КЛАССА ФАЙЛА ВТОРЫМ ИМЕНЕМ (28.09, наряд ведущего (б), ход «синоним»): «документ» — у всякого акта над файлом
+# и вопроса о файле те же пять фраз, что у файла (винительный, родительный, «в файле», «в файл», имя при
+# переименовании), в падеже шаблона двери; брат «каталога» у папки
+for _я, _фразы in {
+        "en": ("the document {f}", "of the document {f}", "in the document {f}", "to the document {f}",
+               "the document {f}"),
+        "ru": ("документ {f}", "документа {f}", "в документе {f}", "в документ {f}", "документ {f}"),
+        "de": ("das Dokument {f}", "des Dokuments {f}", "im Dokument {f}", "das Dokument {f}", "dem Dokument {f}"),
+        "fr": ("le document {f}", "du document {f}", "dans le document {f}", "au document {f}", "le document {f}"),
+        "es": ("el documento {f}", "del documento {f}", "en el documento {f}", "al documento {f}", "el documento {f}"),
+        "it": ("il documento {f}", "del documento {f}", "nel documento {f}", "al documento {f}", "il documento {f}"),
+        "pt": ("o documento {f}", "do documento {f}", "no documento {f}", "ao documento {f}", "o documento {f}"),
+        "nl": ("het document {f}", "van het document {f}", "in het document {f}", "onderaan het document {f}",
+               "het document {f}"),
+        "pl": ("dokument {f}", "dokumentu {f}", "w dokumencie {f}", "do dokumentu {f}", "dokumentu {f}")}.items():
+    ОБЪЕКТЫ[_я].update(zip(("документ_вин", "документа", "в_документе", "в_документ", "документ_имени"),
+                           ((x,) for x in _фразы)))
 # «в конец файла» — место дописываемой строки (голландское каноническое «onderaan» уже есть «внизу»: здесь — «в
 # конец»); папка подлежащим — вторая форма вопроса о числе файлов («how many files does the folder D contain»)
 В_КОНЕЦ = {"en": "to the end of the file {f}", "ru": "в конец файла {f}", "de": "die Datei {f} am Ende",
@@ -696,6 +780,19 @@ for _я, (_в, _на, _из) in {"en": ("in the directory {d}", "to the director
                "es": "¿cuántas veces está {Wи} {М}?", "it": "quante volte appare {Wи} {М}?",
                "pt": "quantas vezes surge {Wи} {М}?", "nl": "hoeveel keer komt {Wи} voor {М}?",
                "pl": "ile razy pojawia się {Wи} {М}?"}
+# ГЛАГОЛЫ ВХОЖДЕНИЯ (28.09, наряд ведущего (б), ход «синоним»): «сколько раз» иным глаголом вхождения — тот же вопросный
+# оборот; глагол второй формы (`ВОПРОС_РАЗ2`) здесь не повторяется
+ГЛАГОЛЫ_ВХОЖДЕНИЯ = {
+    "en": ("how many times does {Wи} appear {М}?", "how many times does {Wи} show up {М}?"),
+    "ru": ("сколько раз {Wи} появляется {М}?", "сколько раз {Wи} попадается {М}?"),
+    "de": ("wie oft erscheint {Wи} {М}?", "wie oft taucht {Wи} {М} auf?"),
+    "fr": ("combien de fois {Wи} figure-t-il {М} ?", "combien de fois voit-on {Wи} {М} ?"),
+    "es": ("¿cuántas veces sale {Wи} {М}?", "¿cuántas veces figura {Wи} {М}?"),
+    "it": ("quante volte ricorre {Wи} {М}?", "quante volte si trova {Wи} {М}?"),
+    "pt": ("quantas vezes consta {Wи} {М}?", "quantas vezes se encontra {Wи} {М}?"),
+    "nl": ("hoe vaak verschijnt {Wи} {М}?", "hoe vaak staat {Wи} {М}?"),
+    "pl": ("ile razy {Wи} znajduje się {М}?", "ile razy {Wи} jest {М}?"),
+}
 
 
 # КОНЕЦ ФАЙЛА — место дописываемой строки «в конце файла», одной фразой и в приказе, и впереди него: «append … at the
@@ -729,6 +826,10 @@ for _я, (_в, _на, _из) in {"en": ("in the directory {d}", "to the director
 # ПЕРЕНОС С МЕСТОМ ВПЕРЕДИ — лишь там, где язык ставит место назначения перед повелением естественно («в папку D
 # перенеси файл X», «in den Ordner D verschiebe …», «do folderu D przenieś …»); прочие этой формы не заводят
 ВПЕРЕДИ_ПЕРЕНОС = frozenset({"ru", "de", "pl"})
+# СЧЁТ С МЕСТОМ ВПЕРЕДИ (28.09, наряд ведущего (б), ход «порядок»): «в файле F сколько раз встречается слово "x"?» —
+# там, где голос выносит место перед вопросным словом естественно (знак — `ВПЕРЕДИ_ЗНАК`); у de и nl вопрос держит
+# глагол вторым, и место перед вопросным словом неестественно — этой формы они не заводят
+ВПЕРЕДИ_ВОПРОС = frozenset({"en", "ru", "fr", "es", "it", "pt", "pl"})
 
 
 def впереди(язык, место, приказ_без_места):
@@ -1594,6 +1695,13 @@ for _я, _р in {"en": dict(нужда="i need to {inf}.", желание="i wou
                "nl": dict(нужда="ik moet {inf}.", желание="ik wil graag {inf}."),
                "pl": dict(нужда="muszę {inf}.", желание="chcę {inf}.")}.items():
     РЕЧЬ[_я]["регистры"].update(_р)
+# МОДАЛЬНОЕ «НАДО» (28.09, наряд ведущего (б), ход «иная конструкция»): безличная нужда — «надо удалить файл F» и пары
+# голосов, отличные от «косвенного» регистра («нужно», «we need to», «man sollte», «il faut», «hay que», «bisogna», «é
+# preciso», «we moeten», «trzeba»)
+for _я, _р in {"en": "we have to {inf}.", "ru": "надо {inf}.", "de": "man muss {inf}.", "fr": "on doit {inf}.",
+               "es": "hace falta {inf}.", "it": "occorre {inf}.", "pt": "é necessário {inf}.", "nl": "men moet {inf}.",
+               "pl": "należy {inf}."}.items():
+    РЕЧЬ[_я]["регистры"]["надо"] = _р
 РЕГИСТРЫ = ("плоский", "вежливый", "косвенный", "вопросом")
 
 # ======================================================================================================
