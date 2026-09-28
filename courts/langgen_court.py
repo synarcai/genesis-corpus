@@ -58,6 +58,13 @@ def _с_элизией(сырой, пакет):
 
 _ЛЕКС = re.compile(r"\{lex:([^:}]+):([^}]+)\}")
 _ЧИСЛ = re.compile(r"\{num:([^}]+)\}")
+# ГЛАГОЛ ПРИ ЯЧЕЙКЕ СЧЁТА (24.09, `past_by_count`): «{past:класс:слово:by_n}» — все формы глагола класса
+_ПРОШ = re.compile(r"\{past:([^:}]+):([^:}]+):(?:by_n|by_sum)\}")
+
+
+def _формы_прошедшего(пакет, класс, слово):
+    кл = (пакет.get("morph_classes") or {}).get(класс) or {}
+    return {str(ф) for ф in ((кл.get("past_by_count") or {}).get(слово) or ())}
 _ЦЕПЬ = re.compile(r"\{chain\}")
 
 
@@ -138,7 +145,14 @@ def _образцы():
                     куски.append(_с_элизией(ш[конец:м.start()], пакет))
                     дыра = м.group()
                     лекс = _ЛЕКС.fullmatch(дыра)
-                    if лекс:
+                    прош = _ПРОШ.fullmatch(дыра)
+                    if прош:
+                        формы = _формы_прошедшего(пакет, прош.group(1), прош.group(2))
+                        if not формы:
+                            годно = False
+                            break
+                        куски.append("(?:" + "|".join(re.escape(ф) for ф in sorted(формы, key=lambda с: (-len(с), с))) + ")")
+                    elif лекс:
                         формы = _формы_клетки(пакет, лекс.group(1), лекс.group(2))
                         if not формы:
                             годно = False
@@ -248,7 +262,14 @@ def _образцы_всех():
                     куски.append(_с_элизией(ш[конец:м.start()], пакет))
                     дыра = м.group()
                     лекс = _ЛЕКС.fullmatch(дыра)
-                    if лекс:
+                    прош = _ПРОШ.fullmatch(дыра)
+                    if прош:
+                        формы = _формы_прошедшего(пакет, прош.group(1), прош.group(2))
+                        if not формы:
+                            годно = False
+                            break
+                        куски.append("(?:" + "|".join(re.escape(ф) for ф in sorted(формы, key=lambda с: (-len(с), с))) + ")")
+                    elif лекс:
                         формы = _формы_клетки(пакет, лекс.group(1), лекс.group(2))
                         if not формы:
                             годно = False

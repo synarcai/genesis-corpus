@@ -114,6 +114,13 @@ def judge_morph_classes(pack):
                 "asks agreement BY COUNT with no "
                 "count_agreement declared"
             )
+        # A VERB AT A COUNT HAS ONE FORM PER COUNT CELL OF ITS CLASS (24.09)
+        for слово, формы_гл in (cls.get("past_by_count") or {}).items():
+            if len(формы_гл) != len(cls.get("forms", [])):
+                why.append(
+                    f"past_by_count «{слово}»: {len(формы_гл)} forms "
+                    f"for {len(cls.get('forms', []))} count cells"
+                )
         if why:
             bad.append((name, why))
     print(
@@ -453,6 +460,9 @@ def pack_vocabulary(pack):
         words |= {str(w) for w in kind.get("lexicon", [])}
     for cls in pack.get("morph_classes", {}).values():
         for forms in cls.get("lexemes", {}).values():
+            words |= {str(f) for f in forms}
+        # ГЛАГОЛ ПРИ ЯЧЕЙКЕ СЧЁТА (24.09): «была», «остался» — слова, объявленные классом
+        for forms in (cls.get("past_by_count") or {}).values():
             words |= {str(f) for f in forms}
     return {w for w in words if w}
 
@@ -1015,6 +1025,15 @@ def gen_kind(pack, kind_name, kind, pass_i):
                     ] = счётная_форма(
                         pack, cls, forms, n + m
                     )
+                    # ГЛАГОЛ ПЕРЕД ЧИСЛОМ БЕРЁТ ЯЧЕЙКУ ИМЕНИ (24.09) — тем же ходом, каким число
+                    # встало при ячейке: «было 1 карта» пласт писал тридцать пять раз, ибо глагол
+                    # стоял в рамке буквой. Класс объявляет формы глагола по своим ячейкам
+                    # (`past_by_count`), рамка зовёт `{past:КЛАСС:СЛОВО:by_n}`; класс, их не
+                    # объявивший, дыры не заполняет, и показ выбывает с именем дыры (DROPPED).
+                    for слово, формы_гл in (cls.get("past_by_count") or {}).items():
+                        for дыра, k in (("by_n", n), ("by_sum", n + m)):
+                            ctx[f"past:{cls_name}:{слово}:{дыра}"] = формы_гл[
+                                count_form_index(pack, cls, k)]
             s = элизия(pack, instantiate(template, ctx))
             if "{" in s:
                 # ДЫРА, ОСТАВШАЯСЯ ПОСЛЕ ПОДСТАНОВКИ, НАЗЫВАЕТСЯ ПО ИМЕНИ

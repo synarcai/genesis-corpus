@@ -1,13 +1,13 @@
 {
   "что_есть_образец": "ПЕРВАЯ страница рода, обрезанная до 120 знаков. О ПРОЧИХ страницах того же рода не говорит НИЧЕГО: род на восемьсот страниц показан здесь одной. Вопрос о страницах, заданный образцу, получит ответ о роде — и ответ этот будет похож на правду. Меру по страницам даёт сайдкар datasets/GENESIS-FULL.genera.tsv (номер строки → дом · род).",
-  "домов": 315,
-  "родов": 1858,
-  "различных": 1564,
-  "страниц": 333194,
+  "домов": 322,
+  "родов": 1986,
+  "различных": 1688,
+  "страниц": 377461,
   "домов_без_словаря_страниц": 1,
   "по_объявлению": {
-    "РОДЫ": 258,
-    "ФОРМЫ": 57
+    "РОДЫ": 266,
+    "ФОРМЫ": 56
   },
   "страниц_вне_объявления": 0,
   "домов_со_страницами_вне": 0,
@@ -17,8 +17,8 @@
       "род": "согласен_знаком"
     }
   ],
-  "одноимённых_имён": 129,
-  "родов_под_одноимёнными": 423,
+  "одноимённых_имён": 132,
+  "родов_под_одноимёнными": 430,
   "дома": [
     {
       "дом": "absforms",
@@ -66,43 +66,43 @@
         {
           "род": "мера",
           "страниц": 36,
-          "образец": "the frog jumped 12 inches. how far did the frog jump? 12 inches.",
+          "образец": "the rabbit jumped 14 inches. how far did the rabbit jump? 14 inches.",
           "зачем": null
         },
         {
           "род": "сумма",
           "страниц": 36,
-          "образец": "the frog jumped 12 inches and then 8 inches. how far did the frog jump in all? 20 inches: 12 + 8 = 20.",
+          "образец": "the rabbit jumped 14 inches and then 7 inches. how far did the rabbit jump in all? 21 inches: 14 + 7 = 21.",
           "зачем": null
         },
         {
           "род": "прибыль",
           "страниц": 36,
-          "образец": "6 birds were sitting on the fence. 4 more birds came. how many birds are on the fence now? 10 birds: 6 + 4 = 10.",
+          "образец": "7 swans were swimming on the lake. 5 more swans flew in. how many swans are on the lake now? 12 swans: 7 + 5 = 12.",
           "зачем": null
         },
         {
           "род": "убыль",
           "страниц": 36,
-          "образец": "6 birds were sitting on the fence. 4 birds flew away. how many birds are on the fence now? 2 birds: 6 − 4 = 2.",
+          "образец": "7 swans were swimming on the lake. 5 swans flew away. how many swans are on the lake now? 2 swans: 7 − 5 = 2.",
           "зачем": null
         },
         {
           "род": "есть_прибыль",
           "страниц": 36,
-          "образец": "there were 6 birds on the fence. 4 more birds came. how many birds are there on the fence now? 10 birds: 6 + 4 = 10.",
+          "образец": "there were 7 swans on the lake. 5 more swans flew in. how many swans are there on the lake now? 12 swans: 7 + 5 = 12.",
           "зачем": null
         },
         {
           "род": "есть_убыль",
           "страниц": 36,
-          "образец": "there were 6 birds on the fence. 4 birds flew away. how many birds are there on the fence now? 2 birds: 6 − 4 = 2.",
+          "образец": "there were 7 swans on the lake. 5 swans flew away. how many swans are there on the lake now? 2 swans: 7 − 5 = 2.",
           "зачем": null
         },
         {
           "род": "разность",
           "страниц": 18,
-          "образец": "there are 12 more girls than boys in the school. there are 20 boys in the school. how many girls are there in the school",
+          "образец": "there are 9 more chairs than tables in the hall. there are 14 tables in the hall. how many chairs are there in the hall?",
           "зачем": null
         }
       ],
@@ -580,6 +580,24 @@
           "страниц": 48,
           "образец": "how old is Ann's brother? it is not said: nothing is told about a brother.",
           "зачем": "род «refusal», объявленный построением"
+        },
+        {
+          "род": "older-given",
+          "страниц": 172,
+          "образец": "Ann is 7 years old. Tom is 5 years older than Ann. how old is Tom? Tom is 12 years old: 7 + 5 = 12.",
+          "зачем": "род «older-given», объявленный построением"
+        },
+        {
+          "род": "younger-given",
+          "страниц": 172,
+          "образец": "Tom is 12 years old. Ann is 5 years younger than Tom. how old is Ann? Ann is 7 years old: 12 − 5 = 7.",
+          "зачем": "род «younger-given», объявленный построением"
+        },
+        {
+          "род": "ask-younger",
+          "страниц": 172,
+          "образец": "how much younger is Ann than Tom? Ann is 5 years younger than Tom: Tom is 12 and Ann is 7.",
+          "зачем": "род «ask-younger», объявленный построением"
         }
       ],
       "вне_объявления": []
@@ -821,43 +839,43 @@
       "роды": [
         {
           "род": "правило",
-          "страниц": 432,
+          "страниц": 864,
           "образец": "Пётр устал. поэтому Пётр ошибается чаще.",
           "зачем": null
         },
         {
           "род": "вопрос",
-          "страниц": 432,
+          "страниц": 864,
           "образец": "Пётр устал. поэтому Пётр ошибается чаще. почему Пётр ошибается чаще? потому что Пётр устал.",
           "зачем": null
         },
         {
           "род": "закон",
-          "страниц": 54,
+          "страниц": 108,
           "образец": "когда человек устал, он ошибается чаще.",
           "зачем": null
         },
         {
           "род": "закон_вопрос",
-          "страниц": 54,
+          "страниц": 108,
           "образец": "когда человек устал, он ошибается чаще. почему он ошибается чаще? потому что человек устал.",
           "зачем": null
         },
         {
           "род": "кратко",
-          "страниц": 42,
+          "страниц": 84,
           "образец": "почему, когда человек устал, он ошибается чаще? потому что усталость ослабляет внимание.",
           "зачем": null
         },
         {
           "род": "основание",
-          "страниц": 54,
+          "страниц": 108,
           "образец": "почему человек ошибается чаще, когда устал? потому что усталость ослабляет внимание.",
           "зачем": null
         },
         {
           "род": "основание_многих",
-          "страниц": 54,
+          "страниц": 108,
           "образец": "почему люди ошибаются чаще, когда устали? потому что усталость ослабляет внимание.",
           "зачем": null
         },
@@ -881,13 +899,13 @@
         },
         {
           "род": "вывод",
-          "страниц": 432,
+          "страниц": 864,
           "образец": "когда человек устал, он ошибается чаще. Пётр устал. значит Пётр ошибается чаще.",
           "зачем": null
         },
         {
           "род": "веер_причины",
-          "страниц": 162,
+          "страниц": 324,
           "образец": "когда человек устал, он ошибается чаще. почему? потому что усталость ослабляет внимание.",
           "зачем": null
         }
@@ -1068,7 +1086,7 @@
         {
           "род": "дни",
           "страниц": 84,
-          "образец": "1 day after monday comes tuesday: 1 + 1 = 2, day 2 is tuesday.",
+          "образец": "1 day after monday comes tuesday: day 1 is monday, 1 + 1 = 2, day 2 is tuesday.",
           "зачем": "день недели и его имя"
         },
         {
@@ -1115,13 +1133,13 @@
         {
           "род": "шаг на k дней вперёд, утверждение с леджером",
           "страниц": 280,
-          "образец": "1 Tag nach Montag kommt Dienstag: 1 + 1 = 2, Tag 2 ist Dienstag.",
+          "образец": "1 Tag nach Montag kommt Dienstag: Tag 1 ist Montag, 1 + 1 = 2, Tag 2 ist Dienstag.",
           "зачем": null
         },
         {
           "род": "вопрос о дне через k дней",
           "страниц": 280,
-          "образец": "welcher Tag kommt 4 Tage nach Donnerstag? 4 Tage nach Donnerstag kommt Montag: 4 + 4 = 8, 8 − 7 = 1, Tag 1 ist Montag.",
+          "образец": "welcher Tag kommt 4 Tage nach Donnerstag? 4 Tage nach Donnerstag kommt Montag: Tag 4 ist Donnerstag, 4 + 4 = 8, eine Woc",
           "зачем": null
         },
         {
@@ -1436,49 +1454,49 @@
         {
           "род": "больше_на",
           "страниц": 864,
-          "образец": "Анна сделала 16 отжиманий. Аня сделала на 7 отжиманий больше, чем Анна. сколько отжиманий сделала Аня? Аня сделала 23 от",
+          "образец": "Анна посадила 16 дубов. Аня посадила на 7 дубов больше, чем Анна. сколько дубов посадила Аня? Аня посадила 23 дуба: 16 +",
           "зачем": null
         },
         {
           "род": "меньше_на",
           "страниц": 864,
-          "образец": "Анна сделала 16 отжиманий. Аня сделала на 7 отжиманий меньше, чем Анна. сколько отжиманий сделала Аня? Аня сделала 9 отж",
+          "образец": "Анна посадила 16 дубов. Аня посадила на 7 дубов меньше, чем Анна. сколько дубов посадила Аня? Аня посадила 9 дубов: 16 −",
           "зачем": null
         },
         {
           "род": "во_столько",
           "страниц": 864,
-          "образец": "Анна сделала 16 отжиманий. Аня сделала вдвое больше отжиманий, чем Анна. сколько отжиманий сделала Аня? Аня сделала 32 о",
+          "образец": "Анна посадила 16 дубов. Аня посадила вдвое больше дубов, чем Анна. сколько дубов посадила Аня? Аня посадила 32 дуба: 16 ",
           "зачем": null
         },
         {
           "род": "на_сколько",
           "страниц": 864,
-          "образец": "Анна сделала 16 отжиманий. Аня сделала 23 отжимания. на сколько больше отжиманий сделала Аня, чем Анна? на 7 отжиманий б",
+          "образец": "Анна посадила 16 дубов. Аня посадила 23 дуба. на сколько больше дубов посадила Аня, чем Анна? на 7 дубов больше: 23 − 16",
           "зачем": null
         },
         {
           "род": "кто_больше",
           "страниц": 864,
-          "образец": "Анна сделала 16 отжиманий. Аня сделала 7 отжиманий. кто сделал больше отжиманий? Анна сделала больше отжиманий.",
+          "образец": "Анна посадила 16 дубов. Аня посадила 7 дубов. кто посадил больше дубов? Анна посадила больше дубов.",
           "зачем": null
         },
         {
           "род": "кто_меньше",
           "страниц": 864,
-          "образец": "Анна сделала 16 отжиманий. Аня сделала 7 отжиманий. кто сделал меньше отжиманий? Аня сделала меньше отжиманий.",
+          "образец": "Анна посадила 16 дубов. Аня посадила 7 дубов. кто посадил меньше дубов? Аня посадила меньше дубов.",
           "зачем": null
         },
         {
           "род": "поровну",
           "страниц": 432,
-          "образец": "Анна сделала 16 отжиманий. Аня сделала 16 отжиманий. кто сделал больше отжиманий? никто: оба сделали поровну — 16 отжима",
+          "образец": "Анна посадила 16 дубов. Аня посадила 16 дубов. кто посадил больше дубов? никто: оба посадили поровну — 16 дубов.",
           "зачем": null
         },
         {
           "род": "во_сколько_раз",
           "страниц": 864,
-          "образец": "Анна сделала 32 отжимания. Аня сделала 16 отжиманий. во сколько раз больше отжиманий сделал Анна, чем Аня? вдвое: 32 ÷ 1",
+          "образец": "Анна посадила 32 дуба. Аня посадила 16 дубов. во сколько раз больше дубов посадила Анна, чем Аня? вдвое: 32 ÷ 16 = 2.",
           "зачем": null
         }
       ],
@@ -1532,7 +1550,7 @@
         {
           "род": "cost",
           "страниц": 160,
-          "образец": "the house cost twice as much as the lot; the lot cost 10000 dollars, so the house cost 20000 dollars.",
+          "образец": "the tent cost twice as much as the lantern; the lantern cost 10 dollars, so the tent cost 20 dollars.",
           "зачем": "цена по кратности: сколько стоит во столько же раз больше"
         }
       ],
@@ -1574,6 +1592,53 @@
       "вне_объявления": []
     },
     {
+      "дом": "codeforms",
+      "мир": "codeforms",
+      "миры": [
+        "codeforms"
+      ],
+      "объявление": "РОДЫ",
+      "роды": [
+        {
+          "род": "вызов и результат",
+          "страниц": 648,
+          "образец": "`def add(a, b): return a + b`. `add(2, 3)` возвращает 5.",
+          "зачем": null
+        },
+        {
+          "род": "вопрос о результате вызова",
+          "страниц": 648,
+          "образец": "`def add(a, b): return a + b`. что возвращает `add(2, 3)`? `add(2, 3)` возвращает 5.",
+          "зачем": null
+        },
+        {
+          "род": "тест проходит — почему",
+          "страниц": 216,
+          "образец": "`def add(a, b): return a + b`. тест `assert add(2, 3) == 5` проходит, потому что `add(2, 3)` возвращает 5.",
+          "зачем": null
+        },
+        {
+          "род": "тест падает — почему и правка",
+          "страниц": 216,
+          "образец": "`def add(a, b): return a - b`. тест `assert add(2, 3) == 5` падает, потому что `add(2, 3)` возвращает -1, а не 5. правка",
+          "зачем": null
+        },
+        {
+          "род": "разбор функции по частям",
+          "страниц": 216,
+          "образец": "`def add(a, b): return a + b` — функция add принимает 2 параметра: a и b, и возвращает `a + b`.",
+          "зачем": null
+        },
+        {
+          "род": "та же функция на Rust",
+          "страниц": 108,
+          "образец": "`def add(a, b): return a + b` на Rust пишется так: `fn add(a: i32, b: i32) -> i32 { a + b }`.",
+          "зачем": null
+        }
+      ],
+      "вне_объявления": []
+    },
+    {
       "дом": "coinforms",
       "мир": "money",
       "миры": [
@@ -1584,7 +1649,7 @@
         {
           "род": "мост",
           "страниц": 150,
-          "образец": "3.10 dollars is 310 cents: 3 × 100 = 300, 300 + 10 = 310.",
+          "образец": "a dollar has 100 cents. 3.10 dollars is 310 cents: 3 × 100 = 300, 300 + 10 = 310.",
           "зачем": "крупная единица и мелкая, связанные счётом"
         },
         {
@@ -2623,25 +2688,25 @@
         {
           "род": "цена_со_скидкой",
           "страниц": 216,
-          "образец": "каждая пачка стоит 76 ₽. скидка 25 ₽ на каждую пачку. сколько платить за одну пачку? 51 ₽: 76 − 25 = 51.",
+          "образец": "каждая бутылка стоит 30 ₽. скидка 3 ₽ на каждую бутылку. сколько платить за одну бутылку? 27 ₽: 30 − 3 = 27.",
           "зачем": null
         },
         {
           "род": "счёт_со_скидкой",
           "страниц": 864,
-          "образец": "каждая пачка стоит 76 ₽. скидка 25 ₽ на каждую пачку. сколько платить за 2 пачки? 102 ₽: 2 × 51 = 102.",
+          "образец": "каждая бутылка стоит 30 ₽. скидка 3 ₽ на каждую бутылку. сколько платить за 2 бутылки? 54 ₽: 30 − 3 = 27, 2 × 27 = 54.",
           "зачем": null
         },
         {
           "род": "сколько_за_сумму",
           "страниц": 864,
-          "образец": "каждая пачка стоит 76 ₽. скидка 25 ₽ на каждую пачку. сколько пачек можно купить за 152 ₽? 2 пачки: 152 ÷ 76 = 2.",
+          "образец": "каждая бутылка стоит 30 ₽. скидка 3 ₽ на каждую бутылку. сколько бутылок можно купить за 60 ₽? 2 бутылки: 60 ÷ 30 = 2.",
           "зачем": null
         },
         {
           "род": "сколько_со_скидкой",
           "страниц": 864,
-          "образец": "каждая пачка стоит 76 ₽. скидка 25 ₽ на каждую пачку. сколько пачек можно купить за 102 ₽? 2 пачки: 102 ÷ 51 = 2.",
+          "образец": "каждая бутылка стоит 30 ₽. скидка 3 ₽ на каждую бутылку. сколько бутылок можно купить за 54 ₽? 2 бутылки: 30 − 3 = 27, 5",
           "зачем": null
         }
       ],
@@ -3669,6 +3734,47 @@
       "вне_объявления": []
     },
     {
+      "дом": "gen_genesis_areas",
+      "мир": "areas",
+      "миры": [
+        "areas"
+      ],
+      "объявление": "РОДЫ",
+      "роды": [
+        {
+          "род": "части целого: две вещи одного вместилища складываются",
+          "страниц": 163,
+          "образец": "a textbook has 6 lessons and 2 appendices. how many parts does the textbook have? 6 + 2 = 8.",
+          "зачем": "«в учебнике 8 уроков и 3 приложения. сколько частей в учебнике? 8 + 3 = 11» — две вещи одного вместилища: учебник, почта, экраны телефона, площадка, шкаф, киоск"
+        },
+        {
+          "род": "по стольку в каждом: число вместилищ на число вещей в каждом",
+          "страниц": 132,
+          "образец": "a textbook has 10 lessons, and each lesson has 5 exercises. how many exercises are in the textbook? 10 × 5 = 50.",
+          "зачем": "«в учебнике 6 уроков, в каждом уроке 4 упражнения … 6 × 4 = 24» — уроки и упражнения, книги и рецепты, площадки и горки, табуреты и ножки"
+        },
+        {
+          "род": "сделано и осталось: из скольких сделано сколько",
+          "страниц": 58,
+          "образец": "a lesson has 4 exercises. Iris solved 1 of them. how many exercises are left to solve? 4 − 1 = 3.",
+          "зачем": "«в рецепте 7 шагов. Лена сделала 3 из них. сколько шагов осталось? 7 − 3 = 4» — сделанное не больше данного"
+        },
+        {
+          "род": "два акта одного дня: утро и вечер складываются",
+          "страниц": 52,
+          "образец": "Iris made 3 uploads from the phone in the morning and 6 uploads in the evening. how many uploads did Iris make that day?",
+          "зачем": "«утром Юра сделал с телефона 3 загрузки, а вечером 5» — два акта одного дня складываются"
+        },
+        {
+          "род": "понятие области своими словами",
+          "страниц": 38,
+          "образец": "what is an exercise? an exercise is a task for practice: the textbook gives it and the student solves it. one exercise t",
+          "зачем": "понятие области своими словами: упражнение, приложение, письмо, загрузка, рецепт, паста, площадка, мастер, панель, журнал, газета"
+        }
+      ],
+      "вне_объявления": []
+    },
+    {
       "дом": "gen_genesis_arith_langs",
       "мир": "arith_langs",
       "миры": [
@@ -3808,7 +3914,7 @@
         {
           "род": "меньше на столько-то",
           "страниц": 288,
-          "образец": "Ben has 1 page fewer than Felix. Felix has 6 pages. how many pages does Ben keep? Ben keeps 5 pages: 6 − 1 = 5.",
+          "образец": "Ben has 1 pencil fewer than Felix. Felix has 6 pencils. how many pencils does Ben keep? Ben keeps 5 pencils: 6 − 1 = 5.",
           "зачем": "A = B − n: та же разность в обратную сторону"
         },
         {
@@ -3820,7 +3926,7 @@
         {
           "род": "вдвое — числом в СЛОВЕ",
           "страниц": 288,
-          "образец": "Dan has double the amount of cards that Grace has. Grace has 5 cards. how many cards does Dan hold now? Dan holds 10 car",
+          "образец": "Dan has double the amount of stamps that Grace has. Grace has 5 stamps. how many stamps does Dan hold now? Dan holds 10 ",
           "зачем": "A = B × 2, и двойка живёт в слове «вдвое», а не в цифре"
         },
         {
@@ -4083,7 +4189,7 @@
       "роды": [
         {
           "род": "род подлежащего правит прошедшим: правило на правильной основе",
-          "страниц": 765,
+          "страниц": 774,
           "образец": "получил + а = получила.",
           "зачем": "«X нашёл» при мужском, «X нашла» при женском — правило, работающее на правильной основе, и вопрос о лице при нём"
         },
@@ -4178,13 +4284,13 @@
         {
           "род": "прибавка: своя пара глаголов на каждый оборот",
           "страниц": 200,
-          "образец": "Ava has 4 hours. Ava buys 1 hour more. how many hours does Ava hold now? Ava holds 5 hours: 4 + 1 = 5.",
+          "образец": "Ava has 4 apples. Ava buys 1 apple more. how many apples does Ava have now? Ava has 5 apples: 4 + 1 = 5.",
           "зачем": "a + b четырьмя парами глаголов и двумя вопросами — счёт один, слова разные"
         },
         {
           "род": "убыль: своя пара глаголов и свой вопрос",
           "страниц": 200,
-          "образец": "Ben has 11 slices. Ben eats 1 slice away. how many slices does Ben keep? Ben keeps 10 slices: 11 − 1 = 10.",
+          "образец": "Ben has 11 bottles. Ben gives 1 bottle away. how many bottles does Ben keep? Ben keeps 10 bottles: 11 − 1 = 10.",
           "зачем": "a − b теми же средствами: лексика есть предмет этого мира"
         }
       ],
@@ -4200,21 +4306,21 @@
       "роды": [
         {
           "род": "прибавка: к своему прибавлено ещё",
-          "страниц": 360,
-          "образец": "Ava gets 4 hours. Ava buys 1 hour more. how many hours does Ava hold now? Ava holds 5 hours: 4 + 1 = 5.",
+          "страниц": 318,
+          "образец": "Ava buys 4 balloons. Ava gets 1 balloon more. how many balloons does Ava have now? Ava has 5 balloons: 4 + 1 = 5.",
           "зачем": "a + b, где оба глагола пары суть «взял» и «взял ещё»"
         },
         {
           "род": "убыль: от своего отдано",
-          "страниц": 360,
-          "образец": "Ben gets 9 seconds. Ben spends 1 second away. how many seconds does Ben keep? Ben keeps 8 seconds: 9 − 1 = 8.",
+          "страниц": 288,
+          "образец": "Ben has 9 flowers. Ben gives 1 flower away. how many flowers does Ben keep? Ben keeps 8 flowers: 9 − 1 = 8.",
           "зачем": "a − b, где второй глагол уносит"
         },
         {
           "род": "притяжательный носитель: несёт питомец хозяина",
-          "страниц": 120,
-          "образец": "Ava s ducks lay 3 eggs. Ava s ducks lay 1 egg more. how many eggs do the ducks hold now? the ducks holds 4 eggs: 3 + 1 =",
-          "зачем": "подлежащее есть ЧУЖОЙ питомец («{имя} s {питомец}»), и сказуемое согласуется с ним, а не с хозяином"
+          "страниц": 108,
+          "образец": "Ava's hens lay 3 eggs. Ava's hens lay 1 egg more. how many eggs do the hens lay in all? the hens lay 4 eggs: 3 + 1 = 4.",
+          "зачем": "подлежащее есть ЧУЖОЙ носитель («{имя}'s {питомец}»), и сказуемое согласуется с ним, а не с хозяином"
         }
       ],
       "вне_объявления": []
@@ -4255,6 +4361,35 @@
       "вне_объявления": []
     },
     {
+      "дом": "gen_genesis_height",
+      "мир": "height",
+      "миры": [
+        "height"
+      ],
+      "объявление": "РОДЫ",
+      "роды": [
+        {
+          "род": "выше: опора — низкий, спрошен высокий",
+          "страниц": 200,
+          "образец": "Carla is 95 cm tall. Ben is 2 cm taller than Carla. how tall is Ben? Ben is 97 cm tall: 95 + 2 = 97.",
+          "зачем": "«Ben is 120 cm tall. Carla is 8 cm taller than Ben. how tall is Carla? Carla is 128 cm tall: 120 + 8 = 128.» — опора до сравнения, ответ называет лицо"
+        },
+        {
+          "род": "ниже: опора — высокий, спрошен низкий",
+          "страниц": 200,
+          "образец": "Ben is 97 cm tall. Carla is 2 cm shorter than Ben. how tall is Carla? Carla is 95 cm tall: 97 − 2 = 95.",
+          "зачем": "«Carla is 128 cm tall. Ben is 8 cm shorter than Carla. how tall is Ben? … 128 − 8 = 120.» — та же разность с другого конца"
+        },
+        {
+          "род": "насколько выше: разность спрошена словом сравнения",
+          "страниц": 200,
+          "образец": "Ben is 97 cm tall and Carla is 95 cm tall. how much taller is Ben than Carla? 2 cm taller: 97 − 95 = 2.",
+          "зачем": "«how much taller is Carla than Ben? 8 cm taller: 128 − 120 = 8.» — разность, спрошенная словом"
+        }
+      ],
+      "вне_объявления": []
+    },
+    {
       "дом": "gen_genesis_items",
       "мир": "items",
       "миры": [
@@ -4264,39 +4399,51 @@
       "роды": [
         {
           "род": "прибавка: акт и ещё акт того же носителя",
-          "страниц": 345,
-          "образец": "ida counted 3 acres. ida found 1 acre more. how many acres does ida hold now? ida holds 4 acres: 3 + 1 = 4.",
+          "страниц": 210,
+          "образец": "Ida bought 3 apples. Ida got 1 apple more. how many apples does Ida have now? Ida has 4 apples: 3 + 1 = 4.",
           "зачем": "n + m, и глагол берётся из пар, какие ДАННАЯ вещь принимает"
         },
         {
           "род": "убыль: отдано не больше своего",
-          "страниц": 345,
-          "образец": "rosa packed 3 acres. rosa used 1 acre away. how many acres does rosa keep? rosa keeps 2 acres: 3 − 1 = 2.",
+          "страниц": 210,
+          "образец": "Rosa had 3 apples. Rosa gave 1 apple away. how many apples does Rosa keep? Rosa keeps 2 apples: 3 − 1 = 2.",
           "зачем": "n − m, где отданное не больше своего: «keeps −1 coins» есть ложь о мире"
         },
         {
-          "род": "цепь актов: сделал, продал, сделал ещё — на сколько больше сделал",
-          "страниц": 305,
-          "образец": "ida made 3 acres. ida sold 1 of them. then ida made 1 more acres. how many more acres did ida make than sell? 3 + 1 = 4,",
-          "зачем": "два звена цепью: «сделал n, продал столько-то, сделал ещё m — на сколько больше сделал, чем продал»"
+          "род": "цепь актов: сделал, отдал, сделал ещё — на сколько больше сделано, чем отдано",
+          "страниц": 144,
+          "образец": "Ida wrote 3 cards. Ida sent 1 of them. then Ida wrote 1 more card. how many more cards did Ida write than send? 3 + 1 = ",
+          "зачем": "два звена цепью: «написал n, отослал столько-то, написал ещё m» и «собрал n, отдал столько-то, собрал ещё m» — на сколько больше сделано, чем отдано"
         },
         {
           "род": "держание без носителя: страница открывается МЕСТОМ, а не лицом",
-          "страниц": 258,
-          "образец": "there are 10 apples on the table. vera took 4 apples. how many apples are there now? 10 − 4 = 6.",
+          "страниц": 157,
+          "образец": "there are 10 balloons on the table. Vera took 4 balloons. how many balloons are there now? 10 − 4 = 6.",
           "зачем": "«there were N … » — страница открывается МЕСТОМ, а не лицом: 44 задачи из 726 в SVAMP устроены так"
         },
         {
           "род": "голая форма множественного при вещи",
-          "страниц": 483,
-          "образец": "ida likes the acres.",
+          "страниц": 294,
+          "образец": "Ida likes the apples.",
           "зачем": "голая форма множественного числа при этой вещи"
         },
         {
           "род": "голая форма единственного при вещи",
-          "страниц": 414,
-          "образец": "the acre is a thing.",
+          "страниц": 252,
+          "образец": "the apple is a thing.",
           "зачем": "голая форма единственного — та, при которой «1» ведёт себя как один"
+        },
+        {
+          "род": "акт двери у носителя: было, акт со знаком двери, сколько теперь",
+          "страниц": 220,
+          "образец": "Ida had 4 apples. Ida got 1 apple. how many apples does Ida have now? Ida has 5 apples: 4 + 1 = 5.",
+          "зачем": "«had n … <акт> m … how many … does X have now?» — знак и частица акта из двери `verbthings.АКТЫ`: рынок знака голосует страницу, где держание стоит против акта"
+        },
+        {
+          "род": "акт двери у места: лежало, принесли или унесли, сколько теперь в месте",
+          "страниц": 50,
+          "образец": "there are 5 apples on the shelf. Ida took 1 apple. how many apples are on the shelf now? 5 − 1 = 4.",
+          "зачем": "«there are n … <место>. X <акт> m … how many … are <место> now?» — тот же знак двери, спрошенный держатель — вместилище, а не деятель"
         }
       ],
       "вне_объявления": []
@@ -4530,13 +4677,13 @@
         {
           "род": "акт",
           "страниц": 240,
-          "образец": "Ann has 4.10 dollars. she spends 1.12 dollars. how much money does she have now? 410 − 112 = 298 cents. 298 cents is 2.9",
+          "образец": "Ann has 4.10 dollars. she spends 1.12 dollars. how much money does she have now? a dollar has 100 cents: 4.10 dollars is",
           "зачем": "прибавка или убыль суммы: рубли и копейки складываются своими разрядами"
         },
         {
           "род": "покупка",
           "страниц": 60,
-          "образец": "Anna has 4.30 dollars. she buys a pen for 1.72 dollars. how much money does she have now? 430 − 172 = 258 cents. 258 cen",
+          "образец": "Anna has 4.30 dollars. she buys a pen for 1.72 dollars. how much money does she have now? a dollar has 100 cents: 4.30 d",
           "зачем": "вещь куплена, и сдача сосчитана"
         },
         {
@@ -4554,13 +4701,13 @@
         {
           "род": "покупка1",
           "страниц": 90,
-          "образец": "Carlos buys 6 pens at 1.10 dollars each. how much does he pay in all? 6 × 110 = 660 cents. 660 cents is 6.60 dollars.",
+          "образец": "Carlos buys 6 pens at 1.10 dollars each. how much does he pay in all? a dollar has 100 cents: 1.10 dollars is 110 cents.",
           "зачем": "n одинаковых вещей по цене P: одно умножение"
         },
         {
           "род": "покупка2",
           "страниц": 90,
-          "образец": "Felix buys 6 books at $7.30 each and 6 pencils at $5.50 each. how much does he pay in all? 6 × 730 = 4380, 6 × 550 = 330",
+          "образец": "Felix buys 6 books at $7.30 each and 6 pencils at $5.50 each. how much does he pay in all? a dollar has 100 cents: 7.30 ",
           "зачем": "две вещи со своими ценами и числами: два умножения и сумма"
         },
         {
@@ -4568,6 +4715,35 @@
           "страниц": 75,
           "образец": "Ava buys 2 pens, 2 books and 2 cups. one pen costs 4.70 dollars, one book costs 5.70 dollars, one cup costs 4.70 dollars",
           "зачем": "три вещи со своими ценами: цепь в пять шагов — три произведения и две суммы"
+        }
+      ],
+      "вне_объявления": []
+    },
+    {
+      "дом": "gen_genesis_much",
+      "мир": "much",
+      "миры": [
+        "much"
+      ],
+      "объявление": "РОДЫ",
+      "роды": [
+        {
+          "род": "вдвое: twice as much",
+          "страниц": 120,
+          "образец": "Ben has 10 dollars. Carla has twice as much money as Ben. how much money does Carla have? Carla has 20 dollars: 2 × 10 =",
+          "зачем": "«Ben has 30 dollars. Carla has twice as much money as Ben. how much money does Carla have? Carla has 60 dollars: 2 × 30 = 60.» — опора до сравнения; по-русски «вдвое больше денег, чем у Вани»"
+        },
+        {
+          "род": "в k раз: k times as much",
+          "страниц": 120,
+          "образец": "Dan has 15 dollars. Felix has 3 times as much money as Dan. how much money does Felix have? Felix has 45 dollars: 3 × 15",
+          "зачем": "«Dan has 4 litres of water. Elena has 3 times as much water as Dan. … 3 × 4 = 12.» — «в 3 раза больше воды, чем у Димы»"
+        },
+        {
+          "род": "вдвое меньше: half as much",
+          "страниц": 120,
+          "образец": "Felix has 20 dollars. Carla has half as much money as Felix. how much money does Carla have? Carla has 10 dollars: 20 ÷ ",
+          "зачем": "«Felix spent 40 minutes on homework. Grace spent half as much time on homework as Felix. … 40 ÷ 2 = 20.» — «вдвое меньше времени»"
         }
       ],
       "вне_объявления": []
@@ -4724,7 +4900,7 @@
         },
         {
           "род": "приставка при единице",
-          "страниц": 16,
+          "страниц": 18,
           "образец": "1 kilometre = 1000 metres.",
           "зачем": "кило-, милли- и прочие: приставка множит единицу"
         },
@@ -4860,31 +5036,31 @@
         {
           "род": "местоимение при убыли: он отдал столько-то",
           "страниц": 185,
-          "образец": "Ben had 6 cookies. he ate 2 of them. Ben has 4 cookies.",
+          "образец": "Ben had 6 plums. he ate 2 of them. Ben has 4 plums.",
           "зачем": "то же при убыли, и «осталось» сказано тремя разными хвостами"
         },
         {
           "род": "состояние до актов: сколько было сначала",
           "страниц": 70,
-          "образец": "Ben had 6 cookies. he ate 2 of them. how many cookies did Ben have at first? Ben had 6 cookies.",
+          "образец": "Ben had 6 plums. he ate 2 of them. how many plums did Ben have at first? Ben had 6 plums.",
           "зачем": "вопрос о состоянии ДО актов: ответ есть первое число, а не сумма"
         },
         {
           "род": "хвост вопроса: «still have left», «altogether» и прочие",
           "страниц": 135,
-          "образец": "Ann had 9 cookies. then she ate 7 of them. how many cookies does Ann have left with her? 9 − 7 = 2.",
+          "образец": "Ann had 9 plums. then she ate 7 of them. how many plums does Ann have left with her? 9 − 7 = 2.",
           "зачем": "хвост вопроса есть часть формы, и читается только показанный"
         },
         {
           "род": "другое держание той же пары: holds, keeps вместо has",
           "страниц": 138,
-          "образец": "Carlos had 15 cookies. he ate 5 of them. Carlos keeps 10 cookies.",
+          "образец": "Carlos had 15 plums. he ate 5 of them. Carlos keeps 10 plums.",
           "зачем": "has, holds, keeps — пара знаков покупается лишь от двух держаний"
         },
         {
           "род": "два акта одного носителя, сравненные: на сколько больше сделал, чем продал",
           "страниц": 136,
-          "образец": "Anna baked 23 cakes. Anna ate 17 cakes. Anna baked 6 more cakes than she ate: 23 − 17 = 6.",
+          "образец": "Anna collected 23 stamps. Anna gave away 17 stamps. Anna collected 6 more stamps than she gave away: 23 − 17 = 6.",
           "зачем": "два акта одного носителя, и вопрос назван местоимением"
         }
       ],
@@ -4954,8 +5130,8 @@
         {
           "род": "убыль: тот же по месту глагол УБАВЛЯЕТ",
           "страниц": 98,
-          "образец": "James baked 9 cookies. James sold 1 cookie away. how many cookies does James keep? James keeps 8 cookies: 9 − 1 = 8.",
-          "зачем": "«baked … then sold N away» — второй глагол уносит, и держание названо keep: алгебра покупает каждый закон со СВОИХ показов"
+          "образец": "James baked 9 cookies. James sold 1 cookie. how many cookies does James keep? James keeps 8 cookies: 9 − 1 = 8.",
+          "зачем": "«baked … then sold N» — второй глагол уносит, и держание названо keep: алгебра покупает каждый закон со СВОИХ показов"
         }
       ],
       "вне_объявления": []
@@ -4983,7 +5159,7 @@
         {
           "род": "раздача между носителями: что осталось лишним",
           "страниц": 160,
-          "образец": "17 acres shared among 5 children leaves 2 left over.",
+          "образец": "17 apples shared among 5 children leaves 2 left over.",
           "зачем": "«17 яблок на 5 друзей — 2 лишних»: тот же счёт в мире вещей"
         }
       ],
@@ -5072,7 +5248,7 @@
         {
           "род": "делится ли нацело: да и нет одной рамкой, и остаток назван",
           "страниц": 120,
-          "образец": "делится ли 30 на 4 нацело? нет: 4 × 7 = 28, остаток 2.",
+          "образец": "делится ли 30 на 4 нацело? нет: 30 ÷ 4 = 7, остаток 2, и 4 × 7 = 28.",
           "зачем": "ярус t6: «делится ли 37 на 5 нацело? нет: 5 × 7 = 35, остаток 2»"
         }
       ],
@@ -5346,25 +5522,25 @@
       "роды": [
         {
           "род": "прошедшее: сложение при четырёх местах",
-          "страниц": 155,
+          "страниц": 150,
           "образец": "Ida collected 3 cards. Ida collected 1 card more. how many cards did Ida collect in all? Ida collected 4 cards: 3 + 1 = ",
           "зачем": "«a взял n, a взял ещё m» — вопрос и ответ со своей кузницей n + m"
         },
         {
           "род": "перфект рядом со своим прошедшим: пара показана, а не предположена",
-          "страниц": 155,
+          "страниц": 150,
           "образец": "Ida has collected 3 cards. Ida collected 3 cards.",
           "зачем": "«has done n» и «did n» стоят рядом: читатель видит пару, а не угадывает её"
         },
         {
           "род": "перфект внутри сравнения: больше на столько-то",
-          "страниц": 155,
+          "страниц": 150,
           "образец": "Rosa has collected 1 card. Ida has collected 3 more cards than Rosa. how many cards did Ida collect in all? Ida collecte",
           "зачем": "перфект несёт сравнение «на n больше, чем b», и счёт идёт поверх"
         },
         {
           "род": "настоящее: основа и третье лицо живут оба",
-          "страниц": 155,
+          "страниц": 150,
           "образец": "Ida collects 3 cards every day. they collect 3 cards every day.",
           "зачем": "«a does n every day» и «they do n every day»: третье лицо и основа"
         }
@@ -5646,103 +5822,103 @@
         {
           "род": "процент",
           "страниц": 80,
-          "образец": "the class has 20 pupils and 1 of them are girls; the percentage of girls is 5 %: 1 ÷ 20 × 100 = 5.",
+          "образец": "the orchard has 20 trees and 1 of them is a pear tree; the percentage of pear trees is 5 %: 1 ÷ 20 × 100 = 5.",
           "зачем": "семейство задач «процент»: вопрос с ответом-уравнением"
         },
         {
           "род": "фунты",
           "страниц": 45,
-          "образец": "the parcel weighs 16 ounces and a pound is 16 ounces; the weight in pounds is 1: 16 ÷ 16 = 1.",
+          "образец": "a bag of apples weighs 16 ounces and a pound is 16 ounces; the weight in pounds is 1: 16 ÷ 16 = 1.",
           "зачем": "семейство задач «фунты»: вопрос с ответом-уравнением"
         },
         {
           "род": "глубина",
           "страниц": 80,
-          "образец": "the tank is 2 feet wide and 2 feet long and holds 4 cubic feet of water; the tank's water depth is 1 foot: 4 ÷ (2 × 2) =",
+          "образец": "the pit is 2 meters wide and 2 meters long and holds 4 cubic meters of sand; the sand in the pit is 1 meter deep: 4 ÷ (2",
           "зачем": "семейство задач «глубина»: вопрос с ответом-уравнением"
         },
         {
           "род": "вероятность",
           "страниц": 72,
-          "образец": "a bag holds 1 red marble and 1 blue marble; the probability of drawing a red marble, expressed as a fraction, is 1/2: 1 ",
+          "образец": "a jar holds 1 black button and 1 white button; the probability of taking a black button, written as a fraction, is 1/2: ",
           "зачем": "семейство задач «вероятность»: вопрос с ответом-уравнением"
         },
         {
           "род": "четверти",
           "страниц": 70,
-          "образец": "if 3 is one quarter of the class, the class has 12 pupils: 3 ÷ 1 × 4 = 12.",
+          "образец": "if 3 pages are one quarter of the book, the book has 12 pages: 3 ÷ 1 × 4 = 12.",
           "зачем": "семейство задач «четверти»: вопрос с ответом-уравнением"
         },
         {
           "род": "дополнение",
           "страниц": 80,
-          "образец": "there were originally 10 cars in the lot and 1 drove away; 9 cars remain: 10 − 1 = 9.",
+          "образец": "there were originally 10 ducks on the pond and 1 flew away; 9 ducks remain: 10 − 1 = 9.",
           "зачем": "семейство задач «дополнение»: вопрос с ответом-уравнением"
         },
         {
           "род": "население",
           "страниц": 45,
-          "образец": "the town has 400 people and half of the whole population lives in the centre; 200 people live in the centre: 400 ÷ 2 = 2",
+          "образец": "the library has 400 books and half of all the books stand in the reading room; 200 books stand in the reading room: 400 ",
           "зачем": "семейство задач «население»: вопрос с ответом-уравнением"
         },
         {
           "род": "команда",
           "страниц": 44,
-          "образец": "the number of boys on the team is 3 and the number of girls is 2; the team has 5 players: 3 + 2 = 5.",
+          "образец": "the number of books on the shelf is 3 and the number of magazines is 2; the shelf holds 5 items: 3 + 2 = 5.",
           "зачем": "семейство задач «команда»: вопрос с ответом-уравнением"
         },
         {
           "род": "кратно",
           "страниц": 74,
-          "образец": "the car cost 5000 dollars and the house cost twice as much as the car; the house cost 10000 dollars: 5000 × 2 = 10000.",
+          "образец": "the tractor cost 5000 dollars and the barn cost twice as much as the tractor; the barn cost 10000 dollars: 5000 × 2 = 10",
           "зачем": "семейство задач «кратно»: вопрос с ответом-уравнением"
         },
         {
           "род": "проект",
           "страниц": 68,
-          "образец": "the design started with 4 panels, was doubled and then reduced by 1; the final design has 7 panels: 4 × 2 − 1 = 7.",
+          "образец": "the order started with 4 boxes, was doubled and then reduced by 1; the final order has 7 boxes: 4 × 2 − 1 = 7.",
           "зачем": "семейство задач «проект»: вопрос с ответом-уравнением"
         },
         {
           "род": "окружность",
           "страниц": 56,
-          "образец": "the circumference of the earth is taken as 4000 miles and the plane flies 400 miles per hour; the flight around the eart",
+          "образец": "the road around the lake is 16 kilometers long and the cyclist rides 8 kilometers per hour; the ride around the lake tak",
           "зачем": "семейство задач «окружность»: вопрос с ответом-уравнением"
         },
         {
           "род": "верёвки",
           "страниц": 29,
-          "образец": "the 2 ropes had a total length of 6 meters; the average rope is 3 meters long: 6 ÷ 2 = 3.",
+          "образец": "the 2 poles had a total height of 6 meters; the average pole is 3 meters tall: 6 ÷ 2 = 3.",
           "зачем": "семейство задач «верёвки»: вопрос с ответом-уравнением"
         },
         {
           "род": "трое",
           "страниц": 80,
-          "образец": "Ann has 3 books, Ben has 2 more books than Ann, and Carla has twice as many books as Ann; together Ann, Ben and Carla ha",
+          "образец": "Ann has 3 shells, Ben has 2 more shells than Ann, and Carla has twice as many shells as Ann; together Ann, Ben and Carla",
           "зачем": "семейство задач «трое»: вопрос с ответом-уравнением"
         },
         {
           "род": "ставка",
           "страниц": 80,
-          "образец": "Ann makes 2 candles an hour and works 2 hours; Ann makes 4 candles: 2 × 2 = 4.",
+          "образец": "Ann signs 2 postcards an hour and works 2 hours; Ann signs 4 postcards: 2 × 2 = 4.",
           "зачем": "семейство задач «ставка»: вопрос с ответом-уравнением"
         },
         {
           "род": "листки",
           "страниц": 80,
-          "образец": "Ann had 60 post-it notes, used 5 on the fridge and 3 on the door; Ann has 52 post-it notes left: 60 − 5 − 3 = 52.",
+          "образец": "Ann had 60 candies, put 5 in the red bowl and 3 in the blue bowl; Ann has 52 candies left: 60 − 5 − 3 = 52.",
           "зачем": "семейство задач «листки»: вопрос с ответом-уравнением"
         },
         {
           "род": "разница",
           "страниц": 73,
-          "образец": "Ann planted 4 trees in the morning and 2 trees in the afternoon; Ann planted 2 more trees in the morning than in the aft",
+          "образец": "Ann painted 4 posts yesterday and 2 posts today; Ann painted 2 more posts yesterday than today: 4 − 2 = 2.",
           "зачем": "семейство задач «разница»: вопрос с ответом-уравнением"
         },
         {
           "род": "скидка",
           "страниц": 80,
-          "образец": "each pack costs 20 dollars and there is a discount of 5 dollars on each pack; you have to pay 15 dollars for each pack: ",
+          "образец": "a ticket costs 20 dollars and pupils get a discount of 5 dollars on each ticket; a pupil pays 15 dollars for a ticket: 2",
           "зачем": "семейство задач «скидка»: вопрос с ответом-уравнением"
         },
         {
@@ -5754,37 +5930,37 @@
         {
           "род": "группы",
           "страниц": 70,
-          "образец": "there are 4 pupils and they stand in groups of 2; there are 2 groups: 4 ÷ 2 = 2.",
+          "образец": "there are 4 plates and they are stacked in piles of 2; there are 2 piles: 4 ÷ 2 = 2.",
           "зачем": "семейство задач «группы»: вопрос с ответом-уравнением"
         },
         {
           "род": "остаток_деления",
           "страниц": 75,
-          "образец": "there are 7 pupils and they stand in groups of 3; there are 2 groups and 1 pupil left over: 3 × 2 = 6, 7 − 6 = 1.",
+          "образец": "there are 7 eggs and they are packed in boxes of 3; there are 2 full boxes and 1 egg left over: 3 × 2 = 6, 7 − 6 = 1.",
           "зачем": "семейство задач «остаток_деления»: вопрос с ответом-уравнением"
         },
         {
           "род": "больше",
           "страниц": 80,
-          "образец": "Ann received 4 emails in the morning and 2 emails in the afternoon; Ann received 2 more emails in the morning than in th",
+          "образец": "Ann picked 4 plums in the morning and 2 plums in the evening; Ann picked 2 more plums in the morning than in the evening",
           "зачем": "семейство задач «больше»: вопрос с ответом-уравнением"
         },
         {
           "род": "отбор",
           "страниц": 80,
-          "образец": "Ann received 3 emails in the morning, 4 in the afternoon and 2 in the evening; in the morning Ann received 3 emails.",
+          "образец": "Ann picked 3 plums on Monday, 4 on Tuesday and 2 on Wednesday; on Monday Ann picked 3 plums.",
           "зачем": "семейство задач «отбор»: вопрос с ответом-уравнением"
         },
         {
           "род": "остаток",
           "страниц": 80,
-          "образец": "the baker made 10 cakes and 5 pastries and sold 2 pastries; the baker still has 10 cakes: the pastries sold are not cake",
+          "образец": "the gardener picked 10 apples and 5 pears and sold 2 pears; the gardener still has 10 apples: the pears sold are not app",
           "зачем": "семейство задач «остаток»: вопрос с ответом-уравнением"
         },
         {
           "род": "класс",
           "страниц": 80,
-          "образец": "there are 5 girls and 4 boys in the class; the class has 9 pupils: 5 + 4 = 9.",
+          "образец": "there are 5 residents on the first floor and 4 on the second floor; the house has 9 residents: 5 + 4 = 9.",
           "зачем": "семейство задач «класс»: вопрос с ответом-уравнением"
         },
         {
@@ -5796,37 +5972,37 @@
         {
           "род": "сдача",
           "страниц": 69,
-          "образец": "Ann gave the craftsman 2 5-dollar bills for a hat worth 8 dollars; the change is 2 dollars: 2 × 5 − 8 = 2.",
+          "образец": "a lamp costs 8 dollars and Ann hands over 2 5-dollar bills; the change is 2 dollars: 2 × 5 − 8 = 2.",
           "зачем": "семейство задач «сдача»: вопрос с ответом-уравнением"
         },
         {
           "род": "прибыль",
           "страниц": 80,
-          "образец": "Ann bought the magazines at 24 dollars and sells them at 11/8 of the price; the profit is 9 dollars: 24 × 11 ÷ 8 − 24 = ",
+          "образец": "Ann bought a bicycle for 12 dollars and sells it at 5/4 of that price; the profit is 3 dollars: 12 × 5 ÷ 4 − 12 = 3.",
           "зачем": "семейство задач «прибыль»: вопрос с ответом-уравнением"
         },
         {
           "род": "завышение",
           "страниц": 56,
-          "образец": "Ann reported 24 people at the concert, overstating the number by 20 percent; 20 people really attended: 24 × 100 ÷ (100 ",
+          "образец": "Ann said 24 guests came to the party, overstating the number by 20 percent; 20 guests really came: 24 × 100 ÷ (100 + 20)",
           "зачем": "семейство задач «завышение»: вопрос с ответом-уравнением"
         },
         {
           "род": "половина",
           "страниц": 65,
-          "образец": "there were 6 ants and half as many bugs as ants in the garden; there were 9 insects in all: 6 + 6 ÷ 2 = 9.",
+          "образец": "there were 6 apples and half as many pears as apples in the basket; there were 9 apples and pears in all: 6 + 6 ÷ 2 = 9.",
           "зачем": "семейство задач «половина»: вопрос с ответом-уравнением"
         },
         {
           "род": "части",
           "страниц": 64,
-          "образец": "a house and a lot cost 60 dollars and the house cost twice as much as the lot; the lot cost 20 dollars: 60 ÷ 3 = 20, 2 +",
+          "образец": "a boat and a trailer cost 60 dollars and the boat cost twice as much as the trailer; the trailer cost 20 dollars: 60 ÷ 3",
           "зачем": "семейство задач «части»: вопрос с ответом-уравнением"
         },
         {
           "род": "полосы",
           "страниц": 80,
-          "образец": "the grasshopper jumped 4 inches. the mouse jumped 2 inches. the grasshopper jumped 2 more inches than the mouse: 4 − 2 =",
+          "образец": "the goat climbed 4 steps. the dog climbed 2 steps. the goat climbed 2 more steps than the dog: 4 − 2 = 2.",
           "зачем": "семейство задач «полосы»: вопрос с ответом-уравнением"
         }
       ],
@@ -5872,25 +6048,25 @@
         {
           "род": "сложением",
           "страниц": 440,
-          "образец": "дополним 11 до 20 и вернём разницу: 15 − 9 = 6, и 20 + 6 = 26, и 11 + 15 = 26.",
+          "образец": "чтобы сложить 11 и 15, дополним 11 до 20 и вернём разницу: 20 − 11 = 9, 15 − 9 = 6, и 20 + 6 = 26, и 11 + 15 = 26.",
           "зачем": null
         },
         {
           "род": "вычитанием",
           "страниц": 310,
-          "образец": "вычтем 20 вместо 11 и вернём лишнее: 52 − 20 = 32, и 32 + 9 = 41, и 52 − 11 = 41.",
+          "образец": "чтобы вычесть 11 из 52, вычтем 20 вместо 11 и вернём лишнее: 20 − 11 = 9, 52 − 20 = 32, и 32 + 9 = 41, и 52 − 11 = 41.",
           "зачем": null
         },
         {
           "род": "закон",
           "страниц": 128,
-          "образец": "перегруппировка законна, ибо скобка сумму не меняет: (12 + 8) + 58 = 78, и 12 + (8 + 58) = 78.",
+          "образец": "для 12, 8 и 58 перегруппировка законна, ибо скобка сумму не меняет: (12 + 8) + 58 = 78, и 12 + (8 + 58) = 78.",
           "зачем": null
         },
         {
           "род": "дополнение",
           "страниц": 144,
-          "образец": "дополнение 11 до десятка: 20 − 11 = 9, и 11 + 9 = 20.",
+          "образец": "дополнение 11 до десятка 20: 20 − 11 = 9, и 11 + 9 = 20.",
           "зачем": null
         }
       ],
@@ -6126,7 +6302,7 @@
         {
           "род": "сколько их в своде",
           "страниц": 2,
-          "образец": "форм объявлено пакетами 2948, и 95 из них носят два языка и более: 2948 − 95 = 2853 единоличных. СЧЁТ ЭТОТ ПЕРЕСЧИТАН ПО",
+          "образец": "форм объявлено пакетами 2966, и 95 из них носят два языка и более: 2966 − 95 = 2871 единоличных. СЧЁТ ЭТОТ ПЕРЕСЧИТАН ПО",
           "зачем": null
         },
         {
@@ -7317,6 +7493,18 @@
           "зачем": null
         },
         {
+          "род": "почему_цепь2",
+          "страниц": 647,
+          "образец": "Ann had 5 coins. Ann gave away 1 coin. Ann got 2 coins. Ann has 6 coins. why does Ann have 6 coins? because Ann had 5, g",
+          "зачем": null
+        },
+        {
+          "род": "почему_цепь3",
+          "страниц": 622,
+          "образец": "Ann had 5 coins. Ann gave away 1 coin. Ann got 2 coins. Ann gave away 1 coin. Ann has 5 coins. why does Ann have 5 coins",
+          "зачем": null
+        },
+        {
           "род": "согласен_вы",
           "страниц": 535,
           "образец": "у Анны 7 шаров. согласны ли вы? да, я согласен: у Анны 7 шаров.",
@@ -7383,14 +7571,15 @@
       "дом": "longdivforms",
       "мир": "longdiv",
       "миры": [
-        "longdiv"
+        "longdiv",
+        "school_biling_v2c"
       ],
       "объявление": "РОДЫ",
       "роды": [
         {
           "род": "division-steps",
           "страниц": 127,
-          "образец": "в делении 391 ÷ 17 берём 39: 17 × 2 = 34, 39 − 34 = 5.",
+          "образец": "в делении 391 ÷ 17 берём 39, цифра частного — 2: 17 × 2 = 34, 39 − 34 = 5.",
           "зачем": "род «division-steps», объявленный построением"
         },
         {
@@ -7472,25 +7661,25 @@
         {
           "род": "на землю",
           "страниц": 204,
-          "образец": "масштаб 1 : 100, и 1 сантиметр на карте суть 1 метр на земле: 1 × 100 = 100, и 100 ÷ 100 = 1.",
+          "образец": "в метре 100 сантиметров. масштаб 1 : 100, и 1 сантиметр на карте суть 1 метр на земле: 1 × 100 = 100, и 100 ÷ 100 = 1.",
           "зачем": null
         },
         {
           "род": "на карту",
           "страниц": 204,
-          "образец": "масштаб 1 : 100, и 1 метр на земле суть 1 сантиметр на карте: 1 × 100 = 100, и 100 ÷ 100 = 1.",
+          "образец": "в метре 100 сантиметров. масштаб 1 : 100, и 1 метр на земле суть 1 сантиметр на карте: 1 × 100 = 100, и 100 ÷ 100 = 1.",
           "зачем": null
         },
         {
           "род": "мельче",
           "страниц": 108,
-          "образец": "масштаб 1 : 200 мельче масштаба 1 : 100, хотя 200 больше 100: 200 ÷ 100 = 2, и 200 ÷ 200 = 1.",
+          "образец": "масштаб 1 : 200 мельче масштаба 1 : 100, хотя 200 больше 100, и 200 сантиметров на земле — это 2 сантиметра на одной кар",
           "зачем": null
         },
         {
           "род": "во сколько",
           "страниц": 204,
-          "образец": "на карте масштаба 1 : 100 всякая длина уменьшена в 100 раз: 100 ÷ 100 = 1.",
+          "образец": "на карте масштаба 1 : 100 всякая длина уменьшена в 100 раз, и 100 сантиметров на земле — это 1 сантиметр на карте: 100 ÷",
           "зачем": null
         }
       ],
@@ -7798,19 +7987,19 @@
         },
         {
           "род": "от_противного",
-          "страниц": 12,
+          "страниц": 24,
           "образец": "допустим, 3 чётно. тогда 3 = 2k для целого k. но 3 = 2 × 1 + 1. противоречие: 3 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВ",
           "зачем": "доказательство, идущее от отрицания"
         },
         {
           "род": "индукция",
-          "страниц": 12,
+          "страниц": 24,
           "образец": "индукция: основание n = 1 верно, шаг от n к n+1 верен, значит верно до n = 3; сумма первых 3 чисел равна 6.",
           "зачем": "доказательство, идущее по ступеням"
         },
         {
           "род": "числа",
-          "страниц": 209,
+          "страниц": 268,
           "образец": "the plural of cent is cents.",
           "зачем": "числовая рамка — сестра падежной, и рамка одна с параметром"
         },
@@ -8029,25 +8218,25 @@
         {
           "род": "мера",
           "страниц": 168,
-          "образец": "der Frosch sprang 12 Zentimeter. wie weit sprang der Frosch? 12 Zentimeter.",
+          "образец": "der Hase sprang 14 Zentimeter. wie weit sprang der Hase? 14 Zentimeter.",
           "зачем": null
         },
         {
           "род": "сумма",
           "страниц": 168,
-          "образец": "der Frosch sprang 12 Zentimeter und dann 8 Zentimeter. wie weit sprang der Frosch insgesamt? 20 Zentimeter: 12 + 8 = 20.",
+          "образец": "der Hase sprang 14 Zentimeter und dann 7 Zentimeter. wie weit sprang der Hase insgesamt? 21 Zentimeter: 14 + 7 = 21.",
           "зачем": null
         },
         {
           "род": "прибыль",
           "страниц": 63,
-          "образец": "auf dem Zaun saßen 6 Vögel. 4 weitere Vögel kamen dazu. wie viele Vögel sind jetzt auf dem Zaun? 10 Vögel: 6 + 4 = 10.",
+          "образец": "auf dem See schwammen 7 Schwäne. 5 weitere Schwäne kamen dazu. wie viele Schwäne sind jetzt auf dem See? 12 Schwäne: 7 +",
           "зачем": null
         },
         {
           "род": "убыль",
           "страниц": 63,
-          "образец": "auf dem Zaun saßen 6 Vögel. 4 Vögel flogen weg. wie viele Vögel sind jetzt auf dem Zaun? 2 Vögel: 6 − 4 = 2.",
+          "образец": "auf dem See schwammen 7 Schwäne. 5 Schwäne flogen weg. wie viele Schwäne sind jetzt auf dem See? 2 Schwäne: 7 − 5 = 2.",
           "зачем": null
         }
       ],
@@ -8084,6 +8273,12 @@
           "страниц": 240,
           "образец": "Elena has 14 cups of coffee. how much coffee does Elena have? 14 cups of coffee.",
           "зачем": "«how much sugar» спрашивает неисчислимое, и ответ честно возвращает мерку, а не число"
+        },
+        {
+          "род": "убыль: выпито из мерки",
+          "страниц": 112,
+          "образец": "Ann had 4 cups of coffee. Ann drank 2 cups of coffee. how many cups of coffee does Ann have now? 2 cups of coffee: 4 − 2",
+          "зачем": "«drank» уносит от носителя питьё, названное при мере, — знак акта двери против держания"
         }
       ],
       "вне_объявления": []
@@ -8145,26 +8340,62 @@
       "роды": [
         {
           "род": "мера_больше",
-          "страниц": 360,
-          "образец": "the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper",
+          "страниц": 292,
+          "образец": "the rabbit jumped 23 inches. the squirrel jumped 6 inches. how many more inches did the rabbit jump than the squirrel? 2",
           "зачем": null
         },
         {
           "род": "мера_меньше",
-          "страниц": 360,
-          "образец": "the frog jumped 31 inches. the grasshopper jumped 25 inches. how many fewer inches did the grasshopper jump than the fro",
+          "страниц": 292,
+          "образец": "the rabbit jumped 23 inches. the squirrel jumped 6 inches. how many fewer inches did the squirrel jump than the rabbit? ",
           "зачем": null
         },
         {
           "род": "пара_мал",
           "страниц": 96,
-          "образец": "a ring and a chain cost 45 dollars together. the ring costs twice as much as the chain. how much does the chain cost? 2 ",
+          "образец": "a ring and a chain cost 174 dollars together. the ring costs twice as much as the chain. how much does the chain cost? 2",
           "зачем": null
         },
         {
           "род": "пара_бол",
           "страниц": 96,
-          "образец": "a ring and a chain cost 45 dollars together. the ring costs twice as much as the chain. how much does the ring cost? 2 +",
+          "образец": "a ring and a chain cost 174 dollars together. the ring costs twice as much as the chain. how much does the ring cost? 2 ",
+          "зачем": null
+        },
+        {
+          "род": "сравнение_дальше",
+          "страниц": 166,
+          "образец": "the squirrel jumped 6 inches. the rabbit jumped 17 inches farther than the squirrel. how far did the rabbit jump? the ra",
+          "зачем": null
+        },
+        {
+          "род": "сравнение_меньше",
+          "страниц": 156,
+          "образец": "the rabbit jumped 52 feet. the squirrel jumped 33 feet less than the rabbit. how far did the squirrel jump? the squirrel",
+          "зачем": null
+        },
+        {
+          "род": "насколько_дальше",
+          "страниц": 166,
+          "образец": "the rabbit jumped 81 metres. the squirrel jumped 32 metres. how much higher did the rabbit jump than the squirrel? 49 me",
+          "зачем": null
+        },
+        {
+          "род": "время_дольше",
+          "страниц": 116,
+          "образец": "the rabbit ran 15 minutes. the fox ran 24 minutes longer than the rabbit. how long did the fox run? the fox ran 39 minut",
+          "зачем": null
+        },
+        {
+          "род": "время_меньше",
+          "страниц": 116,
+          "образец": "the fox ran 68 minutes. the rabbit ran 10 minutes less than the fox. how long did the rabbit run? the rabbit ran 58 minu",
+          "зачем": null
+        },
+        {
+          "род": "насколько_дольше",
+          "страниц": 116,
+          "образец": "the fox ran 26 minutes. the rabbit ran 20 minutes. how much longer did the fox run than the rabbit? 6 minutes longer: 26",
           "зачем": null
         }
       ],
@@ -8364,13 +8595,13 @@
         {
           "род": "мелкая единица, писанная крупной через запятую, с леджером",
           "страниц": 180,
-          "образец": "3,10 Euro sind 310 Cent: 3 × 100 = 300, 300 + 10 = 310.",
+          "образец": "ein Euro hat 100 Cent. 3,10 Euro sind 310 Cent: 3 × 100 = 300, 300 + 10 = 310.",
           "зачем": null
         },
         {
           "род": "вопрос о том же размене, отвечаемый тем же утверждением",
           "страниц": 180,
-          "образец": "wie viel Cent sind 8,45 Euro? 8 × 100 = 800, 800 + 45 = 845 Cent.",
+          "образец": "ein Euro hat 100 Cent. wie viel Cent sind 8,45 Euro? 8 × 100 = 800, 800 + 45 = 845 Cent.",
           "зачем": null
         },
         {
@@ -8388,13 +8619,13 @@
         {
           "род": "обратный ход: из крупной в мелкую",
           "страниц": 360,
-          "образец": "310 Cent sind 3,10 Euro: 3 × 100 = 300, 310 − 300 = 10.",
+          "образец": "ein Euro hat 100 Cent. 310 Cent sind 3,10 Euro: 3 × 100 = 300, 310 − 300 = 10.",
           "зачем": null
         },
         {
           "род": "сумма двух размеров",
           "страниц": 360,
-          "образец": "2,05 Euro + 1,05 Euro = 3,10 Euro: 205 + 105 = 310 Cent.",
+          "образец": "ein Euro hat 100 Cent. 2,05 Euro + 1,05 Euro = 3,10 Euro: 205 + 105 = 310 Cent.",
           "зачем": null
         }
       ],
@@ -8746,7 +8977,7 @@
         {
           "род": "клаузы_один",
           "страниц": 180,
-          "образец": "Глеб купил 31 книга и Глеб купил 29 цветков. сколько вещей купил Глеб? 60 книг: 31 + 29 = 60.",
+          "образец": "Глеб купил 31 книгу и Глеб купил 29 цветков. сколько вещей купил Глеб? 60 книг: 31 + 29 = 60.",
           "зачем": "рамка «клаузы_один» на девяти языках"
         },
         {
@@ -9294,13 +9525,13 @@
         {
           "род": "обладание",
           "страниц": 54,
-          "образец": "в первой главе 48 страниц. сколько страниц в первой главе? 48 страниц.",
+          "образец": "в рассказе 52 страницы. сколько страниц в рассказе? 52 страницы.",
           "зачем": null
         },
         {
           "род": "длина",
           "страниц": 54,
-          "образец": "первая глава — 48 страниц длиной. какой длины первая глава? 48 страниц.",
+          "образец": "рассказ — 52 страницы длиной. какой длины рассказ? 52 страницы.",
           "зачем": null
         },
         {
@@ -10310,6 +10541,83 @@
       "вне_объявления": []
     },
     {
+      "дом": "perunitforms",
+      "мир": "perunit",
+      "миры": [
+        "perunit"
+      ],
+      "объявление": "РОДЫ",
+      "роды": [
+        {
+          "род": "итог при ставке впереди",
+          "страниц": 1410,
+          "образец": "в каждой коробке 3 яблока. сколько яблок в 2 коробках? 6 яблок: 2 × 3 = 6.",
+          "зачем": "итог из ставки и числа единиц, слово ставки впереди числа (C1): b × a = c"
+        },
+        {
+          "род": "итог при ставке позади",
+          "страниц": 1410,
+          "образец": "3 яблока лежат в каждой коробке. сколько яблок в 2 коробках? 6 яблок: 2 × 3 = 6.",
+          "зачем": "итог из ставки и числа единиц, слово ставки позади числа (C2): b × a = c"
+        },
+        {
+          "род": "число единиц",
+          "страниц": 1410,
+          "образец": "6 яблок разложили по коробкам, в каждой коробке 3 яблока. сколько получилось коробок? 2 коробки: 6 ÷ 3 = 2.",
+          "зачем": "число единиц из итога и ставки: c ÷ a = b"
+        },
+        {
+          "род": "ставка",
+          "страниц": 1410,
+          "образец": "6 яблок разложили поровну в 2 коробки. сколько яблок в каждой коробке? 3 яблока: 6 ÷ 2 = 3.",
+          "зачем": "ставка из итога и числа единиц — вопрос о самой ставке со словом ставки: c ÷ b = a"
+        },
+        {
+          "род": "итог при ставке на единицу",
+          "страниц": 1410,
+          "образец": "на коробку приходится 3 яблока. сколько яблок в 2 коробках? 6 яблок: 2 × 3 = 6.",
+          "зачем": "итог из ставки «на единицу» (C3, per box) и числа единиц: b × a = c"
+        },
+        {
+          "род": "число единиц при ставке на единицу",
+          "страниц": 1410,
+          "образец": "6 яблок разложили по коробкам, по 3 яблока на коробку. сколько получилось коробок? 2 коробки: 6 ÷ 3 = 2.",
+          "зачем": "число единиц из итога и ставки «на единицу»: c ÷ a = b"
+        },
+        {
+          "род": "ставка на единицу",
+          "страниц": 1410,
+          "образец": "6 яблок разложили поровну в 2 коробки. сколько яблок приходится на коробку? 3 яблока: 6 ÷ 2 = 3.",
+          "зачем": "ставка «на единицу» из итога и числа единиц: c ÷ b = a"
+        },
+        {
+          "род": "итог при цене за штуку",
+          "страниц": 1410,
+          "образец": "2 яблока продают по 3 рубля за штуку. сколько они стоят вместе? 6 рублей: 2 × 3 = 6.",
+          "зачем": "стоимость из цены за штуку (C4, at P each) и числа вещей: b × a = c"
+        },
+        {
+          "род": "число вещей при цене за штуку",
+          "страниц": 1410,
+          "образец": "яблоки продают по 3 рубля за штуку. сколько яблок можно купить на 6 рублей? 2 яблока: 6 ÷ 3 = 2.",
+          "зачем": "число вещей из стоимости и цены за штуку: c ÷ a = b"
+        },
+        {
+          "род": "цена за штуку",
+          "страниц": 1410,
+          "образец": "2 яблока стоят вместе 6 рублей. сколько стоит каждое яблоко? 3 рубля: 6 ÷ 2 = 3.",
+          "зачем": "цена одной вещи из стоимости и числа вещей, вопрос несёт слово ставки: c ÷ b = a"
+        },
+        {
+          "род": "итог двух счётов",
+          "страниц": 920,
+          "образец": "в понедельник привезли 2 коробки, а во вторник 3 коробки. в каждой коробке 3 яблока. сколько всего привезли яблок? 15 яб",
+          "зачем": "два счёта единиц и ставка — сумма, затем произведение: b1 + b2 = b, b × a = c"
+        }
+      ],
+      "вне_объявления": []
+    },
+    {
       "дом": "physforms",
       "мир": "physics_langs",
       "миры": [
@@ -10547,26 +10855,26 @@
       "роды": [
         {
           "род": "правдоподобно",
-          "страниц": 202,
-          "образец": "ученик весит 33 килограмма, и это правдоподобно: 33 больше 10, и 33 меньше 100.",
+          "страниц": 98,
+          "образец": "ученик обычно весит больше 20 и меньше 90 килограммов, и 21 килограмм — это правдоподобно: 21 больше 20, и 21 меньше 90.",
           "зачем": null
         },
         {
           "род": "слишком много",
-          "страниц": 202,
-          "образец": "ученик не может весить 363 килограмма, ибо это 11 обычных: 363 ÷ 33 = 11.",
+          "страниц": 132,
+          "образец": "ученик обычно весит 30 килограммов, и ученик не может весить 300 килограммов, ибо это в 10 раз больше обычного: 300 ÷ 30",
           "зачем": null
         },
         {
           "род": "слишком мало",
-          "страниц": 202,
-          "образец": "ученик не может весить 3 килограмма, ибо это в 11 раз меньше обычного: 33 ÷ 3 = 11.",
+          "страниц": 24,
+          "образец": "ученик обычно весит 30 килограммов, и ученик не может весить 1 килограмм, ибо это в 30 раз меньше обычного: 30 ÷ 1 = 30.",
           "зачем": null
         },
         {
           "род": "счёт сошёлся",
-          "страниц": 192,
-          "образец": "счёт сошёлся, а ответ невозможен: 3 × 121 = 363, и 363 больше 100.",
+          "страниц": 244,
+          "образец": "2 ученика весят вместе 42 килограмма, и ответ «ученик весит 84 килограмма» невозможен: один ученик весит меньше, чем 2 у",
           "зачем": null
         }
       ],
@@ -11343,7 +11651,7 @@
         {
           "род": "сумма",
           "страниц": 132,
-          "образец": "there are twice as many worker bees as baby bees. there are 15 bees in all. how many baby bees are there? 1 + 2 = 3, 15 ",
+          "образец": "there are twice as many pines as birches. there are 15 trees in all. how many birches are there? 1 + 2 = 3, 15 ÷ 3 = 5. ",
           "зачем": null
         },
         {
@@ -11465,7 +11773,7 @@
       "роды": [
         {
           "род": "отклик",
-          "страниц": 108,
+          "страниц": 162,
           "образец": "я устал. что мне делать? отдохни: когда человек устал, он ошибается чаще.",
           "зачем": null
         }
@@ -12663,7 +12971,7 @@
       "миры": [
         "speedforms"
       ],
-      "объявление": "ФОРМЫ",
+      "объявление": "РОДЫ",
       "роды": [
         {
           "род": "путь",
@@ -12681,6 +12989,24 @@
           "род": "скорость",
           "страниц": 144,
           "образец": "поезд прошёл 180 км за 3 часа. сколько километров в час он идёт? 60 км/ч: 180 ÷ 3 = 60.",
+          "зачем": null
+        },
+        {
+          "род": "быстрее",
+          "страниц": 108,
+          "образец": "автобус едет 60 км/ч. поезд идёт на 20 км/ч быстрее, чем автобус. с какой скоростью идёт поезд? поезд идёт 80 км/ч: 60 +",
+          "зачем": null
+        },
+        {
+          "род": "медленнее",
+          "страниц": 108,
+          "образец": "поезд идёт 80 км/ч. автобус едет на 20 км/ч медленнее, чем поезд. с какой скоростью едет автобус? автобус едет 60 км/ч: ",
+          "зачем": null
+        },
+        {
+          "род": "насколько_быстрее",
+          "страниц": 108,
+          "образец": "поезд идёт 80 км/ч, а автобус едет 60 км/ч. на сколько быстрее идёт поезд, чем автобус? на 20 км/ч: 80 − 60 = 20.",
           "зачем": null
         }
       ],
@@ -12726,49 +13052,49 @@
         {
           "род": "длина прямо",
           "страниц": 40,
-          "образец": "3 м = 300 см: множитель 100, и степень здесь первая — 3 × 100 = 300.",
+          "образец": "в метре 100 сантиметров. 3 м = 300 см: множитель 100, и степень здесь первая — 3 × 100 = 300.",
           "зачем": null
         },
         {
           "род": "площадь в квадрате",
           "страниц": 40,
-          "образец": "3 м² = 30000 см²: множитель берётся В КВАДРАТЕ, ибо в квадрате и единица — 100 × 100 = 10000, и 3 × 10000 = 30000.",
+          "образец": "в метре 100 сантиметров. 3 м² = 30000 см²: множитель берётся В КВАДРАТЕ, ибо в квадрате и единица — 100 × 100 = 10000, и",
           "зачем": null
         },
         {
           "род": "объём в кубе",
           "страниц": 40,
-          "образец": "3 м³ = 3000000 см³: множитель берётся В КУБЕ — 100 × 100 × 100 = 1000000, и 3 × 1000000 = 3000000.",
+          "образец": "в метре 100 сантиметров. 3 м³ = 3000000 см³: множитель берётся В КУБЕ — 100 × 100 × 100 = 1000000, и 3 × 1000000 = 30000",
           "зачем": null
         },
         {
           "род": "множитель длины ложен",
           "страниц": 40,
-          "образец": "3 м² — это НЕ 300 см², а 30000 см²: множитель длины 100 на площади даёт ошибку ровно в 100 раз, ибо 300 × 100 = 30000. М",
+          "образец": "в метре 100 сантиметров. 3 м² — это НЕ 300 см², а 30000 см²: множитель длины 100 на площади даёт ошибку ровно в 100 раз,",
           "зачем": null
         },
         {
           "род": "множитель длины верен",
           "страниц": 40,
-          "образец": "3 м = 300 см, и множитель здесь ПРОСТОЙ — 100, а не 10000. ОН ВЕРЕН РОВНО ПОТОМУ, ЧТО СТЕПЕНЬ ПЕРВАЯ: та же единица в кв",
+          "образец": "в метре 100 сантиметров. 3 м = 300 см, и множитель здесь ПРОСТОЙ — 100, а не 10000. ОН ВЕРЕН РОВНО ПОТОМУ, ЧТО СТЕПЕНЬ П",
           "зачем": null
         },
         {
           "род": "почему так",
           "страниц": 10,
-          "образец": "квадрат со стороной 1 м есть квадрат со стороной 100 см, и клеток в см² в нём 100 × 100 = 10000. ЭТО НЕ ПРАВИЛО, А СЧЁТ ",
+          "образец": "в метре 100 сантиметров. квадрат со стороной 1 м есть квадрат со стороной 100 см, и клеток в см² в нём 100 × 100 = 10000",
           "зачем": null
         },
         {
           "род": "дорога обратно",
           "страниц": 40,
-          "образец": "30000 см² = 3 м²: делим на тот же множитель в квадрате — 30000 ÷ 10000 = 3. ДОРОГА ОБРАТНО ИДЁТ ТЕМ ЖЕ ЧИСЛОМ, ЧТО И ПРЯ",
+          "образец": "в метре 100 сантиметров. 30000 см² = 3 м²: делим на тот же множитель в квадрате — 100 × 100 = 10000, и 30000 ÷ 10000 = 3",
           "зачем": null
         },
         {
           "род": "спрошенное",
           "страниц": 10,
-          "образец": "во сколько раз см² меньше м²? в 10000: 100 × 100 = 10000, а не в 100 — во столько раз меньше см, а не см².",
+          "образец": "в метре 100 сантиметров. во сколько раз см² меньше м²? в 10000: 100 × 100 = 10000, а не в 100 — во столько раз меньше см",
           "зачем": null
         }
       ],
@@ -12843,31 +13169,31 @@
         {
           "род": "прибыль: к стоящим пришли ещё",
           "страниц": 260,
-          "образец": "9 children were riding on the bus. 3 children got on the bus. how many children are on the bus now? 12 children: 9 + 3 =",
+          "образец": "9 cyclists were riding on the ferry. 3 cyclists rode onto the ferry. how many cyclists are on the ferry now? 12 cyclists",
           "зачем": "n стоят, m пришли — и единица показана ЗДЕСЬ ЖЕ, в условии"
         },
         {
           "род": "убыль: от стоящих ушли",
           "страниц": 260,
-          "образец": "40 children were riding on the bus. 38 children got off the bus. how many children are on the bus now? 2 children: 40 − ",
+          "образец": "40 cyclists were riding on the ferry. 38 cyclists rode off the ferry. how many cyclists are on the ferry now? 2 cyclists",
           "зачем": "n стоят, m ушли — и единица показана в ОТВЕТЕ: итог вычитания тоже склоняет имя"
         },
         {
           "род": "два шага: сперва убыль, потом прибыль, и порядок объявлен леджером",
           "страниц": 195,
-          "образец": "11 children were riding on the bus. 9 children got off the bus. 6 more children got on the bus. how many children are on",
+          "образец": "11 cyclists were riding on the ferry. 9 cyclists rode off the ferry. 6 more cyclists rode onto the ferry. how many cycli",
           "зачем": "убыль и прибыль подряд, и порядок их назван леджером"
         },
         {
           "род": "вопрос о самом действии: ответ есть ВТОРОЕ число, а не итог",
           "страниц": 195,
-          "образец": "42 children were riding on the bus. 14 children got on the bus. how many children got on the bus? 14 children got on the",
+          "образец": "42 cyclists were riding on the ferry. 14 cyclists rode onto the ferry. how many cyclists rode onto the ferry? 14 cyclist",
           "зачем": "спрошено не об итоге, а о самом действии, и ответ повторяет ФАКТ целиком, а не висящее в воздухе число"
         },
         {
-          "род": "обстоятельство перед числом: «at the bus stop 82 children got on»",
+          "род": "обстоятельство перед числом: «at the pier 12 cyclists rode onto the ferry»",
           "страниц": 195,
-          "образец": "13 children were riding on the bus. At the bus stop 8 children got on the bus. how many children are on the bus now? 21 ",
+          "образец": "13 cyclists were riding on the ferry. At the pier 8 cyclists rode onto the ferry. how many cyclists are on the ferry now",
           "зачем": "форма SVAMP, какой в своде 23 истории: обстоятельство стои́т ПЕРЕД числом, и два его вида объявлены порознь"
         }
       ],
@@ -13045,7 +13371,7 @@
         {
           "род": "товар",
           "страниц": 216,
-          "образец": "Ann has 12 pages of reading homework and 5 pages of math homework. how many pages of homework does she have in all? 17 p",
+          "образец": "Ann has 12 jars of cherry jam and 5 jars of plum jam. how many jars of jam does she have in all? 17 jars of jam: 12 + 5 ",
           "зачем": null
         },
         {
@@ -13201,139 +13527,139 @@
         {
           "род": "сделал",
           "страниц": 72,
-          "образец": "Ann did 12 push-ups and 5 crunches. how many push-ups did Ann do? 12. how many exercises in all? 17 exercises: 12 + 5 = ",
+          "образец": "Ann planted 12 oaks and 5 birches. how many oaks did Ann plant? 12. how many trees in all? 17 trees: 12 + 5 = 17.",
           "зачем": null
         },
         {
           "род": "больше_чем",
           "страниц": 216,
-          "образец": "Ann did 12 push-ups. Anna did 5 more push-ups than Ann. how many push-ups did Anna do? 17: 12 + 5 = 17.",
+          "образец": "Ann planted 12 oaks. Anna planted 5 more oaks than Ann. how many oaks did Anna plant? 17: 12 + 5 = 17.",
           "зачем": null
         },
         {
           "род": "меньше_чем",
           "страниц": 216,
-          "образец": "Ann did 12 push-ups. Anna did 5 push-ups less than Ann. how many push-ups did Anna do? 7: 12 − 5 = 7.",
+          "образец": "Ann planted 12 oaks. Anna planted 5 fewer oaks than Ann. how many oaks did Anna plant? 7: 12 − 5 = 7.",
           "зачем": null
         },
         {
           "род": "вещи3",
           "страниц": 72,
-          "образец": "Ann has 12 action figures, 5 crayons and 4 games. how many things does Ann have in all? 21: 12 + 5 + 4 = 21.",
+          "образец": "Ann has 12 jars, 5 nuts and 4 stamps. how many things does Ann have in all? 21: 12 + 5 + 4 = 21.",
           "зачем": null
         },
         {
           "род": "продал",
           "страниц": 432,
-          "образец": "Ann had 12 roses. she sold 5 roses. how many roses does she have left? 7: 12 − 5 = 7.",
+          "образец": "Ann had 12 pears. she sold 5 pears. how many pears does she have left? 7: 12 − 5 = 7.",
           "зачем": null
         },
         {
           "род": "присоединились",
-          "страниц": 200,
-          "образец": "there were 12 children on the playground. 5 more children joined them. how many children are on the playground now? 17: ",
+          "страниц": 72,
+          "образец": "there were 12 ducks on the lake. 5 more ducks joined them. how many ducks are on the lake now? 17: 12 + 5 = 17.",
           "зачем": null
         },
         {
           "род": "жили",
-          "страниц": 216,
-          "образец": "12 tenants were living in the house. 5 tenants moved out. how many tenants are living in the house now? 7: 12 − 5 = 7.",
+          "страниц": 72,
+          "образец": "12 bees were living in the hive. 5 bees flew away. how many bees are living in the hive now? 7: 12 − 5 = 7.",
           "зачем": null
         },
         {
           "род": "предложил",
-          "страниц": 216,
-          "образец": "Ann suggested 12 action figures for the shelf. Anna removed 5 of them. how many action figures are left? 7: 12 − 5 = 7.",
+          "страниц": 72,
+          "образец": "Ann brought 12 jars to the cellar. Anna took 5 of them away. how many jars are left? 7: 12 − 5 = 7.",
           "зачем": null
         },
         {
           "род": "в_школе",
           "страниц": 72,
-          "образец": "in a school there are 12 girls and 5 boys. how many pupils are there in the school? 17: 12 + 5 = 17.",
+          "образец": "on a farm there are 12 cows and 5 goats. how many animals are there on the farm? 17: 12 + 5 = 17.",
           "зачем": null
         },
         {
           "род": "рецепт",
           "страниц": 72,
-          "образец": "the recipe calls for 12 cups of flour and 5 cups of sugar. how many more cups of flour than sugar does it call for? 7: 1",
+          "образец": "the builders need 12 bricks for the wall and 5 bricks for the path. how many more bricks do they need for the wall than ",
           "зачем": null
         },
         {
           "род": "теперь_список",
           "страниц": 136,
-          "образец": "Ann had 12 action figures. she also got 5 crayons. now she has 12 action figures and 5 crayons. how many things does she",
+          "образец": "Ann had 12 jars. she also got 5 nuts. now she has 12 jars and 5 nuts. how many things does she have in all? 17: 12 + 5 =",
           "зачем": null
         },
         {
           "род": "добавил",
           "страниц": 144,
-          "образец": "Ann had 12 apps on the phone. she added 5 new apps. how many apps does she have now? 17: 12 + 5 = 17.",
+          "образец": "Ann had 12 photos in the album. she added 5 new photos. how many photos does she have now? 17: 12 + 5 = 17.",
           "зачем": null
         },
         {
           "род": "добавил_на_полку",
-          "страниц": 312,
-          "образец": "Ann had 12 action figures on the shelf. later she added 5 more action figures to the shelf. how many action figures are ",
+          "страниц": 104,
+          "образец": "Ann had 12 jars in the pantry. later she put 5 more jars in the pantry. how many jars are in the pantry now? 17: 12 + 5 ",
           "зачем": null
         },
         {
           "род": "выбросил",
-          "страниц": 312,
-          "образец": "Ann found 12 bottle caps at the park while she threw away 5 old ones. how many more bottle caps did she find than throw ",
+          "страниц": 104,
+          "образец": "Ann picked 12 mushrooms in the forest and threw away 5 bad ones. how many more mushrooms did she pick than throw away? 7",
           "зачем": null
         },
         {
           "род": "выбросил_розы",
           "страниц": 72,
-          "образец": "there were 12 roses in the vase. Ann threw away 5 roses from the vase. how many roses are in the vase now? 7: 12 − 5 = 7",
+          "образец": "there were 12 pears in the basket. Ann threw away 5 pears from the basket. how many pears are in the basket now? 7: 12 −",
           "зачем": null
         },
         {
           "род": "узнал",
-          "страниц": 144,
-          "образец": "Ann learned that 12 visitors came to the palace that day and 5 the next day. how many visitors came in all? 17: 12 + 5 =",
+          "страниц": 72,
+          "образец": "Ann counted that 12 guests came to the museum on the first day and 5 on the second. how many guests came in all? 17: 12 ",
           "зачем": null
         },
         {
           "род": "сели_вышли",
-          "страниц": 200,
-          "образец": "there were 12 children on the bus. at the bus stop 5 children got on the bus while some got off. now there are 15 childr",
+          "страниц": 72,
+          "образец": "there were 12 ducks on the pond. 5 ducks landed on the pond while some flew away. now there are 15 ducks on the pond. ho",
           "зачем": null
         },
         {
           "род": "сыграл",
           "страниц": 72,
-          "образец": "Ann played 12 games on monday and 5 games on tuesday. how many games did Ann play in all? 17: 12 + 5 = 17.",
+          "образец": "Ann collected 12 stamps on monday and 5 stamps on tuesday. how many stamps did Ann collect in all? 17: 12 + 5 = 17.",
           "зачем": null
         },
         {
           "род": "потратил",
           "страниц": 288,
-          "образец": "Ann spent 12 hours on english and 5 hours on chinese. how many hours did Ann spend in all? a total of 17 hours: 12 + 5 =",
+          "образец": "Ann spent 12 hours on drawing and 5 hours on chess. how many hours did Ann spend in all? a total of 17 hours: 12 + 5 = 1",
           "зачем": null
         },
         {
           "род": "список",
           "страниц": 72,
-          "образец": "every day Ann spends 12 hours on english, 5 hours on chinese and 4 hours on spanish. how many hours does Ann spend in al",
+          "образец": "every day Ann spends 12 hours on drawing, 5 hours on chess and 4 hours on reading. how many hours does Ann spend in all?",
           "зачем": null
         },
         {
           "род": "коробка",
           "страниц": 72,
-          "образец": "Ann got a box of 12 crayons and a box of 5 crayons. how many crayons does Ann have? 17: 12 + 5 = 17.",
+          "образец": "Ann got a bag of 12 nuts and a bag of 5 nuts. how many nuts does Ann have? 17: 12 + 5 = 17.",
           "зачем": null
         },
         {
           "род": "главы",
           "страниц": 72,
-          "образец": "a book has 2 chapters. the first chapter is 12 pages long and the second chapter is 5 pages long. how many pages does th",
+          "образец": "a train has 2 cars. the first car has 12 seats and the second car has 5 seats. how many seats does the train have in all",
           "зачем": null
         },
         {
           "род": "две_клаузы",
           "страниц": 216,
-          "образец": "Ann had 12 games and Anna had 5 games. how many games did they have together? 17: 12 + 5 = 17.",
+          "образец": "Ann had 12 stamps and Anna had 5 stamps. how many stamps did they have together? 17: 12 + 5 = 17.",
           "зачем": null
         }
       ],
@@ -13502,8 +13828,133 @@
         {
           "род": "единицы",
           "страниц": 504,
-          "образец": "сколько минут в двух часах? 120: 2 × 60 = 120.",
+          "образец": "в часе 60 минут. сколько минут в двух часах? 120: 2 × 60 = 120.",
           "зачем": "k больших единиц времени суть k × f малых — на девяти языках, двумя рамками и двумя записями числа"
+        }
+      ],
+      "вне_объявления": []
+    },
+    {
+      "дом": "toolacts",
+      "мир": "toolacts",
+      "миры": [
+        "toolacts"
+      ],
+      "объявление": "РОДЫ",
+      "роды": [
+        {
+          "род": "поиск слова в файле",
+          "страниц": 324,
+          "образец": "пользователь: найди слово «молоко» в файле notes.md. организм: предлагаю найти слово «молоко» в файле notes.md. подтверж",
+          "зачем": null
+        },
+        {
+          "род": "поиск слова — отказ",
+          "страниц": 54,
+          "образец": "пользователь: найди слово «молоко» в файле notes.md. организм: предлагаю найти слово «молоко» в файле notes.md. подтверж",
+          "зачем": null
+        },
+        {
+          "род": "сколько раз слово в файле — вопрос без акта",
+          "страниц": 81,
+          "образец": "пользователь: сколько раз слово «молоко» встречается в файле notes.md? организм: в файле notes.md слово «молоко» встреча",
+          "зачем": null
+        },
+        {
+          "род": "поиск строк со словом",
+          "страниц": 324,
+          "образец": "пользователь: найди строки со словом «молоко» в файле notes.md. организм: предлагаю найти строки со словом «молоко» в фа",
+          "зачем": null
+        },
+        {
+          "род": "замена слова",
+          "страниц": 324,
+          "образец": "пользователь: замени слово «молоко» на «сок» в файле notes.md. организм: предлагаю заменить слово «молоко» на «сок» в фа",
+          "зачем": null
+        },
+        {
+          "род": "замена слова — отказ",
+          "страниц": 81,
+          "образец": "пользователь: замени слово «молоко» на «сок» в файле notes.md. организм: предлагаю заменить слово «молоко» на «сок» в фа",
+          "зачем": null
+        },
+        {
+          "род": "замена слова, которого в файле нет",
+          "страниц": 108,
+          "образец": "пользователь: замени слово «чай» на «кофе» в файле notes.md. организм: слова «чай» нет в файле notes.md — акт не совершё",
+          "зачем": null
+        },
+        {
+          "род": "дописать показанную строку",
+          "страниц": 216,
+          "образец": "пользователь: допиши строку «купить яйца» в файл notes.md. организм: предлагаю дописать строку «купить яйца» в файл note",
+          "зачем": null
+        },
+        {
+          "род": "дописать строку — отказ",
+          "страниц": 54,
+          "образец": "пользователь: допиши строку «купить яйца» в файл notes.md. организм: предлагаю дописать строку «купить яйца» в файл note",
+          "зачем": null
+        },
+        {
+          "род": "дописать строку в файл, которого нет",
+          "страниц": 72,
+          "образец": "пользователь: допиши строку «купить яйца» в файл sketch.md. организм: файла sketch.md нет — акт не совершён. папка содер",
+          "зачем": null
+        },
+        {
+          "род": "переименовать файл",
+          "страниц": 216,
+          "образец": "пользователь: переименуй файл notes.md в shopping.md. организм: предлагаю переименовать файл notes.md в shopping.md. под",
+          "зачем": null
+        },
+        {
+          "род": "переименовать в занятое имя",
+          "страниц": 108,
+          "образец": "пользователь: переименуй файл notes.md в todo.txt. организм: файл todo.txt уже есть — акт не совершён. папка содержит 6 ",
+          "зачем": null
+        },
+        {
+          "род": "переименовать файл, которого нет",
+          "страниц": 36,
+          "образец": "пользователь: переименуй файл sketch.md в final.md. организм: файла sketch.md нет — акт не совершён. папка содержит 6 фа",
+          "зачем": null
+        },
+        {
+          "род": "перенести файл в папку archive",
+          "страниц": 108,
+          "образец": "пользователь: перенеси файл notes.md в папку archive. организм: предлагаю перенести файл notes.md в папку archive. подтв",
+          "зачем": null
+        },
+        {
+          "род": "прогон тестов с исходом",
+          "страниц": 324,
+          "образец": "пользователь: запусти тесты из файла test_notes.py. организм: предлагаю запустить тесты из файла test_notes.py. подтверж",
+          "зачем": null
+        },
+        {
+          "род": "прогон тестов — отказ",
+          "страниц": 54,
+          "образец": "пользователь: запусти тесты из файла test_notes.py. организм: предлагаю запустить тесты из файла test_notes.py. подтверж",
+          "зачем": null
+        },
+        {
+          "род": "план: найти, заменить, проверить",
+          "страниц": 81,
+          "образец": "пользователь: найди слово «молоко» в файле notes.md, затем замени его на «сок», затем проверь файл. организм: предлагаю ",
+          "зачем": null
+        },
+        {
+          "род": "план замены — отказ",
+          "страниц": 27,
+          "образец": "пользователь: найди слово «молоко» в файле notes.md, затем замени его на «сок», затем проверь файл. организм: предлагаю ",
+          "зачем": null
+        },
+        {
+          "род": "план: тесты, затем выпуск лишь при всех прошедших",
+          "страниц": 81,
+          "образец": "пользователь: запусти тесты из файла test_notes.py, затем выпусти релиз, если все тесты пройдут. организм: предлагаю два",
+          "зачем": null
         }
       ],
       "вне_объявления": []
@@ -13562,6 +14013,401 @@
           "род": "переместил_из",
           "страниц": 252,
           "образец": "папка A содержит 3 файла, папка B содержит 18 файлов. акт переносит 1 файл из папки A в папку B. сколько файлов содержит",
+          "зачем": null
+        }
+      ],
+      "вне_объявления": []
+    },
+    {
+      "дом": "toolrepo",
+      "мир": "toolrepo",
+      "миры": [
+        "toolrepo"
+      ],
+      "объявление": "РОДЫ",
+      "роды": [
+        {
+          "род": "создать файл по пути",
+          "страниц": 824,
+          "образец": "пользователь: создай файл plan.md. организм: предлагаю создать файл plan.md. подтверждено ли это? пользователь: да. мир:",
+          "зачем": null
+        },
+        {
+          "род": "создать файл в названной папке",
+          "страниц": 166,
+          "образец": "пользователь: создай файл garden.md в папке home. организм: предлагаю создать файл garden.md в папке home. подтверждено ",
+          "зачем": null
+        },
+        {
+          "род": "создать файл, который уже есть",
+          "страниц": 27,
+          "образец": "пользователь: создай файл shopping.txt. мир: create shopping.txt · refused already-there \"shopping.txt\". организм: файл ",
+          "зачем": null
+        },
+        {
+          "род": "создать файл — отказ",
+          "страниц": 162,
+          "образец": "пользователь: создай файл home/garden.md. организм: предлагаю создать файл home/garden.md. подтверждено ли это? пользова",
+          "зачем": null
+        },
+        {
+          "род": "удалить файл по пути",
+          "страниц": 720,
+          "образец": "пользователь: удали файл shopping.txt. организм: предлагаю удалить файл shopping.txt. подтверждено ли это? пользователь:",
+          "зачем": null
+        },
+        {
+          "род": "удалить файл из названной папки",
+          "страниц": 130,
+          "образец": "пользователь: удали файл chores.md из папки home. организм: предлагаю удалить файл chores.md из папки home. подтверждено",
+          "зачем": null
+        },
+        {
+          "род": "удалить файл, которого нет",
+          "страниц": 18,
+          "образец": "пользователь: удали файл budget.md. мир: delete budget.md · refused not-there \"budget.md\". организм: файла budget.md нет",
+          "зачем": null
+        },
+        {
+          "род": "удалить файл — отказ",
+          "страниц": 162,
+          "образец": "пользователь: удали файл home/repairs.txt. организм: предлагаю удалить файл home/repairs.txt. подтверждено ли это? польз",
+          "зачем": null
+        },
+        {
+          "род": "перенести файл в названную папку",
+          "страниц": 820,
+          "образец": "пользователь: перенеси файл shopping.txt в папку home. организм: предлагаю перенести файл shopping.txt в папку home. под",
+          "зачем": null
+        },
+        {
+          "род": "перенести файл, которого нет",
+          "страниц": 18,
+          "образец": "пользователь: перенеси файл budget.md в папку home. мир: move budget.md home · refused not-there \"budget.md\". организм: ",
+          "зачем": null
+        },
+        {
+          "род": "перенести файл — отказ",
+          "страниц": 162,
+          "образец": "пользователь: перенеси файл home/chores.md в папку kitchen. организм: предлагаю перенести файл home/chores.md в папку ki",
+          "зачем": null
+        },
+        {
+          "род": "переименовать файл по пути",
+          "страниц": 684,
+          "образец": "пользователь: переименуй файл shopping.txt в groceries.txt. организм: предлагаю переименовать файл shopping.txt в grocer",
+          "зачем": null
+        },
+        {
+          "род": "переименовать в имя, занятое в той же папке",
+          "страниц": 27,
+          "образец": "пользователь: переименуй файл home/chores.md в repairs.txt. мир: move home/chores.md home/repairs.txt · refused already-",
+          "зачем": null
+        },
+        {
+          "род": "переименовать файл, которого нет",
+          "страниц": 18,
+          "образец": "пользователь: переименуй файл budget.md в costs.md. мир: move budget.md costs.md · refused not-there \"budget.md\". органи",
+          "зачем": null
+        },
+        {
+          "род": "переименовать файл — отказ",
+          "страниц": 162,
+          "образец": "пользователь: переименуй файл home/repairs.txt в fixes.txt. организм: предлагаю переименовать файл home/repairs.txt в fi",
+          "зачем": null
+        },
+        {
+          "род": "заменить текст в кавычках",
+          "страниц": 848,
+          "образец": "пользователь: замени текст «свежий хлеб» на «ржаной хлеб» в файле shopping.txt. организм: предлагаю заменить текст «свеж",
+          "зачем": null
+        },
+        {
+          "род": "заменить слово в файле по пути",
+          "страниц": 72,
+          "образец": "пользователь: замени слово «молоко» на «сок» в файле shopping.txt. организм: предлагаю заменить слово «молоко» на «сок» ",
+          "зачем": null
+        },
+        {
+          "род": "заменить текст, которого в файле нет",
+          "страниц": 18,
+          "образец": "пользователь: замени текст «позвонить зубному врачу» на «ржаной хлеб» в файле shopping.txt. мир: replace shopping.txt \"п",
+          "зачем": null
+        },
+        {
+          "род": "заменить текст — отказ",
+          "страниц": 162,
+          "образец": "пользователь: замени текст «вынести мусор» на «сдать бутылки» в файле home/chores.md. организм: предлагаю заменить текст",
+          "зачем": null
+        },
+        {
+          "род": "дописать строку в кавычках",
+          "страниц": 1040,
+          "образец": "пользователь: допиши строку «купить зелёные яблоки» в файл shopping.txt. организм: предлагаю дописать строку «купить зел",
+          "зачем": null
+        },
+        {
+          "род": "дописать строку — отказ",
+          "страниц": 162,
+          "образец": "пользователь: допиши строку «купить зелёные яблоки» в файл shopping.txt. организм: предлагаю дописать строку «купить зел",
+          "зачем": null
+        },
+        {
+          "род": "прогон тестов по языку проекта",
+          "страниц": 729,
+          "образец": "пользователь: запусти тесты Python. организм: предлагаю запустить тесты Python. подтверждено ли это? пользователь: да. м",
+          "зачем": null
+        },
+        {
+          "род": "прогон тестов — отказ",
+          "страниц": 162,
+          "образец": "пользователь: запусти тесты Python. организм: предлагаю запустить тесты Python. подтверждено ли это? пользователь: нет. ",
+          "зачем": null
+        },
+        {
+          "род": "план: заменить, затем прогнать тесты",
+          "страниц": 275,
+          "образец": "пользователь: замени текст «свежий хлеб» на «ржаной хлеб» в файле shopping.txt, затем запусти тесты Python. организм: пр",
+          "зачем": null
+        },
+        {
+          "род": "план: дописать, затем прогнать тесты",
+          "страниц": 180,
+          "образец": "пользователь: допиши строку «купить зелёные яблоки» в файл shopping.txt, затем запусти тесты Rust. организм: предлагаю д",
+          "зачем": null
+        },
+        {
+          "род": "план: перенести, затем удалить",
+          "страниц": 140,
+          "образец": "пользователь: перенеси файл shopping.txt в папку home, затем удали файл home/repairs.txt. организм: предлагаю два акта: ",
+          "зачем": null
+        },
+        {
+          "род": "план из двух актов — отказ",
+          "страниц": 27,
+          "образец": "пользователь: замени текст «хорошую книгу» на «утреннюю газету» в файле journal.md, затем запусти тесты Rust. организм: ",
+          "зачем": null
+        },
+        {
+          "род": "в каком файле текст — вопрос",
+          "страниц": 760,
+          "образец": "пользователь: в каком файле есть текст «свежий хлеб»? мир: find . \"свежий хлеб\" · occurrences 1 · matches 1 · files 1 · ",
+          "зачем": null
+        },
+        {
+          "род": "в каких файлах слово — вопрос списком",
+          "страниц": 36,
+          "образец": "пользователь: в каких файлах есть слово «молоко»? мир: find . \"молоко\" · occurrences 2 · matches 2 · files 2 · path kitc",
+          "зачем": null
+        },
+        {
+          "род": "текста нет ни в одном файле — вопрос",
+          "страниц": 18,
+          "образец": "пользователь: в каком файле есть текст «позвонить зубному врачу»? мир: find . \"позвонить зубному врачу\" · occurrences 0 ",
+          "зачем": null
+        },
+        {
+          "род": "на какой строке файла текст — вопрос",
+          "страниц": 580,
+          "образец": "пользователь: в какой строке файла shopping.txt стоит текст «свежий хлеб»? мир: find shopping.txt \"свежий хлеб\" · occurr",
+          "зачем": null
+        },
+        {
+          "род": "первая, вторая, последняя строка файла — вопрос",
+          "страниц": 732,
+          "образец": "пользователь: какая первая строка файла shopping.txt? мир: lines shopping.txt · files 3 · bytes 107 · lines 3 · path sho",
+          "зачем": null
+        },
+        {
+          "род": "строка файла с номером — вопрос",
+          "страниц": 548,
+          "образец": "пользователь: что написано в файле shopping.txt в строке 2? мир: lines shopping.txt · files 3 · bytes 107 · lines 3 · pa",
+          "зачем": null
+        },
+        {
+          "род": "значение ключа в файле настроек — вопрос",
+          "страниц": 588,
+          "образец": "пользователь: какое значение у ключа port в файле server.ini? мир: find server.ini \"port\" · occurrences 1 · matches 1 · ",
+          "зачем": null
+        },
+        {
+          "род": "что файл настроек говорит о ключе — вопрос",
+          "страниц": 364,
+          "образец": "пользователь: что файл server.ini говорит о port? мир: find server.ini \"port\" · occurrences 1 · matches 1 · files 1 · pa",
+          "зачем": null
+        },
+        {
+          "род": "сколько строк в файле — вопрос",
+          "страниц": 508,
+          "образец": "пользователь: сколько строк в файле shopping.txt? мир: lines shopping.txt · files 3 · bytes 107 · lines 3 · path shoppin",
+          "зачем": null
+        },
+        {
+          "род": "сколько раз слово в папке и во всём репозитории — вопрос",
+          "страниц": 604,
+          "образец": "пользователь: сколько раз слово «всё» встречается в репозитории? мир: find . \"всё\" · occurrences 2 · matches 1 · files 1",
+          "зачем": null
+        },
+        {
+          "род": "сколько файлов в папке — вопрос",
+          "страниц": 629,
+          "образец": "пользователь: сколько файлов в папке home? мир: count home · files 2 · path home. организм: папка home содержит 2 файла:",
+          "зачем": null
+        },
+        {
+          "род": "план с местоимением: создать, затем дописать в него",
+          "страниц": 249,
+          "образец": "пользователь: создай файл plan.md, затем допиши в него строку «написал письмо домой». организм: предлагаю два акта: созд",
+          "зачем": null
+        },
+        {
+          "род": "план с местоимением: переименовать, затем дописать в него",
+          "страниц": 190,
+          "образец": "пользователь: переименуй файл home/chores.md в tasks.md, затем допиши в него строку «подмести пол». организм: предлагаю ",
+          "зачем": null
+        },
+        {
+          "род": "план с местоимением: перенести в папку, затем удалить его",
+          "страниц": 180,
+          "образец": "пользователь: перенеси файл shopping.txt в папку home, затем удали его. организм: предлагаю два акта: перенести файл sho",
+          "зачем": null
+        },
+        {
+          "род": "план с местоимением: найти файл со словом, затем дописать в него",
+          "страниц": 180,
+          "образец": "пользователь: найди файл, в котором есть слово «свежий», затем допиши в него строку «купить зелёные яблоки». организм: п",
+          "зачем": null
+        },
+        {
+          "род": "план с местоимением — отказ",
+          "страниц": 54,
+          "образец": "пользователь: создай файл home/garden.md, затем допиши в него строку «купить карту города». организм: предлагаю два акта",
+          "зачем": null
+        },
+        {
+          "род": "план с местоимением — первый акт невозможен",
+          "страниц": 90,
+          "образец": "пользователь: создай файл shopping.txt, затем допиши в него строку «купить карту города». мир: create shopping.txt · ref",
+          "зачем": null
+        },
+        {
+          "род": "план с местоимением — слово в нескольких файлах, второй акт ждёт одного",
+          "страниц": 72,
+          "образец": "пользователь: найди файл, в котором есть слово «молоко», затем допиши в него строку «подмести пол». организм: предлагаю ",
+          "зачем": null
+        },
+        {
+          "род": "план с местоимением: акт, затем сколько строк в нём",
+          "страниц": 496,
+          "образец": "пользователь: переименуй файл home/chores.md в tasks.md, затем скажи, сколько в нём строк. организм: предлагаю два акта:",
+          "зачем": null
+        },
+        {
+          "род": "план из трёх актов: акт, дописать туда же, затем сколько строк или прогон",
+          "страниц": 288,
+          "образец": "пользователь: создай файл plan.md, затем допиши в него строку «написал письмо домой», затем скажи, сколько в нём строк. ",
+          "зачем": null
+        },
+        {
+          "род": "условный приказ: если файл есть — дописать, иначе создать",
+          "страниц": 216,
+          "образец": "пользователь: если файл shopping.txt есть, допиши в него строку «купить зелёные яблоки», иначе создай его. организм: пре",
+          "зачем": null
+        },
+        {
+          "род": "условный приказ: если файл есть — удалить",
+          "страниц": 216,
+          "образец": "пользователь: если файл shopping.txt есть, удали его. организм: предлагаю удалить файл shopping.txt, если он есть. подтв",
+          "зачем": null
+        },
+        {
+          "род": "условный приказ: если текст в файле есть — заменить",
+          "страниц": 224,
+          "образец": "пользователь: если в файле shopping.txt есть текст «свежий хлеб», замени его на «ржаной хлеб». организм: предлагаю замен",
+          "зачем": null
+        },
+        {
+          "род": "все файлы папки, кроме названного",
+          "страниц": 216,
+          "образец": "пользователь: удали все файлы в папке home, кроме chores.md. организм: предлагаю удалить все файлы в папке home, кроме c",
+          "зачем": null
+        },
+        {
+          "род": "два объекта в одном приказе",
+          "страниц": 432,
+          "образец": "пользователь: создай файл plan.md, затем создай файл memo.txt. организм: предлагаю два акта: создать файл plan.md, затем",
+          "зачем": null
+        },
+        {
+          "род": "сколько тестов проходит — вопрос, ответ берёт прогон",
+          "страниц": 81,
+          "образец": "пользователь: сколько тестов Python проходит? организм: предлагаю запустить тесты Python. подтверждено ли это? пользоват",
+          "зачем": null
+        },
+        {
+          "род": "план: прогнать тесты, затем сказать, сколько прошло",
+          "страниц": 279,
+          "образец": "пользователь: запусти тесты Python, затем скажи, сколько прошло. организм: предлагаю два акта: запустить тесты Python, з",
+          "зачем": null
+        },
+        {
+          "род": "план: акт, затем зачин просьбы сказать и вопрос о файле, какой двинул акт",
+          "страниц": 356,
+          "образец": "пользователь: переименуй файл home/chores.md в tasks.md, затем скажи, какая первая строка в нём. организм: предлагаю два",
+          "зачем": null
+        },
+        {
+          "род": "вопрос о прошлом акте: удалил ли ты файл — ответ чтением мира, не актом",
+          "страниц": 72,
+          "образец": "пользователь: удалил ли ты файл home/chores.md? мир: read home/chores.md · files 2 · bytes 164 · path home/chores.md. ор",
+          "зачем": null
+        },
+        {
+          "род": "перечень файлов папки — вопрос, ответ записями хода мира",
+          "страниц": 189,
+          "образец": "пользователь: перечисли файлы в папке home. мир: list home · files 2 · path chores.md · path repairs.txt. организм: папк",
+          "зачем": null
+        },
+        {
+          "род": "проходят ли тесты — вопрос, ответ берёт прогон: да или нет",
+          "страниц": 81,
+          "образец": "пользователь: проходят ли тесты Python? организм: предлагаю запустить тесты Python. подтверждено ли это? пользователь: д",
+          "зачем": null
+        },
+        {
+          "род": "файл по имени во всём дереве — вопрос, ответ путём хода мира",
+          "страниц": 755,
+          "образец": "пользователь: найди файл chores.md. мир: locate . \"chores.md\" · entries 1 · path home/chores.md. организм: путь файла ch",
+          "зачем": null
+        },
+        {
+          "род": "файлов одного имени несколько — ответ их числом и путями",
+          "страниц": 519,
+          "образец": "пользователь: найди файл Cargo.toml. мир: locate . \"Cargo.toml\" · entries 2 · path gauge/Cargo.toml · path tally/Cargo.t",
+          "зачем": null
+        },
+        {
+          "род": "файла с этим именем нет ни в одной папке — вопрос",
+          "страниц": 382,
+          "образец": "пользователь: найди файл budget.md. мир: locate . \"budget.md\" · entries 0. организм: в репозитории нет файла с именем bu",
+          "зачем": null
+        },
+        {
+          "род": "сколько файлов с этим именем — вопрос",
+          "страниц": 382,
+          "образец": "пользователь: сколько файлов с именем cake.md? мир: locate . \"cake.md\" · entries 1 · path kitchen/cake.md. организм: в р",
+          "зачем": null
+        },
+        {
+          "род": "прогон тестов — исход мира процесса, какого прогон на объявленном проекте не показывал",
+          "страниц": 396,
+          "образец": "пользователь: запусти тесты Python. организм: предлагаю запустить тесты Python. подтверждено ли это? пользователь: да. м",
+          "зачем": null
+        },
+        {
+          "род": "план из двух разных актов над разными файлами",
+          "страниц": 520,
+          "образец": "пользователь: перенеси файл shopping.txt в папку home, затем допиши строку «смазать калитку» в файл home/repairs.txt. ор",
           "зачем": null
         }
       ],
@@ -13830,37 +14676,37 @@
         {
           "род": "время по разнице",
           "страниц": 20,
-          "образец": "когда в Москве 12 часов, в Лондоне 9: 12 − 3 = 9. ЧАС ЕСТЬ СВОЙСТВО МЕСТА, А НЕ МГНОВЕНИЯ.",
+          "образец": "Лондон на 3 часа позади Москвы, а Москва на 3 часа впереди Лондона. когда в Москве 12 часов, в Лондоне 9: 12 − 3 = 9. ЧА",
           "зачем": null
         },
         {
           "род": "через полночь назад",
           "страниц": 10,
-          "образец": "когда в Москве 1 час, в Лондоне 22 часа ПРЕДЫДУЩЕГО дня: 1 − 3 = −2, а −2 + 24 = 22. СУТКИ ЗАМКНУТЫ В КРУГ, И ВЫЙДЯ ЗА Н",
+          "образец": "Лондон на 3 часа позади Москвы, а Москва на 3 часа впереди Лондона. в сутках 24 часа. когда в Москве 1 час, в Лондоне 22",
           "зачем": null
         },
         {
           "род": "через полночь вперёд",
           "страниц": 10,
-          "образец": "когда в Лондоне 23 часа, в Москве 2 часа СЛЕДУЮЩЕГО дня: 23 + 3 = 26, а 26 − 24 = 2. ТОТ ЖЕ КРУГ, ПРОЙДЕННЫЙ В ДРУГУЮ СТ",
+          "образец": "Москва на 3 часа впереди Лондона, а Лондон на 3 часа позади Москвы. в сутках 24 часа. когда в Лондоне 23 часа, в Москве ",
           "зачем": null
         },
         {
           "род": "полдень не всюду полдень",
           "страниц": 10,
-          "образец": "в Москве полдень — а в Лондоне уже 9: 12 − 3 = 9. ПОЛДЕНЬ ЕСТЬ ПОЛДЕНЬ ТОЛЬКО ТАМ, ГДЕ ОН ПОЛДЕНЬ.",
+          "образец": "Лондон на 3 часа позади Москвы, а Москва на 3 часа впереди Лондона. в Москве полдень — а в Лондоне уже 9: 12 − 3 = 9. ПО",
           "зачем": null
         },
         {
           "род": "в одном поясе время одно",
           "страниц": 10,
-          "образец": "Москва и Стамбул стоя́т на одном поясе +3, и когда в Москве 12 часов, в Стамбуле тоже 12: 12 − 0 = 12. ЧАСОВОЙ ПОЯС ЕСТЬ",
+          "образец": "Москва и Стамбул стоя́т на одном поясе +3: разница между ними — 0 часов, и когда в Москве 12 часов, в Стамбуле тоже 12: ",
           "зачем": null
         },
         {
           "род": "разница не зависит от часа",
           "страниц": 20,
-          "образец": "в Москве 4 — в Лондоне 1; в Москве 22 — в Лондоне 19: 4 − 3 = 1 и 22 − 3 = 19. РАЗНИЦА ЕСТЬ СВОЙСТВО ПАРЫ МЕСТ, А НЕ ЧАС",
+          "образец": "Лондон на 3 часа позади Москвы, а Москва на 3 часа впереди Лондона. в Москве 4 — в Лондоне 1; в Москве 22 — в Лондоне 19",
           "зачем": null
         },
         {
@@ -13950,8 +14796,9 @@
     },
     {
       "дом": "unitforms",
-      "мир": "units_langs",
+      "мир": "genesis_units",
       "миры": [
+        "genesis_units",
         "units_langs"
       ],
       "объявление": "РОДЫ",
@@ -13959,13 +14806,13 @@
         {
           "род": "перевод единиц, утверждение с леджером умножения",
           "страниц": 320,
-          "образец": "2 Stunden sind 120 Minuten: 2 × 60 = 120.",
+          "образец": "eine Stunde hat 60 Minuten. 2 Stunden sind 120 Minuten: 2 × 60 = 120.",
           "зачем": null
         },
         {
           "род": "вопрос о том же переводе, отвечаемый тем же утверждением",
           "страниц": 320,
-          "образец": "wie viele Minuten sind 3 Stunden? 3 Stunden sind 180 Minuten: 3 × 60 = 180.",
+          "образец": "eine Stunde hat 60 Minuten. wie viele Minuten sind 3 Stunden? 3 Stunden sind 180 Minuten: 3 × 60 = 180.",
           "зачем": null
         }
       ],
@@ -14407,25 +15254,25 @@
       "роды": [
         {
           "род": "шов",
-          "страниц": 661,
+          "страниц": 665,
           "образец": "ጠረጴዛ + ዎች = ጠረጴዛዎች.",
           "зачем": "лемма плюс окончание даёт слово: сложение частей"
         },
         {
           "род": "вопрос о шве",
-          "страниц": 1322,
+          "страниц": 1330,
           "образец": "what is ጠረጴዛ + ዎች? ጠረጴዛ + ዎች = ጠረጴዛዎች.",
           "зачем": "то же сложение, спрошенное вопросом на двух языках"
         },
         {
           "род": "разбор",
-          "страниц": 1322,
+          "страниц": 1330,
           "образец": "ጠረጴዛዎች is ጠረጴዛ with the ending -ዎች.",
           "зачем": "слово разложено на лемму и окончание: обратный ход шва"
         },
         {
           "род": "вопрос о разборе",
-          "страниц": 1322,
+          "страниц": 1330,
           "образец": "what is ጠረጴዛዎች made of? ጠረጴዛዎች is ጠረጴዛ with the ending -ዎች.",
           "зачем": "из чего состои́т слово — спрошено и отвечено"
         }

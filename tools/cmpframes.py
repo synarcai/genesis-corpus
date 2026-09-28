@@ -2,28 +2,34 @@
 """THE HOUSE OF COMPARISON FRAMES — the marker is bought as a frame, not as a word (05.09).
 
 THE DEFECT, MEASURED. On the held-out key of 05.09 twelve of the reader's fifteen lies were one
-class: a comparison marker on a non-English page («9 flexiones más que», «in più di», «meer
-dan», «więcej niż») answered by a NEIGHBOURING number — 14 + 1 = 15, 22 − 13 = 9 — the marker
-itself was never bought, so the number was taken from the row. The SVAMP house shows the
-marker on push-ups alone, with bare-number answers, from a table of eight triples; that is a
+class: a comparison marker on a non-English page («9 … más que», «in più di», «meer dan»,
+«więcej niż») answered by a NEIGHBOURING number — 14 + 1 = 15, 22 − 13 = 9 — the marker itself
+was never bought, so the number was taken from the row. The house of story shapes showed the
+marker on one deed alone, with bare-number answers, from a table of eight triples; that is a
 show of the marker, not a market of it.
 
-WHAT THIS HOUSE SHOWS. Nine languages; two kinds of bearer sentence — a DEED («{X} did n
-push-ups», «сделал», «machte», «a fait», «hizo», «ha fatto», «fez», «deed», «zrobił») over deeds
-and a HOLDING («{X} has n bottle caps», «у {X} n крышек», «hat», «a», «tiene», «ha», «tem»,
-«heeft», «ma») over goods; four frames on each: MORE-BY («{Y} did k more than {X}» → n + k),
-LESS-BY (→ n − k), TIMES («twice / three times as many as» → n × m) and HOW-MANY-MORE (the
-inverse question: two stories, the difference asked → s − n). Every answer is a FULL SENTENCE
-with the bearer, the number and the thing, then the ledger — that is how a verb becomes a
-holding verb (holon: the answer's number folds to the story by one choice).
+WHAT THIS HOUSE SHOWS. Nine languages; two kinds of bearer sentence — a DEED («{X} planted n
+oaks», «посадил», «pflanzte», «a planté», «plantó», «ha piantato», «plantou», «plantte»,
+«posadził») over the planted trees, and a HOLDING («{X} has n jars», «у {X} n банок», «hat»,
+«a», «tiene», «ha», «tem», «heeft», «ma») over goods; four frames on each: MORE-BY («{Y} planted
+k more than {X}» → n + k), LESS-BY (→ n − k), TIMES («twice / three times as many as» → n × m)
+and HOW-MANY-MORE (the inverse question: two stories, the difference asked → s − n). Every
+answer is a FULL SENTENCE with the bearer, the number and the thing, then the ledger — that is
+how a verb becomes a holding verb (holon: the answer's number folds to the story by one choice).
 
-WHAT THE HOUSE DECLARES AND WHAT IT BORROWS. Bearers are the packs' persons through the SVAMP
-house's face (the Portuguese article, the Russian genitive of the holding); goods are the
-SVAMP house's deed goods with their count forms by the pack's agreement rule (the singular for
-1 alone where the language keeps it so); the multiplier words, the past-tense gender of the
-Slavic deed verb and the gender of the goods in es/it/pt (the question word and the partitive
-bend by it) are declared here. Numbers are twelve pairs OUTSIDE the SVAMP tables, so the
-market is bought on numbers the tables never showed.
+THE SCENES ARE OUR OWN (23.09, the owner's word: a public band is an instrument, never a
+source). Until 23.09 the deed was the band's own exercise and the holdings its own goods; the
+construction stays, the scene is the story house's rewritten one — trees planted, jars,
+mushrooms, pears, stamps, nuts and photos held.
+
+WHAT THE HOUSE DECLARES AND WHAT IT BORROWS. Bearers are the packs' persons through the story
+house's face (the Portuguese article, the Russian genitive of the holding); goods are the story
+house's act goods with their count forms by the pack's agreement rule (the singular for 1 alone
+where the language keeps it so) and their gender in es/it/pt from its one table
+(`svampforms.РОД_ТОВАРА_АКТОВ`: the question word and the partitive bend by it); the multiplier
+words and the past-tense gender of the Slavic deed verb are declared here. Numbers are twelve
+pairs OUTSIDE the story house's tables, so the market is bought on numbers the tables never
+showed.
 
 THE JUDGE RECOMPUTES. A page is a frame whose holes are declared alternations; a repeated hole
 carries one value; the ledger's sign is the frame's sign (a MORE frame with a minus in its
@@ -40,7 +46,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import actionpages as A  # noqa: E402
 import frgram as _fr  # noqa: E402 — французская элизия: один закон, два читателя
 import rugram as _RUG  # noqa: E402 — закон русского прошедшего: род формы при лице
-import svampforms as S  # noqa: E402 — the bearer's face, the deed goods and their count forms
+import svampforms as S  # noqa: E402 — the bearer's face, the act goods, their count forms and gender
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
 ФОРМЫ = ("больше_на", "меньше_на", "во_столько", "на_сколько",
@@ -48,14 +54,14 @@ import svampforms as S  # noqa: E402 — the bearer's face, the deed goods and t
          # without arithmetic in three of the four, and the inverse of TIMES in the fourth
          "кто_больше", "кто_меньше", "поровну", "во_сколько_раз")
 ГРУППЫ = ("дело", "держание")
-ТОВАРЫ = {"дело": ("отжимания", "скручивания"),
-          "держание": ("крышки", "фигурки", "мелки", "розы", "игры", "приложения")}
-# TWELVE PAIRS OUTSIDE THE SVAMP TABLES: (n, k), n > k; the TIMES frame multiplies n by 2 or 3
+ТОВАРЫ = {"дело": ("дубы", "берёзы"),
+          "держание": ("банки", "грибы", "груши", "марки", "орехи", "фото")}
+# TWELVE PAIRS OUTSIDE THE STORY HOUSE'S TABLES: (n, k), n > k; the TIMES frame multiplies n by 2 or 3
 ПАРЫ = ((16, 7), (22, 9), (26, 11), (28, 13), (32, 14), (36, 15),
         (42, 17), (27, 8), (33, 12), (38, 19), (21, 6), (45, 18))
-_ПЕРВЫЕ_SVAMP = {п[0] for п in S.ЧИСЛА} | {п[0] for п in S.ЧИСЛА_АКТОВ}
+_ПЕРВЫЕ_ИСТОРИЙ = {п[0] for п in S.ЧИСЛА} | {п[0] for п in S.ЧИСЛА_АКТОВ}
 for _n, _k in ПАРЫ:
-    assert _n > _k >= 1 and _n not in _ПЕРВЫЕ_SVAMP, (_n, _k, "the SVAMP tables show this number first")
+    assert _n > _k >= 1 and _n not in _ПЕРВЫЕ_ИСТОРИЙ, (_n, _k, "the story house's tables show this number first")
     assert (_n, _k) not in S.ЧИСЛА and all(т[:2] != (_n, _k) for т in S.ЧИСЛА_АКТОВ), (_n, _k)
 ЗНАК = {"больше_на": "+", "меньше_на": "−", "во_столько": "×", "на_сколько": "−", "во_сколько_раз": "÷"}
 # THE WORD OF EQUALITY is the answer of the EQUAL frame; it is declared, not derived
@@ -65,20 +71,17 @@ for _n, _k in ПАРЫ:
 КРАТ = {"ru": {2: "вдвое", 3: "втрое"}, "en": {2: "twice", 3: "three times"}, "de": {2: "zweimal", 3: "dreimal"},
         "fr": {2: "deux fois", 3: "trois fois"}, "es": {2: "el doble", 3: "el triple"}, "it": {2: "il doppio", 3: "il triplo"},
         "pt": {2: "o dobro", 3: "o triplo"}, "nl": {2: "twee keer", 3: "drie keer"}, "pl": {2: "dwa razy", 3: "trzy razy"}}
-# THE SLAVIC DEED VERB BENDS BY THE BEARER'S GENDER in the past («сделал»/«сделала», «zrobił»/«zrobiła»)
-ГЛАГОЛ_ДЕЛА = {"ru": "сделал", "pl": "zrobił"}
-# THE GENDER OF THE GOODS where the question word bends by it (the plural form → gender)
-РОД = {"es": {"flexiones": "f", "abdominales": "m", "chapas": "f", "figuras": "f", "lápices de colores": "m",
-              "rosas": "f", "partidas": "f", "aplicaciones": "f"},
-       "it": {"flessioni": "f", "addominali": "m", "tappi": "m", "statuine": "f", "pastelli": "m",
-              "rose": "f", "partite": "f", "app": "f"},
-       "pt": {"flexões": "f", "abdominais": "m", "tampas": "f", "bonecos": "m", "lápis de cor": "m",
-              "rosas": "f", "jogos": "m", "aplicações": "f"}}
+# THE SLAVIC DEED VERB BENDS BY THE BEARER'S GENDER in the past («посадил»/«посадила», «posadził»/«posadziła»).
+# It bends in the QUESTION too: the Russian TIMES question held a bare «сделал» before its bearer
+# until 23.09, and ten pages said «во сколько раз больше … сделал Аня» — the court called them true.
+ГЛАГОЛ_ДЕЛА = {"ru": "посадил", "pl": "posadził"}
 РОДОВЫЕ = {"es": {"кск": ("cuántos", "cuántas")},
            "it": {"quante": ("quanti", "quante"), "delle": ("dei", "delle")},
            "pt": {"quantas": ("quantos", "quantas"), "das": ("dos", "das")}}
 
-# THE FRAMES: {X} {Y} bearers, {Xр} {Yр} their genitives (the Russian holding), {В} {ВY} the deed verb bent
+# THE FRAMES: {X} {Y} bearers, {Xр} {Yр} their genitives (the Russian holding), {Xчьё} the name's possessive
+# from the story house's one door (pt «do João», «da Ana»: until 23.09 the frame wrote «de {X}», and 96
+# pages said «o dobro das rosas de a Maria»), {В} {ВY} the deed verb bent
 # by gender, {n} {k} {s} {r} {p} {m} numbers, {Тc} the goods in the count form of c, {Тмн} the plural,
 # {КРАТ} the multiplier word, {знак} the ledger's sign, gender holes by the goods
 РАМКИ = {
@@ -96,10 +99,10 @@ for _n, _k in ПАРЫ:
     },
     "en": {
         "дело": dict(
-            больше_на="{X} did {n} {Тn}. {Y} did {k} more {Тмн} than {X}. how many {Тмн} did {Y} do? {Y} did {s} {Тs}: {n} {знак} {k} = {s}.",
-            меньше_на="{X} did {n} {Тn}. {Y} did {k} fewer {Тмн} than {X}. how many {Тмн} did {Y} do? {Y} did {r} {Тr}: {n} {знак} {k} = {r}.",
-            во_столько="{X} did {n} {Тn}. {Y} did {КРАТ} as many {Тмн} as {X}. how many {Тмн} did {Y} do? {Y} did {p} {Тp}: {n} {знак} {m} = {p}.",
-            на_сколько="{X} did {n} {Тn}. {Y} did {s} {Тs}. how many more {Тмн} did {Y} do than {X}? {k} more {Тмн}: {s} {знак} {n} = {k}."),
+            больше_на="{X} planted {n} {Тn}. {Y} planted {k} more {Тмн} than {X}. how many {Тмн} did {Y} plant? {Y} planted {s} {Тs}: {n} {знак} {k} = {s}.",
+            меньше_на="{X} planted {n} {Тn}. {Y} planted {k} fewer {Тмн} than {X}. how many {Тмн} did {Y} plant? {Y} planted {r} {Тr}: {n} {знак} {k} = {r}.",
+            во_столько="{X} planted {n} {Тn}. {Y} planted {КРАТ} as many {Тмн} as {X}. how many {Тмн} did {Y} plant? {Y} planted {p} {Тp}: {n} {знак} {m} = {p}.",
+            на_сколько="{X} planted {n} {Тn}. {Y} planted {s} {Тs}. how many more {Тмн} did {Y} plant than {X}? {k} more {Тмн}: {s} {знак} {n} = {k}."),
         "держание": dict(
             больше_на="{X} has {n} {Тn}. {Y} has {k} more {Тмн} than {X}. how many {Тмн} does {Y} have? {Y} has {s} {Тs}: {n} {знак} {k} = {s}.",
             меньше_на="{X} has {n} {Тn}. {Y} has {k} fewer {Тмн} than {X}. how many {Тмн} does {Y} have? {Y} has {r} {Тr}: {n} {знак} {k} = {r}.",
@@ -108,10 +111,10 @@ for _n, _k in ПАРЫ:
     },
     "de": {
         "дело": dict(
-            больше_на="{X} machte {n} {Тn}. {Y} machte {k} {Тмн} mehr als {X}. wie viele {Тмн} machte {Y}? {Y} machte {s} {Тs}: {n} {знак} {k} = {s}.",
-            меньше_на="{X} machte {n} {Тn}. {Y} machte {k} {Тмн} weniger als {X}. wie viele {Тмн} machte {Y}? {Y} machte {r} {Тr}: {n} {знак} {k} = {r}.",
-            во_столько="{X} machte {n} {Тn}. {Y} machte {КРАТ} so viele {Тмн} wie {X}. wie viele {Тмн} machte {Y}? {Y} machte {p} {Тp}: {n} {знак} {m} = {p}.",
-            на_сколько="{X} machte {n} {Тn}. {Y} machte {s} {Тs}. wie viele {Тмн} mehr machte {Y} als {X}? {k} {Тмн} mehr: {s} {знак} {n} = {k}."),
+            больше_на="{X} pflanzte {n} {Тn}. {Y} pflanzte {k} {Тмн} mehr als {X}. wie viele {Тмн} pflanzte {Y}? {Y} pflanzte {s} {Тs}: {n} {знак} {k} = {s}.",
+            меньше_на="{X} pflanzte {n} {Тn}. {Y} pflanzte {k} {Тмн} weniger als {X}. wie viele {Тмн} pflanzte {Y}? {Y} pflanzte {r} {Тr}: {n} {знак} {k} = {r}.",
+            во_столько="{X} pflanzte {n} {Тn}. {Y} pflanzte {КРАТ} so viele {Тмн} wie {X}. wie viele {Тмн} pflanzte {Y}? {Y} pflanzte {p} {Тp}: {n} {знак} {m} = {p}.",
+            на_сколько="{X} pflanzte {n} {Тn}. {Y} pflanzte {s} {Тs}. wie viele {Тмн} mehr pflanzte {Y} als {X}? {k} {Тмн} mehr: {s} {знак} {n} = {k}."),
         "держание": dict(
             больше_на="{X} hat {n} {Тn}. {Y} hat {k} {Тмн} mehr als {X}. wie viele {Тмн} hat {Y}? {Y} hat {s} {Тs}: {n} {знак} {k} = {s}.",
             меньше_на="{X} hat {n} {Тn}. {Y} hat {k} {Тмн} weniger als {X}. wie viele {Тмн} hat {Y}? {Y} hat {r} {Тr}: {n} {знак} {k} = {r}.",
@@ -120,10 +123,10 @@ for _n, _k in ПАРЫ:
     },
     "fr": {
         "дело": dict(
-            больше_на="{X} a fait {n} {Тn}. {Y} a fait {k} {Тмн} de plus que {X}. combien de {Тмн} a fait {Y} ? {Y} a fait {s} {Тs} : {n} {знак} {k} = {s}.",
-            меньше_на="{X} a fait {n} {Тn}. {Y} a fait {k} {Тмн} de moins que {X}. combien de {Тмн} a fait {Y} ? {Y} a fait {r} {Тr} : {n} {знак} {k} = {r}.",
-            во_столько="{X} a fait {n} {Тn}. {Y} a fait {КРАТ} plus de {Тмн} que {X}. combien de {Тмн} a fait {Y} ? {Y} a fait {p} {Тp} : {n} {знак} {m} = {p}.",
-            на_сколько="{X} a fait {n} {Тn}. {Y} a fait {s} {Тs}. combien de {Тмн} de plus a fait {Y} que {X} ? {k} {Тмн} de plus : {s} {знак} {n} = {k}."),
+            больше_на="{X} a planté {n} {Тn}. {Y} a planté {k} {Тмн} de plus que {X}. combien de {Тмн} a plantés {Y} ? {Y} a planté {s} {Тs} : {n} {знак} {k} = {s}.",
+            меньше_на="{X} a planté {n} {Тn}. {Y} a planté {k} {Тмн} de moins que {X}. combien de {Тмн} a plantés {Y} ? {Y} a planté {r} {Тr} : {n} {знак} {k} = {r}.",
+            во_столько="{X} a planté {n} {Тn}. {Y} a planté {КРАТ} plus de {Тмн} que {X}. combien de {Тмн} a plantés {Y} ? {Y} a planté {p} {Тp} : {n} {знак} {m} = {p}.",
+            на_сколько="{X} a planté {n} {Тn}. {Y} a planté {s} {Тs}. combien de {Тмн} de plus a plantés {Y} que {X} ? {k} {Тмн} de plus : {s} {знак} {n} = {k}."),
         "держание": dict(
             больше_на="{X} a {n} {Тn}. {Y} a {k} {Тмн} de plus que {X}. combien de {Тмн} a {Y} ? {Y} a {s} {Тs} : {n} {знак} {k} = {s}.",
             меньше_на="{X} a {n} {Тn}. {Y} a {k} {Тмн} de moins que {X}. combien de {Тмн} a {Y} ? {Y} a {r} {Тr} : {n} {знак} {k} = {r}.",
@@ -132,10 +135,10 @@ for _n, _k in ПАРЫ:
     },
     "es": {
         "дело": dict(
-            больше_на="{X} hizo {n} {Тn}. {Y} hizo {k} {Тмн} más que {X}. ¿{кск} {Тмн} hizo {Y}? {Y} hizo {s} {Тs}: {n} {знак} {k} = {s}.",
-            меньше_на="{X} hizo {n} {Тn}. {Y} hizo {k} {Тмн} menos que {X}. ¿{кск} {Тмн} hizo {Y}? {Y} hizo {r} {Тr}: {n} {знак} {k} = {r}.",
-            во_столько="{X} hizo {n} {Тn}. {Y} hizo {КРАТ} de {Тмн} que {X}. ¿{кск} {Тмн} hizo {Y}? {Y} hizo {p} {Тp}: {n} {знак} {m} = {p}.",
-            на_сколько="{X} hizo {n} {Тn}. {Y} hizo {s} {Тs}. ¿{кск} {Тмн} más hizo {Y} que {X}? {k} {Тмн} más: {s} {знак} {n} = {k}."),
+            больше_на="{X} plantó {n} {Тn}. {Y} plantó {k} {Тмн} más que {X}. ¿{кск} {Тмн} plantó {Y}? {Y} plantó {s} {Тs}: {n} {знак} {k} = {s}.",
+            меньше_на="{X} plantó {n} {Тn}. {Y} plantó {k} {Тмн} menos que {X}. ¿{кск} {Тмн} plantó {Y}? {Y} plantó {r} {Тr}: {n} {знак} {k} = {r}.",
+            во_столько="{X} plantó {n} {Тn}. {Y} plantó {КРАТ} de {Тмн} que {X}. ¿{кск} {Тмн} plantó {Y}? {Y} plantó {p} {Тp}: {n} {знак} {m} = {p}.",
+            на_сколько="{X} plantó {n} {Тn}. {Y} plantó {s} {Тs}. ¿{кск} {Тмн} más plantó {Y} que {X}? {k} {Тмн} más: {s} {знак} {n} = {k}."),
         "держание": dict(
             больше_на="{X} tiene {n} {Тn}. {Y} tiene {k} {Тмн} más que {X}. ¿{кск} {Тмн} tiene {Y}? {Y} tiene {s} {Тs}: {n} {знак} {k} = {s}.",
             меньше_на="{X} tiene {n} {Тn}. {Y} tiene {k} {Тмн} menos que {X}. ¿{кск} {Тмн} tiene {Y}? {Y} tiene {r} {Тr}: {n} {знак} {k} = {r}.",
@@ -144,10 +147,10 @@ for _n, _k in ПАРЫ:
     },
     "it": {
         "дело": dict(
-            больше_на="{X} ha fatto {n} {Тn}. {Y} ha fatto {k} {Тмн} in più di {X}. {quante} {Тмн} ha fatto {Y}? {Y} ha fatto {s} {Тs}: {n} {знак} {k} = {s}.",
-            меньше_на="{X} ha fatto {n} {Тn}. {Y} ha fatto {k} {Тмн} in meno di {X}. {quante} {Тмн} ha fatto {Y}? {Y} ha fatto {r} {Тr}: {n} {знак} {k} = {r}.",
-            во_столько="{X} ha fatto {n} {Тn}. {Y} ha fatto {КРАТ} {delle} {Тмн} di {X}. {quante} {Тмн} ha fatto {Y}? {Y} ha fatto {p} {Тp}: {n} {знак} {m} = {p}.",
-            на_сколько="{X} ha fatto {n} {Тn}. {Y} ha fatto {s} {Тs}. {quante} {Тмн} in più ha fatto {Y} di {X}? {k} {Тмн} in più: {s} {знак} {n} = {k}."),
+            больше_на="{X} ha piantato {n} {Тn}. {Y} ha piantato {k} {Тмн} in più di {X}. {quante} {Тмн} ha piantato {Y}? {Y} ha piantato {s} {Тs}: {n} {знак} {k} = {s}.",
+            меньше_на="{X} ha piantato {n} {Тn}. {Y} ha piantato {k} {Тмн} in meno di {X}. {quante} {Тмн} ha piantato {Y}? {Y} ha piantato {r} {Тr}: {n} {знак} {k} = {r}.",
+            во_столько="{X} ha piantato {n} {Тn}. {Y} ha piantato {КРАТ} {delle} {Тмн} di {X}. {quante} {Тмн} ha piantato {Y}? {Y} ha piantato {p} {Тp}: {n} {знак} {m} = {p}.",
+            на_сколько="{X} ha piantato {n} {Тn}. {Y} ha piantato {s} {Тs}. {quante} {Тмн} in più ha piantato {Y} di {X}? {k} {Тмн} in più: {s} {знак} {n} = {k}."),
         "держание": dict(
             больше_на="{X} ha {n} {Тn}. {Y} ha {k} {Тмн} in più di {X}. {quante} {Тмн} ha {Y}? {Y} ha {s} {Тs}: {n} {знак} {k} = {s}.",
             меньше_на="{X} ha {n} {Тn}. {Y} ha {k} {Тмн} in meno di {X}. {quante} {Тмн} ha {Y}? {Y} ha {r} {Тr}: {n} {знак} {k} = {r}.",
@@ -156,22 +159,22 @@ for _n, _k in ПАРЫ:
     },
     "pt": {
         "дело": dict(
-            больше_на="{X} fez {n} {Тn}. {Y} fez mais {k} {Тмн} do que {X}. {quantas} {Тмн} fez {Y}? {Y} fez {s} {Тs}: {n} {знак} {k} = {s}.",
-            меньше_на="{X} fez {n} {Тn}. {Y} fez menos {k} {Тмн} do que {X}. {quantas} {Тмн} fez {Y}? {Y} fez {r} {Тr}: {n} {знак} {k} = {r}.",
-            во_столько="{X} fez {n} {Тn}. {Y} fez {КРАТ} {das} {Тмн} de {X}. {quantas} {Тмн} fez {Y}? {Y} fez {p} {Тp}: {n} {знак} {m} = {p}.",
-            на_сколько="{X} fez {n} {Тn}. {Y} fez {s} {Тs}. {quantas} {Тмн} a mais fez {Y} do que {X}? mais {k} {Тмн}: {s} {знак} {n} = {k}."),
+            больше_на="{X} plantou {n} {Тn}. {Y} plantou mais {k} {Тмн} do que {X}. {quantas} {Тмн} plantou {Y}? {Y} plantou {s} {Тs}: {n} {знак} {k} = {s}.",
+            меньше_на="{X} plantou {n} {Тn}. {Y} plantou menos {k} {Тмн} do que {X}. {quantas} {Тмн} plantou {Y}? {Y} plantou {r} {Тr}: {n} {знак} {k} = {r}.",
+            во_столько="{X} plantou {n} {Тn}. {Y} plantou {КРАТ} {das} {Тмн} {Xчьё}. {quantas} {Тмн} plantou {Y}? {Y} plantou {p} {Тp}: {n} {знак} {m} = {p}.",
+            на_сколько="{X} plantou {n} {Тn}. {Y} plantou {s} {Тs}. {quantas} {Тмн} a mais plantou {Y} do que {X}? mais {k} {Тмн}: {s} {знак} {n} = {k}."),
         "держание": dict(
             больше_на="{X} tem {n} {Тn}. {Y} tem mais {k} {Тмн} do que {X}. {quantas} {Тмн} tem {Y}? {Y} tem {s} {Тs}: {n} {знак} {k} = {s}.",
             меньше_на="{X} tem {n} {Тn}. {Y} tem menos {k} {Тмн} do que {X}. {quantas} {Тмн} tem {Y}? {Y} tem {r} {Тr}: {n} {знак} {k} = {r}.",
-            во_столько="{X} tem {n} {Тn}. {Y} tem {КРАТ} {das} {Тмн} de {X}. {quantas} {Тмн} tem {Y}? {Y} tem {p} {Тp}: {n} {знак} {m} = {p}.",
+            во_столько="{X} tem {n} {Тn}. {Y} tem {КРАТ} {das} {Тмн} {Xчьё}. {quantas} {Тмн} tem {Y}? {Y} tem {p} {Тp}: {n} {знак} {m} = {p}.",
             на_сколько="{X} tem {n} {Тn}. {Y} tem {s} {Тs}. {quantas} {Тмн} a mais tem {Y} do que {X}? mais {k} {Тмн}: {s} {знак} {n} = {k}."),
     },
     "nl": {
         "дело": dict(
-            больше_на="{X} deed {n} {Тn}. {Y} deed {k} {Тмн} meer dan {X}. hoeveel {Тмн} deed {Y}? {Y} deed {s} {Тs}: {n} {знак} {k} = {s}.",
-            меньше_на="{X} deed {n} {Тn}. {Y} deed {k} {Тмн} minder dan {X}. hoeveel {Тмн} deed {Y}? {Y} deed {r} {Тr}: {n} {знак} {k} = {r}.",
-            во_столько="{X} deed {n} {Тn}. {Y} deed {КРАТ} zoveel {Тмн} als {X}. hoeveel {Тмн} deed {Y}? {Y} deed {p} {Тp}: {n} {знак} {m} = {p}.",
-            на_сколько="{X} deed {n} {Тn}. {Y} deed {s} {Тs}. hoeveel {Тмн} meer deed {Y} dan {X}? {k} {Тмн} meer: {s} {знак} {n} = {k}."),
+            больше_на="{X} plantte {n} {Тn}. {Y} plantte {k} {Тмн} meer dan {X}. hoeveel {Тмн} plantte {Y}? {Y} plantte {s} {Тs}: {n} {знак} {k} = {s}.",
+            меньше_на="{X} plantte {n} {Тn}. {Y} plantte {k} {Тмн} minder dan {X}. hoeveel {Тмн} plantte {Y}? {Y} plantte {r} {Тr}: {n} {знак} {k} = {r}.",
+            во_столько="{X} plantte {n} {Тn}. {Y} plantte {КРАТ} zoveel {Тмн} als {X}. hoeveel {Тмн} plantte {Y}? {Y} plantte {p} {Тp}: {n} {знак} {m} = {p}.",
+            на_сколько="{X} plantte {n} {Тn}. {Y} plantte {s} {Тs}. hoeveel {Тмн} meer plantte {Y} dan {X}? {k} {Тмн} meer: {s} {знак} {n} = {k}."),
         "держание": dict(
             больше_на="{X} heeft {n} {Тn}. {Y} heeft {k} {Тмн} meer dan {X}. hoeveel {Тмн} heeft {Y}? {Y} heeft {s} {Тs}: {n} {знак} {k} = {s}.",
             меньше_на="{X} heeft {n} {Тn}. {Y} heeft {k} {Тмн} minder dan {X}. hoeveel {Тмн} heeft {Y}? {Y} heeft {r} {Тr}: {n} {знак} {k} = {r}.",
@@ -202,10 +205,10 @@ for _n, _k in ПАРЫ:
 ВОЛНА2 = {
     "ru": {
         "дело": dict(
-            кто_больше="{X} {В} {n} {Тn}. {Y} {ВY} {k} {Тk}. кто сделал больше {Тмн}? {W} {ВW} больше {Тмн}.",
-            кто_меньше="{X} {В} {n} {Тn}. {Y} {ВY} {k} {Тk}. кто сделал меньше {Тмн}? {W} {ВW} меньше {Тмн}.",
-            поровну="{X} {В} {n} {Тn}. {Y} {ВY} {n} {Тn}. кто сделал больше {Тмн}? никто: оба сделали поровну — {n} {Тn}.",
-            во_сколько_раз="{X} {В} {p} {Тp}. {Y} {ВY} {n} {Тn}. во сколько раз больше {Тмн} сделал {X}, чем {Y}? {КРАТ}: {p} {знак} {n} = {m}."),
+            кто_больше="{X} {В} {n} {Тn}. {Y} {ВY} {k} {Тk}. кто посадил больше {Тмн}? {W} {ВW} больше {Тмн}.",
+            кто_меньше="{X} {В} {n} {Тn}. {Y} {ВY} {k} {Тk}. кто посадил меньше {Тмн}? {W} {ВW} меньше {Тмн}.",
+            поровну="{X} {В} {n} {Тn}. {Y} {ВY} {n} {Тn}. кто посадил больше {Тмн}? никто: оба посадили поровну — {n} {Тn}.",
+            во_сколько_раз="{X} {В} {p} {Тp}. {Y} {ВY} {n} {Тn}. во сколько раз больше {Тмн} {В} {X}, чем {Y}? {КРАТ}: {p} {знак} {n} = {m}."),
         "держание": dict(
             кто_больше="у {Xр} {n} {Тn}. у {Yр} {k} {Тk}. у кого {Тмн} больше? у {Wр} {Тмн} больше.",
             кто_меньше="у {Xр} {n} {Тn}. у {Yр} {k} {Тk}. у кого {Тмн} меньше? у {Wр} {Тмн} меньше.",
@@ -214,10 +217,10 @@ for _n, _k in ПАРЫ:
     },
     "en": {
         "дело": dict(
-            кто_больше="{X} did {n} {Тn}. {Y} did {k} {Тk}. who did more {Тмн}? {W} did more {Тмн}.",
-            кто_меньше="{X} did {n} {Тn}. {Y} did {k} {Тk}. who did fewer {Тмн}? {W} did fewer {Тмн}.",
-            поровну="{X} did {n} {Тn}. {Y} did {n} {Тn}. who did more {Тмн}? neither: they did the same — {n} {Тn}.",
-            во_сколько_раз="{X} did {p} {Тp}. {Y} did {n} {Тn}. how many times more {Тмн} did {X} do than {Y}? {КРАТ} as many: {p} {знак} {n} = {m}."),
+            кто_больше="{X} planted {n} {Тn}. {Y} planted {k} {Тk}. who planted more {Тмн}? {W} planted more {Тмн}.",
+            кто_меньше="{X} planted {n} {Тn}. {Y} planted {k} {Тk}. who planted fewer {Тмн}? {W} planted fewer {Тмн}.",
+            поровну="{X} planted {n} {Тn}. {Y} planted {n} {Тn}. who planted more {Тмн}? neither: they planted the same number — {n} {Тn}.",
+            во_сколько_раз="{X} planted {p} {Тp}. {Y} planted {n} {Тn}. how many times more {Тмн} did {X} plant than {Y}? {КРАТ} as many: {p} {знак} {n} = {m}."),
         "держание": dict(
             кто_больше="{X} has {n} {Тn}. {Y} has {k} {Тk}. who has more {Тмн}? {W} has more {Тмн}.",
             кто_меньше="{X} has {n} {Тn}. {Y} has {k} {Тk}. who has fewer {Тмн}? {W} has fewer {Тмн}.",
@@ -226,10 +229,10 @@ for _n, _k in ПАРЫ:
     },
     "de": {
         "дело": dict(
-            кто_больше="{X} machte {n} {Тn}. {Y} machte {k} {Тk}. wer machte mehr {Тмн}? {W} machte mehr {Тмн}.",
-            кто_меньше="{X} machte {n} {Тn}. {Y} machte {k} {Тk}. wer machte weniger {Тмн}? {W} machte weniger {Тмн}.",
-            поровну="{X} machte {n} {Тn}. {Y} machte {n} {Тn}. wer machte mehr {Тмн}? keiner: beide machten gleich viele — {n} {Тn}.",
-            во_сколько_раз="{X} machte {p} {Тp}. {Y} machte {n} {Тn}. wie viele Mal mehr {Тмн} machte {X} als {Y}? {КРАТ} so viele: {p} {знак} {n} = {m}."),
+            кто_больше="{X} pflanzte {n} {Тn}. {Y} pflanzte {k} {Тk}. wer pflanzte mehr {Тмн}? {W} pflanzte mehr {Тмн}.",
+            кто_меньше="{X} pflanzte {n} {Тn}. {Y} pflanzte {k} {Тk}. wer pflanzte weniger {Тмн}? {W} pflanzte weniger {Тмн}.",
+            поровну="{X} pflanzte {n} {Тn}. {Y} pflanzte {n} {Тn}. wer pflanzte mehr {Тмн}? keiner: beide pflanzten gleich viele — {n} {Тn}.",
+            во_сколько_раз="{X} pflanzte {p} {Тp}. {Y} pflanzte {n} {Тn}. wie viele Mal mehr {Тмн} pflanzte {X} als {Y}? {КРАТ} so viele: {p} {знак} {n} = {m}."),
         "держание": dict(
             кто_больше="{X} hat {n} {Тn}. {Y} hat {k} {Тk}. wer hat mehr {Тмн}? {W} hat mehr {Тмн}.",
             кто_меньше="{X} hat {n} {Тn}. {Y} hat {k} {Тk}. wer hat weniger {Тмн}? {W} hat weniger {Тмн}.",
@@ -238,10 +241,10 @@ for _n, _k in ПАРЫ:
     },
     "fr": {
         "дело": dict(
-            кто_больше="{X} a fait {n} {Тn}. {Y} a fait {k} {Тk}. qui a fait plus de {Тмн} ? {W} a fait plus de {Тмн}.",
-            кто_меньше="{X} a fait {n} {Тn}. {Y} a fait {k} {Тk}. qui a fait moins de {Тмн} ? {W} a fait moins de {Тмн}.",
-            поровну="{X} a fait {n} {Тn}. {Y} a fait {n} {Тn}. qui a fait plus de {Тмн} ? personne : les deux en ont fait autant — {n} {Тn}.",
-            во_сколько_раз="{X} a fait {p} {Тp}. {Y} a fait {n} {Тn}. combien de fois plus de {Тмн} a fait {X} que {Y} ? {КРАТ} plus : {p} {знак} {n} = {m}."),
+            кто_больше="{X} a planté {n} {Тn}. {Y} a planté {k} {Тk}. qui a planté plus de {Тмн} ? {W} a planté plus de {Тмн}.",
+            кто_меньше="{X} a planté {n} {Тn}. {Y} a planté {k} {Тk}. qui a planté moins de {Тмн} ? {W} a planté moins de {Тмн}.",
+            поровну="{X} a planté {n} {Тn}. {Y} a planté {n} {Тn}. qui a planté plus de {Тмн} ? personne : les deux en ont planté autant — {n} {Тn}.",
+            во_сколько_раз="{X} a planté {p} {Тp}. {Y} a planté {n} {Тn}. combien de fois plus de {Тмн} a plantés {X} que {Y} ? {КРАТ} plus : {p} {знак} {n} = {m}."),
         "держание": dict(
             кто_больше="{X} a {n} {Тn}. {Y} a {k} {Тk}. qui a plus de {Тмн} ? {W} a plus de {Тмн}.",
             кто_меньше="{X} a {n} {Тn}. {Y} a {k} {Тk}. qui a moins de {Тмн} ? {W} a moins de {Тмн}.",
@@ -250,10 +253,10 @@ for _n, _k in ПАРЫ:
     },
     "es": {
         "дело": dict(
-            кто_больше="{X} hizo {n} {Тn}. {Y} hizo {k} {Тk}. ¿quién hizo más {Тмн}? {W} hizo más {Тмн}.",
-            кто_меньше="{X} hizo {n} {Тn}. {Y} hizo {k} {Тk}. ¿quién hizo menos {Тмн}? {W} hizo menos {Тмн}.",
-            поровну="{X} hizo {n} {Тn}. {Y} hizo {n} {Тn}. ¿quién hizo más {Тмн}? ninguno: los dos hicieron lo mismo — {n} {Тn}.",
-            во_сколько_раз="{X} hizo {p} {Тp}. {Y} hizo {n} {Тn}. ¿cuántas veces más {Тмн} hizo {X} que {Y}? {КРАТ}: {p} {знак} {n} = {m}."),
+            кто_больше="{X} plantó {n} {Тn}. {Y} plantó {k} {Тk}. ¿quién plantó más {Тмн}? {W} plantó más {Тмн}.",
+            кто_меньше="{X} plantó {n} {Тn}. {Y} plantó {k} {Тk}. ¿quién plantó menos {Тмн}? {W} plantó menos {Тмн}.",
+            поровну="{X} plantó {n} {Тn}. {Y} plantó {n} {Тn}. ¿quién plantó más {Тмн}? ninguno: los dos plantaron lo mismo — {n} {Тn}.",
+            во_сколько_раз="{X} plantó {p} {Тp}. {Y} plantó {n} {Тn}. ¿cuántas veces más {Тмн} plantó {X} que {Y}? {КРАТ}: {p} {знак} {n} = {m}."),
         "держание": dict(
             кто_больше="{X} tiene {n} {Тn}. {Y} tiene {k} {Тk}. ¿quién tiene más {Тмн}? {W} tiene más {Тмн}.",
             кто_меньше="{X} tiene {n} {Тn}. {Y} tiene {k} {Тk}. ¿quién tiene menos {Тмн}? {W} tiene menos {Тмн}.",
@@ -262,10 +265,10 @@ for _n, _k in ПАРЫ:
     },
     "it": {
         "дело": dict(
-            кто_больше="{X} ha fatto {n} {Тn}. {Y} ha fatto {k} {Тk}. chi ha fatto più {Тмн}? {W} ha fatto più {Тмн}.",
-            кто_меньше="{X} ha fatto {n} {Тn}. {Y} ha fatto {k} {Тk}. chi ha fatto meno {Тмн}? {W} ha fatto meno {Тмн}.",
-            поровну="{X} ha fatto {n} {Тn}. {Y} ha fatto {n} {Тn}. chi ha fatto più {Тмн}? nessuno: entrambi ne hanno fatto lo stesso numero — {n} {Тn}.",
-            во_сколько_раз="{X} ha fatto {p} {Тp}. {Y} ha fatto {n} {Тn}. quante volte più {Тмн} ha fatto {X} di {Y}? {КРАТ}: {p} {знак} {n} = {m}."),
+            кто_больше="{X} ha piantato {n} {Тn}. {Y} ha piantato {k} {Тk}. chi ha piantato più {Тмн}? {W} ha piantato più {Тмн}.",
+            кто_меньше="{X} ha piantato {n} {Тn}. {Y} ha piantato {k} {Тk}. chi ha piantato meno {Тмн}? {W} ha piantato meno {Тмн}.",
+            поровну="{X} ha piantato {n} {Тn}. {Y} ha piantato {n} {Тn}. chi ha piantato più {Тмн}? nessuno: entrambi ne hanno piantato lo stesso numero — {n} {Тn}.",
+            во_сколько_раз="{X} ha piantato {p} {Тp}. {Y} ha piantato {n} {Тn}. quante volte più {Тмн} ha piantato {X} di {Y}? {КРАТ}: {p} {знак} {n} = {m}."),
         "держание": dict(
             кто_больше="{X} ha {n} {Тn}. {Y} ha {k} {Тk}. chi ha più {Тмн}? {W} ha più {Тмн}.",
             кто_меньше="{X} ha {n} {Тn}. {Y} ha {k} {Тk}. chi ha meno {Тмн}? {W} ha meno {Тмн}.",
@@ -274,10 +277,10 @@ for _n, _k in ПАРЫ:
     },
     "pt": {
         "дело": dict(
-            кто_больше="{X} fez {n} {Тn}. {Y} fez {k} {Тk}. quem fez mais {Тмн}? {W} fez mais {Тмн}.",
-            кто_меньше="{X} fez {n} {Тn}. {Y} fez {k} {Тk}. quem fez menos {Тмн}? {W} fez menos {Тмн}.",
-            поровну="{X} fez {n} {Тn}. {Y} fez {n} {Тn}. quem fez mais {Тмн}? ninguém: os dois fizeram o mesmo — {n} {Тn}.",
-            во_сколько_раз="{X} fez {p} {Тp}. {Y} fez {n} {Тn}. quantas vezes mais {Тмн} fez {X} do que {Y}? {КРАТ}: {p} {знак} {n} = {m}."),
+            кто_больше="{X} plantou {n} {Тn}. {Y} plantou {k} {Тk}. quem plantou mais {Тмн}? {W} plantou mais {Тмн}.",
+            кто_меньше="{X} plantou {n} {Тn}. {Y} plantou {k} {Тk}. quem plantou menos {Тмн}? {W} plantou menos {Тмн}.",
+            поровну="{X} plantou {n} {Тn}. {Y} plantou {n} {Тn}. quem plantou mais {Тмн}? ninguém: os dois plantaram o mesmo — {n} {Тn}.",
+            во_сколько_раз="{X} plantou {p} {Тp}. {Y} plantou {n} {Тn}. quantas vezes mais {Тмн} plantou {X} do que {Y}? {КРАТ}: {p} {знак} {n} = {m}."),
         "держание": dict(
             кто_больше="{X} tem {n} {Тn}. {Y} tem {k} {Тk}. quem tem mais {Тмн}? {W} tem mais {Тмн}.",
             кто_меньше="{X} tem {n} {Тn}. {Y} tem {k} {Тk}. quem tem menos {Тмн}? {W} tem menos {Тмн}.",
@@ -286,10 +289,10 @@ for _n, _k in ПАРЫ:
     },
     "nl": {
         "дело": dict(
-            кто_больше="{X} deed {n} {Тn}. {Y} deed {k} {Тk}. wie deed meer {Тмн}? {W} deed meer {Тмн}.",
-            кто_меньше="{X} deed {n} {Тn}. {Y} deed {k} {Тk}. wie deed minder {Тмн}? {W} deed minder {Тмн}.",
-            поровну="{X} deed {n} {Тn}. {Y} deed {n} {Тn}. wie deed meer {Тмн}? niemand: beiden deden evenveel — {n} {Тn}.",
-            во_сколько_раз="{X} deed {p} {Тp}. {Y} deed {n} {Тn}. hoeveel keer meer {Тмн} deed {X} dan {Y}? {КРАТ} zoveel: {p} {знак} {n} = {m}."),
+            кто_больше="{X} plantte {n} {Тn}. {Y} plantte {k} {Тk}. wie plantte meer {Тмн}? {W} plantte meer {Тмн}.",
+            кто_меньше="{X} plantte {n} {Тn}. {Y} plantte {k} {Тk}. wie plantte minder {Тмн}? {W} plantte minder {Тмн}.",
+            поровну="{X} plantte {n} {Тn}. {Y} plantte {n} {Тn}. wie plantte meer {Тмн}? niemand: beiden plantten evenveel — {n} {Тn}.",
+            во_сколько_раз="{X} plantte {p} {Тp}. {Y} plantte {n} {Тn}. hoeveel keer meer {Тмн} plantte {X} dan {Y}? {КРАТ} zoveel: {p} {знак} {n} = {m}."),
         "держание": dict(
             кто_больше="{X} heeft {n} {Тn}. {Y} heeft {k} {Тk}. wie heeft meer {Тмн}? {W} heeft meer {Тмн}.",
             кто_меньше="{X} heeft {n} {Тn}. {Y} heeft {k} {Тk}. wie heeft minder {Тмн}? {W} heeft minder {Тмн}.",
@@ -298,9 +301,9 @@ for _n, _k in ПАРЫ:
     },
     "pl": {
         "дело": dict(
-            кто_больше="{X} {В} {n} {Тn}. {Y} {ВY} {k} {Тk}. kto zrobił więcej {Тмн}? {W} {ВW} więcej {Тмн}.",
-            кто_меньше="{X} {В} {n} {Тn}. {Y} {ВY} {k} {Тk}. kto zrobił mniej {Тмн}? {W} {ВW} mniej {Тмн}.",
-            поровну="{X} {В} {n} {Тn}. {Y} {ВY} {n} {Тn}. kto zrobił więcej {Тмн}? nikt: obydwoje zrobili po tyle samo — {n} {Тn}.",
+            кто_больше="{X} {В} {n} {Тn}. {Y} {ВY} {k} {Тk}. kto posadził więcej {Тмн}? {W} {ВW} więcej {Тмн}.",
+            кто_меньше="{X} {В} {n} {Тn}. {Y} {ВY} {k} {Тk}. kto posadził mniej {Тмн}? {W} {ВW} mniej {Тмн}.",
+            поровну="{X} {В} {n} {Тn}. {Y} {ВY} {n} {Тn}. kto posadził więcej {Тмн}? nikt: obydwoje posadzili po tyle samo — {n} {Тn}.",
             во_сколько_раз="{X} {В} {p} {Тp}. {Y} {ВY} {n} {Тn}. ile razy więcej {Тмн} {В} {X} niż {Y}? {КРАТ} więcej: {p} {знак} {n} = {m}."),
         "держание": dict(
             кто_больше="{X} ma {n} {Тn}. {Y} ma {k} {Тk}. kto ma więcej {Тмн}? {W} ma więcej {Тмн}.",
@@ -318,7 +321,7 @@ for _язык, _слово in РАВЕНСТВО.items():
     assert any(_слово in РАМКИ[_язык][_гр]["поровну"] for _гр in ГРУППЫ), (_язык, "the equality word is not in its frame")
 
 def _товар(язык, ключ, c):
-    """The goods in the count form of c — the SVAMP house's forms, the pack's rule."""
+    """The goods in the count form of c — the story house's forms, the pack's rule."""
     return S._товар_форма(язык, ключ, c)
 
 
@@ -327,14 +330,15 @@ def _поля(язык, группа, i, j, ключ, n, k, m):
     if Y[0] == X[0]:
         Y = S._лицо(язык, j + 1)
     s, r, p = n + k, n - k, n * m
-    п = dict(X=X[0], Xр=X[2], Y=Y[0], Yр=Y[2], n=n, k=k, s=s, r=r, p=p, m=m,
+    п = dict(X=X[0], Xр=X[2], Xчьё=S._имя_чьё(язык, X), Y=Y[0], Yр=Y[2], n=n, k=k, s=s, r=r, p=p, m=m,
              Тn=_товар(язык, ключ, n), Тk=_товар(язык, ключ, k), Тs=_товар(язык, ключ, s),
              Тr=_товар(язык, ключ, r), Тp=_товар(язык, ключ, p), Тмн=S.ТОВАРЫ_АКТОВ[язык][ключ][-1],
              КРАТ=КРАТ[язык][m])
     if язык in ГЛАГОЛ_ДЕЛА:
         п["В"] = ГЛАГОЛ_ДЕЛА[язык] + A._а(язык, X[1])
         п["ВY"] = ГЛАГОЛ_ДЕЛА[язык] + A._а(язык, Y[1])
-    род = РОД.get(язык, {}).get(п["Тмн"], "f")
+    род = S.РОД_ТОВАРА_АКТОВ.get(язык, {}).get(п["Тмн"])
+    assert язык not in РОДОВЫЕ or род in ("m", "f"), (язык, п["Тмн"], "the goods' gender is not declared")
     for дыра, (м_, ж_) in РОДОВЫЕ.get(язык, {}).items():
         п[дыра] = м_ if род == "m" else ж_
     п["_X"], п["_Y"] = X, Y      # the faces themselves: the winner is chosen by the frame
@@ -399,7 +403,7 @@ def _показы():
 # РОД ЗДЕСЬ ТРЕТИЙ, А НЕ ВТОРОЙ (13.09). Значение показа — тройка (язык, группа, форма).
 # Группа («дело» или «держание») есть ДОВОД страницы, как местоимение у соседа `pronobject`:
 # она выбирает товары и вторую волну, но не меняет утверждения о сравнении. Род есть ФОРМА:
-# «больше_на» о крышках и «больше_на» об отжиманиях суть один род и один закон суда.
+# «больше_на» о банках и «больше_на» о посаженных дубах суть один род и один закон суда.
 #
 #     ДОМ, У КОТОРОГО РОД СТОИТ НЕ НА ОБЫЧНОМ МЕСТЕ, ГОВОРИТ ЭТО САМ. Указатель родов,
 #     угадывающий место, назвал бы родами две группы и потерял бы восемь форм.
@@ -449,7 +453,7 @@ def _образец(язык, рамка):
     имена, род = _alt(л[0] for л in лица), _alt(л[2] for л in лица)
     товары = _alt(ФОРМЫ_ТОВАРОВ[язык])
     глагол = _alt([ГЛАГОЛ_ДЕЛА[язык], ГЛАГОЛ_ДЕЛА[язык] + A._а(язык, "f")]) if язык in ГЛАГОЛ_ДЕЛА else None
-    дыры = {"X": имена, "Y": имена, "Xр": род, "Yр": род, "n": r"\d+", "k": r"\d+", "s": r"\d+", "r": r"\d+",
+    дыры = {"X": имена, "Y": имена, "Xр": род, "Xчьё": _alt(S._имя_чьё(язык, л) for л in лица), "Yр": род, "n": r"\d+", "k": r"\d+", "s": r"\d+", "r": r"\d+",
             "p": r"\d+", "m": r"\d+", "Тn": товары, "Тk": товары, "Тs": товары, "Тr": товары, "Тp": товары,
             "Тмн": товары, "КРАТ": _alt(КРАТ[язык].values()), "знак": r"[+−×÷]", "В": глагол, "ВY": глагол,
             "W": имена, "Wр": род, "ВW": глагол}
@@ -481,6 +485,10 @@ def _вердикт(язык, группа, форма, м):
             return False
         з[дыра] = v
     if "знак" in з and з["знак"] != ЗНАК.get(форма):
+        return False
+    # the possessive is the possessive of the page's own first bearer, not of a neighbour
+    if "Xчьё" in з and (з.get("X") not in ЛИЦА_ПО_ИМЕНИ[язык]
+                        or S._имя_чьё(язык, ЛИЦА_ПО_ИМЕНИ[язык][з["X"]]) != з["Xчьё"]):
         return False
     ч = {д: int(з[д]) for д in ("n", "k", "s", "r", "p", "m") if д in з}
     if any(v < 1 for v in ч.values()):
@@ -521,7 +529,9 @@ def _вердикт(язык, группа, форма, м):
         return False
     if not any(кл in ТОВАРЫ[группа] for кл in ключи):
         return False
-    род = РОД.get(язык, {}).get(з["Тмн"], "f")
+    род = S.РОД_ТОВАРА_АКТОВ.get(язык, {}).get(з["Тмн"])
+    if язык in РОДОВЫЕ and род not in ("m", "f"):
+        return False
     for дыра, пара in РОДОВЫЕ.get(язык, {}).items():
         if дыра in з and з[дыра] != (пара[0] if род == "m" else пара[1]):
             return False
@@ -602,7 +612,7 @@ def _самопроверка():
             мутанты += 6
         # (8) the question word of the wrong gender (es/it/pt)
         for дыра, пара in РОДОВЫЕ.get(язык, {}).items():
-            б = страница(язык, "дело", "во_столько", 0, 3, "отжимания", 16, 7, 2)
+            б = страница(язык, "дело", "во_столько", 0, 3, ТОВАРЫ["дело"][0], 16, 7, 2)
             стоит = next((с for с in пара if f" {с} " in б), None)
             if стоит is None:
                 continue
@@ -634,16 +644,37 @@ def _самопроверка():
             # (12) the inverse of TIMES whose division does not divide
             assert судить(вр.replace(" ÷ 16 = 2", " ÷ 16 = 3")) == (True, False), вр
             мутанты += 3
-    print("  ", страница("ru", "дело", "больше_на", 0, 3, "отжимания", 16, 7))
-    print("  ", страница("es", "дело", "меньше_на", 1, 4, "отжимания", 22, 9))
-    print("  ", страница("it", "держание", "во_столько", 2, 5, "крышки", 26, 11, 2))
-    print("  ", страница("pl", "дело", "на_сколько", 3, 6, "скручивания", 28, 13))
-    print("  ", страница("pt", "держание", "больше_на", 0, 3, "фигурки", 32, 14))
-    print("  ", страница("nl", "держание", "меньше_на", 1, 4, "мелки", 36, 15))
-    print("  ", страница("ru", "держание", "кто_больше", 0, 3, "крышки", 26, 11))
-    print("  ", страница("en", "дело", "кто_меньше", 1, 4, "отжимания", 22, 9, обратно=True))
-    print("  ", страница("de", "держание", "поровну", 2, 5, "фигурки", 32, 14))
-    print("  ", страница("pl", "дело", "во_сколько_раз", 3, 6, "скручивания", 16, 7, 3))
+        # (14) the possessive of a NEIGHBOUR («o dobro das fotos do Pedro» on a page of João), and
+        # the uncontracted article that stood in 96 pages until 23.09 («de o João»)
+        if язык == "pt":
+            for группа in ГРУППЫ:
+                в = страница(язык, группа, "во_столько", 1, 4, ТОВАРЫ[группа][0], 22, 9, 2)
+                X, чужой = S._лицо(язык, 1), S._лицо(язык, 2)
+                assert S._имя_чьё(язык, X) in в, в
+                assert судить(в.replace(S._имя_чьё(язык, X), S._имя_чьё(язык, чужой))) == (True, False), в
+                assert судить(в.replace(S._имя_чьё(язык, X), "de " + X[0])) == (False, False), в
+                мутанты += 2
+        # (13) the Slavic TIMES question whose verb does not bend by its bearer: until 23.09 the
+        # Russian frame held a bare «сделал» there, and «… сделал Аня, чем Дима?» was called true
+        if язык in ГЛАГОЛ_ДЕЛА:
+            i = next(i for i in range(len(A.ЛИЦА[язык])) if S._лицо(язык, i)[1] == "f")
+            X = S._лицо(язык, i)
+            вр = страница(язык, "дело", "во_сколько_раз", i, i + 1, ТОВАРЫ["дело"][0], 16, 7, 2)
+            согласный = ГЛАГОЛ_ДЕЛА[язык] + A._а(язык, "f")
+            assert судить(вр) == (True, True) and f"{согласный} {X[0]}" in вр, вр
+            битая = вр.replace(f"{согласный} {X[0]}", f"{ГЛАГОЛ_ДЕЛА[язык]} {X[0]}")
+            assert судить(битая) == (True, False), битая
+            мутанты += 1
+    print("  ", страница("ru", "дело", "больше_на", 0, 3, "дубы", 16, 7))
+    print("  ", страница("es", "дело", "меньше_на", 1, 4, "дубы", 22, 9))
+    print("  ", страница("it", "держание", "во_столько", 2, 5, "банки", 26, 11, 2))
+    print("  ", страница("pl", "дело", "на_сколько", 3, 6, "берёзы", 28, 13))
+    print("  ", страница("pt", "держание", "больше_на", 0, 3, "грибы", 32, 14))
+    print("  ", страница("nl", "держание", "меньше_на", 1, 4, "груши", 36, 15))
+    print("  ", страница("ru", "держание", "кто_больше", 0, 3, "марки", 26, 11))
+    print("  ", страница("en", "дело", "кто_меньше", 1, 4, "дубы", 22, 9, обратно=True))
+    print("  ", страница("de", "держание", "поровну", 2, 5, "орехи", 32, 14))
+    print("  ", страница("pl", "дело", "во_сколько_раз", 3, 6, "берёзы", 16, 7, 3))
     print(f"  мутантов поймано: {мутанты}")
     по_форме, по_языку = {}, {}
     for _, (язык, группа, форма) in ПОКАЗЫ.items():

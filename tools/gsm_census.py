@@ -9,7 +9,17 @@ BE RE-DERIVED: it becomes a hand-written list wearing the word
 produced.
 
     python3 tools/gsm_census.py            # print the list
-    python3 tools/gsm_census.py --court    # compare with gsm_items
+    python3 tools/gsm_census.py --court    # judge gsm_items: our doors only; band coverage measured
+
+ПЕРЕПИСЬ ОСТАЛАСЬ ПРИБОРОМ И ПЕРЕСТАЛА БЫТЬ ИСТОЧНИКОМ (23.09, слово владельца, путь «а» ведущего).
+Суд прежде требовал, чтобы словарь `gsm_items` СОВПАДАЛ с переписью полос, то есть держал течь по
+самой двери законом. Ныне закон обратный:
+
+    ВСЯКОЕ СЛОВО СЛОВАРЯ СКЛОНЯЕТСЯ ПАКЕТОМ en И ОБЪЯВЛЕНО КЛАССОМ ВЕЩЕЙ `verbthings` ЛИБО
+    ДОМОМ ОДУШЕВЛЁННОСТИ; слово, пришедшее лишь из полосы, есть течь.
+
+Совпадение словаря с переписью печатается ЧИСЛОМ — это мера покрытия, а не требование. Проба
+идёт при каждом суде: подсаженное слово одной лишь полосы («chimichangas») обязано быть названо.
 
 TWO INDEPENDENT WITNESSES, then certification:
   · the word stands after a number at least LAW times;
@@ -102,19 +112,29 @@ def main():
         print(f"GSM-CENSUS ЛЕНТА: {len(derived)} предметов "
               f"(окно через {len(BETWEEN)} слов, кворум {LAW})", file=sys.stderr)
         return 0
-    from gsm_items import ITEMS, WITHHELD
-    shipped = set(ITEMS) | set(WITHHELD)
-    lost = sorted(set(derived) - shipped)
-    extra = sorted(shipped - set(derived))
+    from gsm_items import ITEMS, ШКОЛЬНЫЕ_КЛАССЫ
+    import verbthings
+    from animacy import ANIMATE
+    пакет = json.loads((ROOT / "tools" / "langpacks" / "en.json").read_text(encoding="utf-8"))
+    склоняет = set(пакет["noun_forms"].values())
+    в_классах = set().union(*(getattr(verbthings, к) for к in ШКОЛЬНЫЕ_КЛАССЫ)) | set(ANIMATE)
+
+    def чужие(слова):
+        return sorted(w for w in слова if w not in склоняет or w not in в_классах)
+
+    # ПРОБА: слово одной лишь полосы обязано быть названо — иначе суд слеп и не вправе судить
+    if "chimichangas" not in чужие(list(ITEMS) + ["chimichangas"]):
+        print("GSM-CENSUS ОТКАЗ: проба не прошла — слово одной лишь полосы не названо")
+        return 2
+    беда = чужие(ITEMS)
+    покрыто = sorted(set(derived) & set(ITEMS))
     print(
-        f"GSM-CENSUS {'PASS' if not (lost or extra) else 'FAIL'}: "
-        f"{len(lost) + len(extra)} расхождений "
-        f"({len(derived)} выведено, {len(ITEMS)} в слое, "
-        f"{len(WITHHELD)} удержано)"
-        + (f"\n  выведено, но не в слое: {lost}" if lost else "")
-        + (f"\n  в слое, но не выведено: {extra}" if extra else "")
+        f"GSM-CENSUS {'PASS' if not беда else 'FAIL'}: слов словаря не из наших дверей {len(беда)} "
+        f"(рубеж 0) из {len(ITEMS)}; покрытие переписи полос — мера, а не закон: "
+        f"{len(покрыто)} из {len(derived)} слов переписи стоят и в словаре"
+        + (f"\n  не из наших дверей: {беда}" if беда else "")
     )
-    return 0 if not (lost or extra) else 1
+    return 0 if not беда else 1
 
 
 if __name__ == "__main__":

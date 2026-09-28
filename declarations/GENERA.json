@@ -1,7 +1,7 @@
 {
  "comment": "таблица родов с формулами — эталон суда охвата; числа показов замерены генераторами на 5 проходах (tools/genera_table.py)",
  "родов": 162,
- "показов": 14710,
+ "показов": 14500,
  "роды": [
   {
    "мир": "gsmforms",
@@ -82,11 +82,11 @@
    ],
    "вопрос": {
     "en": [
-     "the class has # pupils and # of them are girls. what percentage of the class are girls?"
+     "the orchard has # trees and # of them are pear trees. what percentage of the trees are pear trees?"
     ],
     "ru": [
-     "если в классе # учеников, из них # — девочек, какова доля девочек в процентах?",
-     "если в классе # учеников, из них # — девочки, какова доля девочек в процентах?"
+     "если в саду # деревьев, из них # груш, какова доля груш в процентах?",
+     "если в саду # деревьев, из них # груши, какова доля груш в процентах?"
     ]
    },
    "показов": {
@@ -107,11 +107,11 @@
    ],
    "вопрос": {
     "en": [
-     "the parcel weighs # ounces and a pound is # ounces. what is the weight in pounds?"
+     "a bag of apples weighs # ounces and a pound is # ounces. what is the weight in pounds?"
     ],
     "ru": [
-     "если посылка весит # унций, а в фунте # унций, каков вес в фунтах?",
-     "если посылка весит # унции, а в фунте # унций, каков вес в фунтах?"
+     "если мешок яблок весит # унций, а в фунте # унций, каков вес в фунтах?",
+     "если мешок яблок весит # унции, а в фунте # унций, каков вес в фунтах?"
     ]
    },
    "показов": {
@@ -134,13 +134,13 @@
    ],
    "вопрос": {
     "en": [
-     "the tank is # feet wide and # feet long and holds # cubic feet of water. what is the tank's water depth?"
+     "the pit is # meters wide and # meters long and holds # cubic meters of sand. how deep is the sand in the pit?"
     ],
     "ru": [
-     "если бак шириной # фута и длиной # фута вмещает # кубических футов воды, какова глубина воды в баке?",
-     "если бак шириной # футов и длиной # фута вмещает # кубических футов воды, какова глубина воды в баке?",
-     "если бак шириной # фута и длиной # футов вмещает # кубических футов воды, какова глубина воды в баке?",
-     "если бак шириной # футов и длиной # футов вмещает # кубических футов воды, какова глубина воды в баке?"
+     "если яма шириной # метров и длиной # метра вмещает # кубических метров песка, какой толщины слой песка в яме?",
+     "если яма шириной # метра и длиной # метров вмещает # кубических метров песка, какой толщины слой песка в яме?",
+     "если яма шириной # метров и длиной # метров вмещает # кубических метров песка, какой толщины слой песка в яме?",
+     "если яма шириной # метра и длиной # метра вмещает # кубических метра песка, какой толщины слой песка в яме?"
     ]
    },
    "показов": {
@@ -163,14 +163,11 @@
    ],
    "вопрос": {
     "en": [
-     "a bag holds # red marbles and # blue marbles. what is the probability of drawing a red marble, expressed as a fraction?",
-     "a bag holds # red marbles and # blue marble. what is the probability of drawing a red marble, expressed as a fraction?"
+     "a jar holds # black buttons and # white buttons. what is the probability of taking a black button, written as a fraction?",
+     "a jar holds # black buttons and # white button. what is the probability of taking a black button, written as a fraction?"
     ],
     "ru": [
-     "если в мешке # шаров красных и # шаров синих, какова вероятность вынуть красный шар, выраженная дробью?",
-     "если в мешке # шара красных и # шаров синих, какова вероятность вынуть красный шар, выраженная дробью?",
-     "если в мешке # шара красных и # шара синих, какова вероятность вынуть красный шар, выраженная дробью?",
-     "если в мешке # шаров красных и # шара синих, какова вероятность вынуть красный шар, выраженная дробью?"
+     "если в банке чёрных пуговиц #, а белых #, какова вероятность взять чёрную пуговицу, записанная дробью?"
     ]
    },
    "показов": {
@@ -194,13 +191,15 @@
    ],
    "вопрос": {
     "en": [
-     "if # is one quarter of the class, how many pupils does the class have?",
-     "if # is two quarters of the class, how many pupils does the class have?",
-     "if # is three quarters of the class, how many pupils does the class have?"
+     "if # pages are one quarter of the book, how many pages does the book have?",
+     "if # pages are two quarters of the book, how many pages does the book have?",
+     "if # pages are three quarters of the book, how many pages does the book have?"
     ],
     "ru": [
-     "если # — это три четверти класса, сколько учеников в классе?",
-     "если # — это две четверти класса, сколько учеников в классе?"
+     "если # страниц — это две четверти книги, сколько страниц в книге?",
+     "если # страниц — это три четверти книги, сколько страниц в книге?",
+     "если # страницы — это три четверти книги, сколько страниц в книге?",
+     "если # страницы — это две четверти книги, сколько страниц в книге?"
     ]
    },
    "показов": {
@@ -223,15 +222,15 @@
    ],
    "вопрос": {
     "en": [
-     "if there were originally # cars in the lot and # drove away, how many cars remain?",
-     "the set has # pieces and # are in the box. how many pieces are missing?",
-     "if there were # people on the bus and # got off, how many people are on the bus now?"
+     "if there were originally # ducks on the pond and # flew away, how many ducks remain?",
+     "the album has room for # stamps and # are glued in. how many stamps are missing?",
+     "if there were # guests at the party and # went home, how many guests are at the party now?"
     ],
     "ru": [
-     "если в автобусе было # человек, а # вышли, сколько человек в автобусе теперь?",
-     "если в наборе # деталей, а в коробке # деталей, сколько деталей не хватает?",
-     "если в наборе # деталей, а в коробке # детали, сколько деталей не хватает?",
-     "если в автобусе было # человека, а # вышли, сколько человек в автобусе теперь?"
+     "если на празднике было # гостей, а # ушли домой, сколько гостей на празднике теперь?",
+     "если мест для марок в альбоме #, а вклеено # марок, сколько марок не хватает?",
+     "если мест для марок в альбоме #, а вклеено # марки, сколько марок не хватает?",
+     "если на празднике было # гостя, а # ушёл домой, сколько гостей на празднике теперь?"
     ]
    },
    "показов": {
@@ -256,10 +255,10 @@
    ],
    "вопрос": {
     "en": [
-     "if the town has # people and a tenth of the whole population lives in the centre, how many people live in the centre?"
+     "if the library has # books and a tenth of all the books stand in the reading room, how many books stand in the reading room?"
     ],
     "ru": [
-     "если в городе # человек, и четверть всего населения живёт в центре, сколько человек живёт в центре?"
+     "если в библиотеке # книг, и четверть всех книг стоит в читальном зале, сколько книг стоит в читальном зале?"
     ]
    },
    "показов": {
@@ -281,12 +280,12 @@
    ],
    "вопрос": {
     "en": [
-     "if the number of boys on the team is # and the number of girls is #, how many players does the team have?"
+     "if the number of books on the shelf is # and the number of magazines is #, how many items does the shelf hold?"
     ],
     "ru": [
-     "если в команде # мальчиков и # девочек, сколько человек в команде?",
-     "если в команде # мальчиков и # девочки, сколько человек в команде?",
-     "если в команде # мальчика и # девочек, сколько человек в команде?"
+     "если на полке # книг и # журналов, сколько всего предметов на полке?",
+     "если на полке # книг и # журнала, сколько всего предметов на полке?",
+     "если на полке # книги и # журналов, сколько всего предметов на полке?"
     ]
    },
    "показов": {
@@ -310,13 +309,13 @@
    ],
    "вопрос": {
     "en": [
-     "if the car cost # dollars and the house cost twice as much as the car, how much did the house cost?",
-     "if the car cost # dollars and the house cost three times as much as the car, how much did the house cost?",
-     "if the car cost # dollars and the house cost four times as much as the car, how much did the house cost?"
+     "if the tractor cost # dollars and the barn cost twice as much as the tractor, how much did the barn cost?",
+     "if the tractor cost # dollars and the barn cost three times as much as the tractor, how much did the barn cost?",
+     "if the tractor cost # dollars and the barn cost four times as much as the tractor, how much did the barn cost?"
     ],
     "ru": [
-     "если машина стоила # долларов, а дом стоил вчетверо дороже машины, сколько стоил дом?",
-     "если машина стоила # долларов, а дом стоил втрое дороже машины, сколько стоил дом?"
+     "если трактор стоил # долларов, а амбар стоил вчетверо дороже трактора, сколько стоил амбар?",
+     "если трактор стоил # долларов, а амбар стоил втрое дороже трактора, сколько стоил амбар?"
     ]
    },
    "показов": {
@@ -339,10 +338,10 @@
    ],
    "вопрос": {
     "en": [
-     "if the design started with # panels, was tripled and then reduced by #, how many panels does the final design have?"
+     "if the order started with # boxes, was tripled and then reduced by #, how many boxes does the final order have?"
     ],
     "ru": [
-     "если проект начался с # панелей, его утроили и потом убавили на #, сколько панелей в итоговом проекте?"
+     "если заказ начинался с # коробок, его утроили и потом убавили на #, сколько коробок в итоговом заказе?"
     ]
    },
    "показов": {
@@ -364,10 +363,11 @@
    ],
    "вопрос": {
     "en": [
-     "if the circumference of the earth is # miles and the plane flies # miles per hour, how many hours does the flight around the earth take?"
+     "if the road around the lake is # kilometers long and the cyclist rides # kilometers per hour, how many hours does the ride around the lake take?"
     ],
     "ru": [
-     "если длину окружности земли берут за # миль, а самолёт летит # миль в час, сколько часов занимает полёт вокруг земли?"
+     "если дорога вокруг озера длиной # километров, а велосипедист едет # километров в час, сколько часов занимает поездка вокруг озера?",
+     "если дорога вокруг озера длиной # километра, а велосипедист едет # километров в час, сколько часов занимает поездка вокруг озера?"
     ]
    },
    "показов": {
@@ -389,11 +389,11 @@
    ],
    "вопрос": {
     "en": [
-     "if the total length of the ropes is # meters and there are # ropes, how long is the average rope?"
+     "if the total height of the poles is # meters and there are # poles, how tall is the average pole?"
     ],
     "ru": [
-     "если общая длина верёвок # метров, а верёвок #, какова длина средней верёвки?",
-     "если общая длина верёвок # метра, а верёвок #, какова длина средней верёвки?"
+     "если общая высота столбов # метров, а столбов #, какова высота среднего столба?",
+     "если общая высота столбов # метра, а столбов #, какова высота среднего столба?"
     ]
    },
    "показов": {
@@ -418,13 +418,13 @@
    ],
    "вопрос": {
     "en": [
-     "if @ has # books, @ has # more books than @, and @ has three times as many books as @, how many books do they have together?"
+     "if @ has # shells, @ has # more shells than @, and @ has three times as many shells as @, how many shells do they have together?"
     ],
     "ru": [
-     "если @ имеет # книг, @ имеет на # книг больше, чем @, а @ имеет втрое больше книг, чем @, сколько книг у них вместе?",
-     "если @ имеет # книг, @ имеет на # книги больше, чем @, а @ имеет втрое больше книг, чем @, сколько книг у них вместе?",
-     "если @ имеет # книги, @ имеет на # книг больше, чем @, а @ имеет втрое больше книг, чем @, сколько книг у них вместе?",
-     "если @ имеет # книги, @ имеет на # книги больше, чем @, а @ имеет втрое больше книг, чем @, сколько книг у них вместе?"
+     "если @ имеет # ракушек, @ имеет на # ракушек больше, чем @, а @ имеет втрое больше ракушек, чем @, сколько ракушек у них вместе?",
+     "если @ имеет # ракушек, @ имеет на # ракушки больше, чем @, а @ имеет втрое больше ракушек, чем @, сколько ракушек у них вместе?",
+     "если @ имеет # ракушки, @ имеет на # ракушек больше, чем @, а @ имеет втрое больше ракушек, чем @, сколько ракушек у них вместе?",
+     "если @ имеет # ракушки, @ имеет на # ракушки больше, чем @, а @ имеет втрое больше ракушек, чем @, сколько ракушек у них вместе?"
     ]
    },
    "показов": {
@@ -446,13 +446,13 @@
    ],
    "вопрос": {
     "en": [
-     "if @ makes # candles an hour and works # hours, how many candles does @ make?"
+     "if @ signs # postcards an hour and works # hours, how many postcards does @ sign?"
     ],
     "ru": [
-     "если @ делает # свечей в час и работает # часа, сколько свечей делает @?",
-     "если @ делает # свечей в час и работает # часов, сколько свечей делает @?",
-     "если @ делает # свечи в час и работает # часов, сколько свечей делает @?",
-     "если @ делает # свечи в час и работает # часа, сколько свечей делает @?"
+     "если @ подписывает # открыток в час и работает # часа, сколько открыток подписывает @?",
+     "если @ подписывает # открыток в час и работает # часов, сколько открыток подписывает @?",
+     "если @ подписывает # открытки в час и работает # часов, сколько открыток подписывает @?",
+     "если @ подписывает # открытки в час и работает # часа, сколько открыток подписывает @?"
     ]
    },
    "показов": {
@@ -475,12 +475,12 @@
    ],
    "вопрос": {
     "en": [
-     "if @ had # post-it notes, used # on the fridge and # on the door, how many post-it notes does @ have left?"
+     "if @ had # candies, put # in the red bowl and # in the blue bowl, how many candies does @ have left?"
     ],
     "ru": [
-     "если у Маши было # листков, # ушли на холодильник и # на дверь, сколько листков осталось?",
-     "если у Маши было # листка, # ушли на холодильник и # на дверь, сколько листков осталось?",
-     "если у Маши было # листок, # ушли на холодильник и # на дверь, сколько листков осталось?"
+     "если у Маши было # конфет, # ушли в красную вазу и # в синюю, сколько конфет осталось?",
+     "если у Маши было # конфеты, # ушли в красную вазу и # в синюю, сколько конфет осталось?",
+     "если у Маши была # конфета, # ушли в красную вазу и # в синюю, сколько конфет осталось?"
     ]
    },
    "показов": {
@@ -502,11 +502,11 @@
    ],
    "вопрос": {
     "en": [
-     "if @ planted # trees in the morning and # trees in the afternoon, how many more trees did @ plant in the morning than in the afternoon?"
+     "if @ painted # posts yesterday and # posts today, how many more posts did @ paint yesterday than today?"
     ],
     "ru": [
-     "если @ утром посадила # деревьев, а днём # деревьев, на сколько деревьев больше утром, чем днём?",
-     "если @ утром посадила # деревьев, а днём # дерева, на сколько деревьев больше утром, чем днём?"
+     "если @ вчера покрасила # столбов, а сегодня # столбов, на сколько столбов больше вчера, чем сегодня?",
+     "если @ вчера покрасила # столбов, а сегодня # столба, на сколько столбов больше вчера, чем сегодня?"
     ]
    },
    "показов": {
@@ -528,12 +528,12 @@
    ],
    "вопрос": {
     "en": [
-     "if each pack costs # dollars and there is a discount of # dollars on each pack, how much do you have to pay for each pack?"
+     "if a ticket costs # dollars and pupils get a discount of # dollars on each ticket, how much does a pupil pay for a ticket?"
     ],
     "ru": [
-     "если каждая пачка стоит # долларов, и на каждую пачку скидка # долларов, сколько надо заплатить за каждую пачку?",
-     "если каждая пачка стоит # доллара, и на каждую пачку скидка # долларов, сколько надо заплатить за каждую пачку?",
-     "если каждая пачка стоит # доллар, и на каждую пачку скидка # долларов, сколько надо заплатить за каждую пачку?"
+     "если билет стоит # долларов, и ученикам на каждый билет скидка # долларов, сколько ученик платит за билет?",
+     "если билет стоит # доллара, и ученикам на каждый билет скидка # долларов, сколько ученик платит за билет?",
+     "если билет стоит # доллар, и ученикам на каждый билет скидка # долларов, сколько ученик платит за билет?"
     ]
    },
    "показов": {
@@ -587,11 +587,10 @@
    ],
    "вопрос": {
     "en": [
-     "if there are # pupils and they stand in groups of #, how many groups are there?"
+     "if there are # plates and they are stacked in piles of #, how many piles are there?"
     ],
     "ru": [
-     "если # учеников стоят группами по #, сколько групп?",
-     "если # ученика стоят группами по #, сколько групп?"
+     "если тарелок # и их сложили стопками по #, сколько стопок?"
     ]
    },
    "показов": {
@@ -614,11 +613,10 @@
    ],
    "вопрос": {
     "ru": [
-     "если # учеников стоят группами по #, сколько учеников вне групп?",
-     "если # ученика стоят группами по #, сколько учеников вне групп?"
+     "если яиц # и их разложили по коробкам по #, сколько яиц останется?"
     ],
     "en": [
-     "if there are # pupils and they stand in groups of #, how many pupils are left over?"
+     "if there are # eggs and they are packed in boxes of #, how many eggs are left over?"
     ]
    },
    "показов": {
@@ -641,24 +639,24 @@
    ],
    "вопрос": {
     "en": [
-     "if there were # storks and # birds on the fence, how many more storks than birds were there?",
-     "if @ spent # dollars on the shirt and # dollars on the hat, how much more money did @ spend on the shirt than on the hat?",
-     "if there were # red flowers and # white flowers in the garden, how many fewer white flowers than red flowers were there?",
-     "if ann brought # balloons and dan brought # balloons, how many more balloons did ann bring than dan?"
+     "if there were # apples and # pears in the basket, how many more apples than pears were there?",
+     "if @ spent # dollars on train tickets and # dollars on lunch, how much more money did @ spend on train tickets than on lunch?",
+     "if there were # ducks and # swans on the lake, how many fewer swans than ducks were there?",
+     "if the owl caught # mice and the fox caught # mice, how many more mice did the owl catch than the fox?"
     ],
     "ru": [
-     "если @ съела в понедельник # печений, а во вторник # печенья, на сколько печений больше в понедельник, чем во вторник?",
-     "если @ испёк # тортов и # булочки, на сколько тортов больше, чем булочек?",
-     "если @ потратила # долларов на книги и # долларов на ручки, на сколько долларов больше потрачено на книги, чем на ручки?",
-     "если @ прочитал # страниц математики и # страницы чтения, на сколько страниц математики больше, чем страниц чтения?"
+     "если @ вымыла в субботу # тарелок, а в воскресенье # тарелки, на сколько тарелок больше в субботу, чем в воскресенье?",
+     "если @ написал # писем и # открытки, на сколько писем больше, чем открыток?",
+     "если @ потратила # долларов на краску и # долларов на кисти, на сколько долларов больше потрачено на краску, чем на кисти?",
+     "если @ покрасил утром # столбов, а вечером # столбов, на сколько столбов больше утром, чем вечером?"
     ]
    },
    "показов": {
-    "en/вопрос": 32,
+    "en/вопрос": 27,
     "en/отрицание": 20,
     "en/утверждение": 20,
-    "ru/вопрос": 4,
-    "ru/утверждение": 4
+    "ru/вопрос": 6,
+    "ru/утверждение": 7
    },
    "всего": 80
   },
@@ -675,16 +673,16 @@
    ],
    "вопрос": {
     "ru": [
-     "если @ продала утром # книг, днём # и вечером #, сколько книг @ продала днём?",
-     "если @ продала утром # книг, днём # и вечером #, сколько книг @ продала вечером?",
-     "если @ продал утром # книг, днём # и вечером #, сколько книг @ продал утром?",
-     "если @ продал утром # книг, днём # и вечером #, сколько книг @ продал днём?"
+     "если @ вымыла в понедельник # чашек, во вторник # и в среду #, сколько чашек @ вымыла во вторник?",
+     "если @ вымыла в понедельник # чашек, во вторник # и в среду #, сколько чашек @ вымыла в среду?",
+     "если @ вымыл в понедельник # чашек, во вторник # и в среду #, сколько чашек @ вымыл в понедельник?",
+     "если @ вымыл в понедельник # чашек, во вторник # и в среду #, сколько чашек @ вымыл во вторник?"
     ],
     "en": [
-     "if @ played with # kids in the morning, # in the afternoon and # in the evening, how many kids did @ play with in all?",
-     "if @ found # bottle caps in the morning, # in the afternoon and # in the evening, how many bottle caps did @ find in all?",
-     "if @ cut # roses in the morning, # in the afternoon and # in the evening, how many roses did @ cut in the morning?",
-     "if @ found # bottle caps in the morning, # in the afternoon and # in the evening, how many bottle caps did @ find in the morning?"
+     "if @ fed # rabbits on Monday, # on Tuesday and # on Wednesday, how many rabbits did @ feed in all?",
+     "if @ counted # boats on Monday, # on Tuesday and # on Wednesday, how many boats did @ count in all?",
+     "if @ sold # tickets on Monday, # on Tuesday and # on Wednesday, how many tickets did @ sell on Monday?",
+     "if @ counted # boats on Monday, # on Tuesday and # on Wednesday, how many boats did @ count on Monday?"
     ]
    },
    "показов": {
@@ -699,7 +697,7 @@
   {
    "мир": "gsmforms",
    "семейство": "остаток",
-   "формула": "ответ = n − k (проданы торты) | n (проданы булочки)",
+   "формула": "ответ = n − k (проданы яблоки) | n (проданы груши)",
    "величины": [
     "k",
     "m",
@@ -708,14 +706,14 @@
    ],
    "вопрос": {
     "en": [
-     "if the baker made # cakes and # pastries and sold # pastries, how many cakes would the baker still have?",
-     "if the baker made # cakes and # pastries and sold # cakes, how many cakes would the baker still have?"
+     "if the gardener picked # apples and # pears and sold # pears, how many apples would the gardener still have?",
+     "if the gardener picked # apples and # pears and sold # apples, how many apples would the gardener still have?"
     ],
     "ru": [
-     "если пекарь испёк # тортов и # булочек и продал # булочки, сколько тортов осталось?",
-     "если пекарь испёк # тортов и # булочки и продал # тортов, сколько тортов осталось?",
-     "если пекарь испёк # торта и # булочек и продал # тортов, сколько тортов осталось?",
-     "если пекарь испёк # торта и # булочек и продал # булочки, сколько тортов осталось?"
+     "если @ собрал # яблок и # груш и продал # груши, сколько яблок осталось?",
+     "если @ собрал # яблок и # груши и продал # яблок, сколько яблок осталось?",
+     "если @ собрал # яблока и # груш и продал # яблок, сколько яблок осталось?",
+     "если @ собрала # яблока и # груш и продала # груши, сколько яблок осталось?"
     ]
    },
    "показов": {
@@ -740,14 +738,13 @@
    ],
    "вопрос": {
     "en": [
-     "if there are # girls and # boys in the class, how many pupils are there in the class?",
-     "if there are # pupils in the class and # of them are girls, how many boys are there in the class?"
+     "if there are # residents on the first floor and # on the second floor, how many residents does the house have?",
+     "if the house has # residents and # of them live on the first floor, how many residents live on the second floor?"
     ],
     "ru": [
-     "если в классе # учеников, из них # девочек, сколько мальчиков в классе?",
-     "если в классе # девочек и # мальчиков, сколько учеников в классе?",
-     "если в классе # девочек и # мальчика, сколько учеников в классе?",
-     "если в классе # ученика, из них # девочек, сколько мальчиков в классе?"
+     "если на первом этаже # жителей, а на втором #, сколько жителей в доме?",
+     "если в доме # жителей, из них # живут на первом этаже, сколько жителей на втором этаже?",
+     "если в доме # жителя, из них # живут на первом этаже, сколько жителей на втором этаже?"
     ]
    },
    "показов": {
@@ -804,11 +801,11 @@
    ],
    "вопрос": {
     "en": [
-     "if @ gave the craftsman # #-dollar bills for a hat worth # dollars, how much change did @ get?"
+     "if a lamp costs # dollars and @ hands over # #-dollar bills, how much change does @ get?"
     ],
     "ru": [
-     "если @ дала мастеру # купюры по # долларов за шляпу ценой # долларов, какова сдача?",
-     "если @ дала мастеру # купюры по # долларов за шляпу ценой # доллар, какова сдача?"
+     "если лампа стоит # долларов, а @ даёт # купюры по # долларов, какова сдача?",
+     "если лампа стоит # доллар, а @ даёт # купюры по # долларов, какова сдача?"
     ]
    },
    "показов": {
@@ -831,11 +828,11 @@
    ],
    "вопрос": {
     "en": [
-     "if @ bought the magazines at # dollars and sells them at #/# of the price, what is the profit?"
+     "if @ bought a bicycle for # dollars and sells it at #/# of that price, what is the profit?"
     ],
     "ru": [
-     "если @ купила журналы за # долларов и продаёт их за #/# цены, какова прибыль?",
-     "если @ купила журналы за # доллара и продаёт их за #/# цены, какова прибыль?"
+     "если @ купила велосипед за # долларов и продаёт его за #/# этой цены, какова прибыль?",
+     "если @ купила велосипед за # доллара и продаёт его за #/# этой цены, какова прибыль?"
     ]
    },
    "показов": {
@@ -857,10 +854,10 @@
    ],
    "вопрос": {
     "en": [
-     "if @ reported # people at the concert, overstating the number by # percent, how many people really attended?"
+     "if @ said # guests came to the party, overstating the number by # percent, how many guests really came?"
     ],
     "ru": [
-     "если @ сообщила, что на концерте было # человек, завысив число на # процентов, сколько человек было на самом деле?"
+     "если @ сказала, что гостей на празднике было #, но завысила число на # процентов, сколько гостей было на самом деле?"
     ]
    },
    "показов": {
@@ -885,15 +882,15 @@
    ],
    "вопрос": {
     "en": [
-     "if there were # ants and half as many bugs as ants in the garden, how many insects were there in all?",
-     "if there were # ants and twice as many bugs as ants in the garden, how many insects were there in all?",
-     "if there were # ants and three times as many bugs as ants in the garden, how many insects were there in all?"
+     "if there were # apples and half as many pears as apples in the basket, how many apples and pears were there in all?",
+     "if there were # apples and twice as many pears as apples in the basket, how many apples and pears were there in all?",
+     "if there were # apples and three times as many pears as apples in the basket, how many apples and pears were there in all?"
     ],
     "ru": [
-     "если в саду было # муравьёв и втрое больше жуков, сколько всего муравьёв и жуков?",
-     "если в саду было # муравьёв и вдвое больше жуков, сколько всего муравьёв и жуков?",
-     "если в саду было # муравья и вдвое больше жуков, сколько всего муравьёв и жуков?",
-     "если в саду было # муравья и втрое больше жуков, сколько всего муравьёв и жуков?"
+     "если в корзине было # яблок и втрое больше груш, сколько всего яблок и груш?",
+     "если в корзине было # яблок и вдвое больше груш, сколько всего яблок и груш?",
+     "если в корзине было # яблока и вдвое больше груш, сколько всего яблок и груш?",
+     "если в корзине было # яблока и втрое больше груш, сколько всего яблок и груш?"
     ]
    },
    "показов": {
@@ -908,7 +905,7 @@
   {
    "мир": "gsmforms",
    "семейство": "части",
-   "формула": "ответ = всего ÷ (k + 1) (участок) | всего ÷ (k + 1) × k (дом)",
+   "формула": "ответ = всего ÷ (k + 1) (прицеп) | всего ÷ (k + 1) × k (лодка)",
    "величины": [
     "k",
     "всего",
@@ -919,14 +916,14 @@
    ],
    "вопрос": {
     "en": [
-     "if a house and a lot cost # dollars and the house cost # times as much as the lot, how much did the lot cost?",
-     "if a house and a lot cost # dollars and the house cost # times as much as the lot, how much did the house cost?",
-     "if a house and a lot cost # dollars and the house cost twice as much as the lot, how much did the lot cost?",
-     "if a house and a lot cost # dollars and the house cost three times as much as the lot, how much did the house cost?"
+     "if a boat and a trailer cost # dollars and the boat cost # times as much as the trailer, how much did the trailer cost?",
+     "if a boat and a trailer cost # dollars and the boat cost # times as much as the trailer, how much did the boat cost?",
+     "if a boat and a trailer cost # dollars and the boat cost twice as much as the trailer, how much did the trailer cost?",
+     "if a boat and a trailer cost # dollars and the boat cost three times as much as the trailer, how much did the boat cost?"
     ],
     "ru": [
-     "если дом и участок стоили # долларов, а дом стоил вчетверо дороже участка, сколько стоил участок?",
-     "если дом и участок стоили # долларов, а дом стоил втрое дороже участка, сколько стоил участок?"
+     "если лодка и прицеп стоили # долларов, а лодка стоила вчетверо дороже прицепа, сколько стоил прицеп?",
+     "если лодка и прицеп стоили # долларов, а лодка стоила втрое дороже прицепа, сколько стоил прицеп?"
     ]
    },
    "показов": {
@@ -953,10 +950,10 @@
    ],
    "вопрос": {
     "en": [
-     "the grasshopper jumped # inches. the mouse jumped # inches. how many more inches did the grasshopper jump than the mouse?",
-     "@ completed # pages. @ completed # pages. how many more pages did @ complete than @?",
-     "@ sent # letters. @ sent # letters. how many more letters did @ send than @?",
-     "@ removed # books. @ removed # books. how many more books did @ remove than @?"
+     "the goat climbed # steps. the dog climbed # steps. how many more steps did the goat climb than the dog?",
+     "@ painted # posts. @ painted # posts. how many more posts did @ paint than @?",
+     "@ sent # parcels. @ sent # parcels. how many more parcels did @ send than @?",
+     "@ watched # films. @ watched # films. how many more films did @ watch than @?"
     ],
     "ru": [
      "@ прочитала # страниц. @ прочитал # страниц. на сколько страниц больше прочитала @, чем @?",
@@ -2711,9 +2708,9 @@
    "вопрос": "how many {мелкие} do {предмет} equal?",
    "формула": "мелких = крупных × отношение (граф единиц)",
    "показов": {
-    "ru/вопрос": 105
+    "ru/вопрос": 0
    },
-   "всего": 105
+   "всего": 0
   },
   {
    "мир": "units",
@@ -2721,9 +2718,9 @@
    "вопрос": "чему равно {предмет}?",
    "формула": "мелких = крупных × отношение (граф единиц)",
    "показов": {
-    "ru/вопрос": 105
+    "ru/вопрос": 0
    },
-   "всего": 105
+   "всего": 0
   }
  ]
 }

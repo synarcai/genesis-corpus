@@ -16,6 +16,8 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import phrases  # noqa: E402
+import units  # noqa: E402 — длина недели
+import unitforms  # noqa: E402 — фраза постоянной на языке страницы
 
 # per language: days (nominative), oblique days where the phrase bends them,
 # the count forms of «day» (one, many), the statement and the question
@@ -80,13 +82,51 @@ assert set(_РОДЫ_В_ЯЗЫКЕ) <= set(next(iter(ЯЗЫКИ.values()))), "р
               "pt": "o dia {j} é {Y}", "nl": "dag {j} is {Y}", "pl": "dzień {j} to {Y}", "tr": "{j}. gün {Y}"}
 
 
+# ДЛИНА НЕДЕЛИ — У ДВЕРИ ЕДИНИЦ (23.09): «eine Woche hat 7 Tage» говорит `unitforms`, и число её
+# то же, каким замыкается круг имён.
+_НЕДЕЛЯ = units.отношение("week", "day")
+assert _НЕДЕЛЯ.denominator == 1, _НЕДЕЛЯ
+НЕДЕЛЯ = int(_НЕДЕЛЯ)
+assert all(len(я["дни"]) == НЕДЕЛЯ for я in ЯЗЫКИ.values())
+
+
 def леджер(язык, i, n):
-    """THE LEDGER OF THE CYCLE (holon 03.09): «2 + 3 = 5, Tag 5 ist Freitag»,
-    over the edge «6 + 3 = 9, 9 − 7 = 2, Tag 2 ist Dienstag»."""
+    """THE LEDGER OF THE CYCLE (holon 03.09): «Tag 2 ist Dienstag, 2 + 3 = 5, Tag 5 ist Freitag»,
+    over the edge «Tag 6 ist Samstag, 6 + 3 = 9, eine Woche hat 7 Tage, 9 − 7 = 2, Tag 2 ist
+    Dienstag».
+
+    ВСЕ ЧИСЛА УРАВНЕНИЯ СТОЯТ В СТРАНИЦЕ (23.09): номер дня-начала сказан той же рамкой, что номер
+    итога (`ДЕНЬ_НОМЕР`), а длина недели — дверью единиц; прежде обе держались в уме читателя."""
     s = i + 1 + n
-    j = s - 7 if s > 7 else s
-    шаги = [f"{i + 1} + {n} = {s}"] + ([f"{s} − 7 = {j}"] if s > 7 else [])
-    return ", ".join(шаги + [ДЕНЬ_НОМЕР[язык].format(j=j, Y=ЯЗЫКИ[язык]["дни"][j - 1])])
+    j = s - НЕДЕЛЯ if s > НЕДЕЛЯ else s
+    дни = ЯЗЫКИ[язык]["дни"]
+    шаги = [ДЕНЬ_НОМЕР[язык].format(j=i + 1, Y=дни[i]), f"{i + 1} + {n} = {s}"]
+    if s > НЕДЕЛЯ:
+        шаги += [unitforms.сказать_отношение(язык, "week", "day"), f"{s} − {НЕДЕЛЯ} = {j}"]
+    return ", ".join(шаги + [ДЕНЬ_НОМЕР[язык].format(j=j, Y=дни[j - 1])])
+
+
+def подсадки():
+    """ПРЕДСТАВЛЕННОЕ «НЕТ» ЛЕДЖЕРА КРУГА (23.09), выведенное из таблиц дома, — [(род, битая строка)]:
+    номер дня-начала чужой, неделя сказана чужим языком, вычитание недели неверно."""
+    вон = []
+    i, n = НЕДЕЛЯ - 2, 3
+    s = i + 1 + n
+    языки = list(ЯЗЫКИ)
+    for к, язык in enumerate(языки):
+        л = леджер(язык, i, n)
+        с = next(п for п in ПОКАЗЫ if (": " + л + ".") in п)
+        свой = ДЕНЬ_НОМЕР[язык].format(j=i + 1, Y=ЯЗЫКИ[язык]["дни"][i])
+        вон.append(("номер начала чужой", с, с.replace(свой, ДЕНЬ_НОМЕР[язык].format(j=i, Y=ЯЗЫКИ[язык]["дни"][i]), 1)))
+        фраза = unitforms.сказать_отношение(язык, "week", "day")
+        чужая = unitforms.сказать_отношение(языки[(к + 1) % len(языки)], "week", "day")
+        вон.append(("неделя чужим языком", с, с.replace(фраза, чужая)))
+        вон.append(("неделя с чужим числом", с, с.replace(фраза, фраза.replace(str(НЕДЕЛЯ), str(НЕДЕЛЯ + 1)))))
+        вон.append(("вычитание недели неверно", с, с.replace(f"{s} − {НЕДЕЛЯ} = {s - НЕДЕЛЯ}",
+                                                               f"{s} − {НЕДЕЛЯ} = {s - НЕДЕЛЯ + 1}")))
+    for род, было, битая in вон:
+        assert битая != было, (род, было)
+    return [(род, битая) for род, _, битая in вон]
 
 
 def _косв(язык, i):
@@ -135,7 +175,9 @@ def _образец(язык, шаблон):
     я = ЯЗЫКИ[язык]
     alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=lambda с: (-len(с), с))) + ")"
     дыры = {"n": r"(\d+)", "д": alt(я["день"]), "X": alt(я.get("косв", я["дни"])), "Y": alt(я["дни"]),
-            "л": r"(\d+ \+ \d+ = \d+(?:, \d+ − 7 = \d+)?, .+?)"}   # «2. gün salı» carries a period
+            # леджер сверяется с домом буква в букву (`судить_группы`), и дыра его широка нарочно:
+            # «Tag 6 ist Samstag, 6 + 3 = 9, eine Woche hat 7 Tage, 9 − 7 = 2, Tag 2 ist Dienstag»
+            "л": r"(.+?\d+ \+ \d+ = \d+.*?)"}   # «2. gün salı» carries a period
     return phrases.образец(шаблон, дыры)
 
 

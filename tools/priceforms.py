@@ -19,6 +19,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import langpack  # noqa: E402
+import rugram  # noqa: E402 — the Russian count door: the form at a digit
 
 _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
 
@@ -65,6 +66,28 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                рамка=("{В1} kosztuje {n} {Р}. ile kosztują {k} {Вk}?", "{v} {Рv}: {k} × {n} = {v}.")),
 }
 
+# ВЕЩИ ЯЗЫКОВ, У КОТОРЫХ ДОМ ЦЕНЫ РАМКИ НЕ ИМЕЕТ (23.09, дом ставки на единицу по заказу руки
+# rate — десять языков). Дверь вещей одна, и она здесь; мир цены ходит лишь по `ЯЗЫКИ`, и
+# украинской страницы цены эта таблица не пишет. Формы — ячейки пакета uk (one / few / many);
+# слова те же, что держит дом украинского счёта (`ukcountforms`: яблуко, книга).
+ВЕЩИ_БЕЗ_РАМКИ = {
+    "uk": dict(вещи=(dict(one="одне яблуко", few="яблука", many="яблук"),
+                     dict(one="одна книга", few="книги", many="книг"),
+                     dict(one="один олівець", few="олівці", many="олівців")),
+               валюта=dict(one="гривня", few="гривні", many="гривень")),
+}
+assert not set(ВЕЩИ_БЕЗ_РАМКИ) & set(ЯЗЫКИ), "язык с рамкой цены берёт вещи из `ЯЗЫКИ`"
+
+
+def вещи(язык):
+    """Вещи языка у одной двери: языки рамки цены и языки без неё."""
+    return (ЯЗЫКИ.get(язык) or ВЕЩИ_БЕЗ_РАМКИ[язык])["вещи"]
+
+
+def валюта(язык):
+    return (ЯЗЫКИ.get(язык) or ВЕЩИ_БЕЗ_РАМКИ[язык])["валюта"]
+
+
 # ИМЕНА РОДОВ ДЛЯ ПЕРЕПИСИ ДОМОВ (`scripts/houses_census.py`): она печатает их тому, кто ищет
 # в своде дыру, — чтобы дом не был построен второй раз.
 #
@@ -96,10 +119,34 @@ def _пакет(язык):
 
 
 def форма(язык, таблица, k):
-    """The count form of a thing or the currency for k — by the pack's rule."""
+    """The count form of a thing or the currency for k — by the pack's rule.
+
+    THE RUSSIAN FORM AT A DIGIT IS THE COUNT DOOR'S (24.09). The Russian table keeps in its «one»
+    cell the phrase for one — «одно яблоко», «одна книга» — for the frames that say «one apple
+    costs»; the pack's rule sends 21 and 31 to that cell too, and two houses wrote «у меня осталось
+    21 один карандаш» (29 lines). The form after a digit is taken where every Russian house takes
+    it — `rugram.форма` — and the phrase stays the phrase: `таблица["one"]` for those who say it.
+    """
     формы = list(таблица)
+    if язык == "ru":
+        ключ = rugram.ПО_ФОРМЕ.get(таблица["many"])
+        if ключ is not None:
+            return rugram.форма(ключ, k)
     i = langpack.count_form_index(_пакет(язык), {"forms": формы}, k)
     return таблица[формы[i]]
+
+
+def _самопроверка_формы():
+    """The door and the table agree wherever the table speaks of a count: few and many."""
+    я = ЯЗЫКИ["ru"]
+    for таблица in list(я["вещи"]) + [я["валюта"]]:
+        ключ = rugram.ПО_ФОРМЕ.get(таблица["many"])
+        assert ключ is not None, таблица
+        assert (rugram.форма(ключ, 2), rugram.форма(ключ, 5)) == (таблица["few"], таблица["many"]), таблица
+        assert таблица["one"].split()[-1] == rugram.форма(ключ, 1), таблица
+
+
+_самопроверка_формы()
 
 
 def страница(язык, в, n, k):

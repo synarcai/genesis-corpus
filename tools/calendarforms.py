@@ -18,6 +18,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import units  # noqa: E402
+import unitforms  # noqa: E402 — фраза постоянной: «a week has 7 days», «в неделе 7 дней»
 from plural import by_count  # noqa: E402
 
 РОДЫ = ('дни', 'соседи', 'вопросы', 'месяцы', 'годом', 'колесо_парой')
@@ -84,19 +85,37 @@ for _и, _м in enumerate(МЕСЯЦЫ_RU):
     assert МЕСЯЦЫ_RU_ТВОР[_и] == _г.ПАРАДИГМЫ[_м][4], _м
 
 
+# ДЛИНА НЕДЕЛИ — У ДВЕРИ ЕДИНИЦ, А НЕ ЛИТЕРАЛОМ ЗДЕСЬ: «a week has 7 days» говорит дверь
+# (`unitforms.сказать_отношение`), и число её то же, каким замыкается круг имён.
+_НЕДЕЛЯ = units.отношение("week", "day")
+assert _НЕДЕЛЯ.denominator == 1, _НЕДЕЛЯ
+НЕДЕЛЯ = int(_НЕДЕЛЯ)
+assert НЕДЕЛЯ == len(ДНИ_EN) == len(ДНИ_RU), (НЕДЕЛЯ, len(ДНИ_EN))
+
+
+def номер_дня(язык, j):
+    """«day 5 is friday» / «день 5 — пятница»: номер дня недели одной рамкой на оба конца леджера."""
+    return f"day {j} is {ДНИ_EN[j - 1]}" if язык == "en" else f"день {j} — {ДНИ_RU[j - 1]}"
+
+
 def леджер_круга(i, k, язык):
     """THE LEDGER OF THE CYCLE (holon 03.09, ONE-CARRIER — the head of the
     answer stays, the chain after the colon is its witness — wave 70 cf96e016
-    reads the head before the colon): the day numbers
-    of the week are declared («monday is day number 1 of the week»), so the
-    step is arithmetic on them — «2 + 3 = 5, day 5 is friday», and over the
-    edge «6 + 3 = 9, 9 − 7 = 2, day 2 is tuesday»."""
+    reads the head before the colon): the step is arithmetic on the day numbers
+    of the week — «day 2 is tuesday, 2 + 3 = 5, day 5 is friday», and over the
+    edge «day 6 is saturday, 6 + 3 = 9, a week has 7 days, 9 − 7 = 2, day 2 is
+    tuesday».
+
+    ВСЕ ЧИСЛА УРАВНЕНИЯ СТОЯТ В СТРАНИЦЕ (23.09, слово ведущего о скрытых постоянных): номер дня,
+    с которого идёт шаг, и длина недели прежде жили в других страницах мира («monday is day number
+    1 of the week») и в уме читателя — «6 + 3 = 9, 9 − 7 = 2» держало и шестёрку, и семёрку за
+    кадром. Ныне номер начала сказан той же рамкой, что номер итога, а неделя — дверью единиц."""
     s = i + 1 + k
-    j = s - 7 if s > 7 else s
-    имя = ДНИ_EN[j - 1] if язык == "en" else ДНИ_RU[j - 1]
-    шаги = [f"{i + 1} + {k} = {s}"] + ([f"{s} − 7 = {j}"] if s > 7 else [])
-    хвост = f"day {j} is {имя}" if язык == "en" else f"день {j} — {имя}"
-    return ", ".join(шаги + [хвост])
+    j = s - НЕДЕЛЯ if s > НЕДЕЛЯ else s
+    шаги = [номер_дня(язык, i + 1), f"{i + 1} + {k} = {s}"]
+    if s > НЕДЕЛЯ:
+        шаги += [unitforms.сказать_отношение(язык, "week", "day"), f"{s} − {НЕДЕЛЯ} = {j}"]
+    return ", ".join(шаги + [номер_дня(язык, j)])
 
 
 def дни(шаг):
@@ -291,6 +310,31 @@ def _показы():
 
 
 ПОКАЗЫ = _показы()
+
+
+def подсадки():
+    """ПРЕДСТАВЛЕННОЕ «НЕТ» ЛЕДЖЕРА КРУГА (23.09), выведенное из таблиц дома, — [(род, битая строка)].
+
+    Страница шага через край недели портится там, где с 23.09 стоят числа уравнения: номер
+    дня-начала назван чужим, фраза недели сказана чужим языком или с чужим числом («a week has 8
+    days» — сверка с дверью единиц), вычитание недели неверно."""
+    вон = []
+    i, k = НЕДЕЛЯ - 2, 3                     # суббота и три дня: шаг через край
+    s = i + 1 + k
+    for язык in ("en", "ru"):
+        л = леджер_круга(i, k, язык)
+        с = next(п for п in ПОКАЗЫ if п.endswith(": " + л + "."))
+        свой = номер_дня(язык, i + 1)
+        вон.append(("номер начала чужой", с, с.replace(свой, свой.replace(str(i + 1), str(i), 1), 1)))
+        фраза = unitforms.сказать_отношение(язык, "week", "day")
+        чужая = unitforms.сказать_отношение("ru" if язык == "en" else "en", "week", "day")
+        вон.append(("неделя чужим языком", с, с.replace(фраза, чужая)))
+        вон.append(("неделя с чужим числом", с, с.replace(фраза, фраза.replace(str(НЕДЕЛЯ), str(НЕДЕЛЯ + 1)))))
+        вон.append(("вычитание недели неверно", с, с.replace(f"{s} − {НЕДЕЛЯ} = {s - НЕДЕЛЯ}",
+                                                               f"{s} − {НЕДЕЛЯ} = {s - НЕДЕЛЯ + 1}")))
+    for род, было, битая in вон:
+        assert битая != было, (род, было)
+    return [(род, битая) for род, _, битая in вон]
 
 
 def _самопроверка():

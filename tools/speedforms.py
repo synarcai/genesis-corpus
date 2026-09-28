@@ -23,6 +23,12 @@ pair) and the hour word of the house of the clock — one declaration, several r
 here: the ratio unit of each language, the abbreviation of the kilometre, and the frames of a
 journey.
 
+TWO SPEEDS COMPARED (24.09, the lead's order): the reference speed said before the comparison and the
+compared after it, the answer naming its vehicle — «the bus goes 60 km/h. the train goes 20 km/h faster
+than the bus. how fast does the train go? the train goes 80 km/h: 60 + 20 = 80.», the same with «slower»,
+and «how much faster does the train go than the bus?», in the nine languages. The word of comparison is
+a hole of the frame taking both words of the language, so the court calls a swapped word a lie.
+
 WHAT IS NOT MEASURED, NAMED: acceleration, a speed that changes on the way, and any unit but
 the kilometre per hour.
 """
@@ -138,6 +144,98 @@ def рамка(язык, форма):
 ЗНАК_ФОРМЫ = {"путь": "×", "время": "÷", "скорость": "÷"}
 
 
+# СКОРОСТЬ СРАВНИВАЕТСЯ СКОРОСТЬЮ (24.09, заказ ведущего: «faster than» в своде 5 строк, и ни одной в форме,
+# какую читает рынок подписей сравнения — скорость опоры ДО четвёрки, сравниваемого ПОСЛЕ). Второй едок —
+# автобус; ответ называет едока («the train goes 80 km/h»), иначе рынку не из чего взять значение после
+# четвёрки. Формы сравнения — СВОЙ кортеж: `ФОРМЫ` читает ключ следующей точки, и три формы поездки в нём
+# остаются теми же.
+#
+#     БЫСТРЕЕ И МЕДЛЕННЕЕ — ОДНА РАЗНОСТЬ СКОРОСТЕЙ, СКАЗАННАЯ С ДВУХ КОНЦОВ; ЗНАК ЗВЕНА — ЕЁ ПОДПИСЬ.
+СРАВНЕНИЯ = ("быстрее", "медленнее", "насколько_быстрее")
+# РОДЫ ДОМА — ПОЕЗДКА И СРАВНЕНИЕ (25.09, указатель родов): страницы помечены родом сравнения, и объявление
+# обязано их знать; `ФОРМЫ` остаются тремя формами поездки — их читает ключ следующей точки.
+РОДЫ = ФОРМЫ + СРАВНЕНИЯ
+# (скорость быстрого, скорость медленного): разность не меньше пяти, и числа не те, что у поездки
+ПАРЫ_СРАВНЕНИЯ = ((80, 60), (95, 70), (120, 85), (65, 45), (110, 90), (75, 40), (130, 95), (100, 55),
+                  (90, 65), (70, 50), (125, 80), (85, 45))
+# (слово «быстрее», слово «медленнее») каждого языка: в шаблоне это дыра {СР}, и суд сверяет её со знаком
+СЛОВА_СРАВНЕНИЯ = {"ru": ("быстрее", "медленнее"), "en": ("faster", "slower"), "de": ("schneller", "langsamer"),
+                   "fr": ("plus vite", "moins vite"), "es": ("más rápido", "más despacio"),
+                   "it": ("più veloce", "più piano"), "pt": ("mais depressa", "mais devagar"),
+                   "nl": ("sneller", "langzamer"), "pl": ("szybciej", "wolniej")}
+РЕЧЬ_СРАВНЕНИЯ = {
+    "ru": dict(быстрее="автобус едет {V1} {ЕД}. поезд идёт на {D} {ЕД} {СР}, чем автобус. с какой скоростью "
+                       "идёт поезд? поезд идёт {V2} {ЕД}: {V1} {зн} {D} = {V2}.",
+               медленнее="поезд идёт {V2} {ЕД}. автобус едет на {D} {ЕД} {СР}, чем поезд. с какой скоростью "
+                         "едет автобус? автобус едет {V1} {ЕД}: {V2} {зн} {D} = {V1}.",
+               насколько_быстрее="поезд идёт {V2} {ЕД}, а автобус едет {V1} {ЕД}. на сколько {СР} идёт поезд, "
+                                 "чем автобус? на {D} {ЕД}: {V2} {зн} {V1} = {D}."),
+    "en": dict(быстрее="the bus goes {V1} {ЕД}. the train goes {D} {ЕД} {СР} than the bus. how fast does the "
+                       "train go? the train goes {V2} {ЕД}: {V1} {зн} {D} = {V2}.",
+               медленнее="the train goes {V2} {ЕД}. the bus goes {D} {ЕД} {СР} than the train. how fast does "
+                         "the bus go? the bus goes {V1} {ЕД}: {V2} {зн} {D} = {V1}.",
+               насколько_быстрее="the train goes {V2} {ЕД} and the bus goes {V1} {ЕД}. how much {СР} does the "
+                                 "train go than the bus? {D} {ЕД} {СР}: {V2} {зн} {V1} = {D}."),
+    "de": dict(быстрее="der Bus fährt {V1} {ЕД}. der Zug fährt {D} {ЕД} {СР} als der Bus. wie schnell fährt der "
+                       "Zug? der Zug fährt {V2} {ЕД}: {V1} {зн} {D} = {V2}.",
+               медленнее="der Zug fährt {V2} {ЕД}. der Bus fährt {D} {ЕД} {СР} als der Zug. wie schnell fährt "
+                         "der Bus? der Bus fährt {V1} {ЕД}: {V2} {зн} {D} = {V1}.",
+               насколько_быстрее="der Zug fährt {V2} {ЕД} und der Bus fährt {V1} {ЕД}. wie viel {СР} fährt der "
+                                 "Zug als der Bus? {D} {ЕД} {СР}: {V2} {зн} {V1} = {D}."),
+    "fr": dict(быстрее="le bus roule à {V1} {ЕД}. le train roule {D} {ЕД} {СР} que le bus. à quelle vitesse "
+                       "roule le train ? le train roule à {V2} {ЕД} : {V1} {зн} {D} = {V2}.",
+               медленнее="le train roule à {V2} {ЕД}. le bus roule {D} {ЕД} {СР} que le train. à quelle "
+                         "vitesse roule le bus ? le bus roule à {V1} {ЕД} : {V2} {зн} {D} = {V1}.",
+               насколько_быстрее="le train roule à {V2} {ЕД} et le bus roule à {V1} {ЕД}. de combien le train "
+                                 "roule-t-il {СР} que le bus ? de {D} {ЕД} : {V2} {зн} {V1} = {D}."),
+    "es": dict(быстрее="el autobús va a {V1} {ЕД}. el tren va {D} {ЕД} {СР} que el autobús. ¿a qué velocidad "
+                       "va el tren? el tren va a {V2} {ЕД}: {V1} {зн} {D} = {V2}.",
+               медленнее="el tren va a {V2} {ЕД}. el autobús va {D} {ЕД} {СР} que el tren. ¿a qué velocidad "
+                         "va el autobús? el autobús va a {V1} {ЕД}: {V2} {зн} {D} = {V1}.",
+               насколько_быстрее="el tren va a {V2} {ЕД} y el autobús va a {V1} {ЕД}. ¿cuánto {СР} va el tren "
+                                 "que el autobús? {D} {ЕД} {СР}: {V2} {зн} {V1} = {D}."),
+    "it": dict(быстрее="l'autobus va a {V1} {ЕД}. il treno va {D} {ЕД} {СР} dell'autobus. a che velocità va il "
+                       "treno? il treno va a {V2} {ЕД}: {V1} {зн} {D} = {V2}.",
+               медленнее="il treno va a {V2} {ЕД}. l'autobus va {D} {ЕД} {СР} del treno. a che velocità va "
+                         "l'autobus? l'autobus va a {V1} {ЕД}: {V2} {зн} {D} = {V1}.",
+               насколько_быстрее="il treno va a {V2} {ЕД} e l'autobus va a {V1} {ЕД}. quanto è {СР} il treno "
+                                 "dell'autobus? di {D} {ЕД}: {V2} {зн} {V1} = {D}."),
+    "pt": dict(быстрее="o autocarro vai a {V1} {ЕД}. o comboio vai {D} {ЕД} {СР} do que o autocarro. a que "
+                       "velocidade vai o comboio? o comboio vai a {V2} {ЕД}: {V1} {зн} {D} = {V2}.",
+               медленнее="o comboio vai a {V2} {ЕД}. o autocarro vai {D} {ЕД} {СР} do que o comboio. a que "
+                         "velocidade vai o autocarro? o autocarro vai a {V1} {ЕД}: {V2} {зн} {D} = {V1}.",
+               насколько_быстрее="o comboio vai a {V2} {ЕД} e o autocarro vai a {V1} {ЕД}. quanto {СР} vai o "
+                                 "comboio do que o autocarro? {D} {ЕД}: {V2} {зн} {V1} = {D}."),
+    "nl": dict(быстрее="de bus rijdt {V1} {ЕД}. de trein rijdt {D} {ЕД} {СР} dan de bus. hoe snel rijdt de "
+                       "trein? de trein rijdt {V2} {ЕД}: {V1} {зн} {D} = {V2}.",
+               медленнее="de trein rijdt {V2} {ЕД}. de bus rijdt {D} {ЕД} {СР} dan de trein. hoe snel rijdt "
+                         "de bus? de bus rijdt {V1} {ЕД}: {V2} {зн} {D} = {V1}.",
+               насколько_быстрее="de trein rijdt {V2} {ЕД} en de bus rijdt {V1} {ЕД}. hoeveel {СР} rijdt de "
+                                 "trein dan de bus? {D} {ЕД} {СР}: {V2} {зн} {V1} = {D}."),
+    "pl": dict(быстрее="autobus jedzie {V1} {ЕД}. pociąg jedzie o {D} {ЕД} {СР} niż autobus. jak szybko jedzie "
+                       "pociąg? pociąg jedzie {V2} {ЕД}: {V1} {зн} {D} = {V2}.",
+               медленнее="pociąg jedzie {V2} {ЕД}. autobus jedzie o {D} {ЕД} {СР} niż pociąg. jak szybko "
+                         "jedzie autobus? autobus jedzie {V1} {ЕД}: {V2} {зн} {D} = {V1}.",
+               насколько_быстрее="pociąg jedzie {V2} {ЕД}, a autobus jedzie {V1} {ЕД}. o ile {СР} jedzie "
+                                 "pociąg niż autobus? o {D} {ЕД}: {V2} {зн} {V1} = {D}."),
+}
+# форма → (слово: 0 «быстрее» / 1 «медленнее», знак звена)
+ЗНАК_СРАВНЕНИЯ = {"быстрее": (0, "+"), "медленнее": (1, "−"), "насколько_быстрее": (0, "−")}
+
+
+def рамка_сравнения(язык, форма):
+    return РЕЧЬ_СРАВНЕНИЯ[язык][форма].replace("{ЕД}", СКОРОСТЬ_ЕД[язык])
+
+
+def сравнение(язык, форма, быстрый, медленный):
+    """Страница сравнения двух скоростей: быстрый — поезд, медленный — автобус."""
+    if быстрый <= медленный:
+        raise ValueError("быстрый обязан быть быстрее")
+    слово, зн = ЗНАК_СРАВНЕНИЯ[форма]
+    return рамка_сравнения(язык, форма).format(V1=медленный, V2=быстрый, D=быстрый - медленный,
+                                               СР=СЛОВА_СРАВНЕНИЯ[язык][слово], зн=зн)
+
+
 def страница(язык, форма, v, t):
     s = v * t
     return рамка(язык, форма).format(V=v, S=s, t=t, T=_часы(язык, t), зн=ЗНАК_ФОРМЫ[форма])
@@ -149,6 +247,12 @@ def _показы():
         for v, t in ПАРЫ:
             for форма in ФОРМЫ:
                 вон[страница(язык, форма, v, t)] = (язык, форма)
+    # сравнения — после поездок: у всякого языка прежние страницы сохраняют свой номер, и кузница,
+    # берущая всякую пятую страницу языка, раздаёт их по проходам как прежде
+    for язык in ЯЗЫКИ:
+        for быстрый, медленный in ПАРЫ_СРАВНЕНИЯ:
+            for форма in СРАВНЕНИЯ:
+                вон[сравнение(язык, форма, быстрый, медленный)] = (язык, форма)
     return вон
 
 
@@ -178,6 +282,25 @@ def _образец(язык, шаблон):
 ОБРАЗЦЫ = [(_образец(язык, рамка(язык, форма)), язык, форма) for язык in ЯЗЫКИ for форма in ФОРМЫ]
 
 
+def _образец_сравнения(язык, шаблон):
+    """Образец страницы сравнения: скорости, разность, знак и СЛОВО сравнения — дыры; слово берёт
+    оба слова языка, чтобы «20 km/h slower» на месте «faster» звалось ложью, а не молчало."""
+    дыры = {"V1": r"\d+", "V2": r"\d+", "D": r"\d+", "СР": _альт(СЛОВА_СРАВНЕНИЯ[язык]), "зн": r"[+−×÷]"}
+    счёт, куски = {}, []
+    for кусок in re.split(r"(\{[^}]+\})", шаблон):
+        if кусок.startswith("{"):
+            дыра = кусок[1:-1]
+            счёт[дыра] = счёт.get(дыра, 0) + 1
+            куски.append(f"(?P<h_{дыра}__{счёт[дыра]}>{дыры[дыра]})")
+        else:
+            куски.append(re.escape(кусок))
+    return re.compile("^" + "".join(куски) + "$")
+
+
+ОБРАЗЦЫ_СРАВНЕНИЯ = [(_образец_сравнения(язык, рамка_сравнения(язык, форма)), язык, форма)
+                     for язык in ЯЗЫКИ for форма in СРАВНЕНИЯ]
+
+
 def _значения(м):
     вон = {}
     for ключ, знач in м.groupdict().items():
@@ -204,6 +327,16 @@ def _вердикт(язык, форма, зн):
     return True
 
 
+def _вердикт_сравнения(язык, форма, зн):
+    """Слово сравнения и знак звена — одно утверждение, сказанное дважды, и оба сверяются с формой;
+    быстрый быстрее медленного ровно на разность."""
+    слово, знак = ЗНАК_СРАВНЕНИЯ[форма]
+    if зн.get("СР") != СЛОВА_СРАВНЕНИЯ[язык][слово] or зн.get("зн") != знак:
+        return False
+    v1, v2, d = int(зн["V1"]), int(зн["V2"]), int(зн["D"])
+    return min(v1, v2, d) >= 1 and v2 - v1 == d
+
+
 def судить(строка):
     """(судимо, истинно): a page of a frame of the house whose ratio recomputes; else silence."""
     с = строка.strip()
@@ -223,6 +356,14 @@ def судить(строка):
         if зн is None:
             return True, False
         return True, _вердикт(язык, форма, зн)
+    for образ, язык, форма in ОБРАЗЦЫ_СРАВНЕНИЯ:
+        м = образ.match(с)
+        if not м:
+            continue
+        зн = _значения(м)
+        if зн is None:
+            return True, False
+        return True, _вердикт_сравнения(язык, форма, зн)
     return False, False
 
 
@@ -258,6 +399,16 @@ def _самопроверка():
         for стр in (п, в, с):
             вопрос = стр[:стр.index("?") + 1].split(". ")[-1]
             assert asking.зачин_объявлен(вопрос) is not False, (язык, вопрос)
+    # (6) СРАВНЕНИЕ: итог звена неверен; слово сравнения перевёрнуто; знак звена перевёрнут
+    for язык in ЯЗЫКИ:
+        быстр, медл = СЛОВА_СРАВНЕНИЯ[язык]
+        п = сравнение(язык, "быстрее", 80, 60)
+        for битая in (п.replace("= 80.", "= 81."), re.sub(rf"(?<!\w){re.escape(быстр)}(?!\w)", медл, п, count=1)):
+            assert битая != п and судить(битая) == (True, False), битая
+        п = сравнение(язык, "медленнее", 80, 60)
+        битая = п.replace("80 − 20 = 60.", "80 + 20 = 60.")
+        assert битая != п and судить(битая) == (True, False), битая
+        мутанты += 3
     for язык in ЯЗЫКИ:
         print("  ", страница(язык, "путь", 60, 3))
     for язык in ("ru", "en", "pl"):

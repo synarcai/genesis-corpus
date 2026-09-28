@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 348 миров, 473343 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 355 миров, 518118 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,14 +11,16 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 160, строк 239773.
+Миров 164, строк 258153.
 
-- **`links`** (17566 строк; declared, whole_only)  
+- **`links`** (18835 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
+- **`perunit`** (15020 строк; recompute, whole_only, exact_only)  
+  **THE RATE PER UNIT** — ONE RELATION, THREE UNKNOWNS, FOUR FORMS, TEN LANGUAGES (23.09, the lead's order through a peer, then the rate hand's «ORDER TO THE CORPUS» of 11:45; measured by its census `canon/judges/tools/rate_order_census.py` on the bake pin d3…
 - **`school_biling_v2c`** (11440 строк; recompute, whole_only)  
   **THE SCHOOL OF ARITHMETIC IN THREE SURFACES** — the largest show world of the corpus (11 380 lines, 470 858 bytes) and, until 12.09, the one that said least about itself: thirty characters of declaration, «arithmetic school (3 surfaces)».
-- **`svamp`** (10445 строк; recompute, whole_only)  
-  **SVAMP SHAPES** — the eight shapes of the live SVAMP band that no frame of the corpus held (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pr…
+- **`svamp`** (9413 строк; recompute, whole_only)  
+  **STORY SHAPES** — eight constructions that a census of the live public band named mute (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pronou…
 - **`holdforms`** (6777 строк; declared, whole_only)  
   **HOLDINGS WITHOUT A VERB** — the first show «only by frames» (05.09, the owner's word through holon: prototype ONE BEARER, a story read only by frames).
 - **`holes`** (6640 строк; recompute, unsigned_only)  
@@ -55,6 +57,8 @@
   **SHARES AND PERCENTS OVER QUANTITIES** — GENUS 2 OF THE g1 BAND (holon's word 03.09, G1-ATTACK): five forms whose ledger is a chain of primitives whole on the axis, en/ru/de — «what is two thirds of 24? two thirds of 24 is 16: 24 ÷ 3 = 8, 8 × 2 = 16.» (den…
 - **`toolforms`** (2907 строк; recompute, whole_only)  
   **THE TOOL** — «the state before · the call · the state after» (05.09, the agent architecture: a tool is known by what it changes and by what it leaves alone).
+- **`age`** (2904 строк; recompute, whole_only, unsigned_only)  
+  **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`discountroad`** (2808 строк; recompute, whole_only, exact_only)  
   **THE MONEY ROAD WITH A DISCOUNT (05.09, the SECOND gate of the silence atlas by d5's measure: 72–76 turns of the grove stop on the money road). A price, a discount ON EACH item, and FOUR questions over one and the same pair of numbers: the price after the …
 - **`joints`** (2700 строк; declared, whole_only)  
@@ -62,15 +66,13 @@
 - **`genesis_story`** (2686 строк; recompute, whole_only, unsigned_only)  
   **THE STORY AS A THIRD SURFACE** — THE OPERATION IS CARRIED BY THE VERB AND NOT BY A SIGN, declared until 12.09 in five words: «story as third surface (verb algebra)».
 - **`gsmforms`** (2591 строк; recompute, exact_only)  
-  **school forms of GSM8K (owner's word 03.09: band g1 to 100 %; e9's FORM-MUTE named the question families whose form with an answer lives in no world)** — first layer of eight families: the total number of X (sum over carriers), temperature in degrees below…
+  **school forms** — constructions named mute by e9's FORM-MUTE census of the public bands (03.09), each family a construction and a formula, the scene our own — first layer of eight families: the total number of X (sum over carriers), temperature in degrees …
 - **`planforms`** (2520 строк; recompute, whole_only)  
   **THE PLAN** — «task · steps · checkable end» (05.09, the agent architecture, the third market and its critical path): a plan is a chain whose EVERY step is checked by a number, and whose end is a verdict about the task.
 - **`sequences`** (2432 строк; recompute, whole_only, unsigned_only)  
   **ПРОГРЕССИЯ** — ЧЛЕН ПО НОМЕРУ И СУММА ПО КОНЦАМ, И ОБА ВЫВЕДЕНЫ НА СТРАНИЦЕ: «член номер 5 прогрессии от 2 с шагом 2 равен 10: 5 − 1 = 4, 4 × 2 = 8, 2 + 8 = 10» и «сумма 3 6 9 12 равна 30: 3 + 12 = 15, 4 × 15 = 60, 60 ÷ 2 = 30».
 - **`relcompare`** (2400 строк; recompute, whole_only)  
   **THE RELATIVE FACT** — a number that belongs to the DIFFERENCE and to neither bearer (07.09).
-- **`age`** (2352 строк; recompute, whole_only, unsigned_only)  
-  **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`geometry`** (2344 строк; recompute, exact_only)  
   **ПЛОЩАДЬ И ПЕРИМЕТР, ВЫВЕДЕННЫЕ, А НЕ ОБЪЯВЛЕННЫЕ: «прямоугольник 2 на 3 имеет периметр 2 + 3 = 5, 2 × 5 = 10». Прямоугольник, треугольник, коробка** — и всякий раз формула проходится числами: сложение сторон, удвоение, умножение.
 - **`space`** (2301 строк; recompute, exact_only)  
@@ -87,14 +89,18 @@
   **THE SELF-MODEL** — predict yourself, then check by the fact (05.09, the corpus side of Д-2: the organism has a Γ-heart and a self-description but no φ as an OPERATION).
 - **`relation`** (2092 строк; recompute, declared, reversibility, whole_only, exact_only, unsigned_only)  
   **metalanguage of structure in both languages: hierarchy (a declared tree of 18 nodes** — containment, level, path from the root), relations on a finite set with reflexivity, symmetry and transitivity each shown WITH a confirming case and WITH a named witne…
+- **`measure_story`** (2016 строк; recompute, whole_only)  
+  **MEASURED STORIES** — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09).
 - **`relations_story`** (1989 строк; recompute, unsigned_only)  
-  **A MULTIPLE, A DIFFERENCE AND A SUM** — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09, G1-ATTACK genus 1 «multiplicative relation + sum», 21 tasks of g1): «there are twice as many worker bees as baby bees. there are 750 bees in all. how many baby bees …
+  **A MULTIPLE, A DIFFERENCE AND A SUM** — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09 — the G1-ATTACK genus «multiplicative relation + sum»; SCENES REWRITTEN 23.09 by the owner's word: the worker bees of g1.6, the books of g1.32 and the cards of g1.37 …
 - **`ninelang`** (1800 строк; recompute, whole_only)  
   **THREE SHAPES IN NINE LANGUAGES** — one place, nine different words (07.09).
-- **`physics`** (1468 строк; recompute, whole_only)  
+- **`physics`** (1472 строк; recompute, whole_only)  
   **ЗАКОН ФИЗИКИ, СКАЗАННЫЙ ФОРМУЛОЙ И ТУТ ЖЕ ПРОЙДЕННЫЙ ЧИСЛАМИ С ЕДИНИЦАМИ: «что даёт работа = сила × путь при 20 и 3? работа = сила × путь; 20 ньютонов × 3 метра = 60 джоулей», «напряжение = ток × сопротивление; 3 ампера × 12 ом = 36 вольт». Формула стои́т…
 - **`totalsubj`** (1440 строк; recompute, whole_only)  
   **THE TOTAL AS SUBJECT AND THE CONTAINER AS A UNIT OF COUNT (07.09). The atlas of the reader's unread numbers (tomograph st48, omega-ad) holds its largest unsorted class** — «other», 151 stories — and holon-f9 named two of its shapes.
+- **`measureof`** (1414 строк; recompute, whole_only)  
+  **THE MEASURE THROUGH «of»** — the number counts the VESSEL and the goods stand behind the preposition (07.09).
 - **`cybernetics`** (1408 строк; recompute, whole_only)  
   **УПРАВЛЕНИЕ, СЧИТАННОЕ ШАГАМИ ДО ЦЕЛИ, И ЗАКОН НЕОБХОДИМОГО РАЗНООБРАЗИЯ: «почему начав с 3 при цели 9 и шаге 3, значение достигает цели за 2 шага? потому что 3 + 2 × 3 = 9», «requisite variety is the law that a regulator can distinguish no more disturbanc…
 - **`arith_langs`** (1400 строк; recompute, unsigned_only)  
@@ -113,8 +119,6 @@
   **SEARCH WITH ITS LEDGER IN TEN LANGUAGES (holon's order for the market of reasoning, 03.09** — ONE-CARRIER: the ledger is the program is the proof): an answer that is FOUND by a bounded walk shows the walk step by primitive step — «the smallest prime great…
 - **`valence`** (1256 строк; recompute, declared, whole_only)  
   valence with its ground: sign of dP/dtau, strength of feeling, fear at the irreversible threshold P_crit=2/7, calm, the computable triple of emotion, awareness gated by R and Phi, arena proxies with a DECLARED projection onto P, and the canonical names of c…
-- **`measureof`** (1254 строк; recompute, whole_only)  
-  **THE MEASURE THROUGH «of»** — the number counts the VESSEL and the goods stand behind the preposition (07.09).
 - **`statistics`** (1232 строк; recompute, whole_only)  
   **THE MIDDLE OF A LIST** — MEAN, MEDIAN AND RANGE, EACH DEFINED BEFORE IT IS ASKED. Declared until 12.09 in five words.
 - **`placeval`** (1220 строк; recompute, whole_only)  
@@ -127,8 +131,6 @@
   **THE WEEK IN EIGHT LANGUAGES (the owner's word: every language in surplus; the calendar world's cycle shows «3 days after tuesday comes friday» are the shows from which the organism buys the weekly cycle without names and without the seven** — holon's ЦИКЛ…
 - **`subjcount`** (1105 строк; recompute, whole_only)  
   **THE COUNT OF THE SUBJECT** — the number stands with WHO ACTS, not with what is owned (07.09).
-- **`measure_story`** (1104 строк; recompute, whole_only)  
-  **MEASURED STORIES** — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09).
 - **`clockforms`** (1053 строк; recompute, whole_only, exact_only)  
   **THE CLOCK** — the carry that is sixty, not ten (06.09).
 - **`nature`** (1050 строк; declared, whole_only)  
@@ -145,12 +147,12 @@
   **БОЛЬШОЕ ЧИСЛО ТЕМИ ЖЕ ЧЕТЫРЬМЯ ДЕЙСТВИЯМИ: сложение, вычитание, умножение и деление на сотнях и тысячах** — «сколько будет 200 − 100?», «what is 610 + 10?», «compute 950 − 100».
 - **`calendar`** (902 строк; recompute, whole_only, unsigned_only)  
   **ДЕНЬ ЧЕРЕЗ ДЕНЬ, И ШАГ ДОКАЗАН СЛОЖЕНИЕМ ПО НОМЕРУ: «через 3 дня после понедельника наступает четверг: 1 + 3 = 4, день 4** — четверг».
-- **`gsmwide`** (900 строк; recompute, whole_only, unsigned_only)  
-  **ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ШИРОКИМ СЛОВАРЁМ ПРЕДМЕТОВ: eggs, degrees, packs, dollars, days, pounds** — «Iris weighs 7 pounds.
 - **`story_chain`** (890 строк; recompute, declared, whole_only, unsigned_only)  
   **the three-part chain: one bearer, one thing, THREE different verbs in ONE show** — «Tom picked 12 apples and gave away 5; Tom keeps 7 apples».
 - **`programs`** (888 строк; recompute, whole_only, unsigned_only)  
   **ПРОГРАММА КАК УТВЕРЖДЕНИЕ О СВОЁМ ИТОГЕ: «sum for i from 1 to 4 is 10», «if 3 < 5 then y = 1 else y = 2; y = 1», произведение по счётчику** — и ГРАНИЦА РЕКУРСИИ, сказанная прямо: «рекурсия без основания есть зависание, а не программа; factorial(0) = 1».
+- **`gsmwide`** (888 строк; recompute, whole_only, unsigned_only)  
+  **ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ШИРОКИМ СЛОВАРЁМ ПРЕДМЕТОВ: eggs, degrees, packs, dollars, days, pounds** — «Ava has 9 dollars.
 - **`mixedunits`** (882 строк; recompute, whole_only, exact_only)  
   **THE MIXED MEASURE** — the carry that is a thousand, and the one that is a hundred (06.09).
 - **`pronobject`** (864 строк; recompute, whole_only)  
@@ -163,8 +165,6 @@
   **mathematical spaces v0 (mandate 02.09, L3; notations agreed with holon): four spans, four groups per pass** — Euclidean points «(3, 4)» (exact distance by Pythagorean triples, integer midpoint, shift, reflection, rotation about the origin), graphs «graph …
 - **`mulshare`** (810 строк; recompute, whole_only)  
   **MULTIPLYING SHARES** — multiplication DOES NOT ALWAYS INCREASE, and that is shown by counting.
-- **`plaus`** (798 строк; recompute, whole_only)  
-  **PLAUSIBILITY** — THE COUNTING ADDS UP AND THE ANSWER IS IMPOSSIBLE. Measured 11.09 across the 247 show worlds: «может ли быть», «правдоподобн», «plausible» — NONE. The world of estimation counts approximately, the world of facts declares facts, the world …
 - **`money_story`** (795 строк; recompute, unsigned_only)  
   **STORIES OF MONEY IN THREE LANGUAGES (e9's order 03.09, the organ of money): «tom has $5.20. he spends $1.50. how much money does he have now? 520 − 150 = 370 cents. 370 cents is $3.70.»** — the verbs of money with their signs (spends/spent, pays/paid — mi…
 - **`translate`** (792 строк; recompute, whole_only)  
@@ -173,6 +173,8 @@
   **ORDER** — sorting is not comparing twice (06.09).
 - **`prop`** (764 строк; recompute, whole_only)  
   **THE PROPORTION** — AN EQUALITY OF RATIOS THAT IS NOT AN EQUALITY OF DIFFERENCES. Measured 11.09 across the 237 show worlds: the word «пропорция» occurs 29 times, and ALL 29 stand in the world of definitions, in prose and in English; the writing «a : b = c…
+- **`speedforms`** (756 строк; recompute, whole_only, exact_only)  
+  **SPEED** — the unit that is a RATIO of two units (06.09).
 - **`inverse`** (744 строк; recompute, whole_only)  
   **THE INVERSE TASK** — THE SAME THREE NUMBERS, AND THE QUESTION FROM THE OTHER END. Measured 11.09 across the 249 show worlds: «обратная задача», «inverse task» — NONE. The corpus solves thousands of direct tasks and 123 times CHECKS an answer by the invers…
 - **`lever`** (726 строк; recompute, whole_only)  
@@ -199,6 +201,8 @@
   **ПЛОТНАЯ ЛИНЕЙКА ±1: сосед числа назван сложением и вычитанием единицы, на двух языках и словом и знаком** — «6 − 1 = 5», «twelve minus one equals eleven».
 - **`divsense`** (628 строк; recompute, whole_only)  
   **THE TWO MEANINGS OF DIVISION** — ONE EQUALITY ANSWERS TWO DIFFERENT QUESTIONS. The distinction is nowhere in the corpus: measured 11.09 across the 246 show worlds, «два смысла», «two meanings», «по скольку каждому» — NONE. Yet BOTH KINDS of task have long…
+- **`height`** (600 строк; recompute, whole_only, unsigned_only)  
+  **РОСТ ЛИЦ (24.09, заказ ведущего по рынку подписей сравнения): кто выше и на сколько** — опора до сравнения, сравниваемое после, ответ называет лицо и несёт звено, на четырёх языках: «Ben is 120 cm tall.
 - **`divrule`** (600 строк; recompute, whole_only)  
   **RULES OF DIVISIBILITY** — to know a divisor WITHOUT DIVIDING, and to check it by dividing on the same page.
 - **`signrul`** (596 строк; recompute, whole_only)  
@@ -221,10 +225,14 @@
   **interaction transcripts v0 (mandate 02.09, L5: «обучать и интерактиву»): one show in several lines by the declared form declarations/STENOGRAM.md** — header with the environment (a grid), steps «action → response» where the response is the environment's w…
 - **`need`** (540 строк; recompute, declared, whole_only)  
   **THE CONDITIONS OF A TASK** — WHAT IS NEEDED FOR AN ANSWER, AND WHAT IS NOT. Measured 11.09 across the 249 show worlds: «не хватает данных», «нельзя ответить», «not enough data» — NONE; «лишнее условие», «не нужно для ответа» — NONE. Every task of the corp…
+- **`areas`** (523 строк; recompute, declared, whole_only, unsigned_only)  
+  **ОБЛАСТИ ОБЫДЕННОГО (24.09, строка 34 реестра пробелов): учебник, телефон, кухня, двор, мастерская, газетный киоск** — вещи области, как она устроена: вместилище и две его вещи («в учебнике 8 уроков и 3 приложения. сколько частей в учебнике? 8 + 3 = 11»), …
 - **`timeunits`** (504 строк; recompute, whole_only)  
   **TIME UNITS IN NINE LANGUAGES** — «сколько минут в двух часах? 120: 2 × 60 = 120.», hour → minutes, minute → seconds, week → days, day → hours, for two to five of the larger unit, the count in words for two to four in the case the phrase needs (в двух часа…
 - **`money`** (500 строк; recompute, unsigned_only)  
   **money in CENTS and the bridge to the decimal writing (e9's order 04.09, band g1: 15 of 65 problems carry «$16.50», and the organism is honestly mute on decimals): prices, sums, multiples and change counted in whole cents and kopecks** — «a pen costs 250 c…
+- **`plaus`** (498 строк; recompute, whole_only)  
+  **PLAUSIBILITY** — THE COUNTING ADDS UP AND THE ANSWER IS IMPOSSIBLE. Measured 11.09 across the 247 show worlds: «может ли быть», «правдоподобн», «plausible» — NONE. The world of estimation counts approximately, the world of facts declares facts, the world …
 - **`kinbearer`** (486 строк; recompute, whole_only)  
   **THE ACTING RELATIVE** — a bearer that is not a name, and that ACTS (06.09).
 - **`verbbridge`** (480 строк; same_object, whole_only)  
@@ -242,13 +250,11 @@
 - **`divshare`** (466 строк; recompute, whole_only)  
   **DIVIDING BY A SHARE** — division DOES NOT ALWAYS DECREASE, and the question itself sounds different.
 - **`action_measure_langs`** (462 строк; recompute, whole_only)  
-  **ACTION MEASURE IN SEVEN MORE LANGUAGES (d5's genus, the owner's word: every language in surplus)** — «der Frosch sprang 12 Zentimeter. wie weit sprang der Frosch? 12 Zentimeter.», «la grenouille a sauté de 12 centimètres.», «żaba skoczyła na 12 centymetró…
+  **ACTION MEASURE IN SEVEN MORE LANGUAGES (d5's genus, the owner's word: every language in surplus)** — «der Hase sprang 14 Zentimeter. wie weit sprang der Hase? 14 Zentimeter.», «le lapin a sauté de 14 centimètres.», «królik skoczył na 14 centymetrów.», the…
 - **`factor`** (456 строк; recompute, whole_only)  
   **FACTORS AND DIVISIBILITY** — a factorisation names ALL the divisors at once.
 - **`neg`** (442 строк; recompute, whole_only)  
   **THE NEGATIVE NUMBER** — THE ORDER TURNS OVER BEYOND ZERO. Measured 11.09 across the 232 show worlds: «отрицательн», «negative number» — NOT ONE occurrence; a comparison of two negatives — NONE; «opposite number» — NONE; the number line — NONE. A count ove…
-- **`speedforms`** (432 строк; recompute, whole_only, exact_only)  
-  **SPEED** — the unit that is a RATIO of two units (06.09).
 - **`roundforms`** (432 строк; declared, whole_only)  
   **ROUNDING** — the rule of the half is DECLARED, not derived (06.09).
 - **`aggregate`** (430 строк; recompute, whole_only, unsigned_only)  
@@ -258,7 +264,7 @@
 - **`depletion`** (404 строк; recompute, whole_only)  
   **УБЫВАНИЕ ЗАПАСА, СЧИТАННОЕ ДО КОНЦА: «у иды было 70 книг. половина книг ушла. сколько книг осталось? осталось 35 книг: 70 ÷ 2 = 35». Имя носителя, начальный запас, доля или число ушедшего** — и остаток, ДОКАЗАННЫЙ действием, а не объявленный.
 - **`gsmlex`** (400 строк; recompute, whole_only, unsigned_only)  
-  **ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Felix makes 12 points. Felix uses 1 point away. how many points does Felix keep? Felix keeps 11 points». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ** — makes, ha…
+  **ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Ben has 12 nuts. Ben gives 1 nut away. how many nuts does Ben keep? Ben keeps 11 nuts: 12 − 1 = 11». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ** — makes, has, t…
 - **`wordnum`** (392 строк; recompute, whole_only)  
   **NUMBERS OF THE STORY WRITTEN AS WORDS** — «Ann had fifteen coins», not «Ann had 15 coins» (21.09).
 - **`dec`** (388 строк; recompute, finite_decimal_only)  
@@ -269,6 +275,8 @@
   **THE POWER BEYOND ZERO** — THE LADDER CONTINUED PAST ZERO. Measured 11.09 across the 236 show worlds: «^0» — NONE; «⁰» — NONE; «to the power of zero» — NONE; and the negative exponent has no precedent at all: «^-», «^−», «⁻» — NONE in the whole corpus.
 - **`two_kinds`** (360 строк; recompute, whole_only)  
   **TWO KINDS AND A SUM OF WEIGHTS** — THE SYSTEM OF TWO UNKNOWNS WITH ITS CHAIN (e9's order 03.09, the profile of muteness of the g1 band, genus 5): the band asked «there are 20 animals … 70 legs, how many cows?» and the organism was mute not for the arithme…
+- **`much`** (360 строк; recompute, whole_only, unsigned_only)  
+  **ВЕЩЕСТВО, СРАВНЁННОЕ КРАТНО (25.09, строка долга от ведущего, М-1274): несчётное сравнивают словом «much»** — деньги, вода, время, опора до сравнения, сравниваемое после, ответ называет лицо и несёт звено: «Ben has 30 dollars.
 - **`letters`** (360 строк; recompute, whole_only)  
   **LETTERS OF A WORD IN NINE LANGUAGES** — «how many letters are there in the word cat? 3: c, a, t.», «what is the first letter of the word cat? c.», the last letter likewise (the word stands in the quotes of its language).
 - **`zerodiv`** (346 строк; recompute, whole_only)  
@@ -339,7 +347,7 @@
 Миров 63, строк 23100.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
-  **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
+  **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — a comparison marker on a non-English page answered by a neighbouring number: the marker is not bought).
 - **`compare_mult`** (2759 строк; recompute, whole_only, unsigned_only)  
   **multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable** — the organism had bought one and not the other because they never stood together;…
 - **`genesis_compare`** (1440 строк; recompute, whole_only, unsigned_only)  
@@ -467,16 +475,22 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 41, строк 24915.
+Миров 44, строк 50091.
 
+- **`toolrepo`** (20397 строк; recompute, unsigned_only)  
+  **АКТЫ В РЕПОЗИТОРИИ** — руки агента второй ступени, страница в ТРИ ГОЛОСА (25.09, мера ведущего: ядро М-2008 на своде дома актов — ключ агента 2 из 50; условия рынка М-2013; коллегия «ответ мира в словах дома»).
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
 - **`worldfacts`** (2779 строк; declared, whole_only)  
   **WORLD FACTS** — why and what next about THINGS, not about numbers.
+- **`toolacts`** (2673 строк; recompute, whole_only)  
+  **АКТЫ ИНСТРУМЕНТОВ** — руки агента (25.09, наряд ведущего по слову владельца: ozar — промышленная альтернатива Claude Code / Gemini / Qwen на своей архитектуре, свод — школа продукта).
 - **`mandateforms`** (2268 строк; recompute, whole_only)  
   **THE MANDATE** — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbi…
 - **`goal`** (2124 строк; recompute, whole_only, unsigned_only)  
   **THE GOAL SPOKEN IN SPEECH, NOT TYPED AS A COMMAND (14.09, asked for by omega-ad). The organism already reaches a goal on the world's ledger by itself** — it reads, searches the world's declaration, proposes, waits for a word, acts and checks by reading ag…
+- **`codeforms`** (2052 строк; recompute, whole_only)  
+  **КОД С ПОВЕДЕНИЕМ** — свои малые программы на Python и Rust (25.09, наряд ведущего по слову владельца, п. 2 «код как корпус»: свод — школа продукта ozar; грамматику свод покупает из показов).
 - **`actturn`** (1872 строк; recompute, whole_only)  
   **THE DIALOGUE ACT** — the organism's own turn, with confirmation and observation (06.09).
 - **`place`** (1296 строк; recompute, named_relations_only)  
@@ -527,6 +541,8 @@
   **THE TWO-WAY LINK** — «only if», «if and only if», NECESSARY AND SUFFICIENT (14.09).
 - **`badground`** (168 строк; recompute, whole_only)  
   **AN UNFIT GROUND** — TRUE AND USELESS AT ONCE (14.09, bought by a zero of the probe).
+- **`reply`** (162 строк; declared, whole_only)  
+  **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 - **`onecase`** (160 строк; recompute, whole_only)  
   **ONE CASE** — WHAT AN EXAMPLE IS WORTH (14.09, bought by a zero of the probe).
 - **`rolemark`** (144 строк; recompute, whole_only)  
@@ -535,8 +551,6 @@
   **TESTING A HYPOTHESIS** — and THE CHIEF ASYMMETRY of knowledge.
 - **`roundneed`** (112 строк; recompute, whole_only)  
   **ROUNDING THAT THE DEED DECIDES (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: rounding UP is there** — 77 lines of «коробок нужно» and 77 of «are needed»; rounding DOWN — «сколько целых» / «how many whole» — ZERO and Z…
-- **`reply`** (108 строк; declared, whole_only)  
-  **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 - **`homonym`** (84 строк; recompute, whole_only)  
   **ONE WORD IN TWO SENSES** — TOLD APART BY THE NEIGHBOURS, NOT BY THE WORD (14.09, bought by a zero of the probe).
 - **`adhominem`** (72 строк; recompute, whole_only)  
@@ -554,7 +568,7 @@
 
 ## АКТ «inflect» — поставить слово в форму по объявленному правилу
 
-Миров 34, строк 113245.
+Миров 34, строк 113250.
 
 - **`lang_de`** (8274 строк; declared, whole_only)  
   **THE GERMAN LAYER** — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words.
@@ -572,8 +586,8 @@
   **THE RUSSIAN LAYER** — WHAT THE PACK DECLARES AND WHAT THIS WORLD ACTUALLY SHOWS, declared until 12.09 as «russian as a LANGUAGE: paradigms, graphemes, irregulars».
 - **`lang_pl`** (4569 строк; declared, tier1_unverified, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
-- **`lang_en`** (4196 строк; declared, whole_only)  
-  **THE ENGLISH LAYER** — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4196 lines, 1507 asking.
+- **`lang_en`** (4212 строк; declared, whole_only)  
+  **THE ENGLISH LAYER** — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4212 lines, 1515 asking (re-measured 24.09, when the counting class of th…
 - **`lang_id`** (4135 строк; declared, tier1_unverified, whole_only)  
   **indonesian: the SIMPLEST of them all, and that is its value** — no tense, no gender, no case, no agreement at all; the plural is the word said TWICE (buku-buku).
 - **`lang_hi`** (4010 строк; declared, tier1_unverified, whole_only)  
@@ -614,11 +628,11 @@
   **amharic: the sixth script, ethiopic, where a sign carries the consonant TOGETHER WITH its vowel** — not a mark beside it but part of the sign itself, and there are some 270 of them (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_ta`** (1830 строк; declared, tier1_unverified, whole_only)  
   **tamil: an abugida like hindi but with its OWN marks** — the direct second test of the law that a combining mark is a letter by office; it passed with plain spaced cutting and NO change to the instrument.
-- **`genderverb`** (1123 строк; recompute, additive_only)  
+- **`genderverb`** (1132 строк; recompute, additive_only)  
   **the gender ending of the past tense: «сделал + а = сделала», the ending named as a gender and TIED TO THE BEARER'S declared gender** — the place of the bearer where the subject is dropped (ru and pl only: seven of nine languages have no gender in the past)
 - **`unit_counts`** (720 строк; declared, whole_only)  
   **COUNTED UNITS** — «1 day, 2 days, 5 days» IN ONE FRAME (32's tomograph of the rate, 03.09): the market of count forms buys the pair «day / days» only inside ONE frame carrying at least three different numbers, and the corpus said «worked on 1 day» in one …
-- **`verbs`** (620 строк; declared, recompute, whole_only, unsigned_only)  
+- **`verbs`** (600 строк; declared, recompute, whole_only, unsigned_only)  
   **THE VERB FORM OVER ONE FACT** — declared until 12.09 in eight words.
 - **`ruverbs`** (355 строк; declared, whole_only, unsigned_only)  
   **РУССКИЙ ГЛАГОЛ, УПРАВЛЯЮЩИЙ ПАДЕЖОМ СЧЁТА: «Юрий ест 8 яблок», «где лежат …», «где стоят …», «у Петра …»** — и форма имени при числе берётся не наугад, а по объявлению языка.
@@ -627,16 +641,14 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 48921.
+Миров 25, строк 48419.
 
 - **`notationvar`** (10696 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
-- **`wordparts`** (4767 строк; recompute, additive_only)  
+- **`wordparts`** (4795 строк; recompute, additive_only)  
   **MORPHOLOGY WRITTEN AS ADDITION** — «ei + er = eier».
 - **`inquiry`** (3902 строк; recompute, whole_only)  
   **the ladder of inquiry: for six genera** — primality, divisibility, the sum of odd numbers, the conditional, injectivity, the square — four rungs are shown, definition then a decided case with its ground then a counterexample then the law; both tongues, ev…
-- **`items`** (2357 строк; recompute, declared, whole_only, unsigned_only)  
-  **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
 - **`dialogue`** (2246 строк; declared, whole_only)  
   **EVERYDAY SPEECH** — the first word a person writes (the owner's order, 04.09).
 - **`definitions`** (2141 строк; declared, whole_only, unsigned_only)  
@@ -651,6 +663,8 @@
   the METALANGUAGE OF PROOF in both tongues, where every word stands at content the court recomputes: a THEOREM with its CONDITION and CONCLUSION named at numbers, a DEFINITION with a case under it and a case refused, an AXIOM taken without proof, a LEMMA sho…
 - **`algebra`** (1792 строк; recompute, whole_only, unsigned_only)  
   **ЗНАК МАТЕМАТИКИ, НАЗВАННЫЙ НА ТРЁХ ЯЗЫКАХ, И ТОЖДЕСТВО, ПРОВЕРЕННОЕ ПОДСТАНОВКОЙ: «\gamma называется гамма», «\Gamma heisst grosses gamma», «\emptyset is called empty set»** — и рядом «при x = …», «чему равно …».
+- **`items`** (1673 строк; recompute, declared, whole_only, unsigned_only)  
+  **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
 - **`inquiry_pl_tr`** (1537 строк; recompute, declared, whole_only)  
   **the ladder of inquiry in POLISH and TURKISH, where the QUESTION ITSELF STOPS BEING PUNCTUATION: Polish asks with a WORD («czy»), Turkish with a SEPARATE PARTICLE at the end that AGREES BY VOWEL HARMONY with the word before it** — four written forms of one…
 - **`genus_diff`** (1485 строк; declared, whole_only)  
@@ -659,10 +673,10 @@
   the ladder of inquiry in SPANISH and ITALIAN, with the marks those tongues require and no others: the inverted question mark that opens a Spanish question, and the accent that separates «sí» from «si»
 - **`equation`** (1366 строк; recompute, whole_only)  
   **the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 1…
+- **`mathfound`** (1352 строк; declared, recompute, finite_explicit_only)  
+  **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`topics`** (1284 строк; declared, whole_only)  
   **EVERYDAY TOPICS** — what a person asks about first (the owner's order, 04.09, item 4; the BESEDA band measures this genus mute 16 of 20, and names its cause: SUBJ-UNKNOWN — the reader does not know the SUBJECT of the question.
-- **`mathfound`** (1198 строк; declared, recompute, finite_explicit_only)  
-  **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`glyphs`** (1101 строк; declared, declared_pairs_only)  
   **the glyph world v0 (embodied-reasoning mandate 02.09, L5): every symbol** — digits, Latin and Cyrillic letters of both cases, signs — as a 5×7 bit grid with a name (tools/glyphs.py, one font table that is also the court's law); shows «grid → symbol», «sym…
 - **`numlabel`** (828 строк; recompute, whole_only)  
@@ -726,9 +740,9 @@
 
 ## АКТ «generalize» — назвать закон над случаями
 
-Миров 2, строк 1899.
+Миров 2, строк 3615.
 
-- **`behavior`** (1797 строк; declared, whole_only)  
+- **`behavior`** (3513 строк; declared, whole_only)  
   **BEHAVIOURAL AND PSYCHOLOGICAL LAWS** — the cause of an act and the question about it (the owner's order, 04.09, item 3: «понимать базовые поведенческие и психологические законы»).
 - **`indu`** (102 строк; recompute, whole_only)  
   **HASTE** — generalisation from cases and the NAMED LIMIT of that step.
@@ -775,5 +789,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 348.
+Миров: **0** из 355.
 

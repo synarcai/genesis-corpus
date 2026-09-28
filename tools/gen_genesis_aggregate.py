@@ -19,8 +19,8 @@ count (plural.by_count); i//8 decoupling.
 from layer import Сбор, emit
 
 
-from gsm_items import ANIMATE
-from gsm_items import ITEMS as CENSUS_ITEMS
+from animacy import ANIMATE
+from gsm_items import ITEMS as CENSUS_ITEMS, ИМЕЮТ, по_кругу
 from plural import by_count
 
 # ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
@@ -52,6 +52,15 @@ LOCAL = ["apples", "cookies", "coins", "books",
          "eggs", "pages", "points", "cards"]
 ITEMS = LOCAL + [w for w in CENSUS_ITEMS
                  if w not in LOCAL]
+
+
+# ЛИЦО ИМЕЕТ ВЕЩИ, ДЕНЬГИ, ОЧКИ И ЖИВЫХ — НЕ МЕРЫ (24.09, строка 35 реестра пробелов). Словарь полос,
+# слитый сюда, принёс меры, и 104 страницы из 438 говорили «Elena has 2 days. Ava has 3 days. how many
+# days do Elena and Ava hold altogether?», «Hugo has 2 inches» — грамматично и ложно о мире. Круг вещей
+# стоит прежний, а мера в круге уступает место следующей вещи, какую лицо имеет (`gsm_items.ИМЕЮТ`):
+# честные страницы остаются байт в байт, сменяются лишь лживые.
+def вещь_круга(k):
+    return по_кругу(ITEMS, k, ИМЕЮТ)
 # (question tail, answer verb, plural subject) —
 # «they» is the surface GSM8K actually uses, and
 # it keeps the list word in the ANSWER, where the
@@ -94,9 +103,7 @@ def pass_shows(pi):
         ]
         if a == b:
             continue
-        it = ITEMS[
-            (base + i * 5) % len(ITEMS)
-        ]
+        it = вещь_круга(base + i * 5)
         # 1..9 and 1..6: the old strides let the
         # first addend take only {2,3,5,7,8}, so
         # four of nine counts were never shown in

@@ -15,6 +15,12 @@
 t7_svamp_all.jsonl (id, tier, ask, expect, tags). Полоса организма читает
 `need` через bandlib (holon): ok, если организм отказал И его стекло
 называет величину.
+
+С 23.09 СТЕНД ЕСТЬ МЕРА ПЕРЕНОСА, А НЕ ПАМЯТИ (решение ведущего omega-90). Сцены дома
+(`tools/gsmtaskforms.py`) переписаны своими по слову владельца, а стенд намеренно держит
+ПРЕЖНИЕ сцены: числа параметров берутся у дома, слова — здесь. Свод учит новые сцены, стенд
+меряет старые, и верный ответ на нём есть перенос конструкции на сцену, которой свод не
+показывал. Переписать стенд вслед за домом значило бы снова мерить память.
 """
 import json
 import pathlib
@@ -86,7 +92,7 @@ def факты_и_вопрос(семья, п):
         return f, "how much did the house cost in dollars?", lambda d: d["цена"] * k, {"цена": п["цена"]}, {"цена": "how much the car cost", "k": "how many times as much the house cost"}
     if семья == "проект":
         k = п["k"]
-        f = [("старт", f"the design started with {п['старт']} panels"), ("k", f"it was {'doubled' if k == 2 else 'tripled'}"), ("минус", f"then it was reduced by {п['минус']}")]
+        f = [("старт", f"the design started with {п['старт']} {G.by_count(п['старт'], 'panels')}"), ("k", f"it was {'doubled' if k == 2 else 'tripled'}"), ("минус", f"then it was reduced by {п['минус']}")]
         return f, "how many panels does the final design have?", lambda d: d["старт"] * k - d["минус"] if d["старт"] * k > d["минус"] else None, {"старт": п["старт"], "минус": п["минус"]}, {"старт": "how many panels the design started with", "k": "how many times the design grew", "минус": "by how many panels the design was reduced"}
     if семья == "окружность":
         f = [("длина", f"the circumference of the earth is taken as {п['длина']} {G.by_count(п['длина'], 'miles')}"), ("скорость", f"the plane flies {п['скорость']} {G.by_count(п['скорость'], 'miles')} per hour")]

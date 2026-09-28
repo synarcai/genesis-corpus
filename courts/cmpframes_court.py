@@ -35,19 +35,23 @@ def main():
     # the sum; TIMES with a multiplier the word does not name; a count form not of its number;
     # the question word of the wrong gender
     подсадки = (
-        "Marta hizo 16 flexiones. Pablo hizo 7 flexiones más que Marta. ¿cuántas flexiones hizo Pablo? Pablo hizo 9 flexiones: 16 − 7 = 9.",
-        "Ann did 16 push-ups. Ben did 7 more push-ups than Ann. how many push-ups did Ben do? Ben did 24 push-ups: 16 + 7 = 24.",
-        "Ann did 16 push-ups. Ben did 7 more push-ups than Ann. how many push-ups did Ben do? Ben did 22 push-ups: 16 + 7 = 23.",
-        "Daan heeft 16 doppen. Lotte heeft 7 doppen minder dan Daan. hoeveel doppen heeft Lotte? Lotte heeft 23 doppen: 16 + 7 = 23.",
-        "Anna ma 16 kapsli. Jan ma dwa razy więcej kapsli niż Anna. ile kapsli ma Jan? Jan ma 48 kapsli: 16 × 3 = 48.",
-        "Анна сделала 16 отжиманий. Ваня сделал на 7 отжиманий больше, чем Анна. сколько отжиманий сделал Ваня? Ваня сделал 23 отжимание: 16 + 7 = 23.",
-        "Marta hizo 16 flexiones. Pablo hizo 7 flexiones más que Marta. ¿cuántos flexiones hizo Pablo? Pablo hizo 23 flexiones: 16 + 7 = 23.",
+        "Marta plantó 16 robles. Pablo plantó 7 robles más que Marta. ¿cuántos robles plantó Pablo? Pablo plantó 9 robles: 16 − 7 = 9.",
+        "Ann planted 16 oaks. Ben planted 7 more oaks than Ann. how many oaks did Ben plant? Ben planted 24 oaks: 16 + 7 = 24.",
+        "Ann planted 16 oaks. Ben planted 7 more oaks than Ann. how many oaks did Ben plant? Ben planted 22 oaks: 16 + 7 = 23.",
+        "Daan heeft 16 potten. Lotte heeft 7 potten minder dan Daan. hoeveel potten heeft Lotte? Lotte heeft 23 potten: 16 + 7 = 23.",
+        "Anna ma 16 słoików. Jan ma dwa razy więcej słoików niż Anna. ile słoików ma Jan? Jan ma 48 słoików: 16 × 3 = 48.",
+        "Анна посадила 16 дубов. Ваня посадил на 7 дубов больше, чем Анна. сколько дубов посадил Ваня? Ваня посадил 23 дуб: 16 + 7 = 23.",
+        "Marta plantó 16 robles. Pablo plantó 7 robles más que Marta. ¿cuántas robles plantó Pablo? Pablo plantó 23 robles: 16 + 7 = 23.",
         # WAVE 2 (05.09): the answer without arithmetic is a NAME read from the NUMBERS, and the
         # inverse of TIMES answers with the multiplier word of its own quotient
-        "у Анны 26 крышек. у Веры 11 крышек. у кого крышек больше? у Веры крышек больше.",
-        "Anna did 22 push-ups. Carla did 9 push-ups. who did fewer push-ups? Anna did fewer push-ups.",
-        "Lena hat 33 Actionfiguren. Felix hat 32 Actionfiguren. wer hat mehr Actionfiguren? keiner: beide haben gleich viele — 32 Actionfiguren.",
-        "Piotr zrobił 48 brzuszków. Ewa zrobiła 16 brzuszków. ile razy więcej brzuszków zrobił Piotr niż Ewa? dwa razy więcej: 48 ÷ 16 = 3.",
+        "у Анны 26 марок. у Веры 11 марок. у кого марок больше? у Веры марок больше.",
+        "Anna planted 22 oaks. Carla planted 9 oaks. who planted fewer oaks? Anna planted fewer oaks.",
+        "Lena hat 33 Fotos. Felix hat 32 Fotos. wer hat mehr Fotos? keiner: beide haben gleich viele — 32 Fotos.",
+        "Piotr posadził 48 brzóz. Ewa posadziła 16 brzóz. ile razy więcej brzóz posadził Piotr niż Ewa? dwa razy więcej: 48 ÷ 16 = 3.",
+        # 23.09: the Slavic verb of the TIMES question that does not bend by its bearer (ten pages
+        # said «… сделал Аня» and were called true), and the Portuguese possessive of a neighbour
+        "Аня посадила 52 дуба. Дима посадил 26 дубов. во сколько раз больше дубов посадил Аня, чем Дима? вдвое: 52 ÷ 26 = 2.",
+        "a Ana tem 22 selos. o Pedro tem o dobro dos selos do João. quantos selos tem o Pedro? o Pedro tem 44 selos: 22 × 2 = 44.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):

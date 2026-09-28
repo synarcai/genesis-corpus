@@ -27,28 +27,28 @@ import units  # noqa: E402
 
 # forms: (one, many) — or (one, few, many) for pl — and the gender (m/f)
 ЕДИНИЦЫ = {
-    "de": dict(hour=("Stunde", "Stunden", "f"), minute=("Minute", "Minuten", "f"), day=("Tag", "Tage", "m"), week=("Woche", "Wochen", "f"),
+    "de": dict(euro=("Euro", "Euro", "m"), eurocent=("Cent", "Cent", "m"), hour=("Stunde", "Stunden", "f"), minute=("Minute", "Minuten", "f"), day=("Tag", "Tage", "m"), week=("Woche", "Wochen", "f"),
                year=("Jahr", "Jahre", "n"), month=("Monat", "Monate", "m"), kilometre=("Kilometer", "Kilometer", "m"), metre=("Meter", "Meter", "m"),
                centimetre=("Zentimeter", "Zentimeter", "m"), kilogram=("Kilogramm", "Kilogramm", "n"), gram=("Gramm", "Gramm", "n"), second=("Sekunde", "Sekunden", "f")),
-    "fr": dict(hour=("heure", "heures", "f"), minute=("minute", "minutes", "f"), day=("jour", "jours", "m"), week=("semaine", "semaines", "f"),
+    "fr": dict(euro=("euro", "euros", "m"), eurocent=("centime", "centimes", "m"), hour=("heure", "heures", "f"), minute=("minute", "minutes", "f"), day=("jour", "jours", "m"), week=("semaine", "semaines", "f"),
                year=("an", "ans", "m"), month=("mois", "mois", "m"), kilometre=("kilomètre", "kilomètres", "m"), metre=("mètre", "mètres", "m"),
                centimetre=("centimètre", "centimètres", "m"), kilogram=("kilogramme", "kilogrammes", "m"), gram=("gramme", "grammes", "m"), second=("seconde", "secondes", "f")),
-    "es": dict(hour=("hora", "horas", "f"), minute=("minuto", "minutos", "m"), day=("día", "días", "m"), week=("semana", "semanas", "f"),
+    "es": dict(euro=("euro", "euros", "m"), eurocent=("céntimo", "céntimos", "m"), hour=("hora", "horas", "f"), minute=("minuto", "minutos", "m"), day=("día", "días", "m"), week=("semana", "semanas", "f"),
                year=("año", "años", "m"), month=("mes", "meses", "m"), kilometre=("kilómetro", "kilómetros", "m"), metre=("metro", "metros", "m"),
                centimetre=("centímetro", "centímetros", "m"), kilogram=("kilogramo", "kilogramos", "m"), gram=("gramo", "gramos", "m"), second=("segundo", "segundos", "m")),
-    "it": dict(hour=("ora", "ore", "f"), minute=("minuto", "minuti", "m"), day=("giorno", "giorni", "m"), week=("settimana", "settimane", "f"),
+    "it": dict(euro=("euro", "euro", "m"), eurocent=("centesimo", "centesimi", "m"), hour=("ora", "ore", "f"), minute=("minuto", "minuti", "m"), day=("giorno", "giorni", "m"), week=("settimana", "settimane", "f"),
                year=("anno", "anni", "m"), month=("mese", "mesi", "m"), kilometre=("chilometro", "chilometri", "m"), metre=("metro", "metri", "m"),
                centimetre=("centimetro", "centimetri", "m"), kilogram=("chilogrammo", "chilogrammi", "m"), gram=("grammo", "grammi", "m"), second=("secondo", "secondi", "m")),
-    "pt": dict(hour=("hora", "horas", "f"), minute=("minuto", "minutos", "m"), day=("dia", "dias", "m"), week=("semana", "semanas", "f"),
+    "pt": dict(euro=("euro", "euros", "m"), eurocent=("cêntimo", "cêntimos", "m"), hour=("hora", "horas", "f"), minute=("minuto", "minutos", "m"), day=("dia", "dias", "m"), week=("semana", "semanas", "f"),
                year=("ano", "anos", "m"), month=("mês", "meses", "m"), kilometre=("quilómetro", "quilómetros", "m"), metre=("metro", "metros", "m"),
                centimetre=("centímetro", "centímetros", "m"), kilogram=("quilograma", "quilogramas", "m"), gram=("grama", "gramas", "m"), second=("segundo", "segundos", "m")),
-    "nl": dict(hour=("uur", "uur", "n"), minute=("minuut", "minuten", "f"), day=("dag", "dagen", "m"), week=("week", "weken", "f"),
+    "nl": dict(euro=("euro", "euro", "m"), eurocent=("cent", "cent", "m"), hour=("uur", "uur", "n"), minute=("minuut", "minuten", "f"), day=("dag", "dagen", "m"), week=("week", "weken", "f"),
                year=("jaar", "jaar", "n"), month=("maand", "maanden", "f"), kilometre=("kilometer", "kilometer", "m"), metre=("meter", "meter", "m"),
                centimetre=("centimeter", "centimeter", "m"), kilogram=("kilogram", "kilogram", "n"), gram=("gram", "gram", "n"), second=("seconde", "seconden", "f")),
-    "pl": dict(hour=("godzina", "godziny", "godzin", "f"), minute=("minuta", "minuty", "minut", "f"), day=("dzień", "dni", "dni", "m"), week=("tydzień", "tygodnie", "tygodni", "m"),
+    "pl": dict(zloty=("złoty", "złote", "złotych", "m"), grosz=("grosz", "grosze", "groszy", "m"), hour=("godzina", "godziny", "godzin", "f"), minute=("minuta", "minuty", "minut", "f"), day=("dzień", "dni", "dni", "m"), week=("tydzień", "tygodnie", "tygodni", "m"),
                year=("rok", "lata", "lat", "m"), month=("miesiąc", "miesiące", "miesięcy", "m"), kilometre=("kilometr", "kilometry", "kilometrów", "m"), metre=("metr", "metry", "metrów", "m"),
                centimetre=("centymetr", "centymetry", "centymetrów", "m"), kilogram=("kilogram", "kilogramy", "kilogramów", "m"), gram=("gram", "gramy", "gramów", "m"), second=("sekunda", "sekundy", "sekund", "f")),
-    "tr": dict(hour=("saat", "saattir"), minute=("dakika", "dakikadır"), day=("gün", "gündür"), week=("hafta", "haftadır"),
+    "tr": dict(lira=("lira", "liradır"), kurus=("kuruş", "kuruştur"), hour=("saat", "saattir"), minute=("dakika", "dakikadır"), day=("gün", "gündür"), week=("hafta", "haftadır"),
                year=("yıl", "yıldır"), month=("ay", "aydır"), kilometre=("kilometre", "kilometredir"), metre=("metre", "metredir"),
                centimetre=("santimetre", "santimetredir"), kilogram=("kilogram", "kilogramdır"), gram=("gram", "gramdır"), second=("saniye", "saniyedir")),
 }
@@ -112,20 +112,110 @@ def _сколько(язык, единица):
     return СКОЛЬКО[язык][1 if ЕДИНИЦЫ[язык][единица][-1] == "f" else 0]
 
 
-def утверждение(язык, б, м, n):
+# ПОСТОЯННАЯ ОТНОШЕНИЯ ГОВОРИТСЯ В САМОЙ СТРАНИЦЕ (23.09, слово ведущего omega-90: ядро учится
+# отношению величин по страницам, где ВСЕ числа уравнения стоят в тексте). Страница «2 Stunden
+# sind 120 Minuten: 2 × 60 = 120» держала 60 в уме: числа 60 в тексте нет, и такая страница
+# отношению ядро не учит. Замер на своде кандидата: страниц, где недостаёт ОДНОЙ постоянной двери
+# единиц, 3 534; из них в мирах единиц — units_langs 632, units 412, timeunits 288.
+#
+#     ЧИСЛО УРАВНЕНИЯ, НЕ СКАЗАННОЕ СТРАНИЦЕЙ, ЕСТЬ ЗНАНИЕ, КОТОРОЕ СТРАНИЦА ПОДРАЗУМЕВАЕТ,
+#     А НЕ ПОКАЗЫВАЕТ.
+#
+# Дверь одна — здесь: фраза «eine Stunde hat 60 Minuten», «в часе 60 минут», «an hour has 60
+# minutes» пишется и читается одним законом на десяти языках; постоянная берётся из графа
+# единиц (`units.отношение`), а не из строки, и суд сверяет её с графом.
+СКАЗ = {
+    "ru": "в {б} {k} {м}",
+    "en": "{арт} {б} has {k} {м}",
+    "de": "{арт} {б} hat {k} {м}",
+    "fr": "{арт} {б} compte {k} {м}",
+    "es": "{арт} {б} tiene {k} {м}",
+    "it": "{арт}{б} ha {k} {м}",
+    "pt": "{арт} {б} tem {k} {м}",
+    "nl": "een {б} heeft {k} {м}",
+    "pl": "{б} ma {k} {м}",
+    "tr": "bir {б} {k} {м}",
+}
+# неопределённый артикль большей единицы — по её роду (итальянский: «un'» перед гласной женского)
+АРТИКЛЬ = {"de": dict(m="ein", f="eine", n="ein"), "fr": dict(m="un", f="une"),
+           "es": dict(m="un", f="una"), "it": dict(m="un ", f="una "), "pt": dict(m="um", f="uma")}
+
+
+def _артикль(язык, б):
+    if язык == "en":
+        return __import__("plural").article(units.англ(б))
+    if язык not in АРТИКЛЬ:
+        return ""
+    род = ЕДИНИЦЫ[язык][б][-1]
+    if язык == "it" and род == "f" and ЕДИНИЦЫ[язык][б][0][0] in "aeiou":
+        return "un'"
+    return АРТИКЛЬ[язык][род]
+
+
+def _большая(язык, б, письмо):
+    """Большая единица в том виде, в каком её держит фраза отношения."""
+    if язык == "ru":
+        return units.ПРЕДЛОЖНЫЙ_ЕД[б]
+    if язык == "en":
+        return units.англ(б, письмо=письмо)
+    return ЕДИНИЦЫ[язык][б][0]
+
+
+def _малая(язык, м, k, письмо):
+    """Меньшая единица при числе k — счётной формой языка (у турецкого — со связкой)."""
+    if язык == "ru":
+        return units.рус(м, k)
+    if язык == "en":
+        return units.англ(м, много=k != 1, письмо=письмо)
+    if язык == "tr":
+        return ЕДИНИЦЫ["tr"][м][1]
+    return форма(язык, м, k)
+
+
+def сказать_отношение(язык, б, м, письмо="amer"):
+    """«eine Stunde hat 60 Minuten» — постоянная отношения б → м, сказанная на языке; английское
+    письмо (brit / amer) называет зовущий дом, как и у прочих дверей единиц."""
+    k = units.отношение(б, м)
+    assert k is not None and k.denominator == 1 and k > 1, (б, м, k)
+    арт = _артикль(язык, б) if язык != "en" else __import__("plural").article(units.англ(б, письмо=письмо))
+    return СКАЗ[язык].format(арт=арт, б=_большая(язык, б, письмо), k=int(k),
+                             м=_малая(язык, м, int(k), письмо))
+
+
+def сказанные(язык, пары, письмо="amer"):
+    """{фраза: (б, м)} — все фразы отношения, какие дом говорит на языке своими парами."""
+    return {сказать_отношение(язык, б, м, письмо): (б, м) for б, м in dict.fromkeys(пары)}
+
+
+def образец_отношения(язык, пары, письмо="amer"):
+    """Фраза отношения как регулярное выражение: всякая сказанная пара — своей веткой. Фраза
+    сверяется с тем, что дверь сказала бы сама, — с графом единиц, а не с памятью суда: всякая
+    иная постоянная («eine Stunde hat 50 Minuten») в образец не входит."""
+    return "(" + "|".join(re.escape(с) for с in sorted(сказанные(язык, пары, письмо),
+                                                         key=lambda с: (-len(с), с))) + ")"
+
+
+def _утверждение(язык, б, м, n):
     k = units.отношение(б, м)
     итог = n * k
     м_ = ЕДИНИЦЫ["tr"][м][1] if язык == "tr" else форма(язык, м, итог)
     return ФРАЗЫ[язык][0].format(n=n, б=форма(язык, б, n), итог=итог, м=м_, k=k)
 
 
+def утверждение(язык, б, м, n):
+    """Перевод, открытый постоянной, сказанной словами: «eine Stunde hat 60 Minuten. 2 Stunden
+    sind 120 Minuten: 2 × 60 = 120.»"""
+    return f"{сказать_отношение(язык, б, м)}. {_утверждение(язык, б, м, n)}"
+
+
 def вопрос(язык, б, м, n):
-    """The question of the small amount, answered by the statement (М-153)."""
+    """The question of the small amount, answered by the statement (М-153); the spoken constant
+    opens the page."""
     мм = ЕДИНИЦЫ[язык][м][1] if язык == "tr" else (ЕДИНИЦЫ[язык][м][2] if язык == "pl" else ЕДИНИЦЫ[язык][м][1])
     # French elides «de» before a vowel or a mute h: «combien d'heures»
     де = "d'" if мм[0] in "aeiouhé" else "de "
     q = ФРАЗЫ[язык][1].format(n=n, б=форма(язык, б, n), мм=мм, м=мм, ск=_сколько(язык, м), де=де)
-    return f"{q} {утверждение(язык, б, м, n)}"
+    return f"{сказать_отношение(язык, б, м)}. {q} {_утверждение(язык, б, м, n)}"
 
 
 def _слово(язык):
@@ -143,11 +233,12 @@ def _образец(язык, шаблон):
 
 
 def образцы(язык):
-    """[(regex, asked)] — statement groups: n, б, итог, м, n2, k, итог2;
-    question groups first: (ск,) мм, n, б — then the statement's."""
+    """[(regex, asked)] — the first group is the spoken constant; then statement groups: n, б,
+    итог, м, n2, k, итог2; question groups first: (ск,) мм, n, б — then the statement's."""
     утв, воп = ФРАЗЫ[язык]
-    return [(re.compile("^" + _образец(язык, утв) + "$"), False),
-            (re.compile("^" + _образец(язык, воп) + " " + _образец(язык, утв) + "$"), True)]
+    сказ = образец_отношения(язык, ПАРЫ) + re.escape(". ")
+    return [(re.compile("^" + сказ + _образец(язык, утв) + "$"), False),
+            (re.compile("^" + сказ + _образец(язык, воп) + " " + _образец(язык, утв) + "$"), True)]
 
 
 def _единица(язык, слово):
@@ -160,7 +251,8 @@ def _единица(язык, слово):
 
 
 def судить_группы(язык, спрошено, группы):
-    г = list(группы)
+    сказ, *г = list(группы)
+    пара = сказанные(язык, ПАРЫ).get(сказ)
     if спрошено:
         if язык in СКОЛЬКО:
             ск, мм, n0, б0 = г[:4]; г = г[4:]
@@ -181,6 +273,10 @@ def судить_группы(язык, спрошено, группы):
         return False
     k0 = units.отношение(еб[0], ем[0])
     if k0 is None:
+        return False
+    # ПОСТОЯННАЯ, СКАЗАННАЯ СТРАНИЦЕЙ, ЕСТЬ ПОСТОЯННАЯ ЕЁ ПЕРЕВОДА: «eine Stunde hat 60 Minuten»
+    # перед переводом дней в часы — ложь, хотя и фраза, и перевод порознь верны
+    if пара != (еб[0], ем[0]):
         return False
     if not (n2 == n and k == k0 and итог == итог2 == n * k0):
         return False

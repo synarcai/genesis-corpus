@@ -78,9 +78,9 @@ def формы_guess(формы, имя):
 
 ЯЗЫКИ = {
     "en": dict(
-        пары=(("worker bees", "baby bees", "bees"), ("adults", "children", "people"), ("red marbles", "blue marbles", "marbles"),
+        пары=(("pines", "birches", "trees"), ("adults", "children", "people"), ("red marbles", "blue marbles", "marbles"),
               ("roses", "tulips", "flowers"), ("cats", "dogs", "animals"), ("boys", "girls", "pupils")),
-        вещи=("games", "books", "cards", "coins", "stickers", "pens"),
+        вещи=("games", "shells", "stamps", "coins", "stickers", "pens"),
         кратно={2: "twice", 3: "three times", 4: "four times"}, доля={2: "half as many", 3: "a third as many"},
         сумма_утв="there are {K} as many {Б} as {М}. there are {N} {В} in all.",
         сумма_утв2="there are {Д} {М} as {Б}. there are {N} {В} in all.",
@@ -107,9 +107,9 @@ def формы_guess(формы, имя):
         ответ="so the answer is {r}.",
     ),
     "ru": dict(
-        пары=(("рабочих пчёл", "молодых пчёл", "пчёл"), ("взрослых", "детей", "людей"), ("красных шариков", "синих шариков", "шариков"),
+        пары=(("сосен", "берёз", "деревьев"), ("взрослых", "детей", "людей"), ("красных шариков", "синих шариков", "шариков"),
               ("роз", "тюльпанов", "цветов"), ("кошек", "собак", "животных"), ("мальчиков", "девочек", "учеников")),
-        вещи=("игра", "книга", "карта", "монета", "ручка", "шарик"),
+        вещи=("игра", "ракушка", "марка", "монета", "ручка", "шарик"),
         кратно={2: "вдвое", 3: "втрое", 4: "вчетверо"}, доля={2: "вдвое", 3: "втрое"},
         удвоенное={2: "удвоенное", 3: "утроенное", 4: "учетверённое"},
         сумма_утв="{Б} {K} больше, чем {М}. всего {В} {N}.",
@@ -130,9 +130,9 @@ def формы_guess(формы, имя):
         ответ="значит ответ: {r}.",
     ),
     "de": dict(
-        пары=(("Arbeiterbienen", "junge Bienen", "Bienen"), ("Erwachsene", "Kinder", "Personen"), ("rote Murmeln", "blaue Murmeln", "Murmeln"),
+        пары=(("Kiefern", "Birken", "Bäume"), ("Erwachsene", "Kinder", "Personen"), ("rote Murmeln", "blaue Murmeln", "Murmeln"),
               ("Rosen", "Tulpen", "Blumen"), ("Katzen", "Hunde", "Tiere"), ("Jungen", "Mädchen", "Schüler")),
-        вещи=("Spiele", "Bücher", "Karten", "Münzen", "Sticker", "Stifte"),
+        вещи=("Spiele", "Muscheln", "Briefmarken", "Münzen", "Sticker", "Stifte"),
         кратно={2: "doppelt", 3: "dreimal", 4: "viermal"}, доля={2: "halb", 3: "ein Drittel"},
         сумма_утв="es gibt {K} so viele {Б} wie {М}. insgesamt sind es {N} {В}.",
         сумма_утв2="es gibt {Д} so viele {М} wie {Б}. insgesamt sind es {N} {В}.",

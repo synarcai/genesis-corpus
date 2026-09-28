@@ -79,25 +79,30 @@ from plural import by_count                                       # noqa: E402
 #     только в месте числа» была ЗАСВИДЕТЕЛЬСТВОВАНА, а не объявлена, одно и то же слово
 #     обязано стоять местом в ОБЕИХ формах: и после пустого «there», и при подлежащем.
 #
-# Ныне сцен двенадцать, и восемь из них — bus, fence, yard, garden, park, pond, cage,
-# room — стоя́т местами и в экзистенциальном доме: вдвое больше LAW².
+# Ныне сцен тринадцать, и шесть из них — yard, garden, park, pond, cage, room — стоя́т
+# местами и в экзистенциальном доме: больше LAW².
+#
+# СЦЕНЫ ПОЛОСЫ СНЯТЫ 23.09 (слово владельца: полоса — прибор, а не источник). Дети в автобусе
+# с «at the bus stop» были самой задачей SVAMP chal-619, и суд утечки назвал её течью; птицы на
+# заборе — её же семейством. Конструкция (число при подлежащем, приход, уход, два шага, вопрос о
+# самом действии, обстоятельство перед числом) осталась; паром, трамвай и голуби на стене — свои.
 #
 # Каждая запись: (место, народ, глагол стояния БЕЗ места, предлог места, приход, уход,
 # обстоятельство ПРИХОДА для пятой
 # рамки — пустое там, где своего обстоятельства у сцены нет).
 СЦЕНЫ = (
-    ("bus",    "children",  "were riding",  "on the bus",    "got on the bus",     "got off the bus",    "at the bus stop"),
-    ("bus",    "kids",      "were riding",  "on the bus",    "got on the bus",     "got off the bus",    "at the bus stop"),
-    ("fence",  "birds",     "were sitting", "on the fence",  "flew to the fence",  "flew away",          ""),
-    ("tree",   "birds",     "were sitting", "in the tree",   "flew to the tree",   "flew away",          ""),
+    ("ferry",  "cyclists",  "were riding",  "on the ferry",  "rode onto the ferry", "rode off the ferry", "at the pier"),
+    ("tram",   "passengers", "were riding", "on the tram",   "got on the tram",    "got off the tram",   "at the next stop"),
+    ("wall",   "pigeons",   "were sitting", "on the wall",   "flew to the wall",   "flew away",          ""),
+    ("tree",   "sparrows",  "were sitting", "in the tree",   "flew to the tree",   "flew away",          ""),
     ("shop",   "customers", "were waiting", "in the shop",   "came into the shop", "left the shop",      ""),
     ("hall",   "students",  "were waiting", "in the hall",   "came into the hall", "left the hall",      ""),
     ("train",  "passengers", "were riding", "on the train",  "got on the train",   "got off the train",  "at the station"),
     ("yard",   "puppies",   "were playing", "in the yard",   "ran into the yard",  "ran out of the yard", ""),
-    ("garden", "birds",     "were sitting", "in the garden", "flew to the garden", "flew away",          ""),
+    ("garden", "bees",      "were buzzing", "in the garden", "flew into the garden", "flew away",        ""),
     ("park",   "children",  "were playing", "in the park",   "came into the park", "left the park",      ""),
-    ("pond",   "birds",     "were swimming", "on the pond",  "flew to the pond",   "flew away",          ""),
-    ("cage",   "birds",     "were sitting", "in the cage",   "flew into the cage", "flew out of the cage", ""),
+    ("pond",   "ducks",     "were swimming", "on the pond",  "flew to the pond",   "flew away",          ""),
+    ("cage",   "parrots",   "were sitting", "in the cage",   "flew into the cage", "flew out of the cage", ""),
     ("room",   "students",  "were waiting", "in the room",   "came into the room", "left the room",      ""),
 )
 
@@ -135,7 +140,7 @@ def _сцена(i):
 УБЫЛЬ = "убыль: от стоящих ушли"
 ДВА_ШАГА = "два шага: сперва убыль, потом прибыль, и порядок объявлен леджером"
 ВОПРОС_О_ДЕЙСТВИИ = "вопрос о самом действии: ответ есть ВТОРОЕ число, а не итог"
-ОБСТОЯТЕЛЬСТВО = "обстоятельство перед числом: «at the bus stop 82 children got on»"
+ОБСТОЯТЕЛЬСТВО = "обстоятельство перед числом: «at the pier 12 cyclists rode onto the ferry»"
 
 
 def показы(pi):
