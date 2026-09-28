@@ -351,7 +351,7 @@ def объявляет_род(путь):
 def дома(двор):
     """(взятые, не взятые) — дом найден ПО ДЕЛУ: по объявлению родов, а не по имени файла."""
     import genesis                                       # noqa: PLC0415
-    миры = {м["name"] for м in genesis.manifest()["worlds"] if м.get("text") == "shows"}
+    миры = {м["name"] for м in genesis.manifest()["worlds"] if genesis.в_полном_своде(м)}
     кормление = кормит(двор)
     взятые, не_взятые = [], []
     for п in sorted(pathlib.Path(двор).glob("*.py")):

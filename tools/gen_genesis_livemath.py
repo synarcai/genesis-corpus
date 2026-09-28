@@ -15,7 +15,7 @@ from layer import emit, PASSES  # noqa: E402
 
 
 def pass_shows(шаг):
-    показы = sorted(F.ПОКАЗЫ, key=lambda с: F.ПОКАЗЫ[с])
+    показы = sorted(F.ПОКАЗЫ, key=lambda с: F.ПРОИСХОЖДЕНИЕ[с])
     return показы[шаг::len(PASSES)]
 
 

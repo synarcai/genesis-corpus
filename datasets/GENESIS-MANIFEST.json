@@ -301,8 +301,8 @@
         "full"
       ],
       "actors": [],
-      "источник": "MIT — openai/grade-school-math (GSM8K), train split; datasets/sources/gsm8k/LICENSE",
-      "происхождение": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl — 7 473 problems; 2 near-duplicates of key problems struck out (datasets/sources/gsm8k/leak_near_duplicate_ids.json); 0 exact matches with any key"
+      "источник": "MIT — openai/grade-school-math (GSM8K), train split; tools/seeds/gsm8k/LICENSE",
+      "происхождение": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl — 7 473 problems; 2 near-duplicates of key problems struck out (tools/seeds/gsm8k/leak_near_duplicate_ids.json); 0 exact matches with any key"
     },
     {
       "name": "nestcalc",
@@ -3361,10 +3361,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 45310966,
+      "size": 53204005,
       "tiers": [],
       "text": "mix",
-      "lines": 473343
+      "lines": 502350
     },
     {
       "name": "fuseprep",

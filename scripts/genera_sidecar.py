@@ -231,7 +231,7 @@ def границы(свод):
     строки = свод.read_text(encoding="utf-8", errors="replace").split("\n")
     вон, позиция = [], 0
     for м in genesis.manifest()["worlds"]:
-        if м.get("text") != "shows":
+        if not genesis.в_полном_своде(м):     # тот же выбор, что у сборщика свода
             continue
         путь = КОРЕНЬ / м["file"]
         if not путь.is_file():

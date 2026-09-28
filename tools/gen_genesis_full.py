@@ -43,7 +43,7 @@ def куски_сборки(сборка="full"):
     for мир in genesis.manifest()["worlds"]:
         # ЖИВАЯ ЗАДАЧА ЕДЕТ В СВОД РЯДОМ С ПОКАЗАМИ (23.09): её строку судит закон её мира, а не
         # судьи показов (род «live», см. манифест), но ест её организм так же.
-        if мир.get("text") not in ("shows", "live"):
+        if not genesis.в_полном_своде(мир):
             continue
         if имя_сборки is not None and имя_сборки not in (
                 мир.get("assemblies") or ()):
