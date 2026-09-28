@@ -44,3 +44,20 @@ Thumbs.db
 # генератором tools/gen_genesis_holdout.py и умирает с судом — не канон
 datasets/GENESIS-HOLDOUT.txt
 datasets/GENESIS-SCHOOL-PERMUTED.txt
+
+# ПРОИЗВОДНЫЕ СБОРКИ СВОДА (слово владельца 28.09): собираются из миров datasets/genesis_*.txt и кода домов — в git не
+# хранятся, чтобы всякий перевыпуск не добавлял в историю ~270 МБ слепков (прежние слепки остаются в истории:
+# git show <коммит>:datasets/<сборка>). Пересборка:
+#   python3 tools/gen_genesis_full.py                         → GENESIS-FULL.txt, GENESIS-SCHOOL.txt
+#   python3 scripts/genera_sidecar.py --собрать               → GENESIS-FULL.genera.tsv
+#   python3 scripts/minimal_build.py --масса 9 / 13 / 20       → GENESIS-MIN / GENESIS-MID13 / GENESIS-MID (+ ворота пина)
+#   python3 scripts/uniq_build.py                             → GENESIS-UNIQ.txt (+ ворота пина)
+#   python3 scripts/strat_slice.py                            → GENESIS-STRAT.txt
+datasets/GENESIS-FULL.txt
+datasets/GENESIS-SCHOOL.txt
+datasets/GENESIS-FULL.genera.tsv
+datasets/GENESIS-UNIQ.txt
+datasets/GENESIS-MID.txt
+datasets/GENESIS-MID13.txt
+datasets/GENESIS-MIN.txt
+datasets/GENESIS-STRAT.txt
