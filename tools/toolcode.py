@@ -80,7 +80,7 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
 # 12 = 12» суд арифметики читает умножением — между счётом и леджером стоит место («dans le projet», как «dans le
 # dépôt» дома актов); номер строки не стоит перед родительным падежом («строка 5 файла» суд счёта читает «5 файла»)
 РЕЧЬ = {
-    "en": dict(q_где="where is {x} defined?", q_сорт="in which file is {С}?", q_найди="find the definition of {x}.",
+    "en": dict(q_где_с="where is {С} defined?", q_упом_с="where is {С} used?", q_где="where is {x} defined?", q_сорт="in which file is {С}?", q_найди="find the definition of {x}.",
                a_определено="{С} is defined {М} on line {n}", нет_имени="the project has no name {x}",
                q_где_упом="where is {x} used?", q_сколько="how many times is {x} referenced?",
                q_найди_упом="find the references to {x}.", a_упоминается="{x} is referenced {N} in the project",
@@ -92,7 +92,7 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
                переименуй="rename {X} to {y}", везде="rename {x} to {y} everywhere in the project",
                инф="rename {x} to {y}", zu="rename {x} to {y}", прош="renamed {x} to {y}",
                a_заменено="the name was replaced {N} {F}", в_файлах="in the files {С}"),
-    "ru": dict(q_где="где определение {x}?", q_сорт="в каком файле {С}?", q_найди="найди определение {x}.",
+    "ru": dict(q_где_с="где {прич} {С}?", q_упом_с="где используется {С}?", q_где="где определение {x}?", q_сорт="в каком файле {С}?", q_найди="найди определение {x}.",
                a_определено="{С} {прич} {М} на строке {n}", нет_имени="в проекте нет имени {x}",
                q_где_упом="где используется {x}?", q_сколько="сколько раз упоминается {x}?",
                q_найди_упом="найди упоминания {x}.", a_упоминается="{x} упоминается {N} в проекте",
@@ -104,7 +104,7 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
                переименуй="переименуй {X} в {y}", везде="переименуй {x} в {y} во всём проекте",
                инф="переименовать {x} в {y}", zu="переименовать {x} в {y}", прош="переименовал {x} в {y}",
                a_заменено="имя заменено {N} {F}", в_файлах="в файлах {С}"),
-    "de": dict(q_где="wo ist {x} definiert?", q_сорт="in welcher Datei steht {С}?",
+    "de": dict(q_где_с="wo ist {С} definiert?", q_упом_с="wo wird {С} verwendet?", q_где="wo ist {x} definiert?", q_сорт="in welcher Datei steht {С}?",
                q_найди="finde die Definition von {x}.", a_определено="{С} ist {М} in Zeile {n} definiert",
                нет_имени="im Projekt gibt es keinen Namen {x}", q_где_упом="wo wird {x} verwendet?",
                q_сколько="wie oft wird {x} referenziert?", q_найди_упом="finde die Verweise auf {x}.",
@@ -116,7 +116,7 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
                переименуй="benenne {X} in {y} um", везде="benenne {x} im ganzen Projekt in {y} um",
                инф="{x} in {y} umbenennen", zu="{x} in {y} umzubenennen", прош="{x} in {y} umbenannt",
                a_заменено="der Name wurde {N} {F} ersetzt", в_файлах="in den Dateien {С}"),
-    "fr": dict(q_где="où se trouve la définition du nom {x} ?", q_сорт="dans quel fichier se trouve {С} ?",
+    "fr": dict(q_где_с="où est {прич} {С} ?", q_упом_с="où utilise-t-on {С} ?", q_где="où se trouve la définition du nom {x} ?", q_сорт="dans quel fichier se trouve {С} ?",
                q_найди="trouve la définition du nom {x}.", a_определено="{С} est {прич} {М} à la ligne {n}",
                нет_имени="le projet ne contient aucun nom {x}", q_где_упом="où est utilisé {x} ?",
                q_сколько="combien de références au nom {x} y a-t-il ?", q_найди_упом="trouve les références au nom {x}.",
@@ -128,7 +128,7 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
                переименуй="renomme {X} en {y}", везде="renomme {x} en {y} dans tout le projet",
                инф="renommer {x} en {y}", zu="renommer {x} en {y}", прош="renommé {x} en {y}",
                a_заменено="le nom a été remplacé {N} {F}", в_файлах="dans les fichiers {С}"),
-    "es": dict(q_где="¿dónde está la definición de {x}?", q_сорт="¿en qué archivo está {С}?",
+    "es": dict(q_где_с="¿dónde está {прич} {С}?", q_упом_с="¿dónde se usa {С}?", q_где="¿dónde está la definición de {x}?", q_сорт="¿en qué archivo está {С}?",
                q_найди="busca la definición de {x}.", a_определено="{С} está {прич} {М} en la línea {n}",
                нет_имени="el proyecto no tiene ningún nombre {x}", q_где_упом="¿dónde se usa {x}?",
                q_сколько="¿cuántas veces se hace referencia a {x}?", q_найди_упом="busca las referencias a {x}.",
@@ -140,7 +140,7 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
                переименуй="renombra {X} como {y}", везде="renombra {x} como {y} en todo el proyecto",
                инф="renombrar {x} como {y}", zu="renombrar {x} como {y}", прош="renombrado {x} como {y}",
                a_заменено="el nombre se reemplazó {N} {F}", в_файлах="en los archivos {С}"),
-    "it": dict(q_где="dove si trova la definizione di {x}?", q_сорт="in quale file si trova {С}?",
+    "it": dict(q_где_с="dove è {прич} {С}?", q_упом_с="dove si usa {С}?", q_где="dove si trova la definizione di {x}?", q_сорт="in quale file si trova {С}?",
                q_найди="trova la definizione di {x}.", a_определено="{С} è {прич} {М} alla riga {n}",
                нет_имени="il progetto non contiene alcun nome {x}", q_где_упом="dove si usa {x}?",
                q_сколько="quante volte si fa riferimento a {x}?", q_найди_упом="trova i riferimenti a {x}.",
@@ -152,7 +152,7 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
                переименуй="rinomina {X} in {y}", везде="rinomina {x} in {y} in tutto il progetto",
                инф="rinominare {x} in {y}", zu="rinominare {x} in {y}", прош="rinominato {x} in {y}",
                a_заменено="il nome è stato sostituito {N} {F}", в_файлах="nei file {С}"),
-    "pt": dict(q_где="onde está a definição de {x}?", q_сорт="em que ficheiro está {С}?",
+    "pt": dict(q_где_с="onde está {прич} {С}?", q_упом_с="onde se usa {С}?", q_где="onde está a definição de {x}?", q_сорт="em que ficheiro está {С}?",
                q_найди="encontra a definição de {x}.", a_определено="{С} está {прич} {М} na linha {n}",
                нет_имени="o projeto não tem nenhum nome {x}", q_где_упом="onde se usa {x}?",
                q_сколько="quantas vezes se faz referência a {x}?", q_найди_упом="encontra as referências a {x}.",
@@ -164,7 +164,7 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
                переименуй="renomeia {X} para {y}", везде="renomeia {x} para {y} em todo o projeto",
                инф="renomear {x} para {y}", zu="renomear {x} para {y}", прош="renomeei {x} para {y}",
                a_заменено="o nome foi substituído {N} {F}", в_файлах="nos ficheiros {С}"),
-    "nl": dict(q_где="waar is {x} gedefinieerd?", q_сорт="in welk bestand staat {С}?",
+    "nl": dict(q_где_с="waar is {С} gedefinieerd?", q_упом_с="waar wordt {С} gebruikt?", q_где="waar is {x} gedefinieerd?", q_сорт="in welk bestand staat {С}?",
                q_найди="zoek de definitie van {x}.", a_определено="{С} is gedefinieerd {М} op regel {n}",
                нет_имени="het project heeft geen naam {x}", q_где_упом="waar wordt {x} gebruikt?",
                q_сколько="hoe vaak wordt naar {x} verwezen?", q_найди_упом="zoek de verwijzingen naar {x}.",
@@ -176,7 +176,7 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
                переименуй="hernoem {X} naar {y}", везде="hernoem {x} overal in het project naar {y}",
                инф="{x} naar {y} hernoemen", zu="{x} naar {y} te hernoemen", прош="{x} naar {y} hernoemd",
                a_заменено="de naam is {N} {F} vervangen", в_файлах="in de bestanden {С}"),
-    "pl": dict(q_где="gdzie jest definicja {x}?", q_сорт="w którym pliku jest {С}?", q_найди="znajdź definicję {x}.",
+    "pl": dict(q_где_с="gdzie jest {прич} {С}?", q_упом_с="gdzie używa się {С2}?", q_где="gdzie jest definicja {x}?", q_сорт="w którym pliku jest {С}?", q_найди="znajdź definicję {x}.",
                a_определено="{С} jest {прич} {М} w linii {n}", нет_имени="w projekcie nie ma nazwy {x}",
                q_где_упом="gdzie używa się {x}?", q_сколько="ile jest odwołań do {x}?",
                q_найди_упом="znajdź odwołania do {x}.", a_упоминается="do {x} odwołano się {N} w projekcie",
@@ -212,13 +212,18 @@ import toolrepo as R  # noqa: E402 — сборка страницы дома а
 НЕВОЗМОЖНЫЕ = frozenset({ПЕРЕИМЕНОВАНИЕ_ЗАНЯТО, ПЕРЕИМЕНОВАНИЕ_НЕТ})
 # ФОРМЫ: вопрос определения — где, словом сорта, приказом «найди»; упоминаний — где, сколько раз, «найди»; символов —
 # что определяет, перечисли; переименования — голым именем, словом сорта, «во всём проекте»
-ФОРМЫ_ОПРЕДЕЛЕНИЯ = ("где", "сорт", "найди")
-ФОРМЫ_УПОМИНАНИЙ = ("где", "сколько", "найди")
+ФОРМЫ_ОПРЕДЕЛЕНИЯ = ("где", "сорт", "найди", "где·сорт")
+ФОРМЫ_УПОМИНАНИЙ = ("где", "сколько", "найди", "где·сорт")
+# СИМВОЛ РОДОМ (29.09, находка ведущего по переписи: вопросы мира кода называли символ лишь голым именем, и орган не
+# читал вопроса, где символ назван родом, — стена конструкции): «where is the function half defined?», «где определена
+# функция half?», «where is the function greet used?» — форма «где·сорт» на всякой основе, пара голого «где» того же хода
+# мира; слово сорта — дверь `СОРТ`, причастие — `ОПРЕДЕЛЁН`
+ФОРМЫ_СОРТОМ = frozenset({"сорт", "где·сорт"})
 ФОРМЫ_СИМВОЛОВ = ("что", "перечисли")
 ФОРМЫ_ПЕРЕИМЕНОВАНИЯ = ("канон", "сорт", "везде")
 # семьи перефраза — правка формы над канонической («где», «что», «канон»): синоним вопроса или приказ
 ПЕРЕФРАЗ_ФОРМЫ = {"сорт": "синоним", "найди": "синоним", "сколько": "синоним", "перечисли": "синоним",
-                  "везде": "вводное"}
+                  "везде": "вводное", "где·сорт": "синоним"}
 # РЕГИСТРЫ ПРИКАЗА ПЕРЕИМЕНОВАНИЯ — у двери дома рук (`toolacts.РЕЧЬ[…]["регистры"]`): прямой, вежливый и вопросная
 # просьба («could you rename half to halve?»); регистр лишь прибавляет слова к приказу или берёт его инфинитив, и у
 # всякой страницы регистра есть прямая пара той же основы с тем же ходом мира
@@ -307,16 +312,20 @@ def _вопрос_текст(язык, ключ, **п):
 # (рамка страницы — та же сборка дома)
 def сборка_определения(язык, форма, x, мир_, sort=None, f=None, n=None):
     """Вопрос об определении имени: ход мира и ответ; без находки (отказ мира not-there) — «в проекте нет имени x»."""
-    ключ = {"где": "q_где", "сорт": "q_сорт", "найди": "q_найди"}[форма]
-    вопрос_ = _вопрос_текст(язык, ключ, x=x, С=сорт(язык, sort, x) if форма == "сорт" else None)
+    ключ = {"где": "q_где", "сорт": "q_сорт", "найди": "q_найди", "где·сорт": "q_где_с"}[форма]
+    прич = ОПРЕДЕЛЁН.get(язык, {}).get(СОРТ[язык][sort][2], "") if форма in ФОРМЫ_СОРТОМ else ""
+    вопрос_ = _вопрос_текст(язык, ключ, x=x, С=сорт(язык, sort, x) if форма in ФОРМЫ_СОРТОМ else None, прич=прич)
     if f is None:
         return R.вопрос(язык, вопрос_, мир_, _ф(язык, _р(язык, "нет_имени", x=x)))
     return R.вопрос(язык, вопрос_, мир_, ответ_определения(язык, sort, x, f, n))
 
 
-def сборка_упоминаний(язык, форма, x, мир_, N=None, L=None, места_=None, нет=False):
-    """Вопрос об упоминаниях: счёт и места; ноль — «нигде»; имени нет — отказ мира not-there."""
-    вопрос_ = _вопрос_текст(язык, {"где": "q_где_упом", "сколько": "q_сколько", "найди": "q_найди_упом"}[форма], x=x)
+def сборка_упоминаний(язык, форма, x, мир_, N=None, L=None, места_=None, нет=False, sort=None):
+    """Вопрос об упоминаниях: счёт и места; ноль — «нигде»; имени нет — отказ мира not-there; форма «где·сорт» называет
+    символ родом (`sort` — клетка sort его определения)."""
+    ключ = {"где": "q_где_упом", "сколько": "q_сколько", "найди": "q_найди_упом", "где·сорт": "q_упом_с"}[форма]
+    вопрос_ = _вопрос_текст(язык, ключ, x=x, **({"С": сорт(язык, sort, x), "С2": сорт(язык, sort, x, 1)}
+                                               if форма in ФОРМЫ_СОРТОМ else {}))
     if нет:
         return R.вопрос(язык, вопрос_, мир_, _ф(язык, _р(язык, "нет_имени", x=x)))
     return R.вопрос(язык, вопрос_, мир_, ответ_упоминаний(язык, x, N, L, места_))
@@ -398,7 +407,8 @@ def страница(язык, род, форма, объект, довод=None
         ход_ = К.ход("refs", объект)
         N, L = счёт(язык, ход_.мера(К.СЧЁТ["refs"]))
         места_ = места(язык, [(dict(с)["line"], dict(с)["path"]) for с in ход_.строки]) if ход_.строки else None
-        return сборка_упоминаний(язык, форма, объект, W.текст(ход_), N, L, места_)
+        sort = _сорт_определения(К.ход("define", объект)) if форма in ФОРМЫ_СОРТОМ else None
+        return сборка_упоминаний(язык, форма, объект, W.текст(ход_), N, L, места_, sort=sort)
     if род in (СИМВОЛЫ, СИМВОЛОВ_НЕТ, ФАЙЛА_НЕТ):
         ход_ = К.ход("symbols", объект)
         if род == ФАЙЛА_НЕТ:
@@ -453,15 +463,18 @@ def _показы():
         # ОПРЕДЕЛЕНИЕ: всякая форма на четырёх основах, по кругу имён (у каждой формы свои); имена, каких нет
         for i, форма in enumerate(ФОРМЫ_ОПРЕДЕЛЕНИЯ):
             # каноническая форма — на всяком имени; правленая — на четырёх из них (по кругу): пара одного хода мира
-            for x in (К.ОПРЕДЕЛЕНИЯ if форма == "где" else R._кругом(К.ОПРЕДЕЛЕНИЯ, 4 * i)):
+            for x in (К.ОПРЕДЕЛЕНИЯ if форма in ("где", "где·сорт") else R._кругом(К.ОПРЕДЕЛЕНИЯ, 4 * i)):
                 положить(страница(язык, ОПРЕДЕЛЕНИЕ, форма, x), язык, ОПРЕДЕЛЕНИЕ, форма, п_, {"x": x})
         for x in К.НЕТ_ИМЁН:
             положить(страница(язык, ИМЕНИ_НЕТ, "где", x), язык, ИМЕНИ_НЕТ, "где", п_, {"x": x})
         # УПОМИНАНИЯ: всякая форма на четырёх упоминаемых именах; имена, каких не упоминает никто; имена, каких нет
+        снятые = frozenset(К.семя().get("reads", {}))
         for форма in ФОРМЫ_УПОМИНАНИЙ:
             for x in К.УПОМИНАЕМЫЕ:
+                if форма in ФОРМЫ_СОРТОМ and К.ключ("define", x) not in снятые:
+                    continue
                 положить(страница(язык, УПОМИНАНИЯ, форма, x), язык, УПОМИНАНИЯ, форма, п_, {"x": x})
-        for форма in ("где", "сколько"):
+        for форма in ("где", "сколько", "где·сорт"):
             for x in К.НЕУПОМИНАЕМЫЕ:
                 положить(страница(язык, НЕ_УПОМИНАЕТСЯ, форма, x), язык, НЕ_УПОМИНАЕТСЯ, форма, п_, {"x": x})
         for x in К.НЕТ_ИМЁН:
