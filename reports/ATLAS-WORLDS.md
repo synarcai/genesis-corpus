@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 355 миров, 518388 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 356 миров, 519396 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -475,7 +475,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 44, строк 50361.
+Миров 45, строк 51369.
 
 - **`toolrepo`** (20667 строк; recompute, unsigned_only)  
   **АКТЫ В РЕПОЗИТОРИИ** — руки агента второй ступени, страница в ТРИ ГОЛОСА (25.09, мера ведущего: ядро М-2008 на своде дома актов — ключ агента 2 из 50; условия рынка М-2013; коллегия «ответ мира в словах дома»).
@@ -501,6 +501,8 @@
   **STRICT INFERENCE** — modus ponens, modus tollens, and TWO FALLACIES named as fallacies.
 - **`adjorder`** (1155 строк; recompute, whole_only)  
   **THE ORDER OF ADJECTIVES** — WHICH WORD STANDS FIRST AND WHY (16.09, the BBH genus `hyperbaton`).
+- **`toolcode`** (1008 строк; recompute, unsigned_only)  
+  **КОД РЕПОЗИТОРИЯ** — МИР: руки агента в коде (29.09, ведущий omega-90, М-2099; поток П3 продукта ozar).
 - **`plan`** (576 строк; recompute, whole_only, unsigned_only)  
   order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)
 - **`proof`** (520 строк; recompute, whole_only)  
@@ -789,5 +791,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 355.
+Миров: **0** из 356.
 
