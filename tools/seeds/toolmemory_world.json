@@ -4,6 +4,7 @@
   "name": "@modelcontextprotocol/server-memory",
   "version": "2026.8.31"
  },
+ "bridge": "omega-codeworld 54693269b",
  "declare": "kind create_entities\nkind create_relations\nkind add_observations\nkind delete_entities\nkind delete_observations\nkind delete_relations\nkind read_graph\nkind search_nodes\nkind open_nodes\nledger rows\nledger error\nreading read_graph\nreading search_nodes\nreading open_nodes\ntakes create_entities 2\ntakes create_relations 2\ntakes add_observations 1\ntakes delete_observations 1\ntakes delete_relations 2\nrows create_entities name entityType observations\nrows create_relations from to relationType\nrows add_observations entityName addedObservations\nrows delete_entities success message\nrows delete_observations success message\nrows delete_relations success message\nrows read_graph name entityType observations from to relationType\nrows search_nodes name entityType observations from to relationType\nrows open_nodes name entityType observations from to relationType\nend error\n",
  "scenes": {
   "ru": {

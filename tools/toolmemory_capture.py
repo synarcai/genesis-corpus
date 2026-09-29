@@ -14,7 +14,8 @@
     python3 tools/toolmemory_capture.py                    # самопроверка без процессов
     python3 tools/toolmemory_capture.py --снять [пути]     # снять заново всё и записать
     пути: --мост <ozar_mcp_world> --память <mcp-server-memory> (по умолчанию — из окружения: OZAR_MCP_WORLD,
-    OZAR_MCP_MEMORY)
+    OZAR_MCP_MEMORY); --коммит <коммит моста> (OZAR_BRIDGE_COMMIT) — ложится в семя рядом с версией сервера: семя
+    объявляет, каким мостом снято
 """
 import json
 import os
@@ -66,7 +67,7 @@ def снять():
     память = _довод("--память", "OZAR_MCP_MEMORY")
     assert мост and память, "нужны пути моста и сервера: --мост, --память"
     (объявление,), _граф = _сессия(мост, память, [("declare", "", ())])
-    вон = {"source": П.отпечаток(), "server": _версия(память),
+    вон = {"source": П.отпечаток(), "server": _версия(память), "bridge": _довод("--коммит", "OZAR_BRIDGE_COMMIT") or "?",
            "declare": bytes(объявление.get("bytes") or []).decode("utf-8"), "scenes": {}}
     for язык in П.ЯЗЫКИ:
         граф_ = П.акты_графа(язык)
@@ -83,8 +84,8 @@ def снять():
         print(f"{язык}: снято актов {len(сцены)} (граф голоса — {len(граф_)} актов)")
     П.СЕМЯ.parent.mkdir(parents=True, exist_ok=True)
     П.СЕМЯ.write_text(json.dumps(вон, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"СНЯТО: голосов {len(вон['scenes'])}, сервер {вон['server']['name']} {вон['server']['version']}, "
-          f"отпечаток {вон['source']}")
+    print(f"СНЯТО: голосов {len(вон['scenes'])}, сервер {вон['server']['name']} {вон['server']['version']}, мост "
+          f"{вон['bridge']}, отпечаток {вон['source']}")
     return 0
 
 
