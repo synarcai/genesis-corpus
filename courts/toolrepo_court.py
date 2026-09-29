@@ -31,6 +31,7 @@ sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import actturn as A  # noqa: E402 — дверь хода: реплики, да/нет, счётные слова, леджер
 import closedworld  # noqa: E402
 import folderworld as W  # noqa: E402 — мир папки: ход мира на акт
+import runnerread  # noqa: E402 — чтение отчёта бегуна судом: числа итога стоят в отчёте
 import toolacts as T  # noqa: E402 — дверь рук: кавычки, «раз», строки, исход
 import toolrepo as R  # noqa: E402 — сборка страниц дома и объявление мира
 from closedworld import Слой  # noqa: E402,F401 — палата подаёт имя мира лишь тому, кто ввёз Слой
@@ -740,23 +741,6 @@ def _место_верно(язык, род, форма, зн, ходы):
     return _итог_верен(язык, второй, {**зн, "N": зн["N2"], "L": зн["L2"]}, ходы[1])
 
 
-_CARGO = re.compile(r"^test result: (?:ok|FAILED)\. (\d+) passed; (\d+) failed;", re.M)
-_UNITTEST = re.compile(r"^Ran (\d+) tests? in .*\n\n(OK|NO TESTS RAN|FAILED \((.*)\))$", re.M)
-
-
-def _стоят(отчёт, строки_итога):
-    """Числа итога стоят в отчёте бегуна — своим чтением отчёта: строки «test result» cargo по порядку или «Ran N
-    tests» и «OK» / «NO TESTS RAN» / «FAILED (failures=K, errors=E)» unittest (упавшие — провалы и ошибки)."""
-    cargo = [(int(п), int(у)) for п, у in _CARGO.findall(отчёт)]
-    if cargo:
-        return cargo == строки_итога
-    м = _UNITTEST.search(отчёт)
-    if м is None or (м.group(2) == "NO TESTS RAN") != (м.group(1) == "0"):
-        return False
-    упало = sum(int(x) for x in re.findall(r"\b(?:failures|errors)=(\d+)", м.group(3) or ""))
-    return строки_итога == [(int(м.group(1)) - упало, упало)]
-
-
 _СНЯТЫЕ = {}
 
 
@@ -792,7 +776,7 @@ def _прогон_верен(язык, зн, мир_, сдвиг, ключи=("N
         return True
     числа, исход = R.исход(язык, зн["Я"], снятое)
     return (зн["ЧИСЛА"] == числа and зн["ИСХОД"] == исход
-            and _стоят("\n".join(снятое["report"]), R.строки_итога(снятое)))
+            and runnerread.стоят("\n".join(снятое["report"]), R.строки_итога(снятое)))
 
 
 def _итог_верен(язык, род, зн, ход_, мир_=None):
