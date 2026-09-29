@@ -31,6 +31,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import frgram  # noqa: E402 — французская элизия после подстановки
+import numberslots  # noqa: E402 — слова шаблона за числовой дырой
 import svampforms as S  # noqa: E402 — счётная ячейка пакета
 from actturn import ЯЗЫКИ  # noqa: E402 — девять языков атаки
 
@@ -153,6 +154,9 @@ def исполнить(имя, парам, тело_py, аргументы):
                разбор="{code} — funkcja {name} przyjmuje {n}: {params}, i zwraca {expr}", и="i",
                перевод="{py} w Ruście zapisuje się tak: {rs}"),
 }
+# СЛОВА ЗА ЧИСЛОМ (29.09, суд согласования): «{call} geeft {v} terug» ставит «terug» после всякого значения — дом
+# объявляет свои числовые дыры, слова выводит дверь `numberslots`
+СЛОВА_ПОСЛЕ_ЧИСЛА = numberslots.слова_после_числа((РЕЧЬ,), ("v", "actual", "expected", "n"))
 
 ВЫЗОВ = "вызов и результат"
 ВОПРОС = "вопрос о результате вызова"
